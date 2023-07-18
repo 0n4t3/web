@@ -2,69 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>An Untitled Blog</title>
-    <link>example.com/</link>
+    <link>www.mecca1.net/</link>
     <description>Recent content on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="example.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="www.mecca1.net/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Post</title>
-      <link>example.com/posts/2023-06-16_first-post/</link>
+      <link>www.mecca1.net/posts/2023-06-16_first-post/</link>
       <pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>example.com/posts/2023-06-16_first-post/</guid>
+      <guid>www.mecca1.net/posts/2023-06-16_first-post/</guid>
       <description>
         
           
-            I think I&amp;rsquo;m going to start a blog here. I got this domain with the A records just collecting dust, and have an interest in writing stuff casually. I figure I&amp;rsquo;ll write about projects I work on or opinions about things in my field whenever something interests me enough to talk about it. I probably won&amp;rsquo;t write too much about myself personally though, if you&amp;rsquo;re reading this you probably A) know me already and somehow got roped into reading this, B) we&amp;rsquo;re working on some sort of project and you&amp;rsquo;re interested in reading about my writing about it, or C) find my writing about something interesting or useful (the latter being the most unlikely).
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Test Post 3</title>
-      <link>example.com/posts/post3/</link>
-      <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>example.com/posts/post3/</guid>
-      <description>
-        
-          
-            This is a test post 3
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Test Post 2</title>
-      <link>example.com/posts/post2/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>example.com/posts/post2/</guid>
-      <description>
-        
-          
-            This is a test post 2
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Test Post</title>
-      <link>example.com/posts/post/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>example.com/posts/post/</guid>
-      <description>
-        
-          
-            This is a test post
+            I think I&amp;rsquo;m going to start a blog here. I got this domain with some DNS records just collecting dust, and have an interest in writing stuff casually. I figure I&amp;rsquo;ll write about projects I work on or opinions about things in my field whenever something interests me enough to talk about it. I probably won&amp;rsquo;t write too much about myself personally though, if you&amp;rsquo;re reading this you probably A) know me already and somehow got roped into reading this, B) we&amp;rsquo;re working on some sort of project and you&amp;rsquo;re interested in reading about my writing about it, or C) find my writing about something interesting or useful (the latter being the most unlikely).
           
           
         

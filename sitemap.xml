@@ -2,43 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>example.com/</loc>
+    <loc>www.mecca1.net/</loc>
     <lastmod>2023-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>example.com/categories/</loc>
+    <loc>www.mecca1.net/categories/</loc>
     <lastmod>2023-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>example.com/posts/2023-06-16_first-post/</loc>
+    <loc>www.mecca1.net/posts/2023-06-16_first-post/</loc>
     <lastmod>2023-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>example.com/tags/personal/</loc>
+    <loc>www.mecca1.net/tags/misc/</loc>
     <lastmod>2023-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>example.com/posts/</loc>
+    <loc>www.mecca1.net/categories/personal-updates/</loc>
     <lastmod>2023-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>example.com/categories/syntax/</loc>
+    <loc>www.mecca1.net/posts/</loc>
     <lastmod>2023-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>example.com/tags/</loc>
+    <loc>www.mecca1.net/tags/</loc>
     <lastmod>2023-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>example.com/categories/themes/</loc>
-    <lastmod>2023-06-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>example.com/posts/post3/</loc>
+    <loc>www.mecca1.net/posts/post3/</loc>
     <lastmod>2021-06-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>example.com/posts/post2/</loc>
+    <loc>www.mecca1.net/posts/post2/</loc>
     <lastmod>2019-05-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>example.com/posts/post/</loc>
+    <loc>www.mecca1.net/posts/post/</loc>
     <lastmod>2018-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>example.com/pages/</loc>
+    <loc>www.mecca1.net/pages/</loc>
   </url><url>
-    <loc>example.com/pages/resume/</loc>
+    <loc>www.mecca1.net/pages/resume/</loc>
   </url><url>
-    <loc>example.com/pages/follow/</loc>
+    <loc>www.mecca1.net/pages/follow/</loc>
   </url>
 </urlset>

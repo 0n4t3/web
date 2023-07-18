@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on An Untitled Blog</title>
-    <link>example.com/tags/</link>
+    <link>www.mecca1.net/tags/</link>
     <description>Recent content in Tags on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="www.mecca1.net/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
