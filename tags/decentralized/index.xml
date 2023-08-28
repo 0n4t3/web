@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Decentralized on An Untitled Blog</title>
+    <link>https://www.mecca1.net/tags/decentralized/</link>
+    <description>Recent content in Decentralized on An Untitled Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mecca1.net/tags/decentralized/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is IPFS &#43; basic use</title>
+      <link>https://www.mecca1.net/posts/2023-08-28_ipfs/</link>
+      <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mecca1.net/posts/2023-08-28_ipfs/</guid>
+      <description>
+        
+          
+            IPFS, an acronym for &amp;ldquo;InterPlanetary File System&amp;rdquo;, is a way to deliver files that takes a different approach to HTTP. As I mentioned in my very first post, I originally considered hosting my entire site/blog on it, and while I decided against it for reasons I mentioned there and reasons I&amp;rsquo;ll get into later here; I am working on something that may involve me sharing files here, which I&amp;rsquo;ll probably use IPFS for.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
