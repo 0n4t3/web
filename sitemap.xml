@@ -2,67 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.mecca1.net/</loc>
+    <loc>https://nate.mecca1.net/</loc>
+    <lastmod>2023-09-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/categories/</loc>
+    <lastmod>2023-09-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/misc/</loc>
+    <lastmod>2023-09-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/categories/personal-updates/</loc>
+    <lastmod>2023-09-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/posts/</loc>
+    <lastmod>2023-09-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/posts/2023-09-24_subdomain-change/</loc>
+    <lastmod>2023-09-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/</loc>
+    <lastmod>2023-09-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/decentralized/</loc>
     <lastmod>2023-08-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mecca1.net/categories/</loc>
+    <loc>https://nate.mecca1.net/categories/informational/</loc>
     <lastmod>2023-08-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mecca1.net/tags/decentralized/</loc>
+    <loc>https://nate.mecca1.net/tags/ipfs/</loc>
     <lastmod>2023-08-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mecca1.net/categories/informational/</loc>
+    <loc>https://nate.mecca1.net/posts/2023-08-28_ipfs/</loc>
     <lastmod>2023-08-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mecca1.net/tags/ipfs/</loc>
-    <lastmod>2023-08-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mecca1.net/posts/</loc>
-    <lastmod>2023-08-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mecca1.net/tags/</loc>
-    <lastmod>2023-08-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mecca1.net/posts/2023-08-28_ipfs/</loc>
-    <lastmod>2023-08-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mecca1.net/tags/cloud/</loc>
+    <loc>https://nate.mecca1.net/tags/cloud/</loc>
     <lastmod>2023-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mecca1.net/categories/complaints/</loc>
+    <loc>https://nate.mecca1.net/categories/complaints/</loc>
     <lastmod>2023-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mecca1.net/posts/2023-07-24_cloud-oss/</loc>
+    <loc>https://nate.mecca1.net/posts/2023-07-24_cloud-oss/</loc>
     <lastmod>2023-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mecca1.net/tags/privacy/</loc>
+    <loc>https://nate.mecca1.net/tags/privacy/</loc>
     <lastmod>2023-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mecca1.net/tags/windows/</loc>
+    <loc>https://nate.mecca1.net/tags/windows/</loc>
     <lastmod>2023-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mecca1.net/posts/2023-06-16_first-post/</loc>
+    <loc>https://nate.mecca1.net/posts/2023-06-16_first-post/</loc>
     <lastmod>2023-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mecca1.net/tags/misc/</loc>
-    <lastmod>2023-06-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mecca1.net/categories/personal-updates/</loc>
-    <lastmod>2023-06-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.mecca1.net/posts/post3/</loc>
+    <loc>https://nate.mecca1.net/posts/post3/</loc>
     <lastmod>2021-06-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mecca1.net/posts/post2/</loc>
+    <loc>https://nate.mecca1.net/posts/post2/</loc>
     <lastmod>2019-05-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mecca1.net/posts/post/</loc>
+    <loc>https://nate.mecca1.net/posts/post/</loc>
     <lastmod>2018-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.mecca1.net/pages/</loc>
+    <loc>https://nate.mecca1.net/pages/</loc>
   </url><url>
-    <loc>https://www.mecca1.net/pages/resume/</loc>
+    <loc>https://nate.mecca1.net/pages/resume/</loc>
   </url><url>
-    <loc>https://www.mecca1.net/pages/follow/</loc>
+    <loc>https://nate.mecca1.net/pages/follow/</loc>
   </url>
 </urlset>

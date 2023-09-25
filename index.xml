@@ -2,17 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>An Untitled Blog</title>
-    <link>https://www.mecca1.net/</link>
+    <link>https://nate.mecca1.net/</link>
     <description>Recent content on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mecca1.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Subdomain Change</title>
+      <link>https://nate.mecca1.net/posts/2023-09-24_subdomain-change/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nate.mecca1.net/posts/2023-09-24_subdomain-change/</guid>
+      <description>
+        
+          
+            TLDR Even though it&amp;rsquo;s only been three months since I created my blog here, I&amp;rsquo;m going to change the domain from www.mecca1.net to nate.mecca1.net instead. Nothing&amp;rsquo;s going to break, www.mecca1.net will just auto-forward for now to nate.mecca1.net once I change it. Still, if you&amp;rsquo;re following me through RSS or you have my site bookmarked it might be worth swapping out the URL.
+Longer Update My domain predates my blog by about six years, so when I created my blog a few months ago I opted to just use the www subdomain.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>What is IPFS &#43; basic use</title>
-      <link>https://www.mecca1.net/posts/2023-08-28_ipfs/</link>
+      <link>https://nate.mecca1.net/posts/2023-08-28_ipfs/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.mecca1.net/posts/2023-08-28_ipfs/</guid>
+      <guid>https://nate.mecca1.net/posts/2023-08-28_ipfs/</guid>
       <description>
         
           
@@ -25,10 +42,10 @@
     
     <item>
       <title>Microsoft&#39;s All-Cloud Windows is what I dislike about Modern Computing</title>
-      <link>https://www.mecca1.net/posts/2023-07-24_cloud-oss/</link>
+      <link>https://nate.mecca1.net/posts/2023-07-24_cloud-oss/</link>
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.mecca1.net/posts/2023-07-24_cloud-oss/</guid>
+      <guid>https://nate.mecca1.net/posts/2023-07-24_cloud-oss/</guid>
       <description>
         
           
@@ -41,10 +58,10 @@
     
     <item>
       <title>First Post</title>
-      <link>https://www.mecca1.net/posts/2023-06-16_first-post/</link>
+      <link>https://nate.mecca1.net/posts/2023-06-16_first-post/</link>
       <pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.mecca1.net/posts/2023-06-16_first-post/</guid>
+      <guid>https://nate.mecca1.net/posts/2023-06-16_first-post/</guid>
       <description>
         
           
