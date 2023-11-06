@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Android on An Untitled Blog</title>
-    <link>https://nate.mecca1.net/tags/android/</link>
-    <description>Recent content in Android on An Untitled Blog</description>
+    <title>Debian on An Untitled Blog</title>
+    <link>https://nate.mecca1.net/tags/debian/</link>
+    <description>Recent content in Debian on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/tags/debian/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quest to find a tablet, pt 1</title>
       <link>https://nate.mecca1.net/posts/2023-11-05_tablets-1/</link>
@@ -17,22 +17,6 @@
         
           
             TLDR, for those looking for less of a novel I did a lot of looking and found a few different options if you&amp;rsquo;re looking for a tablet and have similar preferences as me. There are custom ROMs for some tablets, though they are somewhat limited in which devices are supported (as well as sometimes limits on features or time in which security updates come in). There&amp;rsquo;s also the ability to cut out junk with ADB bridge on Android tablets, of which some cheaper tablets are sketchy and lack long-term security updates, and some of the premium tablets can get pricey.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Random Tech Tidbits if the Lights (or Router) Goes Out</title>
-      <link>https://nate.mecca1.net/posts/2023-10-23_cell-down/</link>
-      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://nate.mecca1.net/posts/2023-10-23_cell-down/</guid>
-      <description>
-        
-          
-            I count myself lucky to live in a pretty stable and safe part of the world. The last three years or so might have been slightly less so, but still in the scheme of things I certainly haven&amp;rsquo;t seen the worst of it. But hey, this year is as good of any to think about useful ways to utilize your electronics, specifically your phone, if the power goes out or something similar happens.
           
           
         
