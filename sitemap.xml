@@ -3,18 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nate.mecca1.net/</loc>
-    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/categories/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/posts/2023-11-14_defaults/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/categories/hobbies/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/misc/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/posts/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/tags/android/</loc>
     <lastmod>2023-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nate.mecca1.net/categories/</loc>
-    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nate.mecca1.net/tags/debian/</loc>
-    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/categories/hobbies/</loc>
     <lastmod>2023-11-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/tags/linux/</loc>
@@ -23,16 +35,10 @@
     <loc>https://nate.mecca1.net/tags/mobile/</loc>
     <lastmod>2023-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nate.mecca1.net/posts/</loc>
-    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nate.mecca1.net/tags/privacy/</loc>
     <lastmod>2023-11-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/posts/2023-11-05_tablets-1/</loc>
-    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/tags/</loc>
     <lastmod>2023-11-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/tags/windows/</loc>
@@ -49,9 +55,6 @@
   </url><url>
     <loc>https://nate.mecca1.net/tags/utility/</loc>
     <lastmod>2023-10-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/tags/misc/</loc>
-    <lastmod>2023-09-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/categories/personal-updates/</loc>
     <lastmod>2023-09-24T00:00:00+00:00</lastmod>

@@ -6,7 +6,24 @@
     <description>Recent content in Posts on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Defaults</title>
+      <link>https://nate.mecca1.net/posts/2023-11-14_defaults/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nate.mecca1.net/posts/2023-11-14_defaults/</guid>
+      <description>
+        
+          
+            I ran across a neat trend of sharing your default apps, and a collection of posts doing so. It&amp;rsquo;s made some interesting reads and I thought I would join in and post my own favorites.
+My Devices I have three different devices: a PC running Debian, a tablet I just got setup running Debian and a Waydroid container, and a phone running the Graphene fork of Android. PC Tablet Phone 📨 Mail Client Proton Web Proton App Proton App 📮 Mail Server ^ ^ ^ 📝 Notes Joplin Joplin Joplin ✅ To-Do n/a n/a Tasks (F-Droid) 📷 Photo Shooting n/a n/a AOSP Camera 🟦 Photo Management File Manager n/a AOSP Gallery 📆 Calendar n/a n/a Simple Calendar 📁 Cloud File Storage IceDrive (web) IceDrive (web) IceDrive (PWA) 📖 RSS Nextcloud (web) Nextcloud (web) Nextcloud News App 🙍🏻‍♂️ Contacts n/a n/a AOSP Contacts 🌐 Browser LibreWolf Brave Fennec Firefox 💬 Chat Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web) Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web) Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web) 🔖 Bookmarks Unsynced Unsynced Unsynced 📑 Read It Later PDFs w/ Syncthing PDFs w/ Syncthing PDFs w/ Syncthing 📜 Word Processing LibreOffice LibreOffice n/a 📈 Spreadsheets LibreOffice n/a n/a 📊 Presentations LibreOffice n/a n/a 🛒 Shopping Lists Joplin Joplin Joplin 🍴 Meal Planning n/a n/a n/a 💰 Budgeting and Personal Finance n/a n/a MoneyWallet 📰 News Nextcloud (Web) Nextcould (Web) Nextcloud News App 🎵 Music VLC VLC Innertune 🎤 Podcasts VLC VLC VLC 🔐 Password Management Keepass Keepass Keepass The above is the pre-built list, though for my post I thought I would add on a few extras I like:
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Quest to find a tablet, pt 1</title>
       <link>https://nate.mecca1.net/posts/2023-11-05_tablets-1/</link>
