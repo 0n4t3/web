@@ -3,10 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nate.mecca1.net/</loc>
-    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/categories/</loc>
-    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/categories/complaints/</loc>
+    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/encryption/</loc>
+    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/posts/2023-11-19_signal-cons/</loc>
+    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/posts/</loc>
+    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/</loc>
+    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/technology/</loc>
+    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/posts/2023-11-14_defaults/</loc>
     <lastmod>2023-11-14T00:00:00+00:00</lastmod>
@@ -15,12 +33,6 @@
     <lastmod>2023-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/tags/misc/</loc>
-    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/posts/</loc>
-    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/tags/</loc>
     <lastmod>2023-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/tags/android/</loc>
@@ -74,9 +86,6 @@
     <loc>https://nate.mecca1.net/tags/cloud/</loc>
     <lastmod>2023-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nate.mecca1.net/categories/complaints/</loc>
-    <lastmod>2023-07-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nate.mecca1.net/posts/2023-07-24_cloud-oss/</loc>
     <lastmod>2023-07-24T00:00:00+00:00</lastmod>
   </url><url>
@@ -88,9 +97,6 @@
   </url><url>
     <loc>https://nate.mecca1.net/posts/post2/</loc>
     <lastmod>2019-05-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/posts/post/</loc>
-    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/pages/</loc>
   </url><url>
