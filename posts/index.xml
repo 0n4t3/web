@@ -16,7 +16,9 @@
       <description>
         
           
-            A quick disclaimer I use Signal regularly. It works well and sure beats SMS, Google Chat, Telegram, or messages on Facebook via the website - which I also use because I won&amp;rsquo;t disassociate with family or friends who only use any of the latter four to communicate. As much as I&amp;rsquo;d love to exclusively be on something like Session or Briar, I don&amp;rsquo;t use either because I don&amp;rsquo;t know anybody using them - I can hardly even convince people to use Signal.
+            Update 11/25: I was made aware that Signal has some proprietary anti-spam code in the client and added the TLDR.
+A More Technical TLDR I never know how much jargon I should include or how much I should explain, and as long as I&amp;rsquo;m writing I&amp;rsquo;m enjoying myself meaning I&amp;rsquo;ve been all over the place. But here&amp;rsquo;s a shortened version for those familiar with encryption.
+A vanilla implementation of the Signal protocol relies on public key infrastructure to perform a handshake between devices.
           
           
         
