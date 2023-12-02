@@ -200,11 +200,14 @@
 <p>If you have an existing installation where Microsoft or the manufactuerer pre-loaded many unnecessary applications, consider removing/disabling them.  Type &ldquo;add or remove programs&rdquo; in the start menu, then go through and remove anything you don&rsquo;t want or need.</p>
 <h2 id="browsers">Browsers:</h2>
 <p>We use browsers for a ton, so they&rsquo;re definitely worth configuring to improve your computer&rsquo;s performance and battery life and to have a more private and less cluttered web browsing experience. There are three browsers I&rsquo;ll talk about how I would want them configured: Edge, Firefox, and Brave. If you&rsquo;re using a package manager (e.g. Winget/Chocolatey) then LibreWolf might be worth using as well.</p>
+<hr>
 <details>
   <summary>Thoughts/Ideology on Browser Engines &amp; Google Stuff</summary>
   <p>Browser engines, if you&rsquo;re unaware, are the part of the browser that reads web files and puts them on your screen. There are three different main ones: Chromium (by Google), Gecko (by Mozilla), and Webkit (by Apple). Every browser is going to use one of these three engines under the hood, and most browsers as well as with a <a href="https://en.wikipedia.org/wiki/Usage_share_of_web_browsers">vast majority of web traffic</a> is using the Chromium engine.</p>
 <p>This means browsers like Edge and Chrome are nearly identical, minus the coat of paint Microsoft or Google placed on the engine. This is also why a lot of tech-y people (including myself) think it&rsquo;s a good idea to use browsers that don&rsquo;t run Chromium (like Mozilla Firefox &amp; derivatives that use Gecko) because with Google&rsquo;s near monopoly on browsers they can easily dictate that the web change in ways they want (though some more heavily modified versions of Chromium like Brave could be argued to be contributing less to the Chromium monopoly). That said, use whatever suits you best, as technology is a means to an end.</p>
-<p>&ndash;</p>
+<ul>
+<li></li>
+</ul>
 <p>Speaking of things Google could dictate to the web, there have been three browser changes Google has been making in rapid succession that many people (including myself) are not happy with.</p>
 <p>First, Google is phasing in Manifest V3, which seriously hampers ad-block plugins in Chromium-based browsers. They claim it&rsquo;s a security feature, and things are not entirely cut and dry, though the consensus seems to be overwhelmingly leaning towards Google using monopoly power to try to cut out ad-block. This affects most Chromium-based browsers, though Brave is not affected.</p>
 <p>Secondly, Google has been implementing WEI (web environment integrity) being a form of attestation (effectively DRM or anti-cheat for the internet) implemented in Chromium. Google is not doing anything with WEI at the moment, but the point of something like that is to monitor or exclude devices for some reason so it&rsquo;s for now just sitting there like a crate of dynamite waiting to go off when Google decides to try to say that computers running software, plugins, or operating systems they don&rsquo;t like shouldn&rsquo;t be allowed to connect to the internet. Some Chromium-based browsers, including Brave, are not implementing WEI.</p>
@@ -212,6 +215,7 @@
 
 </details>
 
+<hr>
 <h4 id="edge">Edge:</h4>
 <p>Microsoft Edge is <a href="https://imgb.ifunny.co/images/b92230a979a8ded1efa49755e28e07e6451553ce48ba5d9224bda650a9b76fd5_1.webp">sort of a meme</a>, but being based on Chromium it&rsquo;s pretty much identical to browsers like Chrome or modern versions of Opera. If you want the vanilla browser experience or are on a device running Windows Go and forced to use Edge then here is how I would configure it if I were using it.</p>
 <p><strong>Configuration:</strong></p>
@@ -270,6 +274,7 @@
 <p>Finally, you will probably want to either hide the Brave rewards icon near the address bar so it stops bothering you about it or set it up. Brave rewards shows you ads paid for in Bat and then provides you with a small percentage of what the advertiser paid (Bat - basic attention token - is the cryptocurrency platform Brave built their ad network with). It&rsquo;s disabled by default, and I personally would prefer it stay off, but if you want to use it then you can set it up.</p>
 <h4 id="ublock-origin">Ublock Origin</h4>
 <p>Ublock is an ad block plugin for browsers that I think is absolutely necessary, unless you&rsquo;re on Brave with it&rsquo;s built in ad-block that works about as well.</p>
+<hr>
 <details>
   <summary>Installing Ublock on different Browsers</summary>
   <p>Adding on Edge:
@@ -281,6 +286,7 @@ Go to the menu button (three lines at the top right), click extensions, click on
 
 </details>
 
+<hr>
 <p>With Ublock installed it will work out of the box without any need to configure it besides updating filters occasionally. In order to do so, or to further configure it, click the extensions icon, click on Ublock, and then the gear icon to go to Ublock settings. There you can update the filters or add additional filters such as blocking cookie banners.</p>
 <p>Further, if you click on the Ublock icon, the &ldquo;more&rdquo; drop-down menu, the &ldquo;&lt;/&gt;&rdquo; button, and then the lock icon that appears you can permanently disable Javascript for a particular site. This is great for getting around paywalls or popups, and in my opinion, absolutely necessary for any news website.</p>
 <h3 id="bitlocker">Bitlocker</h3>
@@ -313,6 +319,9 @@ Go to the menu button (three lines at the top right), click extensions, click on
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://nate.mecca1.net/posts/2023-12-01_tablets-2/" class="nav-link" title="Quest to find a tablet, pt 2">Quest to find a tablet, pt 2</a>
+      </li>
+      <li>
         <a href="https://nate.mecca1.net/posts/2023-11-19_signal-cons/" class="nav-link" title="MITM Risks in Signal? Cost of Numbers &amp; Mitigation &#43; Monologue">MITM Risks in Signal? Cost of Numbers &amp; Mitigation + Monologue</a>
       </li>
       <li>
@@ -333,13 +342,15 @@ Go to the menu button (three lines at the top right), click extensions, click on
       <li>
         <a href="https://nate.mecca1.net/posts/2023-08-28_ipfs/" class="nav-link" title="What is IPFS &#43; basic use">What is IPFS + basic use</a>
       </li>
-      <li>
-        <a href="https://nate.mecca1.net/posts/2023-07-24_cloud-oss/" class="nav-link" title="Microsoft&#39;s All-Cloud Windows is what I dislike about Modern Computing">Microsoft&rsquo;s All-Cloud Windows is what I dislike about Modern Computing</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
+        <a href='https://nate.mecca1.net/categories/hobbies/' class="post_tag button button_translucent" title="hobbies">
+          HOBBIES
+          <span class="button_tally">3</span>
+        </a>
+        
         <a href='https://nate.mecca1.net/categories/informational/' class="post_tag button button_translucent" title="informational">
           INFORMATIONAL
           <span class="button_tally">3</span>
@@ -347,11 +358,6 @@ Go to the menu button (three lines at the top right), click extensions, click on
         
         <a href='https://nate.mecca1.net/categories/complaints/' class="post_tag button button_translucent" title="complaints">
           COMPLAINTS
-          <span class="button_tally">2</span>
-        </a>
-        
-        <a href='https://nate.mecca1.net/categories/hobbies/' class="post_tag button button_translucent" title="hobbies">
-          HOBBIES
           <span class="button_tally">2</span>
         </a>
         
@@ -366,38 +372,43 @@ Go to the menu button (three lines at the top right), click extensions, click on
     <div>
       <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
       <nav class="tags_nav">
+        <a href='https://nate.mecca1.net/tags/privacy/' class="post_tag button button_translucent" title="privacy">
+          PRIVACY
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/windows/' class="post_tag button button_translucent" title="windows">
+          WINDOWS
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/android/' class="post_tag button button_translucent" title="android">
+          ANDROID
+          <span class="button_tally">3</span>
+        </a>
+        
         <a href='https://nate.mecca1.net/tags/misc/' class="post_tag button button_translucent" title="misc">
           MISC
           <span class="button_tally">3</span>
         </a>
         
-        <a href='https://nate.mecca1.net/tags/privacy/' class="post_tag button button_translucent" title="privacy">
-          PRIVACY
+        <a href='https://nate.mecca1.net/tags/mobile/' class="post_tag button button_translucent" title="mobile">
+          MOBILE
           <span class="button_tally">3</span>
         </a>
         
-        <a href='https://nate.mecca1.net/tags/windows/' class="post_tag button button_translucent" title="windows">
-          WINDOWS
-          <span class="button_tally">3</span>
-        </a>
-        
-        <a href='https://nate.mecca1.net/tags/android/' class="post_tag button button_translucent" title="android">
-          ANDROID
+        <a href='https://nate.mecca1.net/tags/debian/' class="post_tag button button_translucent" title="debian">
+          DEBIAN
           <span class="button_tally">2</span>
         </a>
         
-        <a href='https://nate.mecca1.net/tags/mobile/' class="post_tag button button_translucent" title="mobile">
-          MOBILE
+        <a href='https://nate.mecca1.net/tags/linux/' class="post_tag button button_translucent" title="linux">
+          LINUX
           <span class="button_tally">2</span>
         </a>
         
         <a href='https://nate.mecca1.net/tags/cloud/' class="post_tag button button_translucent" title="cloud">
           CLOUD
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://nate.mecca1.net/tags/debian/' class="post_tag button button_translucent" title="debian">
-          DEBIAN
           <span class="button_tally">1</span>
         </a>
         
@@ -413,11 +424,6 @@ Go to the menu button (three lines at the top right), click extensions, click on
         
         <a href='https://nate.mecca1.net/tags/ipfs/' class="post_tag button button_translucent" title="ipfs">
           IPFS
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://nate.mecca1.net/tags/linux/' class="post_tag button button_translucent" title="linux">
-          LINUX
           <span class="button_tally">1</span>
         </a>
         
