@@ -40,21 +40,5 @@ If you read my first post here you probably got the idea I have strong feelings 
       </description>
     </item>
     
-    <item>
-      <title>What is IPFS &#43; basic use</title>
-      <link>https://nate.mecca1.net/posts/2023-08-28_ipfs/</link>
-      <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://nate.mecca1.net/posts/2023-08-28_ipfs/</guid>
-      <description>
-        
-          
-            IPFS, an acronym for &amp;ldquo;InterPlanetary File System&amp;rdquo;, is a way to deliver files that takes a different approach to HTTP. As I mentioned in my very first post, I originally considered hosting my entire site/blog on it, and while I decided against it for reasons I mentioned there and reasons I&amp;rsquo;ll get into later here; I am working on something that may involve me sharing files here, which I&amp;rsquo;ll probably use IPFS for.
-          
-          
-        
-      </description>
-    </item>
-    
   </channel>
 </rss>

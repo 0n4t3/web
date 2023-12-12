@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-figures=""
+  
+    class="page"
+  
+  
+  >
+  <head>
+<title>Nostr | An Untitled Blog</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+
+
+<meta property="og:locale" content="en" />
+
+<meta property="og:type" content="article">
+<meta name="description" content="I have recently been re-dipping my toes into Nostr (tried it a while back just to experiment with it but never really stuck around), and so far it&rsquo;s …" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="">
+<meta name="twitter:title" content="Nostr" />
+<meta name="twitter:image" content="https://nate.mecca1.net/"/>
+<meta property="og:url" content="https://nate.mecca1.net/posts/2023-12-11_nostr/" />
+<meta property="og:title" content="Nostr" />
+<meta property="og:description" content="I have recently been re-dipping my toes into Nostr (tried it a while back just to experiment with it but never really stuck around), and so far it&rsquo;s …" />
+<meta property="og:image" content="https://nate.mecca1.net/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://nate.mecca1.net/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://nate.mecca1.net/icons/favicon-32x32.png">
+<link rel="manifest" href="https://nate.mecca1.net/icons/site.webmanifest">
+
+<link rel="canonical" href="https://nate.mecca1.net/posts/2023-12-11_nostr/">
+
+
+
+<link rel="preload" href="https://nate.mecca1.net/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity = "sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" as="style" crossorigin="anonymous">
+
+
+
+<link rel="preload" href="https://nate.mecca1.net/en/js/bundle.ea04089d5378df052824a1c181cf96e36e6f1a1d04670069f0b8ac2efdd0b7d0703c1c94cfcb2ed1888892d38043289f06e9b22caa9a28b1601301db34fef4c2.js" as="script" integrity=
+"sha512-6gQInVN43wUoJKHBgc&#43;W425vGh0EZwBp8LisLv3Qt9BwPByUz8su0YiIktOAQyifBumyLKqaKLFgEwHbNP70wg==" crossorigin="anonymous">
+
+
+<link rel="stylesheet" type="text/css" href="https://nate.mecca1.net/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity="sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" crossorigin="anonymous">
+
+  </head>
+  <body
+    data-code="100"
+    data-lines="false"
+    id="documentTop"
+    data-lang="en"
+  >
+
+<header class="nav_header" >
+  <nav class="nav"><a href='https://nate.mecca1.net/' class="nav_brand nav_item" title="An Untitled Blog">An Untitled Blog
+  <div class="nav_close">
+    <div><svg class="icon">
+  <title>open-menu</title>
+  <use xlink:href="#open-menu"></use>
+</svg>
+<svg class="icon">
+  <title>closeme</title>
+  <use xlink:href="#closeme"></use>
+</svg>
+</div>
+  </div>
+</a>
+
+    <div class='nav_body nav_body_left'>
+      
+      
+      
+        
+
+  <div class="nav_parent">
+    <a href="https://nate.mecca1.net/pages/follow/" class="nav_item" title="Follow/Contact">Follow/Contact </a>
+  </div>
+  <div class="nav_parent">
+    <a href="https://nate.mecca1.net/pages/resume/" class="nav_item" title="Resume">Resume </a>
+  </div>
+      
+<div class='follow'>
+<div class="color_mode">
+  <input type="checkbox" class="color_choice" id="mode">
+</div>
+
+</div>
+
+    </div>
+  </nav>
+</header>
+
+    <main>
+  
+<div class="grid-inverse wrap content">
+  <article class="post_content">
+    <h1 class="post_title">Nostr</h1>
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Dec 11, 2023</span>
+    <span class="post_time"> · 17 min read</span><span>&nbsp;· <a href='https://nate.mecca1.net/tags/decentralized/' title="decentralized" class="post_tag button button_translucent">decentralized
+        </a><a href='https://nate.mecca1.net/tags/protocols/' title="protocols" class="post_tag button button_translucent">protocols
+        </a><a href='https://nate.mecca1.net/tags/nostr/' title="nostr" class="post_tag button button_translucent">nostr
+        </a><a href='https://nate.mecca1.net/tags/decentralized/' title="Decentralized" class="post_tag button button_translucent">Decentralized
+        </a><a href='https://nate.mecca1.net/tags/tech/' title="tech" class="post_tag button button_translucent">tech
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·</span>
+  </div>
+
+    <div class="post_body"><p>I have recently been re-dipping my toes into Nostr (tried it a while back just to experiment with it but never really stuck around), and so far it&rsquo;s become my preferred microblogging platform. There&rsquo;s a handful of reasons surrounding that, both in the protocol itself and what&rsquo;s being built up around it, and I think it has a lot of promise that merits its very quick growth. Today I thought I would go over why I am a fan of it, and why I think it might be worth checking out if you&rsquo;re interested in a more decentralized web.</p>
+<p>Further, moments before I was going to do the final proofread of my post, I ran across a video from <a href="mailto:Cahlen@Cahlen.org">Cahlen@Cahlen.org</a> that covers pretty much everything I talk about in video form, and if you&rsquo;re like me seeing things visualized is always nice so you can check <a href="https://cahlen.org/files/videos/2023/12/CahlenLee_20231211_NostrBasics/CahlenLee_20231211_NostrBasics.mp4">it out here</a>. <em>As a bonus, it&rsquo;s hosted on <a href="https://nate.mecca1.net/posts/2023-08-28_ipfs/">IPFS</a>.</em></p>
+<details>
+  <summary><strong>A quick dropdown on Activity Pub and the Fediverse</strong></summary>
+  <em>I just wanted to clarify this real quick, a lot of this post (especially towards the beginning) is going to be me comparing why I think Nostr works better than Activity Pub in certain circumstances. I don&rsquo;t want this to come across too much as me just bashing Activity Pub, it works fine and I&rsquo;m just comparing it to point out the benefits of the Nostr protocol since Activity Pub is currently the standard for non-centralized social media (assuming you don&rsquo;t include RSS in the mix there). I&rsquo;d also like to quickly point out, which I&rsquo;ll delve into more later on, that in the world of open protocols it&rsquo;s less a zero-sum game and the two protocols are actually playing nice together with both bringing value to users on both protocols. Even further, by my definition, Nostr is becoming part of the &ldquo;Fediverse&rdquo; as opposed to competing with it even if it&rsquo;s decentralized and not federated.</em>
+</details>
+
+<h2 id="the-protocol">The Protocol</h2>
+<p>To summarize how Nostr works, when you create an account your device generates a key pair which acts as your account. Your client can then create &ldquo;notes and stuff&rdquo; which it uploads to the relays (servers) of your choosing. Other clients that are also connected to those same relays can then grab a copy of your post as well as stuff like your profile details.</p>
+<h4 id="decentralization">Decentralization</h4>
+<p>The post <a href="https://kevincox.ca/2023/07/20/decentralized-vs-federated/">Decentralized vs Federated</a> by Kevin Cox is a great on topic read that covers what decentralization is in depth, but the shortened version is a Nostr account (as opposed to something on a federated service) can jump around from relay to relay without any device other than your own controlling the account. This is unlike a Federated protocol like Activity Pub, where your account is created on a server and controlled by said server. Relays can still control what content they host and prevent an account from posting to it, but they can&rsquo;t modify, delete, or hijack your account; and they also cannot control what other relays your account is or is not communicating with alongside their relay.</p>
+<h4 id="efficiency-and-simplicity">Efficiency and Simplicity</h4>
+<p>Nostr is also very efficient and fairly simplistic. As for efficiency, all posts on Nostr are text only, and relays do not communicate with other relays. While you can still see images or videos in posts like any other platform, they&rsquo;re hosted elsewhere and embedded in the post instead of being hosted by a relay, limiting storage requirements to plain text. Similarly, unlike an Activity Pub server that keeps a copy of posts on other servers it&rsquo;s federated with, relays exist entirely independently of each other and don&rsquo;t communicate with each other or keep copies of data stored on other relays.</p>
+<p>Its simplicity ends up making it easier for projects to be built on top of it. That&rsquo;s not to say that other protocols like Activity Pub can&rsquo;t interact with other projects outside of its main implementation, but Nostr still lends itself to easier integration: two examples being Lemmy and BirdSiteLive. As Lemmy goes, even though it&rsquo;s using Activity Pub, because accounts are tied to a server and a standard microblogging server doesn&rsquo;t understand Lemmy a Mastodon account can&rsquo;t properly interact with Lemmy and generally requires a separate account on a Lemmy server to use it properly. BirdSiteLive is a bridge that takes Twitter posts and presents them in Activity Pub format, allowing you to follow Twitter accounts with an account on an Activity Pub server. However, because Mastodon servers handle federation a large number of server owners (including the flagship mastodon.social instance) defederated with it.</p>
+<p>In Nostr&rsquo;s case, however, with accounts that are not tied to servers you can sign into an account with any client that communicates with any combination of relays, therefore adding an equivalent service is generally as easy as copying and pasting a relay URL. There are plenty of good faith reasons for an instance to defederate with various instances and projects such as BirdSiteLive, but with Nostr it gives you the option to choose exactly which services you use and which you do not, without the need for the server to make the decision on the community&rsquo;s behalf. Similarly, since an account is not tied to a server there are no issues where the server itself doesn&rsquo;t support a particular implementation of the protocol. Similar to the case with Lemmy&rsquo;s, not all Nostr clients and relays support link aggregator style content on Nostr, but it&rsquo;s a breeze to switch to a client that does and add supported relays to begin using it without getting locked into only what a particular server supports and has enabled.</p>
+<h4 id="account-identification">Account Identification</h4>
+<p>Finally - as far as the protocol is concerned - there&rsquo;s identifiers, which are a bit of a double-edged sword. Being a key pair accounts are not paired to a server, but that comes at the cost of having a particularly long username. As I mentioned in my <a href="https://nate.mecca1.net/posts/2023-08-28_ipfs/">post about IPFS</a> which also uses cryptography to identify things (in this case files):</p>
+<p><em>Generally speaking, you can identify content three ways: by consulting a central authority (such as ICANN with normal domains), a decentralized authority such as a blockchain, or math using hashes and/or public-private key pairs (IPFS being the latter). While this leads to the benefits of IPFS, it also means that there can be no human memorable domains built in.</em></p>
+<p>That means that your main username is long, something like <code>npub1jy90jpcdl447ae3lp4924s65khdpvnttkg7fepmvmafycusyueksrvllx9</code>, which is a hash of your public key and referred to as a NIP01. Being in a digital age your NIP01 can just be copied and pasted, though it&rsquo;s obviously not too convenient. There are multiple different NIPs, however, some of which can be used to identify accounts more memorably. For example, a NIP05 can be set with a domain, allowing a more Activity Pub style username like <code>nate@nate.mecca1.net</code> and accounts can also be located with that username as well. These are set by a client, signed with your private key, and then uploaded to any relay you&rsquo;ve set to mirror your account.</p>
+<details>
+  <summary><strong>Better Elaboration on NIPs</strong></summary>
+  <em>To elaborate further NIP stands for Nostr Implementation Protocol and there are a total of <a href="https://github.com/nostr-protocol/nips">99 NIPs implemented</a> in the official Nostr project at this moment. It is up to a client and relay to choose which ones they do or do not support, and theoretically (as far as my limited knowledge goes) if a client and relay both agreed on unofficial ones they could also be implemented. Not all of them are the same, for example while NIP05 acts as a username that is verified through ICANN domain ownership, NIP90 acts as &ldquo;vending machine&rdquo; instructions to automate sales. Long story short, a NIP is just a bit of code that handles how a client and relay interact to perform a particular function, with functions like identifying an account with an easier username, building a marketplace, or creating a livestream being amoung the 99 currently existing NIPs.</em>
+</details>
+
+<h2 id="every-day-use">Every Day Use</h2>
+<p>Beyond the above where I went over how it differs from similar protocols like Activity Pub at a more core level, there are also the differences you&rsquo;re likely to run into if you&rsquo;re actually using it, and those will likely have an even bigger effect.</p>
+<h4 id="client-and-relay-customization">Client and Relay Customization</h4>
+<p>One of the first things that will likely stand out is that your client, not the relays (servers), combines all of the posts and replies from various relays into one big network. You can add a relay (most clients come with defaults, but those can be changed), choose how to interact with that relay, and then the content from the accounts that use the relay will be visible and interactable in a very similar way to how Activity Pub handles federation. You can of course tune how your client interacts with a relay, for example in the Amethyst client you can enable or disable a relay:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uploading Data</td>
+<td>Will enable/disable the client from mirroring your account on the relay</td>
+</tr>
+<tr>
+<td>Downloading Data</td>
+<td>Will enable/disable the client from downloading content from other people&rsquo;s profiles mirrored on the relay</td>
+</tr>
+<tr>
+<td>Showing up in your home feed</td>
+<td>Will enable/disable content from that relay from showing up in your home feed</td>
+</tr>
+<tr>
+<td>Delivering direct messages</td>
+<td>Will enable/disable other users&rsquo; ability to use that relay to send direct messages from you</td>
+</tr>
+<tr>
+<td>Showing up in Nostr chat rooms</td>
+<td>Will enable/disable the delivery of public chat content from that relay</td>
+</tr>
+<tr>
+<td>Showing up in the global feed</td>
+<td>Will enable/disable content from that relay from showing up in your global feed</td>
+</tr>
+<tr>
+<td>Showing up in searches</td>
+<td>Will enable/disable content from that relay from showing up in searches</td>
+</tr>
+</tbody>
+</table>
+<p>This gives a great deal of control over what you see and where it shows up, for example by disabling private messages from users on a particular relay. Keep in mind that it only prevents that relay from delivering the message, so if you and a user have two relays in common and only one relay has been disabled the other relay will still deliver that same message. In this way choosing your preferred level of moderation and how you go about doing so is entirely up to you.</p>
+<p>This also makes it a lot easier to add or remove various projects built on top of Nostr. For example, if you wanted to follow RSS feeds in a Nostr client you can simply add a relay such as <a href="/tmp/.mount_Joplindvp2xE/resources/app.asar/rsslay.nostr.moe" title="rsslay.nostr.moe">rsslay.nostr.moe</a> and begin using the project without any hassle. For example, by adding the relay then following my blog&rsquo;s feed below:</p>
+<pre><code>npub1mw8lhf8lcuvy6gvkmkphdekf80mr52jcywf92ys5230g4r76pptq98rfny
+</code></pre>
+<p>Once relays have been configured you can then go and follow/interact with any account that you share at least one relay in an identical manner to any other microblogging platform.</p>
+<h4 id="openness">Openness</h4>
+<p>Something else I&rsquo;ve observed in my second go around toying with Nostr is that there are a lot of people building projects that take advantage of Nostr&rsquo;s openness as well as various protocols and tools built into Nostr almost like plugins via the various NIPs. Group chats and boards, relays that convert RSS to Nostr profiles, live streams, photo/video posts you can scroll through like YouTube Shorts, Mostr - a bridge that brings Nostr into the Fediverse; all just random things that make the protocol feel really open when compared to something like an Activity Pub server where the server is responsible for handling everything and can&rsquo;t let a client connect to a different server that serves a completely different function.</p>
+<p>I mean heck, of the handful of accounts I followed at the time of my first draft of this post not a single one was a traditional Nostr account, all of them were Fediverse and RSS feeds bridged in by community members who built projects on top of Nostr that make it feel incredibly open.</p>
+<h4 id="community--growth">Community &amp; Growth</h4>
+<p>Nostr has grown pretty fast, growing to about half of what the Fediverse has in under a third of the time (albeit, both getting a jolt of users with the Twitter drama so it&rsquo;s not totally 1:1). I&rsquo;m expecting it to grow a lot more, especially given it&rsquo;s probably at the stage where the platform and community are rapidly improving rather than being more mature in a more final form that doesn&rsquo;t leave a ton of room for improvement that risks breaking things that it was built around.</p>
+<p>The community itself is a bit of a double-edged sword. Right now it&rsquo;s very somewhat dominated by crypto enthusiasts, and hey, I like the ideals behind it but I doubt it&rsquo;s replacing central banks, I&rsquo;m not interested in your NFTs, and I really don&rsquo;t want to follow a bunch of people who make it their entire personality. But, at the same time, I think it&rsquo;s also becoming the home of a lot of techy people who appreciate technology as opposed to the other branches of people in the alternate tech space such as the ones who left mainstream platforms for political reasons or the kinds of people who think web technology shouldn&rsquo;t have progressed passed the &rsquo;90s. And to paraphrase a post from Jack Dorsey I saw somebody share partway through drafting this post, it&rsquo;s usually the techy people who build something up and get things ironed out so that it can suddenly be plug-and-play for the rest of the internet.</p>
+<p>Moderation can also be a bit meh, given accounts are created with key pairs it&rsquo;s really easy to generate a bunch and connect to a lot of relays without any sort of hurdles in place. It&rsquo;s not issue with the the protocol itself, since relays are still able to control who&rsquo;s accounts they do and do not mirror using some of the standard hurdles to problematic users such as: requiring registration, using automated filters and tools, asking for payment, and good &lsquo;ol manually kicking people off a particular relay. It isn&rsquo;t horrendous as the &ldquo;standard&rdquo; global Nostr feed isn&rsquo;t too dissimilar to the federated timeline on any moderately or mildly moderated Activity Pub timeline, and again gives you the tools to choose exactly how and what you want to connect to. Still though, if you want a very toxicity-free experience you&rsquo;ll probably need to either avoid the global feed or modify relays from the &ldquo;standard&rdquo; relays that clients often default to. Not that it&rsquo;s dissimilar to choosing a Fediverse server in part based on how much or how little moderation you prefer.</p>
+<details>
+  <summary><strong>A further elaboration on moderation</strong></summary>
+  <p><em>I finished this post&rsquo;s draft a while back, and since then I&rsquo;ve actually noticed that most of the more chaotic portion of the global feed is acutally coming from Activity Pub bridges: while Mostr is the main project a number of other additional relays build off Mostr and mirror content one way from Activity Pub to Nostr (including ones that are pre-set on clients like Amethyst). I&rsquo;m leaving the above paragraph in since it&rsquo;s still the case of the standard experience, but would like to update this to further emphesize the point that it&rsquo;s not the protocol but just what you (or your clent) configures to see or not see. I don&rsquo;t mean to scare anyone away from either, it&rsquo;s just the firehose you&rsquo;d expect to see from any federated protocol (or decentralized protocol, or even centralized social medias) that contains all sorts of characters from all sorts of communities. I&rsquo;ll speak more on the bridge(s) in just a second.</em></p>
+<p><em>Again though, I&rsquo;d like to emphesize it&rsquo;s completely up to your configuration to control what relays (and what people on those relays) show up in feeds, and which ones are communicated with or not entirly.</em></p>
+
+</details>
+
+<p>Last, on the community side of things, there&rsquo;s already a plethora of communities on Nostr integrated through its openness. I know I&rsquo;ve been comparing Nostr and Activity Pub a lot in here, but it actually feels like they&rsquo;re integrating nicely together. For example: with RSS bridges on Nostr all of your favorite blogs + microblogs, news sites, and even your favorite YouTube channels and Substack creators are already part of the Nostr community without them even being aware of it. The same goes for the entire Fediverse, thanks to <a href="https://mostr.pub">Mostr</a> the bridge that allows accounts on the Fediverse and Nostr to interact without any issues (soon alongside <a href="https://gitlab.com/soapbox-pub/ditto">Ditto</a>, a dual Nostr Relay/Activity Pub server in development). I guess that&rsquo;s the great thing about open protocols, as they allow integration as opposed to jumping from one walled garden to the next - and Nostr is built to be about as open as it gets.</p>
+<h2 id="trying-out-nostr">Trying out Nostr</h2>
+<p>If the above sounds interesting, then there are a couple easy ways to check Nostr out. Despite the complex options to configure clients and relays, the act of joining Nostr really only takes about five seconds plus the time to install any applicable software.</p>
+<h4 id="clients">Clients</h4>
+<p>The simplest way to check out Nostr is to try something like <a href="https://snort.social/">Snort.Social</a> in your web browser. This is very much counterintuitive to the whole decentralized aspect, and theoretically they could nab your keys and take over your account at any time. Still though, worst case it&rsquo;s no different than a traditional social media site or a Fediverse server, and if you want to give Nostr a try you can fire up the Snort web client that&rsquo;s using the Snort relay and check it out. Something like this would also probably suffice if you only wanted a generic account to follow other accounts or to post the occasional pseudonymous meme.</p>
+<p>Beyond that, I&rsquo;ve been using the Amethyst client. It&rsquo;s built for Android and available on F-Droid, Google Play, and Github. It&rsquo;s a pretty functional client that runs fast, is kept up to date, and has a lot of additional feature support like livestreams or group chats if you want to toy around with those alongside standard Nostr microblogging. I almost exclusively use microblogging platforms from my phone, but when toying around with it on my computer I&rsquo;m just using Amethyst via Waydroid. But if you&rsquo;re not looking to use Android or an Android container I would recommend checking out <a href="https://github.com/aljazceru/awesome-nostr">awesome-nostr</a>, a GithHub repo with a list of various tools including an extensive list of clients. Using a trusted software client is the only way you can truly make use of the benefits Nostr brings to the table and the only way to actually be sure you control your account keys.</p>
+<h4 id="registration">Registration</h4>
+<p>Once you have your client all ready to go you&rsquo;ll generally be prompted to log in or to register. Registering is usually a single click away, and your client will generate a private and public key. Your private key is your account itself, and you can usually log into any client with it, but if you lose it or it gets stolen your account is lost so be careful with it. Your public key, and more specifically your NIP01 (SHA-256 hash of your public key) is how people find your account and follow or interact with your posts. From here you can edit your profile details (display name, bio, links, etc).</p>
+<p>You can also optionally register a NIP05 using your own domain or a service that lets you use theirs. This will give you a username that&rsquo;s easier to remember, at the cost of requiring you to have a domain or giving control of your NIP05 username to another service. <a href="https://orangepill.dev/nostr-guides/guide-to-verify-nostr-profile-nip05-identifier-with-your-domain/">Here&rsquo;s a guide to using your own domain</a>, but it pretty much boils down to creating a /.well-known/nostr.json file on a web server, such as mine at <a href="https://nate.mecca1.net/.well-known/nostr.json">nate.mecca1.net/.well-known/nostr.json</a>. Alternatively, if you don&rsquo;t have a domain or don&rsquo;t want to use your own you can register for free with a service like <a href="https://app.nip05.social/home">Nip05.Social</a>.</p>
+<h4 id="configuration-and-use">Configuration and Use</h4>
+<p>With your account all registered and setup, from here you can optionally configure relays, such as taking less moderated ones out of your global feed or adding relays that serve a particular function such as <a href="https://mostr.pub">Mostr</a> or <a href="https://rsslay.nostr.moe/">RSSlay</a>. With that complete you&rsquo;re ready to find/follow accounts by searching NIP01s or NIP05s, follow tags or configure what shows up in the global feed, and to start posting your own posts.</p>
+<h2 id="wrapping-up">Wrapping Up</h2>
+<p>So after all that, is it a good time for me to mention I don&rsquo;t spend a ton of time on microblogging platforms or social media in general? I usually just check in every few days to share some random thought or article and check in on accounts I find interesting. But as far as microblogging platforms go I think Nostr has to be my favorite, especially when I can follow just about anything anywhere, and it&rsquo;s the only microblogging platform I am activly using at the moment. If you&rsquo;re also on Nostr send me your public key, I&rsquo;m looking to find some new people to follow and if you&rsquo;re reading this you can&rsquo;t be too bad, right?</p>
+<hr>
+<details>
+  <summary><strong>Follow Me via Nostr</strong></summary>
+  <p>If you want to check out my profile you can find me on Nostr at <a href="mailto:nate@nate.mecca1.net">nate@nate.mecca1.net</a> or at:</p>
+<pre><code>npub1jy90jpcdl447ae3lp4924s65khdpvnttkg7fepmvmafycusyueksrvllx9
+</code></pre>
+<p>or on some Fediverse servers via the Mostr bridge by searching:</p>
+<pre><code>@910af9070dfd6beee63f0d4aaac354b5da164d6bb23c9c876cdf524c7204e66d@mostr.pub
+-or-
+https://mostr,pub/users/910af9070dfd6beee63f0d4aaac354b5da164d6bb23c9c876cdf524c7204e66d
+</code></pre>
+<p>and you can find the instructions to follow my blog&rsquo;s feed via Nostr by adding <code>wss://rsslay.nostr.moe</code> to your relays and following:</p>
+<pre><code>npub1mw8lhf8lcuvy6gvkmkphdekf80mr52jcywf92ys5230g4r76pptq98rfny
+</code></pre>
+
+</details>
+
+<hr>
+
+    </div>
+<div class="post_comments">
+  
+  
+  
+</div>
+
+
+
+
+  </article>
+<aside class="sidebar">
+  <section class="sidebar_inner">
+    <br>
+    
+
+
+    
+    
+    <h2 class="mt-4">Recent Posts</h2>
+    <ul class="flex-column">
+      <li>
+        <a href="https://nate.mecca1.net/posts/2023-12-11_nostr/" class="nav-link" title="Nostr">Nostr</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2023-12-01_tablets-2/" class="nav-link" title="Quest to find a tablet, pt 2">Quest to find a tablet, pt 2</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2023-11-19_signal-cons/" class="nav-link" title="MITM Risks in Signal? Cost of Numbers &amp; Mitigation &#43; Monologue">MITM Risks in Signal? Cost of Numbers &amp; Mitigation + Monologue</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2023-11-14_defaults/" class="nav-link" title="Defaults">Defaults</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2023-11-05_tablets-1/" class="nav-link" title="Quest to find a tablet, pt 1">Quest to find a tablet, pt 1</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2023-11-02_win11/" class="nav-link" title="Get The Most of Win 11 (and the least bloat)">Get The Most of Win 11 (and the least bloat)</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2023-10-23_cell-down/" class="nav-link" title="Random Tech Tidbits if the Lights (or Router) Goes Out">Random Tech Tidbits if the Lights (or Router) Goes Out</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2023-09-24_subdomain-change/" class="nav-link" title="Subdomain Change">Subdomain Change</a>
+      </li>
+    </ul>
+    <div>
+      <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
+      <nav class="tags_nav">
+        <a href='https://nate.mecca1.net/categories/hobbies/' class="post_tag button button_translucent" title="hobbies">
+          HOBBIES
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/categories/complaints/' class="post_tag button button_translucent" title="complaints">
+          COMPLAINTS
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/categories/informational/' class="post_tag button button_translucent" title="informational">
+          INFORMATIONAL
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/categories/personal-updates/' class="post_tag button button_translucent" title="personal-updates">
+          PERSONAL-UPDATES
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/categories/stuff-i-like/' class="post_tag button button_translucent" title="stuff-i-like">
+          STUFF-I-LIKE
+          <span class="button_tally">2</span>
+        </a>
+        
+        
+      </nav>
+    </div>
+    <div>
+      <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
+      <nav class="tags_nav">
+        <a href='https://nate.mecca1.net/tags/windows/' class="post_tag button button_translucent" title="windows">
+          WINDOWS
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/android/' class="post_tag button button_translucent" title="android">
+          ANDROID
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/misc/' class="post_tag button button_translucent" title="misc">
+          MISC
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/mobile/' class="post_tag button button_translucent" title="mobile">
+          MOBILE
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/privacy/' class="post_tag button button_translucent" title="privacy">
+          PRIVACY
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/protocols/' class="post_tag button button_translucent" title="protocols">
+          PROTOCOLS
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/tech/' class="post_tag button button_translucent" title="tech">
+          TECH
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/debian/' class="post_tag button button_translucent" title="debian">
+          DEBIAN
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/decentralized/' class="post_tag button button_translucent" title="decentralized">
+          DECENTRALIZED
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/linux/' class="post_tag button button_translucent" title="linux">
+          LINUX
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/cloud/' class="post_tag button button_translucent" title="cloud">
+          CLOUD
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/encryption/' class="post_tag button button_translucent" title="encryption">
+          ENCRYPTION
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/ipfs/' class="post_tag button button_translucent" title="ipfs">
+          IPFS
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/nostr/' class="post_tag button button_translucent" title="nostr">
+          NOSTR
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/utility/' class="post_tag button button_translucent" title="utility">
+          UTILITY
+          <span class="button_tally">1</span>
+        </a>
+        
+        
+      </nav>
+    </div>
+  </section>
+</aside>
+
+  
+</div>
+    </main><svg width="0" height="0" class="hidden">
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.001 18.001" id="twitter">
+    <path d="M15.891 4.013c.808-.496 1.343-1.173 1.605-2.034a8.68 8.68 0 0 1-2.351.861c-.703-.756-1.593-1.14-2.66-1.14-1.043 0-1.924.366-2.643 1.078a3.56 3.56 0 0 0-1.076 2.605c0 .309.039.585.117.819-3.076-.105-5.622-1.381-7.628-3.837-.34.601-.51 1.213-.51 1.846 0 1.301.549 2.332 1.645 3.089-.625-.053-1.176-.211-1.645-.47 0 .929.273 1.705.82 2.388a3.623 3.623 0 0 0 2.115 1.291c-.312.08-.641.118-.979.118-.312 0-.533-.026-.664-.083.23.757.664 1.371 1.291 1.841a3.652 3.652 0 0 0 2.152.743C4.148 14.173 2.625 14.69.902 14.69c-.422 0-.721-.006-.902-.038 1.697 1.102 3.586 1.649 5.676 1.649 2.139 0 4.029-.542 5.674-1.626 1.645-1.078 2.859-2.408 3.639-3.974a10.77 10.77 0 0 0 1.172-4.892v-.468a7.788 7.788 0 0 0 1.84-1.921 8.142 8.142 0 0 1-2.11.593z"
+      ></path>
+  </symbol>
+  <symbol aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="mail">
+    <path  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="calendar">
+    <path d="M452 40h-24V0h-40v40H124V0H84v40H60C26.916 40 0 66.916 0 100v352c0 33.084 26.916 60 60 60h392c33.084 0 60-26.916 60-60V100c0-33.084-26.916-60-60-60zm20 412c0 11.028-8.972 20-20 20H60c-11.028 0-20-8.972-20-20V188h432v264zm0-304H40v-48c0-11.028 8.972-20 20-20h24v40h40V80h264v40h40V80h24c11.028 0 20 8.972 20 20v48z"></path>
+    <path d="M76 230h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 310h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 390h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80-80h40v40h-40z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="github">
+    <path d="M255.968 5.329C114.624 5.329 0 120.401 0 262.353c0 113.536 73.344 209.856 175.104 243.872 12.8 2.368 17.472-5.568 17.472-12.384 0-6.112-.224-22.272-.352-43.712-71.2 15.52-86.24-34.464-86.24-34.464-11.616-29.696-28.416-37.6-28.416-37.6-23.264-15.936 1.728-15.616 1.728-15.616 25.696 1.824 39.2 26.496 39.2 26.496 22.848 39.264 59.936 27.936 74.528 21.344 2.304-16.608 8.928-27.936 16.256-34.368-56.832-6.496-116.608-28.544-116.608-127.008 0-28.064 9.984-51.008 26.368-68.992-2.656-6.496-11.424-32.64 2.496-68 0 0 21.504-6.912 70.4 26.336 20.416-5.696 42.304-8.544 64.096-8.64 21.728.128 43.648 2.944 64.096 8.672 48.864-33.248 70.336-26.336 70.336-26.336 13.952 35.392 5.184 61.504 2.56 68 16.416 17.984 26.304 40.928 26.304 68.992 0 98.72-59.84 120.448-116.864 126.816 9.184 7.936 17.376 23.616 17.376 47.584 0 34.368-.32 62.08-.32 70.496 0 6.88 4.608 14.88 17.6 12.352C438.72 472.145 512 375.857 512 262.353 512 120.401 397.376 5.329 255.968 5.329z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 212" id="gitlab">
+    <path d="M12.3 74.7h54L43.3 3c-1-3.6-6.4-3.6-7.6 0L12.3 74.8z" />
+    <path d="M12.3 74.7L.5 111c-1 3.2 0 6.8 3 8.8l101.6 74-92.5-119z"/>
+    <path d="M105 193.7l-38.6-119h-54l92.7 119z"/>
+    <path d="M105 193.7l38.7-119H66.4l38.7 119z"/>
+    <path d="M105 193.7l38.7-119H198l-93 119z"/>
+    <path d="M198 74.7l11.6 36.2c1 3 0 6.6-3 8.6l-101.5 74 93-119z"/>
+    <path d="M198 74.7h-54.3L167 3c1.2-3.6 6.4-3.6 7.6 0L198 74.8z"/>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="rss">
+    <circle cx="3.429" cy="20.571" r="3.429"></circle>
+    <path d="M11.429 24h4.57C15.999 15.179 8.821 8.001 0 8v4.572c6.302.001 11.429 5.126 11.429 11.428z"></path>
+    <path d="M24 24C24 10.766 13.234 0 0 0v4.571c10.714 0 19.43 8.714 19.43 19.429z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="linkedin">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h362c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zM181 406h-60V196h60zm0-240h-60v-60h60zm210 240h-60V286c0-16.54-13.46-30-30-30s-30 13.46-30 30v120h-60V196h60v11.309C286.719 202.422 296.93 196 316 196c40.691.043 75 36.547 75 79.688zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612" id="to-top">
+    <path d="M604.501 440.509L325.398 134.956c-5.331-5.357-12.423-7.627-19.386-7.27-6.989-.357-14.056 1.913-19.387 7.27L7.499 440.509c-9.999 10.024-9.999 26.298 0 36.323s26.223 10.024 36.222 0l262.293-287.164L568.28 476.832c9.999 10.024 26.222 10.024 36.221 0 9.999-10.023 9.999-26.298 0-36.323z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="carly">
+    <path d="M504.971 239.029L448 182.059V84c0-46.317-37.682-84-84-84h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c19.851 0 36 16.149 36 36v108c0 6.365 2.529 12.47 7.029 16.971L454.059 256l-47.029 47.029A24.002 24.002 0 0 0 400 320v108c0 19.851-16.149 36-36 36h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c46.318 0 84-37.683 84-84v-98.059l56.971-56.971c9.372-9.372 9.372-24.568 0-33.941zM112 192V84c0-19.851 16.149-36 36-36h44c13.255 0 24-10.745 24-24S205.255 0 192 0h-44c-46.318 0-84 37.683-84 84v98.059l-56.971 56.97c-9.373 9.373-9.373 24.568 0 33.941L64 329.941V428c0 46.317 37.682 84 84 84h44c13.255 0 24-10.745 24-24s-10.745-24-24-24h-44c-19.851 0-36-16.149-36-36V320c0-6.365-2.529-12.47-7.029-16.971L57.941 256l47.029-47.029A24.002 24.002 0 0 0 112 192z"></path>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="copy">
+    <path d="M23 2.75A2.75 2.75 0 0 0 20.25 0H8.75A2.75 2.75 0 0 0 6 2.75v13.5A2.75 2.75 0 0 0 8.75 19h11.5A2.75 2.75 0 0 0 23 16.25zM18.25 14.5h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5z"></path>
+    <path d="M8.75 20.5a4.255 4.255 0 0 1-4.25-4.25V2.75c0-.086.02-.166.025-.25H3.75A2.752 2.752 0 0 0 1 5.25v16A2.752 2.752 0 0 0 3.75 24h12a2.752 2.752 0 0 0 2.75-2.75v-.75z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.001 512.001" id="closeme">
+    <path d="M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0 0 14.143 5.857 19.94 19.94 0 0 0 14.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="open-menu">
+    <path d="M492 236H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0-160H20C8.954 76 0 84.954 0 96s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0 320H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="instagram">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id=youtube>
+    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="stackoverflow">
+    <path d="M21 27v-8h3v11H0V19h3v8h18z"></path><path d="M17.1.2L15 1.8l7.9 10.6 2.1-1.6L17.1.2zm3.7 14.7L10.6 6.4l1.7-2 10.2 8.5-1.7 2zM7.2 12.3l12 5.6 1.1-2.4-12-5.6-1.1 2.4zm-1.8 6.8l13.56 1.96.17-2.38-13.26-2.55-.47 2.97zM19 25H5v-3h14v3z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="xing">
+    <path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 55" id="discord">
+    <path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" id="mastodon">
+    <path
+    fill="#ffffff"
+    d="m 15.054695,9.8859583 c -0.22611,1.1632697 -2.02517,2.4363497 -4.09138,2.6830797 -1.0774504,0.12856 -2.1382704,0.24673 -3.2694704,0.19484 -1.84996,-0.0848 -3.30971,-0.44157 -3.30971,-0.44157 0,0.1801 0.0111,0.35157 0.0333,0.51194 0.24051,1.82571 1.81034,1.93508 3.29737,1.98607 1.50088,0.0514 2.8373104,-0.37004 2.8373104,-0.37004 l 0.0617,1.35686 c 0,0 -1.0498104,0.56374 -2.9199404,0.66742 -1.03124,0.0567 -2.3117,-0.0259 -3.80308,-0.42069 -3.23454998,-0.85613 -3.79081998,-4.304 -3.87592998,-7.8024197 -0.026,-1.03871 -0.01,-2.01815 -0.01,-2.83732 0,-3.57732 2.34385998,-4.62587996 2.34385998,-4.62587996 1.18184,-0.54277 3.20976,-0.77101 5.318,-0.7882499985409 h 0.0518 C 9.8267646,0.01719834 11.856025,0.24547834 13.037775,0.78824834 c 0,0 2.34377,1.04855996 2.34377,4.62587996 0,0 0.0294,2.63937 -0.32687,4.47183"/>
+ <path
+    fill="#000000"
+    d="m 12.616925,5.6916583 v 4.3315297 h -1.71607 V 5.8189683 c 0,-0.88624 -0.37289,-1.33607 -1.1187604,-1.33607 -0.82467,0 -1.23799,0.53361 -1.23799,1.58875 v 2.30122 h -1.70594 v -2.30122 c 0,-1.05514 -0.4134,-1.58875 -1.23808,-1.58875 -0.74587,0 -1.11876,0.44983 -1.11876,1.33607 v 4.2042197 h -1.71607 V 5.6916583 c 0,-0.88527 0.22541,-1.58876 0.67817,-2.10922 0.46689,-0.52047 1.07833,-0.78727 1.83735,-0.78727 0.87816,0 1.54317,0.33752 1.98288,1.01267 l 0.42744,0.71655 0.42753,-0.71655 c 0.43961,-0.67515 1.10463,-1.01267 1.9828704,-1.01267 0.75893,0 1.37037,0.2668 1.83735,0.78727 0.45268,0.52046 0.67808,1.22395 0.67808,2.10922"/>
+  </symbol>
+</svg>
+
+<script type="text/javascript" src="https://nate.mecca1.net/en/js/bundle.ea04089d5378df052824a1c181cf96e36e6f1a1d04670069f0b8ac2efdd0b7d0703c1c94cfcb2ed1888892d38043289f06e9b22caa9a28b1601301db34fef4c2.js" integrity="sha512-6gQInVN43wUoJKHBgc&#43;W425vGh0EZwBp8LisLv3Qt9BwPByUz8su0YiIktOAQyifBumyLKqaKLFgEwHbNP70wg==" crossorigin="anonymous"></script>
+  </body>
+</html>

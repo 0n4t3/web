@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tech on An Untitled Blog</title>
+    <link>https://nate.mecca1.net/tags/tech/</link>
+    <description>Recent content in tech on An Untitled Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nostr</title>
+      <link>https://nate.mecca1.net/posts/2023-12-11_nostr/</link>
+      <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nate.mecca1.net/posts/2023-12-11_nostr/</guid>
+      <description>
+        
+          
+            I have recently been re-dipping my toes into Nostr (tried it a while back just to experiment with it but never really stuck around), and so far it&amp;rsquo;s become my preferred microblogging platform. There&amp;rsquo;s a handful of reasons surrounding that, both in the protocol itself and what&amp;rsquo;s being built up around it, and I think it has a lot of promise that merits its very quick growth. Today I thought I would go over why I am a fan of it, and why I think it might be worth checking out if you&amp;rsquo;re interested in a more decentralized web.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>MITM Risks in Signal? Cost of Numbers &amp; Mitigation &#43; Monologue</title>
+      <link>https://nate.mecca1.net/posts/2023-11-19_signal-cons/</link>
+      <pubDate>Sun, 19 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nate.mecca1.net/posts/2023-11-19_signal-cons/</guid>
+      <description>
+        
+          
+            Update 11/25: I was made aware that Signal has some proprietary anti-spam code and added the TLDR.
+A More Technical TLDR I never know how much jargon I should include or how much I should explain, and as long as I&amp;rsquo;m writing I&amp;rsquo;m enjoying myself meaning I&amp;rsquo;ve been all over the place. But here&amp;rsquo;s a shortened version for those familiar with encryption.
+A vanilla implementation of the Signal protocol relies on public key infrastructure to perform a handshake between devices.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What is IPFS &#43; basic use</title>
+      <link>https://nate.mecca1.net/posts/2023-08-28_ipfs/</link>
+      <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nate.mecca1.net/posts/2023-08-28_ipfs/</guid>
+      <description>
+        
+          
+            IPFS, an acronym for &amp;ldquo;InterPlanetary File System&amp;rdquo;, is a way to deliver files that takes a different approach to HTTP. As I mentioned in my very first post, I originally considered hosting my entire site/blog on it, and while I decided against it for reasons I mentioned there and reasons I&amp;rsquo;ll get into later here; I am working on something that may involve me sharing files here, which I&amp;rsquo;ll probably use IPFS for.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

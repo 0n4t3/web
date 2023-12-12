@@ -6,7 +6,23 @@
     <description>Recent content in Posts on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nostr</title>
+      <link>https://nate.mecca1.net/posts/2023-12-11_nostr/</link>
+      <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nate.mecca1.net/posts/2023-12-11_nostr/</guid>
+      <description>
+        
+          
+            I have recently been re-dipping my toes into Nostr (tried it a while back just to experiment with it but never really stuck around), and so far it&amp;rsquo;s become my preferred microblogging platform. There&amp;rsquo;s a handful of reasons surrounding that, both in the protocol itself and what&amp;rsquo;s being built up around it, and I think it has a lot of promise that merits its very quick growth. Today I thought I would go over why I am a fan of it, and why I think it might be worth checking out if you&amp;rsquo;re interested in a more decentralized web.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Quest to find a tablet, pt 2</title>
       <link>https://nate.mecca1.net/posts/2023-12-01_tablets-2/</link>
