@@ -6,7 +6,23 @@
     <description>Recent content in stuff-I-like on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/categories/stuff-i-like/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/categories/stuff-i-like/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>👍 Platform Agnostic Follows (&amp; requesting your help)</title>
+      <link>https://nate.mecca1.net/posts/2023-12-20_followanything/</link>
+      <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nate.mecca1.net/posts/2023-12-20_followanything/</guid>
+      <description>
+        
+          
+            Chances are if you&amp;rsquo;re here it&amp;rsquo;s through an RSS feed (or an RSS feed bridged to something else), so I probably don&amp;rsquo;t need to do too much of an introduction. Here&amp;rsquo;s a quick rundown if you&amp;rsquo;re unfamiliar. However, today I wanted to talk about RSS (as well as three other means of following content), how I&amp;rsquo;ve benefited from it, and a small project I started. Just about every piece of content I follow is through RSS - organized into different categories (news, blogs, videos, audio, etc), and the following benefits really stand out:
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Nostr</title>
       <link>https://nate.mecca1.net/posts/2023-12-11_nostr/</link>

@@ -2,34 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nate.mecca1.net/posts/2023-12-20_followanything/</loc>
+    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nate.mecca1.net/</loc>
-    <lastmod>2023-12-11T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/categories/</loc>
-    <lastmod>2023-12-11T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/tags/decentralized/</loc>
-    <lastmod>2023-12-11T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/posts/</loc>
+    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/projects/</loc>
+    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/protocols/</loc>
+    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/categories/stuff-i-like/</loc>
+    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/</loc>
+    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/tech/</loc>
+    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/tags/nostr/</loc>
     <lastmod>2023-12-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/posts/2023-12-11_nostr/</loc>
-    <lastmod>2023-12-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/posts/</loc>
-    <lastmod>2023-12-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/tags/protocols/</loc>
-    <lastmod>2023-12-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/categories/stuff-i-like/</loc>
-    <lastmod>2023-12-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/tags/</loc>
-    <lastmod>2023-12-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/tags/tech/</loc>
     <lastmod>2023-12-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/tags/android/</loc>
@@ -52,9 +58,6 @@
   </url><url>
     <loc>https://nate.mecca1.net/tags/windows/</loc>
     <lastmod>2023-12-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/posts/post4/</loc>
-    <lastmod>2023-11-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/categories/complaints/</loc>
     <lastmod>2023-11-19T00:00:00+00:00</lastmod>
@@ -109,12 +112,6 @@
   </url><url>
     <loc>https://nate.mecca1.net/posts/2023-06-16_first-post/</loc>
     <lastmod>2023-06-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/posts/post3/</loc>
-    <lastmod>2021-06-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/posts/post2/</loc>
-    <lastmod>2019-05-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/pages/follow/</loc>
   </url><url>
