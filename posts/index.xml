@@ -6,7 +6,23 @@
     <description>Recent content in Posts on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Firefox: a brink of their own making?</title>
+      <link>https://nate.mecca1.net/posts/2023-12-27_mozillasbrink/</link>
+      <pubDate>Wed, 27 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nate.mecca1.net/posts/2023-12-27_mozillasbrink/</guid>
+      <description>
+        
+          
+            Listen to this post: Download audio This post gets its name from Bryce Wray&amp;rsquo;s post Firefox on the brink which made rounds recently. While I would recommend reading the entire article, the crux is that with Firefox&amp;rsquo;s declining market share it&amp;rsquo;s approaching a 2% traffic share on government websites - and if it drops below it&amp;rsquo;s no longer taken into account in the development of said sites. While government web guidelines aren&amp;rsquo;t the be-all-end-all, it’s a quantifiable indicator of a larger issue Mozilla has been facing.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Platform Agnostic Following</title>
       <link>https://nate.mecca1.net/posts/2023-12-20_followanything/</link>
