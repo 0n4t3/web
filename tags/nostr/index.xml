@@ -6,7 +6,23 @@
     <description>Recent content in nostr on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/tags/nostr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/tags/nostr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ActivityPub/Nostr/AT-BlueSky Compared</title>
+      <link>https://nate.mecca1.net/posts/2024-01-30_microblogging-protocols/</link>
+      <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nate.mecca1.net/posts/2024-01-30_microblogging-protocols/</guid>
+      <description>
+        
+          
+            Distributed social media networks have been on my mind for a while, especially during my deep dive into Nostr over the last few months. Being on my mind I started writing a comparison between the big three, which sort of morphed into this. I should clarify that I&amp;rsquo;m a layman here: I&amp;rsquo;ve never participated in the development of any of them, or the development of anything built on top of them (nor the development of anything complex at all).
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Nostr</title>
       <link>https://nate.mecca1.net/posts/2023-12-11_nostr/</link>
