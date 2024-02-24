@@ -4,10 +4,12 @@
   lang="en"
   data-figures=""
   
+    class="page"
+  
   
   >
   <head>
-<title>Categories | An Untitled Blog</title>
+<title>I made a client, Nostr surpassed Mastodon, and BlueSky is open? | An Untitled Blog</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,22 +21,21 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="" />
+<meta name="description" content="So after two very long posts, one complaining about web browsers and one comparing the three big non-centralized social media protocols, I thought about writing …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="Categories" />
+<meta name="twitter:title" content="I made a client, Nostr surpassed Mastodon, and BlueSky is open?" />
 <meta name="twitter:image" content="https://nate.mecca1.net/"/>
-<meta property="og:url" content="https://nate.mecca1.net/categories/" />
-<meta property="og:title" content="Categories" />
-<meta property="og:description" content="" />
+<meta property="og:url" content="https://nate.mecca1.net/posts/2024-02-24_microblogging-anthology/" />
+<meta property="og:title" content="I made a client, Nostr surpassed Mastodon, and BlueSky is open?" />
+<meta property="og:description" content="So after two very long posts, one complaining about web browsers and one comparing the three big non-centralized social media protocols, I thought about writing …" />
 <meta property="og:image" content="https://nate.mecca1.net/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://nate.mecca1.net/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://nate.mecca1.net/icons/favicon-32x32.png">
 <link rel="manifest" href="https://nate.mecca1.net/icons/site.webmanifest">
 
-<link rel="canonical" href="https://nate.mecca1.net/categories/">
-<link rel="alternate" type="application/rss+xml" href="https://nate.mecca1.net/categories/index.xml" title="An Untitled Blog" />
+<link rel="canonical" href="https://nate.mecca1.net/posts/2024-02-24_microblogging-anthology/">
 
 
 
@@ -96,19 +97,10 @@
 </header>
 
     <main>
-
-
-
+  
 <div class="grid-inverse wrap content">
-  <div>
-    <ul class="posts" id="posts">
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://nate.mecca1.net/categories/stuff-i-like/" title="stuff-I-like">stuff-I-like</a>
-      </h3>
-      
+  <article class="post_content">
+    <h1 class="post_title">I made a client, Nostr surpassed Mastodon, and BlueSky is open?</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -117,155 +109,43 @@
 </span>
     <span class="post_date">
       Feb 24, 2024</span>
-    <span class="post_time"> · 0 min read</span>
+    <span class="post_time"> · 5 min read</span><span>&nbsp;· <a href='https://nate.mecca1.net/tags/tech/' title="tech" class="post_tag button button_translucent">tech
+        </a><a href='https://nate.mecca1.net/tags/protocols/' title="protocols" class="post_tag button button_translucent">protocols
+        </a><a href='https://nate.mecca1.net/tags/nostr/' title="nostr" class="post_tag button button_translucent">nostr
+        </a>
+    </span>
     <span class="page_only">&nbsp;·</span>
   </div>
 
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p></p>
-          
-          <br>
-          <a href="https://nate.mecca1.net/categories/stuff-i-like/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
+    <div class="post_body"><p>So after two very long posts, one complaining about web browsers and one comparing the three big non-centralized social media protocols, I thought about writing two shorter posts about random things (hats and making sour krout specifically). However, between then and now stuffs happened and I thought I would make an anthology post with three different mini topics I wanted to share.</p>
+<h2 id="i-made-a-client">I made a client</h2>
+<p>So yeah, I made a client that can post to Nostr, Activity Pub, and BlueSky (hopefully all of AT once it&rsquo;s fully opened). It&rsquo;s a bit hacky, and written in Python using dependencies that do all the heavy lifting, but it works. It can broadcast the same post to all three, post different posts to different protocols, or skip posting to a protocol altogether. There&rsquo;s a version that uses Keyring to have your OS manage your credentials instead of baking them into a script, and it&rsquo;ll run on just about everything. I&rsquo;m not a programmer by trade, and it&rsquo;s been a very long time since I wrote any code for public consumption, so I&rsquo;m excited to get it working and share it. Apparently I&rsquo;m the second person to do this, as shortly under two weeks before I released mine somebody else made Nootti, so if you like this idea, are on IOS, and want something more polished that is also an option as well.</p>
+<p>You can find a link to my GitHub repository <a href="https://github.com/0n4t3/nipy">here</a>.</p>
+<h2 id="nostr-surpassed-mastodon">Nostr Surpassed Mastodon?</h2>
+<p>So this one has caveats, and caveats to the caveats, and a disclaimer at the end, but is good news in a non-competitive way. The first, which is a big one, is that it&rsquo;s really hard to track usage of decentralized social media software given it&rsquo;s, well, decentralized. Comparing two very close in numbers gets especially difficult given there&rsquo;s probably a lot of leeway in both numbers. Regardless, I was reading <a href="https://techcrunch.com/2024/02/20/spam-attack-on-twitter-x-rival-mastodon-highlights-fediverse-vulnerabilities/">this article</a> about a spam attack on the fediverse which stated that Mastodon&rsquo;s usage is at 1 million monthly active users.</p>
+<p>Listening to a recording of a Nostr conference a few months ago I recall hearing that Nostr had 1.1 million monthly active users. Nostr has had pretty meteoric growth in the last year or two, and about a year ago there were articles speculating a 30k monthly active user base as a potential growth goal, so if those numbers were correct I would expect its userbase to be even larger than 1.1 million now. The best numbers I was able to find were gathered by <a href="https://stats.nostr.band/#relay_users">nostr.band</a> which calculated that the largest Nostr relay <a href="https://damus.io/">Damus</a> has a little over 500k accounts both pulling data from it and posting data to it. Taking into account that the top relay is half the estimate alone I would assume that the number was correct at that it&rsquo;s climbed further since then.</p>
+<details>
+  <summary>Quick Definition</summary>
+  For those only familiar with Activity Pub instances or AT PDSs, a relay is more or less the equivalent of an instance or PDS. An important distinction, however, is unlike the other two protocols Nostr accounts can participate on more than one relay simultaneously. So, despite the top five having a combined total of 2+ million monthly active users, there&rsquo;s likely a lot of overlap where one account can be counted on several of those. That&rsquo;s why I assume the 1.1+ figure was accurate when it was stated a few months ago and repeated elsewhere since then.
+</details>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://nate.mecca1.net/categories/personal-updates/" title="Personal Updates">Personal Updates</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Jan 18, 2024</span>
-    <span class="post_time"> · 0 min read</span>
-    <span class="page_only">&nbsp;·</span>
-  </div>
+<p>The other caveat is the fact that Mastodon isn&rsquo;t the fediverse. There are a lot of different types of software on the fediverse. According to the same article, there are about 3 million monthly active users across the fediverse (presumably defined by anything interoperable with Activity Pub). For example, it was recently pointed out to me that Friendica - which I&rsquo;m also on - had actually adopted Activity Pub before Mastodon. There&rsquo;s also Nostr, which being bridged in, also counts as part of the Fediverse. Taking into account the fringes of Activity Pub like WordPress.com accounts or Truth Social, and the soon-to-be Threads, Tumbler, Gitlab, and Activity Pub is/will be in the hundreds of millions. So in that way, Nostr is still small fries.</p>
+<p>The last caveat, however, is as I mentioned in my previous posts <a href="https://nate.mecca1.net/posts/2024-01-30_microblogging-protocols/">1</a>/<a href="https://nate.mecca1.net/posts/2023-12-11_nostr/">2</a> there&rsquo;s minimal competition between protocols. Again, as I previously mentioned, Nostr is bridged into Activity Pub and both protocols stand to gain by growth of each other. As you probably gained from this blog if you read it regularly, it&rsquo;s mostly me being like &ldquo;Oh hey, look at this tech smart people made, it&rsquo;s cool&rdquo; with the occasional complaint post thrown in. It&rsquo;s more of that my favorite protocol that I thought was a few nerds talking about tech turned out to be a <em>lot</em> of nerds talking about tech and less of &ldquo;my favorite software is more used so screw this other software (that I also think is cool)&rdquo;.</p>
+<h2 id="blueskyat-is-now-open">BlueSky/At is now Open?</h2>
+<p>A week or so ago BlueSky announced they had opened registrations up to the public, and a day or so ago they announced they were beginning to open up BlueSky to other people on the AT Protocol as well. Real federation isn&rsquo;t fully open yet, but they are still allowing small PDSs onto the BlueSky crawler. I mentioned in my <a href="https://nate.mecca1.net/posts/2024-01-30_microblogging-protocols/">comparison post</a> that I&rsquo;m unsure what role (if any) the AT Protocol would play in the broader landscape because it was entirely closed off at the time - despite the fact I liked the underlying technology. Given things are opening up, even though it&rsquo;s a slow process and not fully opened yet, I now believe it will play a large role in the landscape of federated and decentralized social media. And further, I especially look forward to when it&rsquo;s bridged into Nostr and Activity Pub to make one large over-arching ecosystem.</p>
+<p>As for how well it will perform as a protocol (scaling, moderation, customization and malleability, etc) time will tell.</p>
 
     </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p></p>
-          
-          <br>
-          <a href="https://nate.mecca1.net/categories/personal-updates/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
+<div class="post_comments">
+  
+  
+  
+</div>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://nate.mecca1.net/categories/complaints/" title="complaints">complaints</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Dec 27, 2023</span>
-    <span class="post_time"> · 0 min read</span>
-    <span class="page_only">&nbsp;·</span>
-  </div>
 
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p></p>
-          
-          <br>
-          <a href="https://nate.mecca1.net/categories/complaints/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://nate.mecca1.net/categories/hobbies/" title="Hobbies">Hobbies</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Dec 1, 2023</span>
-    <span class="post_time"> · 0 min read</span>
-    <span class="page_only">&nbsp;·</span>
-  </div>
 
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p></p>
-          
-          <br>
-          <a href="https://nate.mecca1.net/categories/hobbies/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://nate.mecca1.net/categories/informational/" title="informational">informational</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Nov 1, 2023</span>
-    <span class="post_time"> · 0 min read</span>
-    <span class="page_only">&nbsp;·</span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p></p>
-          
-          <br>
-          <a href="https://nate.mecca1.net/categories/informational/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-      <li>
-      </li>
-    </ul>
-  </div>
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <br>
@@ -421,9 +301,8 @@
   </section>
 </aside>
 
+  
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>

@@ -247,7 +247,7 @@
 <p>The English speaking portion of Nostr is currently heavily populated by crypto enthusiasts, with many of the remaining people being categorized as cypherpunks, technology enthusiasts, libertarians, or a combination of the four. While continued growth brings in a broader group of people, and user curation can create a network more curated towards particular interests, the concentration of those groups can push other people away.</p>
 <p>Further, on moderation specifically, most relays do not require any sort of registration to participate and heavily rely on automated moderation tools. While in my experience the network I&rsquo;m participating in has been fairly free of problematic people (minus the occasional spam or rude comment), I expect that if the community grows it may experience growing pains in the form of a sudden uptick in problematic posts as it&rsquo;s fairly easy to generate many key pairs and then act with impunity.</p>
 <h4 id="future-changes-1">Future Changes</h4>
-<p>Again, while not exactly my expertise level, I thought I would go over some things I would expect could bring value to Nostr. First is the idea of a DHT layer that acts entirely independently of relays. DHT, short for distributed hash tables, would be the idea of creating a decentralized network (almost identical to <a href="https://nate.mecca1.net/posts/2023-08-28_ipfs/">IPFS</a>) that would allow any client running the software to optionally distribute posts of its user and/or posts/users of the device owner&rsquo;s choosing. Something like this would allow a phone or computer to effectively host their posts, and most likely also have the option of hosting copies of posts that the user has liked, responded to, or of people they follow. Given the small size of posts, this would likely be easily feasible, and if used in conjunction with relays this would likely serve as a means of solving the &lsquo;hub relays&rsquo; issue I talked about above.</p>
+<p>Again, while not exactly my expertise level, I thought I would go over some things I would expect could bring value to Nostr. First is the idea of a DHT layer that acts entirely independently of relays. DHT, short for distributed hash tables, would be the idea of creating a decentralized network (almost identical to <a href="https://nate.mecca1.net/posts/2023-08-28_ipfs/">IPFS</a>) that would allow any client/relay running the software to optionally distribute posts to and pull posts from any other account also using a client/relay with DHT. Something like this would allow a phone or computer to effectively host their posts or other&rsquo;s posts of their choosing if integrated into a client, and could likely also allow the creation of &lsquo;universal&rsquo; relays that can pull posts from anywhere or distribute someone&rsquo;s post to anyone also using DHT. Given the small size of posts, this would likely be easily feasible, and if used in conjunction with normal relays this would likely serve as a means of solving the &lsquo;hub relays&rsquo; issue I talked about above.</p>
 <p>Further, I believe the protocol would benefit from having some means of better locating users on other relays. Whether that be having some relays &lsquo;gossip&rsquo; (effectively some form of federation/duplication among relays that choose to do so), having some sort of search tool in clients that can find an event (post) from other relays even if it&rsquo;s not added to the user&rsquo;s relays, or have some sort of tagging on events as to where the post was originally mirrored on (though this is sort of accomplished oppositely by &lsquo;broadcasting&rsquo; a post to all your relays if you re-post it).</p>
 <p>Finally, for the possibility of large scale adoption, I foresee the need for a service (or set of services) to come out that hides keys and NPUBs (probably utilizing NIP05s in its place) on the backend. Something that allows users to register like a centralized/federated social media service but remain able to interact with other Nostr users. Something like <a href="https://gitlab.com/soapbox-pub/ditto/-/tree/main">Ditto</a> or a more mainstream-friendly version of Minds are potential contenders for something like this, and would prevent the technical knowledge barrier to participating on the Nostr network.</p>
 <h4 id="the-perfect-model-and-conclusions-1">The Perfect Model, and Conclusions</h4>
@@ -330,6 +330,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://nate.mecca1.net/posts/2024-02-24_microblogging-anthology/" class="nav-link" title="I made a client, Nostr surpassed Mastodon, and BlueSky is open?">I made a client, Nostr surpassed Mastodon, and BlueSky is open?</a>
+      </li>
+      <li>
         <a href="https://nate.mecca1.net/posts/2024-01-30_microblogging-protocols/" class="nav-link" title="ActivityPub/Nostr/AT-BlueSky Compared">ActivityPub/Nostr/AT-BlueSky Compared</a>
       </li>
       <li>
@@ -350,16 +353,13 @@
       <li>
         <a href="https://nate.mecca1.net/posts/2023-11-19_signal-cons/" class="nav-link" title="MITM Risks in Signal? Mitigation &#43; Monologue">MITM Risks in Signal? Mitigation + Monologue</a>
       </li>
-      <li>
-        <a href="https://nate.mecca1.net/posts/2023-11-14_defaults/" class="nav-link" title="Defaults">Defaults</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
         <a href='https://nate.mecca1.net/categories/stuff-i-like/' class="post_tag button button_translucent" title="stuff-i-like">
           STUFF-I-LIKE
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         <a href='https://nate.mecca1.net/categories/complaints/' class="post_tag button button_translucent" title="complaints">
@@ -390,12 +390,12 @@
       <nav class="tags_nav">
         <a href='https://nate.mecca1.net/tags/tech/' class="post_tag button button_translucent" title="tech">
           TECH
-          <span class="button_tally">6</span>
+          <span class="button_tally">7</span>
         </a>
         
         <a href='https://nate.mecca1.net/tags/protocols/' class="post_tag button button_translucent" title="protocols">
           PROTOCOLS
-          <span class="button_tally">5</span>
+          <span class="button_tally">6</span>
         </a>
         
         <a href='https://nate.mecca1.net/tags/misc/' class="post_tag button button_translucent" title="misc">
@@ -428,6 +428,11 @@
           <span class="button_tally">3</span>
         </a>
         
+        <a href='https://nate.mecca1.net/tags/nostr/' class="post_tag button button_translucent" title="nostr">
+          NOSTR
+          <span class="button_tally">3</span>
+        </a>
+        
         <a href='https://nate.mecca1.net/tags/debian/' class="post_tag button button_translucent" title="debian">
           DEBIAN
           <span class="button_tally">2</span>
@@ -435,11 +440,6 @@
         
         <a href='https://nate.mecca1.net/tags/linux/' class="post_tag button button_translucent" title="linux">
           LINUX
-          <span class="button_tally">2</span>
-        </a>
-        
-        <a href='https://nate.mecca1.net/tags/nostr/' class="post_tag button button_translucent" title="nostr">
-          NOSTR
           <span class="button_tally">2</span>
         </a>
         
