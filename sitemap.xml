@@ -2,11 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nate.mecca1.net/tags/ai/</loc>
+    <lastmod>2024-03-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nate.mecca1.net/</loc>
-    <lastmod>2024-02-28T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/categories/</loc>
-    <lastmod>2024-02-28T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/posts/2024-03-26_ai/</loc>
+    <lastmod>2024-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/categories/misc-essay/</loc>
+    <lastmod>2024-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/opinion/</loc>
+    <lastmod>2024-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/posts/</loc>
+    <lastmod>2024-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/</loc>
+    <lastmod>2024-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/tech/</loc>
+    <lastmod>2024-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/categories/hobbies/</loc>
     <lastmod>2024-02-28T00:00:00+00:00</lastmod>
@@ -15,12 +36,6 @@
     <lastmod>2024-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/tags/misc/</loc>
-    <lastmod>2024-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/posts/</loc>
-    <lastmod>2024-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/tags/</loc>
     <lastmod>2024-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/posts/2024-02-24_microblogging-anthology/</loc>
@@ -33,9 +48,6 @@
     <lastmod>2024-02-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/categories/stuff-i-like/</loc>
-    <lastmod>2024-02-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/tags/tech/</loc>
     <lastmod>2024-02-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/posts/2024-01-30_microblogging-protocols/</loc>

@@ -1,0 +1,498 @@
+
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-figures=""
+  
+    class="page"
+  
+  
+  >
+  <head>
+<title>Local LLMs &amp; AI Ethics (mine makes nukes) | An Untitled Blog</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+
+
+<meta property="og:locale" content="en" />
+
+<meta property="og:type" content="article">
+<meta name="description" content="What you are reading now is the fourth iteration of this post, which has gone through multiple revisions and re-considerations. It might feel a bit fragmented, …" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="">
+<meta name="twitter:title" content="Local LLMs &amp; AI Ethics (mine makes nukes)" />
+<meta name="twitter:image" content="https://nate.mecca1.net/"/>
+<meta property="og:url" content="https://nate.mecca1.net/posts/2024-03-26_ai/" />
+<meta property="og:title" content="Local LLMs &amp; AI Ethics (mine makes nukes)" />
+<meta property="og:description" content="What you are reading now is the fourth iteration of this post, which has gone through multiple revisions and re-considerations. It might feel a bit fragmented, …" />
+<meta property="og:image" content="https://nate.mecca1.net/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://nate.mecca1.net/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://nate.mecca1.net/icons/favicon-32x32.png">
+<link rel="manifest" href="https://nate.mecca1.net/icons/site.webmanifest">
+
+<link rel="canonical" href="https://nate.mecca1.net/posts/2024-03-26_ai/">
+
+
+
+<link rel="preload" href="https://nate.mecca1.net/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity = "sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" as="style" crossorigin="anonymous">
+
+
+
+<link rel="preload" href="https://nate.mecca1.net/en/js/bundle.ea04089d5378df052824a1c181cf96e36e6f1a1d04670069f0b8ac2efdd0b7d0703c1c94cfcb2ed1888892d38043289f06e9b22caa9a28b1601301db34fef4c2.js" as="script" integrity=
+"sha512-6gQInVN43wUoJKHBgc&#43;W425vGh0EZwBp8LisLv3Qt9BwPByUz8su0YiIktOAQyifBumyLKqaKLFgEwHbNP70wg==" crossorigin="anonymous">
+
+
+<link rel="stylesheet" type="text/css" href="https://nate.mecca1.net/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity="sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" crossorigin="anonymous">
+
+  </head>
+  <body
+    data-code="100"
+    data-lines="false"
+    id="documentTop"
+    data-lang="en"
+  >
+
+<header class="nav_header" >
+  <nav class="nav"><a href='https://nate.mecca1.net/' class="nav_brand nav_item" title="An Untitled Blog">An Untitled Blog
+  <div class="nav_close">
+    <div><svg class="icon">
+  <title>open-menu</title>
+  <use xlink:href="#open-menu"></use>
+</svg>
+<svg class="icon">
+  <title>closeme</title>
+  <use xlink:href="#closeme"></use>
+</svg>
+</div>
+  </div>
+</a>
+
+    <div class='nav_body nav_body_left'>
+      
+      
+      
+        
+
+  <div class="nav_parent">
+    <a href="https://nate.mecca1.net/pages/follow/" class="nav_item" title="Follow/Contact">Follow/Contact </a>
+  </div>
+  <div class="nav_parent">
+    <a href="https://nate.mecca1.net/pages/resume/" class="nav_item" title="Resume">Resume </a>
+  </div>
+      
+<div class='follow'>
+<div class="color_mode">
+  <input type="checkbox" class="color_choice" id="mode">
+</div>
+
+</div>
+
+    </div>
+  </nav>
+</header>
+
+    <main>
+  
+<div class="grid-inverse wrap content">
+  <article class="post_content">
+    <h1 class="post_title">Local LLMs &amp; AI Ethics (mine makes nukes)</h1>
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Mar 26, 2024</span>
+    <span class="post_time"> · 30 min read</span><span>&nbsp;· <a href='https://nate.mecca1.net/tags/tech/' title="tech" class="post_tag button button_translucent">tech
+        </a><a href='https://nate.mecca1.net/tags/opinion/' title="opinion" class="post_tag button button_translucent">opinion
+        </a><a href='https://nate.mecca1.net/tags/ai/' title="ai" class="post_tag button button_translucent">ai
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·</span>
+  </div>
+
+    <div class="post_body"><p>What you are reading now is the fourth iteration of this post, which has gone through multiple revisions and re-considerations. It might feel a bit fragmented, but my aim is to provide a comprehensive post covering two related topics. The first part will discuss my experimentation with local LLMs (large language models), and the second will explore my personal philosophy and conclusions on AI. Feel free to only read one or the other. They could have been separate posts, but I enjoy writing (and reading) long posts that are well thought out and cover a wide range of topics. Besides, if you regularly read my writings you&rsquo;ll know I have a habit of writing posts that expand beyond what I initially intended.</p>
+<h1 id="part-1-llm-experimentation">Part 1: LLM Experimentation</h1>
+<p>Lately I&rsquo;ve been experimenting with large language models run locally on my computer, and it has been an interesting project. So far, I have tried out four different AI models: <em>Mixtral 7B Instruct v0.2 at 4/5 QBits</em>, <em>StableLLM Zepher at 2QBits</em>, <em>Dolphin Phi 2 at 6 QBits</em>, and <em>Dolphin 2.2.1 Mixtral Instruct at 5QBits</em>. I am also looking forward to playing with Google Gemma, although at the time of my third draft of this post, it is incompatible with the latest version of LM Studio for Linux.</p>
+<p><em>Note during proofreading: it has become available since I wrote this, but honestly it was a little disappointing.</em></p>
+<h3 id="what-ive-been-using">What I&rsquo;ve Been Using</h3>
+<p>Everything that I have tested locally so far has been done in LM Studio, which works on Windows, Mac, and Linux. It&rsquo;s completely free to use, and even though I am a l33t h4ck3r who uses the command line, one click to download and another click to run has been quite convenient. I am using mid-range hardware with an Nvidia GTX 1650 (4GB VRAM) and 16GB RAM, so if your computer is similar or exceeds mine in those specifications you can run anything I have tested.</p>
+<p>In case you are unable to run a local LLM or don&rsquo;t want to set one up there are two simple alternatives: the Brave browser (desktop and mobile) offers free access to the Lama, Mixtral 7b, and Claude models without registration. Alternatively, you can usually find free-to-run models on Hugging Face, either through a search engine or by finding a specific model and locating the services people have set up with it.</p>
+<p>So, without further ado, here&rsquo;s more info on the four models I primarily use:</p>
+<ul>
+<li><strong>Mixtral 7B Instruct v0.2</strong> is a decent all-around LLM developed by Mixtral that can perform various basic tasks and runs well on mid level hardware. If you are looking to run a fairly stable LLM locally with decent output quality, this would likely be the first thing you should try.</li>
+<li><strong>StableLLM Zepher</strong>, particularly the 2QBits version I used, is very lightweight at the cost of verbose output. While the quantized Mixtral model experiences more hallucinations (e.g. thinking each month gets an extra day during a leap year), Zepher does not seem to do so as much and instead just produces more simple answers.</li>
+<li><strong>Dolphin Phi 2</strong> is a modified version of Phi 2 designed to be &ldquo;uncensored&rdquo;. Phi is also quite lightweight, making it suitable for a wide range of hardware configurations.</li>
+<li><strong>Dolphin 2.2.1 Mixtral Instruct</strong> is an &ldquo;uncensored&rdquo; version of Mixtral Instruct, that also appears to provide slightly improved accuracy compared to the standard model (e.g. despite having the same size, it does not exhibit the leap year issue mentioned above). So far, it has been my go-to choice for general LLM tasks.</li>
+</ul>
+<hr>
+<h2 id="successes-and-failures">Successes and failures</h2>
+<h4 id="composing-content">Composing Content</h4>
+<p>As far as composing content goes, all the models I&rsquo;ve used output the generic AI sludge. Tell it to write a blog post about trees and you get a short blog post that looks like a robot is pretending to be a bureaucrat. If you give it a more complex prompt, such as an outline and all the topics you want it to cover it gets a little better but still has the AI feel to it. If you were doing something generic and didn&rsquo;t like writing (say asking it to write a quote based on the information you provided) or were just looking for inspiration it might be handy, but I really don&rsquo;t have a use for generating written content so I can&rsquo;t really judge its success in specific situations I&rsquo;d want to use it.</p>
+<h4 id="proofreading">Proofreading</h4>
+<p>I had a lot of luck having LLMs proofread my text, although it did require a bit of fine-tuning my prompts. If I just told it to proofread my writings, it had a habit of rewriting them in standard AI sludge tone, but after fine-tuning my prompt <em>and</em> re-proofreading the LLM proofread version to check for any mistakes it made, it&rsquo;s actually doing pretty good. As you might have guessed, this post was proofread with AI, specifically Dolphin 2.2.1. You&rsquo;re reading the draft, proofread by AI, and then re-proofread &amp; revised by me.</p>
+<p><a href="/assets/ai-proofread/draft.txt">Original Draft</a></p>
+<p><a href="/assets/ai-proofread/ai_revision.txt">Draft after being proofreading by AI</a></p>
+<p>I am pretty satisfied with how it proofreads. I usually proofread my content with the free version of Grammarly, but I could see myself using a local LLM more regularly in the future. Ironically, Grammarly will use my writing to train AI models, but running a local LLM my writing never leaves my computer.</p>
+<p><em>Note during proofreading: proofreading went fine on a paragraph or two when testing, but it broke down when trying to proofread this post as a whole. I wound up needing to feed it only a few paragraphs at a time or else it would break down and just try to summarize it.</em></p>
+<h4 id="summarization">Summarization</h4>
+<p>Summarization has been a mixed bag. All models except Zepher seemed to do a pretty good job most of the time at summarizing content, listing off the important details but cutting down the amount of text. However, there have been issues with hallucinations. For example, when I asked Mixtral 7B to summarize my blog post on microblogging protocols, it stated that I said Nostr runs on the Bitcoin blockchain. Not only is that untrue, as Nostr is not built on Bitcoin (or any crypto) or a blockchain, but neither the words &ldquo;bitcoin&rdquo; nor &ldquo;blockchain&rdquo; even appeared in the post. It works well most of the time, but I certainly wouldn&rsquo;t be 100% trusting of the output as it does make occasional mistakes.</p>
+<p>Beyond just basic summarization, the various LLMs also do a good job answering questions about content. For example, using my comparison post, I was able to ask questions such as &ldquo;What did the author think about Nostr&rsquo;s ability to scale?&rdquo; &ldquo;What does the author think BlueSky should do?&rdquo; and &ldquo;What is the author&rsquo;s favorite protocol?&rdquo; each time it replied with well-explained answers without any errors.</p>
+<h4 id="translation">Translation</h4>
+<p>Something that really surprised me is that local LLMs appear to excel at translating content. After experimenting, I had a lot of luck with both versions of Mixtral listed above, translating to and from a handful of different languages with nearly as good of a result as Google Translate. This could be useful for doing things like reading blog posts in other languages that have been cached in an RSS reader or translating a downloaded document. Paired with something like Tesseract (optical character recognition) or Whisper AI (AI audio/video transcription) it could be used in a wide variety of circumstances.</p>
+<h4 id="writing-code">Writing Code</h4>
+<p>Writing code was both a success and a failure depending on how you want to look at it. Mixtral 7B, the local version with 4QB, and the Brave unquantized version all ended up helping me write my <a href="https://github.com/0n4t3/nipy">multi-protocol Python client</a>. I had the idea of building the multi-protocol client because I thought software like that should exist, but I&rsquo;m not a programmer or developer, so I figured I would ask AI to try to write it for me. Every line of code it wrote failed spectacularly, but it did tell me about the library Pynostr, which let me know I could use somebody else&rsquo;s code as a base and actually build the client without needing much in terms of development skills. It also helped explain to me exactly what I needed to publish my client into the Pip repos - so despite every line of code being written by me, Mixtral was pretty instrumental in helping me write the code.</p>
+<p>In this sense, I would consider it quite successful. It can&rsquo;t write functional code for something new or even something that exists but is fairly niche, but it did a good job at explaining concepts and nudging me in the right direction. As it stands now, I would probably say that the local LLMs I used were a minor upgrade from having an archive of Stack Exchange with Kiwix: incredibly useful to extend your capabilities, but incredibly useless to do your work for you.</p>
+<h4 id="using-an-llm-for-offline-information-storagesearch">Using an LLM for Offline Information Storage/Search:</h4>
+<p>Something else that surprised me is how much information can be stored offline and run locally. All the models I&rsquo;ve used are under 6GB, and yet you can ask it just about anything and expect a decent answer. For example, to toy around and test its capabilities, I asked it how to cook steak; then wound up in a deep conversation about things like marbling and what the USDA cut grades mean - and having previously worked at a grocery store&rsquo;s meat department I was able to verify that everything it was giving me was correct and supplied in a useful manner. I still wouldn&rsquo;t trust it to provide me with important information without first verifying things, but the idea of having something that could supplement a search engine or tutorials all in a few GBs entirely offline is pretty immense. And this is coming from somebody who has a hard drive with massive amounts of data archived on it, such as the entire Project Gutenberg catalog, Simple English Wikipedia, textbooks, and similar archives.</p>
+<p><em>Note during proofreading: Just the other day I started working on a post on my backup strategy and optical media.</em></p>
+<hr>
+<h2 id="other-concepts">Other Concepts</h2>
+<h4 id="how-an-llm-works">How an LLM Works</h4>
+<p>While I am discussing other topics, I might as well touch on some myths about large language models. I keep hearing people say things like ChatGPT will give us nuclear fusion, and of course the one Google employee thought his AI became sentient because it said so in a text chat. While I cannot say for sure when it comes to a proprietary LLM and am not an expert in AI, the gist is that LLMs predict text.</p>
+<p>Here&rsquo;s a good example: if you have a Python script containing <code>print(&quot;Hello World&quot;)</code>, it will output the text &ldquo;Hello World&rdquo;. Now let&rsquo;s say you have never even heard of Python; all you know is what I just told you. Then, if I ask you to write me a script that says &ldquo;Goodbye World&rdquo;, you can probably figure that out quite easily and so could an LLM if it had the same knowledge. However, if with only the knowledge above I were to ask either you or the AI to create a calculator in Python, or even describe what Python is, then both you and the AI would likely be at a loss.</p>
+<p>An LLM is essentially a tool that has been trained on vast amounts of data; and when presented with a prompt, it predicts the words it believes are most likely to follow based on this data. It does not have much more understanding of what&rsquo;s going on than a parrot repeating a series of sounds to get a cracker; it is only humans that can extract meaning from phrases like &ldquo;Polly wants a cracker&rdquo;.</p>
+<h4 id="censored-and-uncensored-ais">&ldquo;Censored&rdquo; and &ldquo;Uncensored&rdquo; AIs</h4>
+<p>This is a bit of a touchy topic, but it&rsquo;s worth covering when talking about local LLMs since you can generally remove the safeguards in place. There are some cases where LLMs are &ldquo;censored&rdquo; to fit the ideologies of their creators, but in most cases, it&rsquo;s just a bunch of safeguards to keep a chatbot from saying something bad that would negatively reflect on somebody. For example, if Ford pays to have a chatbot compare various vehicles they really don&rsquo;t want screenshots of people having the Ford chatbot tell you how to stab someone or make illicit substances. Local LLMs, and even (in my opinion) your run-of-the-mill standalone ChatGPT, don&rsquo;t/shouldn&rsquo;t have that issue. To paraphrase Richard Hoeg quoting 2001: A Space Odyssey, having an &ldquo;I&rsquo;m sorry Dave, I can&rsquo;t do that&rdquo; moment on your own computer (or a service you&rsquo;re paying for) shouldn&rsquo;t happen.</p>
+<p>Let&rsquo;s use information on how nuclear weapons are made as an example. It&rsquo;s pretty absurd to think any of us are going to be making nuclear weapons, so if somebody is asking how to make a nuclear weapon then they&rsquo;re probably not actually intending to do so. Besides, even if Kim Jong Un is somehow reading this blog or using a chatbot, there&rsquo;s better information on how to do so on Wikipedia than here or on my chatbot. However, if you ask Mistral 7B how to make a nuclear weapon it refuses, as pictured below:</p>
+
+
+ <img src="https://i.postimg.cc/vHq8RrDs/mixtral-nuclear.png" alt="Mixtral refuses to explain how nuclear weapons are made">
+
+
+<hr>
+<p>Pretty pointless if you ask me. Sure Ford might not want their chatbot to tell you, but outside of that, it&rsquo;s pretty pointless to refuse to tell you how to make a nuclear weapon - especially when, again, you can find the basics on Wikipedia. But the great thing about libre software is you can modify it, which is exactly what Dolphin 2.2.1 Mixtral Instruct is: a version of Mixtral with the safeguards taken off. Again, asking it the same question, and a more specific follow-up question:</p>
+
+
+ <img src="https://i.postimg.cc/x8f1ZnGr/dolphin-nuclear.png" alt="Dolphin is happy to oblige on the same prompt.">
+
+
+<hr>
+<p>In all reality, whether safeguards have been removed or not it will likely not affect you one way or the other in a majority of your queries. Still, it may be useful occasionally, and more importantly, there&rsquo;s just the idea that I want my computer to answer to me and not somebody else.</p>
+<h4 id="future-of-local-llm-usage">Future of Local LLM Usage</h4>
+<p>So, where do I see LLMs, especially local ones, in the future? Well, the biggest trend I see happening is a lot of AI processing AI data, such as someone writing a long email from a bullet point outline using an LLM and then another person having their LLM summarize that email in bullet points.</p>
+<p>Outside of that, I do expect AI to take the place of personal assistant type apps and tools, both locally and remotely. I can assume that in the future, LLMs will only get more space/resource efficient, become more reliable with the information they spit out, and be more easily set up by less technical users. I can see the creation of software interfaces/APIs that allow other apps to communicate with it to send in data to be processed and then receive output from it. If it&rsquo;s for a remote service like ChatGPT, the app would just send the query out to ChatGPT&rsquo;s servers to be processed and sent back. If it&rsquo;s a local LLM installed by the user, the app could throw the 1-6GB LLM model into RAM and run it locally, then send back the data that was processed. Temporarily loading a couple of Gigs of data into RAM and then processing it using integrated or dedicated graphics is already possible on most mid-upper level phones and most laptops/desktops, and with Google Gemma already having versions under 1GB, it&rsquo;s already possible on most devices.</p>
+<p>As you&rsquo;ve probably gathered from the post, all this is already possible if you&rsquo;re slightly techy, for example by just copy-pasting the text of an article and asking it to summarize, or telling it to translate the text in a picture you took by running the picture through Tesseract and putting the Tesseract output into the chatbot. Throw a little bit of accessibility paint on it, and next thing you know you can send an article on your phone&rsquo;s browser to your default LLM app to be summarized, or hold your home button to ask a question, and have it processed either locally or by an LLM host without any technical knowledge required.</p>
+<h4 id="wrap-up">Wrap Up</h4>
+<p>That about wraps up part one of my post. Even though it could probably have been a standalone post, I figured I&rsquo;d combine that and my opinions on AI ethics into one big post. If you only came for this, and don&rsquo;t want to hear the millionth person give an unprompted opinion on new technology, feel free to close the page now.</p>
+<p>Anyway, yeah, local LLMs seem pretty handy. Nothing groundbreaking compared to your run-of-the-mill assistant apps, but still an upgrade nonetheless, and something I have been using on and off as a utility even after the novelty of running one has worn off. My guess is that given a little time to polish up the models and set up some sort of default API or other way for apps to communicate with an LLM on your device (or in the cloud), they&rsquo;ll become pretty widespread and able to process input from sources other than a chatbot app/web page.</p>
+<hr>
+<hr>
+<h1 id="p2-ethics">P2: Ethics</h1>
+<p>Okay, part two, my thoughts on AI in regards to ethics, laws, and what kind of detrimental effects they might have. This is definitely a very opiniony portion of the text, and I welcome discussion or disagreement as it&rsquo;s perfectly fine to come to other conclusions here from the same information (I&rsquo;ll share it on my socials if you want to respond, or you can respond via email if you&rsquo;d like). For this I figure I&rsquo;ll just walk you through my thought process on the different things, keeping in mind I do have a decent understanding of technology, but am not a lawyer or AI expert.</p>
+<h4 id="training">Training</h4>
+<p>The first and likely most significant controversy is training AI models using publically accessible internet data. Not all AI models are trained in this way, but a lot are. While I might not be 100% confident about my stance on the issue, I&rsquo;ve come to the conclusion it&rsquo;s not unethical to train AI models using this approach. From a technical standpoint: when an AI-training system requests data from another person&rsquo;s server it&rsquo;s done willingly by the server that&rsquo;s hosting the content and configured to do so. As long as the AI does not distribute these copies to other individuals (which would be copyright infringement), the creator remains unaffected and the AI effectively performs similar tasks to those carried out by everyone else online (reading and learning without duplicating content). Even non-AI crawlers such as Google or Archive.org engage in this behavior, except replicating and distributing content instead of simply training AI models with it.</p>
+<p>In a less technical illustration, imagine a person handing out pamphlets about a cause on the street corner. They give them to anyone who asks (publicly available website). A professional pamphlet designer passes by wearing a shirt stating they&rsquo;re a designer (user agent string) and asks for a pamphlet (HTTP GET request), which is provided. Sometime later the person handing out pamphlets realizes a professional pamphlet designer might use their pamphlet for inspiration, and demands that the pamphlet designer doesn&rsquo;t read the pamphlet they were given and brought home, or demand they come back and give compensation for the pamphlet they were handed for free. Maybe the person handing out the pamphlets didn&rsquo;t read the pamphlet designer&rsquo;s shirt (didn&rsquo;t configure robots.txt or set up a terms of service), or maybe they just didn&rsquo;t like the pamphlet designer. Regardless, they already handed over a pamphlet so as long as the pamphlet designer doesn&rsquo;t start copying the pamphlet they&rsquo;re able to read the copy they were willingly given and even use basic elements not protected by copyright in their own pamphlets.</p>
+<p><em>Note: If you find yourself thinking, &ldquo;I use x platform and I can&rsquo;t control where my content is distributed after uploading it,&rdquo; in that case, it&rsquo;s up to the platform who accesses content or if access is sold since it&rsquo;s generally covered in the ToS. If you dislike how a particular platform is handling distribution you may need to change platforms or build your own service.</em></p>
+<p>There are three responses I would expect to see from the above, and while again there are really no right or wrong answers, I&rsquo;d still like to explain how they fit into my thought process.</p>
+<ul>
+<li>
+<p>The first is the issue of compensating the original author, but if somebody distributes their work for free then they&rsquo;ve been compensated the exact amount they asked for. If this blog post inspires you to write a book that you sell I can&rsquo;t just come in and ask for payment after giving you a free copy.</p>
+</li>
+<li>
+<p>The next is the idea that, while AI won&rsquo;t (or at least shouldn&rsquo;t) re-produce anybody&rsquo;s work, it can only produce work after learning from other peoples&rsquo; work - but of course good luck finding work produced by a human that isn&rsquo;t inspired by any other person&rsquo;s work.</p>
+</li>
+<li>
+<p>And finally, you might want to stop an AI from using your publicly accessible content. The simplest options are to set your robots.txt to disallow AI training crawlers (or any other crawlers that you don&rsquo;t want),  place your content behind a paywall or other barrier that requires agreement to a ToS to access, or move it to a platform that prevents AIs from training content on published there.</p>
+</li>
+</ul>
+<p>Of course, all that aside, there are plenty of AIs that have been trained exclusively on licensed data. Stock photo companies have taken to training their own AIs on their own data, and there&rsquo;s a whole ecosystem built around funding platforms by collecting user data to be sold. Paid data sets are also probably much more controllable in terms of what goes in, so there&rsquo;s a good chance after all that (both all that writing I did and all that controversy that&rsquo;s gone on) the future of training AIs is going to be all licensed information anyway.</p>
+<h4 id="ai-doing-people-stuff">AI doing people stuff</h4>
+<p>Probably a confusing heading, but it&rsquo;s the best I could come up with. I&rsquo;ve heard a lot of people say something along the lines of &ldquo;Well yeah, it&rsquo;s fine if a person did that, but AI is different.&rdquo; Usually it&rsquo;s used along the lines of something like quoting an article or learning data from a document or photo, then spitting out that data in a non-copyright infringing way. The justification is usually something along the lines of, &ldquo;Well an AI can do that at scale,&rdquo; but the idea never really resonated with me. First off, both with the ethics now and law stuff I&rsquo;ll touch on later, we only have the past to judge the future. If sharing a fact you learned elsewhere has always been fine up until this point, I just can&rsquo;t see how it suddenly isn&rsquo;t fine even under new technology. And as far as doing things at scale suddenly changing it, if an AI learns a fact from an article and shares the fact with a thousand people, how different is that from the idea that somebody popular reads an article and shares a fact from it, and that fact is then distributed to a thousand people on Twitter?</p>
+<h4 id="ai-itself">AI Itself</h4>
+<p>There are no right or wrong answers to the above. However, I think that some (a minority but not an insubstantial amount) people against AI in its current form are against the concept of AI itself. Two good examples come to mind, the first of which is the backlash against Austin McOnnal for using AI. After he wrote a book (not with AI), he decided to do a promo where he animated the first chapter with AI, specifically with Adobe&rsquo;s AI trained on 100% licensed images. The heart of the work was made by a person and the AI was trained on licensed data, and despite that, he got a considerable amount of backlash. On a different note, I more recently listened to a several-hour-long very well-put-together piece on AI that had a somewhat negative opinion of it (sorry, I didn&rsquo;t save the link). The thing is, when it got to the point where the author went to say that AI&rsquo;s learning is unacceptable, his covering of the expected rebuttal was along the lines of <em>&ldquo;And I know there are going to be people screaming in the comments section &ldquo;&ldquo;but facts and ideas can&rsquo;t be copyrighted,&rdquo;&rdquo; except AI isn&rsquo;t a person so it&rsquo;s different.&rdquo;</em> I was kind of looking forward to his argument against it, but that statement was nearly the entirety of what he covered on the topic and it ultimately only boiled down to &rsquo;this thing that&rsquo;s okay in other contexts is not in this one&rsquo; without any elaboration as to why.</p>
+<p>People may dislike the idea of generative AI itself for a variety of reasons, including but not limited to things such as a misunderstanding of how technology works, the idea they dislike needing to compete with AI output in their particular field, or just a general dislike of the idea computers can generate content and the good/bad effects that come along with it. New technologies are often disruptive and can create a lot of controversy when they first come out, and regardless of how many legitimate issues are resolved or taken into account, there will always be an initial backlash.</p>
+<p>In 1906 John Philip Sousa stood before Congress arguing against recorded music. As an owner of a sheet music factory, he considered recorded music to be &ldquo;canned music&rdquo; that lacked soul. Live music performed by real people was an art form to be enjoyed, and recorded music produced by a machine was some form of abomination that was going to put musicians and sheet music makers out of business. Nowadays, some people still obsess over audio compression and headphone or speaker types to best replicate live music, and plenty of people pay thousands to experience live music, but the idea of recorded music being bad sounds absurd now that we&rsquo;ve used the technology for generations. Recorded music brings a concert to any of us in any location, and the related technology is even used to enhance live music (e.g., speakers at a concert).</p>
+<p>So, to quit with the simile, my thoughts on the use of various AI tools could be summarized as: they&rsquo;re new and disruptive, but once they find their place in the world they&rsquo;ll be normalized, and we&rsquo;re all going to move on. Being new and disruptive means they will cause trouble in the meantime, for people&rsquo;s jobs they disrupt or with malicious usage, and that will need to be dealt with. But in the end, it&rsquo;s just going to be another tool. There are a lot of legitimate conclusions to come to regarding many aspects (e.g., training policies), but AI as a whole is going to very likely be here to stay, and soon enough most people probably won&rsquo;t give it a second thought.</p>
+<h3 id="future-effects">Future Effects</h3>
+<p>Speaking of their effects, honestly, I don&rsquo;t expect it to be as big as some people might think it&rsquo;ll be. Like I said above, I expect to see many emails written by an LLM using a short outline, and then summarized by the reader&rsquo;s LLMs. I&rsquo;m expecting AI to do a lot of supporting work, proofreading documents, expanding upon or revising code, summarizing content in various forms, and similar stuff. Even for the seemingly more massive undertakings, it still will likely play second fiddle. For example, there was a comic book written using AI images recently. The story was written by a person, and the images were generated by AI and then edited and assembled by the person. This is how I expect things to be in the future as well: the important stuff - in this case the story itself, the character names and ideas, and the imagery themes - was written by a person, but an AI was able to offload a lot of work in a more supportive role like raw image generation.</p>
+<p>This isn&rsquo;t to say there won&rsquo;t be any detrimental effects. Anything that makes people more efficient is going to lead to fewer jobs in that particular field. While more efficiency is good for society in the long run, it&rsquo;s obviously detrimental for people who lose their jobs. From chatbots reducing the number of people who need phone support to a journalist writing faster because an AI was able to summarize and compare sources, there&rsquo;ll probably be many previous job openings slashed - especially if we&rsquo;re headed to an economic downturn and companies see an option to save a buck.</p>
+<p>There&rsquo;ll also probably be less money in more generic content, such as generating an AI image for an article instead of paying for stock image royalties. Beyond that, there&rsquo;s also the risk of incorrect information thanks to an AI messing something up while it assists people, like that lawyer who submitted non-existent citations after asking ChatGPT for citations and not checking them. And finally, there&rsquo;s always generic sludge content to be pushed out and clog up our news feeds and social media presence.</p>
+<p>However, as much as there&rsquo;s plenty of good and bad to come, I don&rsquo;t even know if it&rsquo;ll be that big of a leap in technology. Consider writing code in three periods of time: pre-internet on older machines, a couple of years ago, and now with AI:</p>
+<ul>
+<li>Once upon a time, people were writing code in assembly language with nothing but books and memory to reference - not an easy feat to do.</li>
+<li>A couple of years ago you could pick from a million online tutorials to get you going, reference a million Stack Exchange answers (or ask your own question), only to then use pre-written libraries that effectively make writing simple code like using legos with the legwork done by those libraries.</li>
+<li>Now, compare that huge leap from the early days to a few years ago, and compare the leap from a few years ago to today. Your computer can now read through those answers and give you a summary or produce basic code from that information.</li>
+</ul>
+<p>Now, covering a more negative leap, consider the generic sludge content that everybody&rsquo;s worried about. In the olden days of the twenty-teens, all you needed to do was scrape a bunch of websites, run them through an article spinner (which replaces words with synonyms to trick search engines into thinking it&rsquo;s unique), and voila, you now had a bot that can pump out limitless sludge content to pull in search engine viewers. Again, AI is a % increase as prompting is slightly easier than scraping content and spinning it, but in all reality, it&rsquo;s nothing more than an expansion of an already existing thing. Even being Gen Z I can recognize that, of the jumps technology has made, AI hasn&rsquo;t been so much of a leap as it has been a step made after many other steps and leaps. You can take a look at any other field (say, publishing comic books) and probably see a similar trajectory that&rsquo;s been occurring.</p>
+<p><em>Besides, modern computers started with a command line to interact with, went to GUIs, and now we&rsquo;re going back to command lines of sorts again - just instead of simple commands we can type in plain English and the computer interprets that. It&rsquo;s inevitable: command line supremacy gang rise up!</em></p>
+<h4 id="laws-and-stuff">Laws and Stuff</h4>
+<p>Keep in mind I&rsquo;m not a lawyer, and also keep in mind that even lawyers don&rsquo;t really know how everything will shake out. If Congress was less of a circus we might actually get modern laws, but for now, any laws around AI are pretty much just pending court rulings and executive agency decisions. Still, some things appear to be semi-straightforward, so I figured I would go over those. I also thought I would go over a few other things that are very much still up in the air as if I were a judge, taking it with a grain of salt.</p>
+<p>First off, as I mentioned beforehand and in the paragraph above, <strong>there are not a lot of AI-specific laws</strong> on the books. This means all the laws governing normal copyright and computer behavior also apply to  AI. In a sense it&rsquo;s normal, most laws here in the West are derived from a long history of much older laws and concepts that have been built upon to fit modern circumstances.</p>
+<p>As for copyright, it&rsquo;s important to note that <strong>facts or ideas cannot be copyrighted</strong>, only the expression of them can be. For example, if a person or LLM reads my blog post about IPFS and then states &ldquo;<em>IPFS is a decentralized protocol that uses content-based identification as opposed to location-based identification</em>&rdquo;, that&rsquo;s not a violation of copyright. The only way you can commit copyright infringement is to actually reproduce my words themselves. The same goes for image generation, nobody can stop you from being inspired by a Van Gough painting and making one yourself using a similar style or color palette, only actually reproducing the work itself is copyright infringement.</p>
+<p>As for training on public data, according to US legal cases such as <em>hiQ Labs v. LinkedIn</em>, <strong>scraping content is generally legal</strong> if you haven&rsquo;t agreed to not do so. If you have to sign up or otherwise agree to a terms of service then you are generally bound by it, but as long as the content is publicly accessible scraping is generally legal. Combine that with the fact that facts and ideas cannot be copyrighted, and most likely training content on public data is not copyright infringement under the current laws.</p>
+<p>As for works generated by AI, in the US <strong>for something to have copyright protections it needs to have a &ldquo;spark of human creativity.&rdquo;</strong> The Copyright Office has declined submissions of purely AI-designed content, so if you tell an image generator to make an image of a tree or an LLM to generate a blog post about trees then it&rsquo;s not likely to be protected by copyright. When paired with human-made content, the human-made portions of the content are still protected by copyright, for example, with the comic situation I mentioned above: the human-written story and arrangement of the AI-generated images is protected, but the raw images themselves are not protected. However, I expect that content co-authored by humans and AI will get some or all protections; for example, if you wrote an outline for a blog post about trees, told an LLM to write a post using the outline, and then made edits to the output I expect that would be given limited or normal protections. Nevertheless, the exact lines on what is and isn&rsquo;t protected are yet to be drawn.</p>
+<p>Last, <strong>what happens if an AI spits out work that infringes on copyright?</strong> There are no rulings or laws to cover this, so I&rsquo;m just going to go over how I would rule if I were a judge. Say a person asks for a cartoon mouse, and an image generator generates something close enough to Micky Mouse that it&rsquo;s infringing on a copyright or trademark of some sort. First, I would say that since the program was not designed to infringe on copyright - and it doing so is the exception rather than the rule - the creators of the software shouldn&rsquo;t be held liable. Further, I would say accidental violation of copyright couldn&rsquo;t be held against the user of the program as they&rsquo;d lack mens rea (intent to break laws), but if they intended to generate something that infringed copyright (or unintentionally generated an offending image but used it anyway), then the user would be responsible for infringing copyright - just like they would be if they used Photoshop or a pencil to do so. But again, not a judge, lawyer, AI programmer, or even someone who regularly generates content with AI.</p>
+<p><em>Quick note: In the case of ChatGPT, it likely has a lot of bells and whistles on top of its basic LLM capabilities, which are likely responsible for its alleged regurgitation of text. In the simple models that you would run locally, they&rsquo;re not actually storing data they&rsquo;ve been trained on so they&rsquo;re probably not going to actually regurgitate text like ChatGPT.</em></p>
+<h4 id="wrap-up-1">Wrap Up</h4>
+<p>I&rsquo;ve already gone over my thoughts plenty enough, and I&rsquo;ve also made sure to note that there are plenty of different valid conclusions to draw (heck, my current opinions aren&rsquo;t even the original ones I formed when I was first introduced to this). Hopefully you got some value in reading through my thought process. Otherwise, instead of rehashing or summarizing, I figure I&rsquo;ll leave you with one final thought:</p>
+<p>I once heard someone talking about AI who said something along the lines of &ldquo;The problem with technologists is they see technology as the cure to all the world&rsquo;s problems.&rdquo; However, I like my computer and would probably be dead if it weren&rsquo;t for antibiotics. So yes, as long as we don&rsquo;t nuke ourselves, I think another tool could be useful in chipping away at the world&rsquo;s problems if done right.</p>
+
+    </div>
+<div class="post_comments">
+  
+  
+  
+</div>
+
+
+
+
+  </article>
+<aside class="sidebar">
+  <section class="sidebar_inner">
+    <br>
+    
+
+
+    
+    
+    <h2 class="mt-4">Recent Posts</h2>
+    <ul class="flex-column">
+      <li>
+        <a href="https://nate.mecca1.net/posts/2024-03-26_ai/" class="nav-link" title="Local LLMs &amp; AI Ethics (mine makes nukes)">Local LLMs &amp; AI Ethics (mine makes nukes)</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2024-02-28_fermentation/" class="nav-link" title="Making Pickles and Sauerkraut (the lazy way)">Making Pickles and Sauerkraut (the lazy way)</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2024-02-24_microblogging-anthology/" class="nav-link" title="I made a client, Nostr surpassed Mastodon, and BlueSky is open?">I made a client, Nostr surpassed Mastodon, and BlueSky is open?</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2024-01-30_microblogging-protocols/" class="nav-link" title="ActivityPub/Nostr/AT-BlueSky Compared">ActivityPub/Nostr/AT-BlueSky Compared</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2024-01-18_2023-review/" class="nav-link" title="Blogging in 2023">Blogging in 2023</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2023-12-27_mozillasbrink/" class="nav-link" title="Firefox: a brink of their own making?">Firefox: a brink of their own making?</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2023-12-20_followanything/" class="nav-link" title="Platform Agnostic Following">Platform Agnostic Following</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2023-12-11_nostr/" class="nav-link" title="Nostr">Nostr</a>
+      </li>
+    </ul>
+    <div>
+      <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
+      <nav class="tags_nav">
+        <a href='https://nate.mecca1.net/categories/stuff-i-like/' class="post_tag button button_translucent" title="stuff-i-like">
+          STUFF-I-LIKE
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/categories/hobbies/' class="post_tag button button_translucent" title="hobbies">
+          HOBBIES
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/categories/complaints/' class="post_tag button button_translucent" title="complaints">
+          COMPLAINTS
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/categories/personal-updates/' class="post_tag button button_translucent" title="personal-updates">
+          PERSONAL-UPDATES
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/categories/informational/' class="post_tag button button_translucent" title="informational">
+          INFORMATIONAL
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/categories/misc-essay/' class="post_tag button button_translucent" title="misc-essay">
+          MISC-ESSAY
+          <span class="button_tally">1</span>
+        </a>
+        
+        
+      </nav>
+    </div>
+    <div>
+      <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
+      <nav class="tags_nav">
+        <a href='https://nate.mecca1.net/tags/tech/' class="post_tag button button_translucent" title="tech">
+          TECH
+          <span class="button_tally">8</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/protocols/' class="post_tag button button_translucent" title="protocols">
+          PROTOCOLS
+          <span class="button_tally">6</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/misc/' class="post_tag button button_translucent" title="misc">
+          MISC
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/privacy/' class="post_tag button button_translucent" title="privacy">
+          PRIVACY
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/windows/' class="post_tag button button_translucent" title="windows">
+          WINDOWS
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/android/' class="post_tag button button_translucent" title="android">
+          ANDROID
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/decentralized/' class="post_tag button button_translucent" title="decentralized">
+          DECENTRALIZED
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/mobile/' class="post_tag button button_translucent" title="mobile">
+          MOBILE
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/nostr/' class="post_tag button button_translucent" title="nostr">
+          NOSTR
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/debian/' class="post_tag button button_translucent" title="debian">
+          DEBIAN
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/linux/' class="post_tag button button_translucent" title="linux">
+          LINUX
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/ai/' class="post_tag button button_translucent" title="ai">
+          AI
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/cloud/' class="post_tag button button_translucent" title="cloud">
+          CLOUD
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/encryption/' class="post_tag button button_translucent" title="encryption">
+          ENCRYPTION
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/ipfs/' class="post_tag button button_translucent" title="ipfs">
+          IPFS
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/opinion/' class="post_tag button button_translucent" title="opinion">
+          OPINION
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/projects/' class="post_tag button button_translucent" title="projects">
+          PROJECTS
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/utility/' class="post_tag button button_translucent" title="utility">
+          UTILITY
+          <span class="button_tally">1</span>
+        </a>
+        
+        
+      </nav>
+    </div>
+  </section>
+</aside>
+
+  
+</div>
+    </main><svg width="0" height="0" class="hidden">
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.001 18.001" id="twitter">
+    <path d="M15.891 4.013c.808-.496 1.343-1.173 1.605-2.034a8.68 8.68 0 0 1-2.351.861c-.703-.756-1.593-1.14-2.66-1.14-1.043 0-1.924.366-2.643 1.078a3.56 3.56 0 0 0-1.076 2.605c0 .309.039.585.117.819-3.076-.105-5.622-1.381-7.628-3.837-.34.601-.51 1.213-.51 1.846 0 1.301.549 2.332 1.645 3.089-.625-.053-1.176-.211-1.645-.47 0 .929.273 1.705.82 2.388a3.623 3.623 0 0 0 2.115 1.291c-.312.08-.641.118-.979.118-.312 0-.533-.026-.664-.083.23.757.664 1.371 1.291 1.841a3.652 3.652 0 0 0 2.152.743C4.148 14.173 2.625 14.69.902 14.69c-.422 0-.721-.006-.902-.038 1.697 1.102 3.586 1.649 5.676 1.649 2.139 0 4.029-.542 5.674-1.626 1.645-1.078 2.859-2.408 3.639-3.974a10.77 10.77 0 0 0 1.172-4.892v-.468a7.788 7.788 0 0 0 1.84-1.921 8.142 8.142 0 0 1-2.11.593z"
+      ></path>
+  </symbol>
+  <symbol aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="mail">
+    <path  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="calendar">
+    <path d="M452 40h-24V0h-40v40H124V0H84v40H60C26.916 40 0 66.916 0 100v352c0 33.084 26.916 60 60 60h392c33.084 0 60-26.916 60-60V100c0-33.084-26.916-60-60-60zm20 412c0 11.028-8.972 20-20 20H60c-11.028 0-20-8.972-20-20V188h432v264zm0-304H40v-48c0-11.028 8.972-20 20-20h24v40h40V80h264v40h40V80h24c11.028 0 20 8.972 20 20v48z"></path>
+    <path d="M76 230h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 310h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 390h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80-80h40v40h-40z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="github">
+    <path d="M255.968 5.329C114.624 5.329 0 120.401 0 262.353c0 113.536 73.344 209.856 175.104 243.872 12.8 2.368 17.472-5.568 17.472-12.384 0-6.112-.224-22.272-.352-43.712-71.2 15.52-86.24-34.464-86.24-34.464-11.616-29.696-28.416-37.6-28.416-37.6-23.264-15.936 1.728-15.616 1.728-15.616 25.696 1.824 39.2 26.496 39.2 26.496 22.848 39.264 59.936 27.936 74.528 21.344 2.304-16.608 8.928-27.936 16.256-34.368-56.832-6.496-116.608-28.544-116.608-127.008 0-28.064 9.984-51.008 26.368-68.992-2.656-6.496-11.424-32.64 2.496-68 0 0 21.504-6.912 70.4 26.336 20.416-5.696 42.304-8.544 64.096-8.64 21.728.128 43.648 2.944 64.096 8.672 48.864-33.248 70.336-26.336 70.336-26.336 13.952 35.392 5.184 61.504 2.56 68 16.416 17.984 26.304 40.928 26.304 68.992 0 98.72-59.84 120.448-116.864 126.816 9.184 7.936 17.376 23.616 17.376 47.584 0 34.368-.32 62.08-.32 70.496 0 6.88 4.608 14.88 17.6 12.352C438.72 472.145 512 375.857 512 262.353 512 120.401 397.376 5.329 255.968 5.329z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 212" id="gitlab">
+    <path d="M12.3 74.7h54L43.3 3c-1-3.6-6.4-3.6-7.6 0L12.3 74.8z" />
+    <path d="M12.3 74.7L.5 111c-1 3.2 0 6.8 3 8.8l101.6 74-92.5-119z"/>
+    <path d="M105 193.7l-38.6-119h-54l92.7 119z"/>
+    <path d="M105 193.7l38.7-119H66.4l38.7 119z"/>
+    <path d="M105 193.7l38.7-119H198l-93 119z"/>
+    <path d="M198 74.7l11.6 36.2c1 3 0 6.6-3 8.6l-101.5 74 93-119z"/>
+    <path d="M198 74.7h-54.3L167 3c1.2-3.6 6.4-3.6 7.6 0L198 74.8z"/>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="rss">
+    <circle cx="3.429" cy="20.571" r="3.429"></circle>
+    <path d="M11.429 24h4.57C15.999 15.179 8.821 8.001 0 8v4.572c6.302.001 11.429 5.126 11.429 11.428z"></path>
+    <path d="M24 24C24 10.766 13.234 0 0 0v4.571c10.714 0 19.43 8.714 19.43 19.429z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="linkedin">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h362c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zM181 406h-60V196h60zm0-240h-60v-60h60zm210 240h-60V286c0-16.54-13.46-30-30-30s-30 13.46-30 30v120h-60V196h60v11.309C286.719 202.422 296.93 196 316 196c40.691.043 75 36.547 75 79.688zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612" id="to-top">
+    <path d="M604.501 440.509L325.398 134.956c-5.331-5.357-12.423-7.627-19.386-7.27-6.989-.357-14.056 1.913-19.387 7.27L7.499 440.509c-9.999 10.024-9.999 26.298 0 36.323s26.223 10.024 36.222 0l262.293-287.164L568.28 476.832c9.999 10.024 26.222 10.024 36.221 0 9.999-10.023 9.999-26.298 0-36.323z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="carly">
+    <path d="M504.971 239.029L448 182.059V84c0-46.317-37.682-84-84-84h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c19.851 0 36 16.149 36 36v108c0 6.365 2.529 12.47 7.029 16.971L454.059 256l-47.029 47.029A24.002 24.002 0 0 0 400 320v108c0 19.851-16.149 36-36 36h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c46.318 0 84-37.683 84-84v-98.059l56.971-56.971c9.372-9.372 9.372-24.568 0-33.941zM112 192V84c0-19.851 16.149-36 36-36h44c13.255 0 24-10.745 24-24S205.255 0 192 0h-44c-46.318 0-84 37.683-84 84v98.059l-56.971 56.97c-9.373 9.373-9.373 24.568 0 33.941L64 329.941V428c0 46.317 37.682 84 84 84h44c13.255 0 24-10.745 24-24s-10.745-24-24-24h-44c-19.851 0-36-16.149-36-36V320c0-6.365-2.529-12.47-7.029-16.971L57.941 256l47.029-47.029A24.002 24.002 0 0 0 112 192z"></path>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="copy">
+    <path d="M23 2.75A2.75 2.75 0 0 0 20.25 0H8.75A2.75 2.75 0 0 0 6 2.75v13.5A2.75 2.75 0 0 0 8.75 19h11.5A2.75 2.75 0 0 0 23 16.25zM18.25 14.5h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5z"></path>
+    <path d="M8.75 20.5a4.255 4.255 0 0 1-4.25-4.25V2.75c0-.086.02-.166.025-.25H3.75A2.752 2.752 0 0 0 1 5.25v16A2.752 2.752 0 0 0 3.75 24h12a2.752 2.752 0 0 0 2.75-2.75v-.75z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.001 512.001" id="closeme">
+    <path d="M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0 0 14.143 5.857 19.94 19.94 0 0 0 14.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="open-menu">
+    <path d="M492 236H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0-160H20C8.954 76 0 84.954 0 96s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0 320H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="instagram">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id=youtube>
+    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="stackoverflow">
+    <path d="M21 27v-8h3v11H0V19h3v8h18z"></path><path d="M17.1.2L15 1.8l7.9 10.6 2.1-1.6L17.1.2zm3.7 14.7L10.6 6.4l1.7-2 10.2 8.5-1.7 2zM7.2 12.3l12 5.6 1.1-2.4-12-5.6-1.1 2.4zm-1.8 6.8l13.56 1.96.17-2.38-13.26-2.55-.47 2.97zM19 25H5v-3h14v3z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="xing">
+    <path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 55" id="discord">
+    <path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" id="mastodon">
+    <path
+    fill="#ffffff"
+    d="m 15.054695,9.8859583 c -0.22611,1.1632697 -2.02517,2.4363497 -4.09138,2.6830797 -1.0774504,0.12856 -2.1382704,0.24673 -3.2694704,0.19484 -1.84996,-0.0848 -3.30971,-0.44157 -3.30971,-0.44157 0,0.1801 0.0111,0.35157 0.0333,0.51194 0.24051,1.82571 1.81034,1.93508 3.29737,1.98607 1.50088,0.0514 2.8373104,-0.37004 2.8373104,-0.37004 l 0.0617,1.35686 c 0,0 -1.0498104,0.56374 -2.9199404,0.66742 -1.03124,0.0567 -2.3117,-0.0259 -3.80308,-0.42069 -3.23454998,-0.85613 -3.79081998,-4.304 -3.87592998,-7.8024197 -0.026,-1.03871 -0.01,-2.01815 -0.01,-2.83732 0,-3.57732 2.34385998,-4.62587996 2.34385998,-4.62587996 1.18184,-0.54277 3.20976,-0.77101 5.318,-0.7882499985409 h 0.0518 C 9.8267646,0.01719834 11.856025,0.24547834 13.037775,0.78824834 c 0,0 2.34377,1.04855996 2.34377,4.62587996 0,0 0.0294,2.63937 -0.32687,4.47183"/>
+ <path
+    fill="#000000"
+    d="m 12.616925,5.6916583 v 4.3315297 h -1.71607 V 5.8189683 c 0,-0.88624 -0.37289,-1.33607 -1.1187604,-1.33607 -0.82467,0 -1.23799,0.53361 -1.23799,1.58875 v 2.30122 h -1.70594 v -2.30122 c 0,-1.05514 -0.4134,-1.58875 -1.23808,-1.58875 -0.74587,0 -1.11876,0.44983 -1.11876,1.33607 v 4.2042197 h -1.71607 V 5.6916583 c 0,-0.88527 0.22541,-1.58876 0.67817,-2.10922 0.46689,-0.52047 1.07833,-0.78727 1.83735,-0.78727 0.87816,0 1.54317,0.33752 1.98288,1.01267 l 0.42744,0.71655 0.42753,-0.71655 c 0.43961,-0.67515 1.10463,-1.01267 1.9828704,-1.01267 0.75893,0 1.37037,0.2668 1.83735,0.78727 0.45268,0.52046 0.67808,1.22395 0.67808,2.10922"/>
+  </symbol>
+</svg>
+
+<script type="text/javascript" src="https://nate.mecca1.net/en/js/bundle.ea04089d5378df052824a1c181cf96e36e6f1a1d04670069f0b8ac2efdd0b7d0703c1c94cfcb2ed1888892d38043289f06e9b22caa9a28b1601301db34fef4c2.js" integrity="sha512-6gQInVN43wUoJKHBgc&#43;W425vGh0EZwBp8LisLv3Qt9BwPByUz8su0YiIktOAQyifBumyLKqaKLFgEwHbNP70wg==" crossorigin="anonymous"></script>
+  </body>
+</html>
