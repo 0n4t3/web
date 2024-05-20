@@ -197,7 +197,7 @@
 <p>Lots of admins chose to defederate with Gab, but then a lot of instances also chose to defederate with any instance that didn&rsquo;t also defederate with Gab. Given a few years followed by the influx of users from the hellscape that was, is, and always will be Twitter and defederation has gotten a lot more common - and in my opinion an overcorrection. Defederation can now happen many degrees separated from instances (A defederates with B because B is federated with C and C is federated with &ldquo;the bad people&rdquo;), and as the landscape of what people would think of as the mainstream &ldquo;fediverse&rdquo; has shrunken, the people demanding stronger defederation have gotten louder voice by comparison accelerating how aggressive it can be.</p>
 <p>A good way to elaborate on this is to tell the saga of the defederation of infosec.exchange, a benign instance dedicated to information security. One day CISA (the US Federal agency focused on things like best cybersecurity practices) was being impersonated a lot on Activity Pub and chose to create an account. Not to use, but to sit there as a placeholder they can point to in order to decrease impersonation. Naturally, they chose the benign instance dedicated to information security.</p>
 <p>All hell broke loose.</p>
-<p>Alright, this may be a bit of an exaggeration, but there was a mass defederation across the network from infosec.exchange. People following users on infosec.exchange couldn&rsquo;t see their posts, and people on infosec.exchange couldn&rsquo;t interact with many of the people they followed. Furthermore, because instances operate accounts, people migrating away from infosec.exchange couldn&rsquo;t take a number of their followers with them since those followers were blocked from interacting with infosec.exchange. Anybody who chose to migrate away also lost all their post history and community.</p>
+<p>Alright, that may have been a bit of an exaggeration, but there was a mass defederation across the network from infosec.exchange. People following users on infosec.exchange couldn&rsquo;t see their posts, and people on infosec.exchange couldn&rsquo;t interact with many of the people they followed. Furthermore, because instances operate accounts, people migrating away from infosec.exchange couldn&rsquo;t take a number of their followers with them since those followers were blocked from interacting with infosec.exchange. Anybody who chose to migrate away also lost all their post history and community.</p>
 <p>And this was because CISA, what has to be like the least controversial portion of the government, registered a placeholder account on the server. It&rsquo;s my opinion that as what gets defederated expands, it could become a serious issue for the growth of Activity Pub fragmenting and prevent real growth. There is probably a large number of servers that would be considered &ldquo;mainstream Activity Pub&rdquo; only federated with ~5%-20% of the Activity Pub network. With the calls to defederate with Threads, that could probably jump to many of the larger servers only being able to interact with ~0.1%-1% of the network.</p>
 <p>With all that said, it&rsquo;s my opinion that fragmentation and an unstable list of servers that can or cannot interact is a potential issue for the adoption of Activity Pub.</p>
 
@@ -330,6 +330,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://nate.mecca1.net/posts/2024-05-20_archiving/" class="nav-link" title="Confessions of a Data Hoarder">Confessions of a Data Hoarder</a>
+      </li>
+      <li>
         <a href="https://nate.mecca1.net/posts/2024-03-26_ai/" class="nav-link" title="Local LLMs and AI Ethics (mine makes nukes)">Local LLMs and AI Ethics (mine makes nukes)</a>
       </li>
       <li>
@@ -350,9 +353,6 @@
       <li>
         <a href="https://nate.mecca1.net/posts/2023-12-20_followanything/" class="nav-link" title="Platform Agnostic Following">Platform Agnostic Following</a>
       </li>
-      <li>
-        <a href="https://nate.mecca1.net/posts/2023-12-11_nostr/" class="nav-link" title="Nostr">Nostr</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
@@ -372,14 +372,14 @@
           <span class="button_tally">3</span>
         </a>
         
-        <a href='https://nate.mecca1.net/categories/personal-updates/' class="post_tag button button_translucent" title="personal-updates">
-          PERSONAL-UPDATES
+        <a href='https://nate.mecca1.net/categories/informational/' class="post_tag button button_translucent" title="informational">
+          INFORMATIONAL
           <span class="button_tally">3</span>
         </a>
         
-        <a href='https://nate.mecca1.net/categories/informational/' class="post_tag button button_translucent" title="informational">
-          INFORMATIONAL
-          <span class="button_tally">2</span>
+        <a href='https://nate.mecca1.net/categories/personal-updates/' class="post_tag button button_translucent" title="personal-updates">
+          PERSONAL-UPDATES
+          <span class="button_tally">3</span>
         </a>
         
         <a href='https://nate.mecca1.net/categories/misc-essay/' class="post_tag button button_translucent" title="misc-essay">
@@ -395,7 +395,7 @@
       <nav class="tags_nav">
         <a href='https://nate.mecca1.net/tags/tech/' class="post_tag button button_translucent" title="tech">
           TECH
-          <span class="button_tally">8</span>
+          <span class="button_tally">9</span>
         </a>
         
         <a href='https://nate.mecca1.net/tags/protocols/' class="post_tag button button_translucent" title="protocols">
@@ -448,8 +448,18 @@
           <span class="button_tally">2</span>
         </a>
         
+        <a href='https://nate.mecca1.net/tags/projects/' class="post_tag button button_translucent" title="projects">
+          PROJECTS
+          <span class="button_tally">2</span>
+        </a>
+        
         <a href='https://nate.mecca1.net/tags/ai/' class="post_tag button button_translucent" title="ai">
           AI
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/archival/' class="post_tag button button_translucent" title="archival">
+          ARCHIVAL
           <span class="button_tally">1</span>
         </a>
         
@@ -470,11 +480,6 @@
         
         <a href='https://nate.mecca1.net/tags/opinion/' class="post_tag button button_translucent" title="opinion">
           OPINION
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://nate.mecca1.net/tags/projects/' class="post_tag button button_translucent" title="projects">
-          PROJECTS
           <span class="button_tally">1</span>
         </a>
         
