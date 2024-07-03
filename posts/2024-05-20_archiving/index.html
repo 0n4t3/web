@@ -212,7 +212,7 @@
 <p><code>yt-dlp -f &quot;bv*[height=360][ext=mp4]+ba*[ext=m4a]&quot; --embed-thumbnail --output &quot;%(upload_date)s-%(channel)s-%(title)s.%(ext)s&quot; [url]</code>
 is my default download command for anything I would want to archive. It grabs the thumbnail and names it with a nice name for archiving. Change the height from &ldquo;360&rdquo; to whatever resolution you&rsquo;re actually looking for.</p>
 <p><code>yt-dlp -f &quot;bestaudio[ext=m4a]&quot; --embed-thumbnail --sponsorblock-remove all --output &quot;%(artist)s - %(title)s.%(ext)s&quot; [url</code>
-is my go to for archiving songs and music playlists on YouTube</p>
+is my go to for archiving songs and audio content on YouTube</p>
 <p>The simplest way to download with YT-DLP is to just go <code>yt-dlp [link] --list-formats</code>, then choose the format you like and run <code>yt-dlp [link] -f [format]</code> which is handy for a one off video or if you&rsquo;re on a random non-YouTube website trying to grab something you don&rsquo;t know the format of. However, you can add many additional arguments to the command like a custom name to save the file with or a set of rules to automatically convert the file after download.</p>
 <p><code>--sponsorblock-remove [what-to-remove]</code> is a great way to cut out sponsorblock marked segments, from non-music portions of music videos to your generic sponsor segments if you don&rsquo;t want to include those as well. <code>--embed-thumbnail</code> includes the thumbnail in the file, which is a great little addition to an archived piece of media. <code>--extract-audio --audio-format m4a</code> isn&rsquo;t usually needed on YouTube, but it&rsquo;s great to pull a podcast or some other audio based content from other platforms that don&rsquo;t have audio only formats to download. Generally all these little pieces of commands can be mixed and matched, and don&rsquo;t need to be placed in the command in any particular order.</p>
 <p>Finally, if you&rsquo;re looking to avoid the command line, there are a handful of pieces of software that can let you download from within a GUI. Seal is a graphical tool for Android based on YT-DLP, and third-party apps like NewPipe/LibreTube/GrayJay (Android) and FreeTube (Win/Linux) can also download individual videos or audio files from within the platform(s) they support. Third party front ends like Invidious and Piped can also download videos if enabled by the person who&rsquo;s hosting the instance, and if all else fails you can always resort to one of the YT-DL/YT-DLP based websites.</p>
@@ -249,6 +249,9 @@ is my go to for archiving songs and music playlists on YouTube</p>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://nate.mecca1.net/posts/2024-07-03_browsers2/" class="nav-link" title="Browsers: Plummeting Off the Brink">Browsers: Plummeting Off the Brink</a>
+      </li>
+      <li>
         <a href="https://nate.mecca1.net/posts/2024-05-20_archiving/" class="nav-link" title="Confessions of a Data Hoarder">Confessions of a Data Hoarder</a>
       </li>
       <li>
@@ -269,9 +272,6 @@ is my go to for archiving songs and music playlists on YouTube</p>
       <li>
         <a href="https://nate.mecca1.net/posts/2023-12-27_mozillasbrink/" class="nav-link" title="Firefox: a brink of their own making?">Firefox: a brink of their own making?</a>
       </li>
-      <li>
-        <a href="https://nate.mecca1.net/posts/2023-12-20_followanything/" class="nav-link" title="Platform Agnostic Following">Platform Agnostic Following</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
@@ -281,14 +281,14 @@ is my go to for archiving songs and music playlists on YouTube</p>
           <span class="button_tally">5</span>
         </a>
         
-        <a href='https://nate.mecca1.net/categories/hobbies/' class="post_tag button button_translucent" title="hobbies">
-          HOBBIES
+        <a href='https://nate.mecca1.net/categories/complaints/' class="post_tag button button_translucent" title="complaints">
+          COMPLAINTS
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://nate.mecca1.net/categories/complaints/' class="post_tag button button_translucent" title="complaints">
-          COMPLAINTS
-          <span class="button_tally">3</span>
+        <a href='https://nate.mecca1.net/categories/hobbies/' class="post_tag button button_translucent" title="hobbies">
+          HOBBIES
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://nate.mecca1.net/categories/informational/' class="post_tag button button_translucent" title="informational">
@@ -314,7 +314,7 @@ is my go to for archiving songs and music playlists on YouTube</p>
       <nav class="tags_nav">
         <a href='https://nate.mecca1.net/tags/tech/' class="post_tag button button_translucent" title="tech">
           TECH
-          <span class="button_tally">9</span>
+          <span class="button_tally">10</span>
         </a>
         
         <a href='https://nate.mecca1.net/tags/protocols/' class="post_tag button button_translucent" title="protocols">
@@ -329,7 +329,7 @@ is my go to for archiving songs and music playlists on YouTube</p>
         
         <a href='https://nate.mecca1.net/tags/privacy/' class="post_tag button button_translucent" title="privacy">
           PRIVACY
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         <a href='https://nate.mecca1.net/tags/windows/' class="post_tag button button_translucent" title="windows">

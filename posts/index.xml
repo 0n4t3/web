@@ -6,7 +6,23 @@
     <description>Recent content in Posts on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Browsers: Plummeting Off the Brink</title>
+      <link>https://nate.mecca1.net/posts/2024-07-03_browsers2/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nate.mecca1.net/posts/2024-07-03_browsers2/</guid>
+      <description>
+        
+          
+            This is sort of a successor to Firefox: A Brink of Their Own Making that I published ~6 months ago, followed by me rambling on about different browsers that I&amp;rsquo;ve used or decided to check out for this post. This follow-up was largely spurred on by two different things: Manifest v2&amp;rsquo;s phasing out in standard Chromium and Firefox getting worse. Further, after writing a whole lot and then reflecting on it, I&amp;rsquo;ve gotten a few more thoughts on the topics on hand - but unfortunately like the two external motivations, my thoughts have also led me to think about the ecosystem more negatively.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Confessions of a Data Hoarder</title>
       <link>https://nate.mecca1.net/posts/2024-05-20_archiving/</link>
