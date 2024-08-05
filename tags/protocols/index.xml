@@ -33,7 +33,8 @@ I made a client So yeah, I made a client that can post to Nostr, Activity Pub, a
       <description>
         
           
-            Distributed social media networks have been on my mind for a while, especially during my deep dive into Nostr over the last few months. Being on my mind I started writing a comparison between the big three, which sort of morphed into this. I should clarify that I&amp;rsquo;m a layman here: I&amp;rsquo;ve never participated in the development of any of them, or the development of anything built on top of them (nor the development of anything complex at all).
+            Update August 5th 2024
+I have some good and bad news regarding this post. First, I made two mistakes. AT crawlers are not in fact crawlers, they are called relays. Also, shared inboxes are actually part of the Activity Pub W3C standard as apposed to hacky additions to the protocol by third party servers. I was wrong about Activity Pub servers sending multiple messages to the same server remote to update it about a single post.
           
           
         
