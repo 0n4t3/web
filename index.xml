@@ -131,7 +131,8 @@ I made a client So yeah, I made a client that can post to Nostr, Activity Pub, a
       <description>
         
           
-            Update August 5th 2024
+            Note: This post is out of date, here&amp;rsquo;s a more up to date version
+Update August 5th 2024
 I have some good and bad news regarding this post. First, I made two mistakes. AT crawlers are not in fact crawlers, they are called relays. Also, shared inboxes are actually part of the Activity Pub W3C standard as apposed to hacky additions to the protocol by third party servers. I was wrong about Activity Pub servers sending multiple messages to the same server remote to update it about a single post.
           
           
