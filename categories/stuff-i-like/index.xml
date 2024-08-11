@@ -6,7 +6,24 @@
     <description>Recent content in stuff-I-like on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/categories/stuff-i-like/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/categories/stuff-i-like/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microblogging Protocols Compared v2</title>
+      <link>https://nate.mecca1.net/posts/2024-08-11_microbloggingv2/</link>
+      <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nate.mecca1.net/posts/2024-08-11_microbloggingv2/</guid>
+      <description>
+        
+          
+            Click Here to skip my introduction and the misc topics.
+In January of 2024 I published a blog post comparing Activity Pub, Nostr, and AT, and this is a revised version of that post. There are a few reasons why I went about making an updated version. First, I got a couple of things wrong - specifically not realizing SharedInboxes were part of the official Activity Pub standard and mistakenly calling AT relays AT crawlers.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>I made a client, Nostr surpassed Mastodon, and BlueSky is open?</title>
       <link>https://nate.mecca1.net/posts/2024-02-24_microblogging-anthology/</link>
