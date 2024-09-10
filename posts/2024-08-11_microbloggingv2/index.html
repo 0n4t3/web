@@ -324,12 +324,12 @@ Your browser does not support the video tag.
 <p>Last is the <strong>Relay</strong>, which I had previously mistakenly referred to as a &lsquo;Crawler.&rsquo; AT Relays operates very similarly to an Activity Pub server, collecting data from remote PDSs and providing them to the user who&rsquo;s using the social media network. BlueSky itself is one of those <em>relays</em>, collecting data from PDSs (both hosted by the BlueSky foundation and private individuals) and then providing that data in the BlueSky site or app.</p>
 <p><em>If you&rsquo;re familiar with Nostr, an AT relay performs data collection and parsing from PDSs in a similar way a user&rsquo;s Nostr client collects data from Nostr relays and parses it for the user. Similarly, if you&rsquo;re familiar with RSS the AT model is like Feedly collecting content from RSS feeds and providing it to you in a web browser, where something like Nostr would be your local RSS reader querying the feeds directly.</em></p>
 <h4 id="oddball-cool-stuff-2">Oddball Cool Stuff</h4>
-<p>I like how AT is set up, breaking things into multiple different parts makes it super easy to control your little portion of the network without needing to maintain the parts you don&rsquo;t want to. Want to own your own identity? You own your keys and can optionally link them to a domain, so you&rsquo;re all good to go without needing to host anything. Want to host your own server? Fire up a PDS which is lighter to host since it&rsquo;s not doing much any federating, and start posting your content to that. The real heavy stuff, i.e. hosting an AT relay, is the only thing that needs to do a whole bunch of stuff and needs a lot of overhead.</p>
+<p>I like how AT is set up, breaking things into multiple different parts makes it super easy to control your little portion of the network without needing to maintain the parts you don&rsquo;t want to. Want to own your own identity? You own your keys and can optionally link them to a domain, so you&rsquo;re all good to go without needing to host anything. Want to host your own server? Fire up a PDS which is lighter to host since it&rsquo;s not doing any federating, and start posting your content to that. The real heavy stuff, i.e. hosting an AT relay, is the only thing that needs to do a whole bunch of stuff and needs a lot of overhead.</p>
 <p>Additionally, the BlueSky relay<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> is being built around being customizable. If you want to have specific moderation options or specific recommendation algorithms it&rsquo;s up to the user to select their preferred one, making it almost as configurable as something like Nostr.</p>
 <p>Finally, the BlueSky relay also functions as a layer of abstraction to make it easier for non-techies to use the platform. You can register with a phone number or email and become a part of the BlueSky network without needing to deal with asymmetric encryption or choosing/hosting a PDS.</p>
 <h4 id="oddball-potential-issues-2">Oddball Potential Issues</h4>
 <p>The greatest oddball issue I see with AT is that it&rsquo;s currently in development. Things like account migration and direct messaging are <a href="https://atproto.com/specs/atp#what-is-missing">not implemented</a> at the time of writing. If your PDS goes down, or you set one up but no longer wish to host one, R.I.P. to your account. Similarly, if you started on BlueSky but want to grab your keys and go elsewhere you&rsquo;re also stuck.</p>
-<p>The second potential issue I see with AT is centralization. It&rsquo;s compartmentalization is great for individuals to host their own PDS, but it also means that most people rely on the BlueSky relay to crawl their PDSs and deliver that content to others. At the time of drafting, I am unaware of any relays other aside from BlueSky.</p>
+<p>The second potential issue I see with AT is centralization. It&rsquo;s compartmentalization is great for individuals to host their own PDS, but it also means that most people rely on the BlueSky relay to crawl their PDSs and deliver that content to others. At the time of drafting, I am unaware of any relays aside from BlueSky.</p>
 <p>Further, it&rsquo;s not possible to truly delete things on AT. Since AT stores data in a similar fashion to a git repository, even if a post is deleted or a like/reaction undone the changelog will still show it being created then deleted. Just like the timeless <em>&ldquo;Oops I just committed an API key to a git repo,&rdquo;</em> even if you delete the data the contents of the deleted thing will still be in the changelog both when they were added and deleted<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>. The only means of truly getting rid of the content is to nuke the account in its entirety.</p>
 <p>Last, like Nostr, if you lose your AT keys you lose your account. Similarly, if you outsource your key management to a platform and they lose your keys you&rsquo;ll also lose your account.</p>
 <h1 id="comparisons">Comparisons</h1>
@@ -362,7 +362,7 @@ Your browser does not support the video tag.
 <hr>
 <p>In March news broke that <a href="https://hubzilla.org/help/en/about/about#What_is_Hubzilla_">Hubzilla</a>/Zot&rsquo;s Nomadic Identities <a href="https://wedistribute.org/2024/03/activitypub-nomadic-identity/">may be coming to Activity Pub at some point</a> - something I had mentioned two months prior in my original post that could be a potential way to solve some perceived issues<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>. In regards to having an identity separate from the status of one&rsquo;s instance, there are two relevant bits that may or may not be implemented if we do get Nomadic Identities in Activity Pub.</p>
 <p>The first thing is using cryptographic keys underneath a channel. A channel is just Zot&rsquo;s identity, say <code>user@example.com</code>. You could still find users with a domain-based username, but the underlying cryptographic keys make an account more easily exported and imported across different servers while verifying that you&rsquo;re still you.</p>
-<p>The second part of Nomadic identities is the ability to mirror your identity across multiple servers. This means that if you&rsquo;re <code>user@example.com</code> you can create an account <code>identity@server.com</code> and set the second account to mirror content from your first account. Then if example.com goes down your followers can still find you at server.com and see your existing &amp; new posts, using server.com as your new main profile until/if example.com comes back.</p>
+<p>The second part of Nomadic identities is the ability to mirror your identity across multiple servers. This means that if you&rsquo;re <code>user@example.com</code> you can create an account <code>identity@server.com</code> and set the second account to mirror content from your first account. Then if example.com goes down your followers can default to following you at server.com and see your existing &amp; new posts, using server.com as your new main profile until/if example.com comes back.</p>
 <p>Outside of Nomadic Identities, I was also made aware of <a href="https://github.com/jointakahe/takahe">Tahake</a>, an Activity Pub server in beta that supports multiple domains. This existed for the past two years, so it&rsquo;s not a development in between my last post and now, but I was unaware of it at the time hence it being the second updated part of this section. Being able to support multiple domains it can let individual users use their own domain and through that control their own identity without needing to host their own server to use with their own domain.</p>
 <hr>
 <p>However, as far as the protocol as it currently stands, the user doesn&rsquo;t have ownership of their account. Nomadic Identities are a potential future inclusion in the protocol, and Tahake is a server with a unique modification but not part of the run-of-the-mill Activity Pub implementation. Of course, however, for the people who really want to seek it out, they can host their own server or join an existing Tahake server.</p>
@@ -371,16 +371,16 @@ Your browser does not support the video tag.
 <h4 id="at-1">AT</h4>
 <p>AT is theoretically the same as Nostr in this regard, the user holds their encryption keys and thus controls their account. There are two buts here, however. First, anybody registered on BlueSky doesn&rsquo;t actually own their private keys. Further, even if you&rsquo;re on a third-party PDS, since migration hasn&rsquo;t actually been developed your account is still kinda tied to a PDS.</p>
 <h2 id="communities">Communities</h2>
-<p>Communities, both individual ones and and the protocol&rsquo;s community as a whole are the end goal of making protocol to communicate with. I do expect all three to get &lsquo;Eternal September&rsquo; as they grow, but it&rsquo;s worth rambling on about their current state regardless.</p>
+<p>Communities, both individual ones and and the protocol&rsquo;s community as a whole are the end goal of making protocol to communicate with. I do expect all three to get &lsquo;Eternal Septembered&rsquo; as they grow, but it&rsquo;s worth rambling on about their current state regardless.</p>
 <h4 id="activity-pub-3">Activity Pub</h4>
 <p>Activity Pub is THE protocol for individual communities. It&rsquo;s built around individual servers that generally house a unique community with its specific theme and policies.</p>
 <p>As for the Activity Pub wide community, based on my observations it&rsquo;s the largest and has the most varied of all the protocols. Still, it&rsquo;s got a techy slant as any new protocol would, and if I were to guess the median user it would probably be a 40-something tech blogger who dislikes big tech and wants a return to Web 1.0. It does, however, by nature of being the oldest protocol (still widely in use anyway) house most of the less desirable communities that broke away from the mainstream social media networks.</p>
 <h4 id="nostr-3">Nostr</h4>
-<p>Nostr generally doesn&rsquo;t have local communities by default, having your client and keypair more or less equivalent to a local instance of one. Because of its customization there are ways to effectively create a local community, such as creating a feed of all posts on one or a set of relays to get a local community going. Some clients also support adding custom &lsquo;Algorithms&rsquo; to give you a feed with a specific flavor, and there are projects like <a href="https://gitlab.com/soapbox-pub/ditto">Dito</a> which fairly successfully emulate an Activity Pub style instance from within Nostr. Again, though, this is not the default.</p>
+<p>Nostr generally doesn&rsquo;t have local communities by default, having your client and keypair more or less equivalent to a local instance of one. Because of its customization there are ways to effectively create a local community, such as creating a feed of all posts on one or a set of relays to get a local community going. Some clients also support adding custom &lsquo;Algorithms&rsquo; to give you a feed with a specific flavor, and there are projects like <a href="https://gitlab.com/soapbox-pub/ditto">Ditto</a> which fairly successfully emulate an Activity Pub style instance from within Nostr. Again, though, this is not the default.</p>
 <p>The protocol-wide community is fairly techy with a decent portion of the community being cryptocurrency enthusiasts and cypherpunks<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>. Originally that was the community in its entirety, although as it&rsquo;s grown a lot there is a pretty wide variety of people on there now - albeit still with a very techy culture (more so than the other two, which is saying something since they also are fairly techy).</p>
 <h4 id="at-2">AT</h4>
 <p>If other people start setting up relays there may be individual communities built on AT, but at the moment I do not believe there&rsquo;s much in the way of individual communities on AT since everything is centralized around BlueSky. On BlueSky you can subscribe to custom &lsquo;Algorithms&rsquo; and moderation feeds that could build something of a community, but to my knowledge, that&rsquo;s the extent of things where it stands now.</p>
-<p>As for the protocol-wide community, it&rsquo;s important to note that I&rsquo;ve spent the least amount of time on AT/BlueSky so I&rsquo;m certainly not qualified to make any be-all end-all statements<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. But based on my observations and what I&rsquo;ve heard I&rsquo;d say it most resembles older Twitter. Lots of celebrities and non-techy people joined there since it was simple to join instead of needing to learn a new protocol like Activity Pub/Nostr. I&rsquo;ve also heard there&rsquo;s also a lot of furries.</p>
+<p>As for the protocol-wide community, it&rsquo;s important to note that I&rsquo;ve spent the least amount of time on AT/BlueSky so I&rsquo;m certainly not qualified to make any be-all end-all statements<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. But based on my observations and what I&rsquo;ve heard I&rsquo;d say it most resembles older Twitter. Lots of celebrities and non-techy people joined there since it was simple to join instead of needing to learn a new protocol like Activity Pub/Nostr. I&rsquo;ve also heard there&rsquo;s a lot of furries.</p>
 <h2 id="maliability--compatibility">Maliability &amp; Compatibility</h2>
 <p>&lsquo;Mealiability&rsquo; is probably a poor descriptor, which I pointed out in my last post, but I still am kinda at a loss for words for a better descriptor. Anyway, the malleability portion of this post is where I talk about how well a particular protocol does being put to use in ways outside of its &lsquo;standard&rsquo; implementation. Further, if done so, how compatible are different implementations that are on the same protocol?</p>
 <h4 id="activity-pub-4">Activity Pub</h4>
@@ -581,6 +581,9 @@ Your browser does not support the video tag.
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://nate.mecca1.net/posts/2024-09-09_hats/" class="nav-link" title="Making a Fur Hat">Making a Fur Hat</a>
+      </li>
+      <li>
         <a href="https://nate.mecca1.net/posts/2024-08-11_microbloggingv2/" class="nav-link" title="Microblogging Protocols Compared v2">Microblogging Protocols Compared v2</a>
       </li>
       <li>
@@ -601,21 +604,18 @@ Your browser does not support the video tag.
       <li>
         <a href="https://nate.mecca1.net/posts/2024-02-24_microblogging-anthology/" class="nav-link" title="I made a client, Nostr surpassed Mastodon, and BlueSky is open?">I made a client, Nostr surpassed Mastodon, and BlueSky is open?</a>
       </li>
-      <li>
-        <a href="https://nate.mecca1.net/posts/2024-01-30_microblogging-protocols/" class="nav-link" title="ActivityPub/Nostr/AT-BlueSky Compared">ActivityPub/Nostr/AT-BlueSky Compared</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
-        <a href='https://nate.mecca1.net/categories/stuff-i-like/' class="post_tag button button_translucent" title="stuff-i-like">
-          STUFF-I-LIKE
+        <a href='https://nate.mecca1.net/categories/hobbies/' class="post_tag button button_translucent" title="hobbies">
+          HOBBIES
           <span class="button_tally">6</span>
         </a>
         
-        <a href='https://nate.mecca1.net/categories/hobbies/' class="post_tag button button_translucent" title="hobbies">
-          HOBBIES
-          <span class="button_tally">5</span>
+        <a href='https://nate.mecca1.net/categories/stuff-i-like/' class="post_tag button button_translucent" title="stuff-i-like">
+          STUFF-I-LIKE
+          <span class="button_tally">6</span>
         </a>
         
         <a href='https://nate.mecca1.net/categories/complaints/' class="post_tag button button_translucent" title="complaints">
@@ -669,6 +669,11 @@ Your browser does not support the video tag.
           <span class="button_tally">4</span>
         </a>
         
+        <a href='https://nate.mecca1.net/tags/projects/' class="post_tag button button_translucent" title="projects">
+          PROJECTS
+          <span class="button_tally">4</span>
+        </a>
+        
         <a href='https://nate.mecca1.net/tags/windows/' class="post_tag button button_translucent" title="windows">
           WINDOWS
           <span class="button_tally">4</span>
@@ -686,11 +691,6 @@ Your browser does not support the video tag.
         
         <a href='https://nate.mecca1.net/tags/mobile/' class="post_tag button button_translucent" title="mobile">
           MOBILE
-          <span class="button_tally">3</span>
-        </a>
-        
-        <a href='https://nate.mecca1.net/tags/projects/' class="post_tag button button_translucent" title="projects">
-          PROJECTS
           <span class="button_tally">3</span>
         </a>
         
