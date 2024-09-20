@@ -32,8 +32,8 @@
       <description>
         
           
-            Click Here to skip my introduction and the misc topics.
-In January of 2024 I published a blog post comparing Activity Pub, Nostr, and AT, and this is a revised version of that post. There are a few reasons why I went about making an updated version. First, I got a couple of things wrong - specifically not realizing SharedInboxes were part of the official Activity Pub standard and mistakenly calling AT relays AT crawlers.
+            Update: September 20th, 2024: I was incorrect regarding AT&amp;rsquo;s (BlueSky) inability to fully delete things, the protocol DOES support fully deleting posts from the user&amp;rsquo;s repo and I&amp;rsquo;ve updated the post to reflect that. Read more. Big thanks to Ryan for providing the info.
+Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) - in keeping tradition with the original post - Bluesky has managed to change rapidly shortly after I finished this.
           
           
         
