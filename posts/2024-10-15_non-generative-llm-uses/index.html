@@ -1,0 +1,701 @@
+
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-figures=""
+  
+    class="page"
+  
+  
+  >
+  <head>
+<title>Non-Generative uses of Local LLMs | An Untitled Blog</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+
+
+<meta property="og:locale" content="en" />
+
+<meta property="og:type" content="article">
+<meta name="description" content="At this point we all know how LLMs can generate text, and I&rsquo;m guessing that everybody reading this knows some relatively lightweight libre LLMs can be …" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="">
+<meta name="twitter:title" content="Non-Generative uses of Local LLMs" />
+<meta name="twitter:image" content="https://nate.mecca1.net/"/>
+<meta property="og:url" content="https://nate.mecca1.net/posts/2024-10-15_non-generative-llm-uses/" />
+<meta property="og:title" content="Non-Generative uses of Local LLMs" />
+<meta property="og:description" content="At this point we all know how LLMs can generate text, and I&rsquo;m guessing that everybody reading this knows some relatively lightweight libre LLMs can be …" />
+<meta property="og:image" content="https://nate.mecca1.net/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://nate.mecca1.net/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://nate.mecca1.net/icons/favicon-32x32.png">
+<link rel="manifest" href="https://nate.mecca1.net/icons/site.webmanifest">
+
+<link rel="canonical" href="https://nate.mecca1.net/posts/2024-10-15_non-generative-llm-uses/">
+
+
+
+<link rel="preload" href="https://nate.mecca1.net/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity = "sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" as="style" crossorigin="anonymous">
+
+
+
+<link rel="preload" href="https://nate.mecca1.net/en/js/bundle.ea04089d5378df052824a1c181cf96e36e6f1a1d04670069f0b8ac2efdd0b7d0703c1c94cfcb2ed1888892d38043289f06e9b22caa9a28b1601301db34fef4c2.js" as="script" integrity=
+"sha512-6gQInVN43wUoJKHBgc&#43;W425vGh0EZwBp8LisLv3Qt9BwPByUz8su0YiIktOAQyifBumyLKqaKLFgEwHbNP70wg==" crossorigin="anonymous">
+
+
+<link rel="stylesheet" type="text/css" href="https://nate.mecca1.net/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity="sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" crossorigin="anonymous">
+
+  </head>
+  <body
+    data-code="100"
+    data-lines="false"
+    id="documentTop"
+    data-lang="en"
+  >
+
+<header class="nav_header" >
+  <nav class="nav"><a href='https://nate.mecca1.net/' class="nav_brand nav_item" title="An Untitled Blog">An Untitled Blog
+  <div class="nav_close">
+    <div><svg class="icon">
+  <title>open-menu</title>
+  <use xlink:href="#open-menu"></use>
+</svg>
+<svg class="icon">
+  <title>closeme</title>
+  <use xlink:href="#closeme"></use>
+</svg>
+</div>
+  </div>
+</a>
+
+    <div class='nav_body nav_body_left'>
+      
+      
+      
+        
+
+  <div class="nav_parent">
+    <a href="https://nate.mecca1.net/pages/follow/" class="nav_item" title="Follow/Contact">Follow/Contact </a>
+  </div>
+  <div class="nav_parent">
+    <a href="https://nate.mecca1.net/pages/resume/" class="nav_item" title="Resume">Resume </a>
+  </div>
+      
+<div class='follow'>
+<div class="color_mode">
+  <input type="checkbox" class="color_choice" id="mode">
+</div>
+
+</div>
+
+    </div>
+  </nav>
+</header>
+
+    <main>
+  
+<div class="grid-inverse wrap content">
+  <article class="post_content">
+    <h1 class="post_title">Non-Generative uses of Local LLMs</h1>
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Oct 15, 2024</span>
+    <span class="post_time"> · 43 min read</span><span>&nbsp;· <a href='https://nate.mecca1.net/tags/tech/' title="tech" class="post_tag button button_translucent">tech
+        </a><a href='https://nate.mecca1.net/tags/utility/' title="utility" class="post_tag button button_translucent">utility
+        </a><a href='https://nate.mecca1.net/tags/ai/' title="ai" class="post_tag button button_translucent">ai
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·</span>
+  </div>
+
+    <div class="post_body"><p>At this point we all know how LLMs can generate text, and I&rsquo;m guessing that everybody reading this knows some relatively lightweight libre LLMs can be installed and run locally. But, as you can probably guess by reading this, I enjoy writing stuff, so text generation isn&rsquo;t really something that I have a use for. The knowledge stored in them is helpful for sure; I use local LLMs to find data or troubleshoot something on probably more or less a once-a-week basis (because I&rsquo;m not connected to the internet, can&rsquo;t find what I&rsquo;m looking for in search engines, want to ask about an error code in plain English, etc). They&rsquo;re also always fun to toy around with at first, but after using them for a while the fun wears off and it just becomes another tool.</p>
+<p>So, what else can we do with them? I&rsquo;ve touched on LLMs in the past, but this one will be more hyper-focused on three tasks I&rsquo;ve been experimenting with: proofreading, translating, and transcriptions. I touched on two of the three in the other post, but this one will be more detailed with examples instead of just saying, &ldquo;I tried it, seemed to work.&rdquo;</p>
+<h4 id="what-i-used">What I Used</h4>
+<p>Everything you&rsquo;ll see in the examples was accomplished using Dolphin 2.2.1 Mixtral 7b (Q 5.13 GB) in LM Studio 0.2.3 and Dolphin 2.8 Mixtral 7b (Q 3.83 GB) in LM Studio 0.3.2. The difference in versions is only because this has been a blog post built around a bunch of notes and tests I&rsquo;ve done over a relatively long period of time<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> and not because one version worked much better. I also tried these with Google Gemma and Dolphin Phi 2, both quantized around ~2GB. They output the data a lot faster, but they were a little less reliable.</p>
+<h4 id="free-non-local-versions">Free Non-Local Versions</h4>
+<p>As a side note, if you are unable to run an LLM on your machine, you do have a few options to get access to an LLM over the internet <em>without</em> needing an account or payment:</p>
+<ul>
+<li>ChatGPT offers free access to ChatGPT 4o</li>
+<li>DuckDuckGo offers <a href="https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&amp;ia=chat&amp;duckai=1">duck chat</a> with free proxied access to ChatGPT 4o and free access to Claud, Lama, and Mixtral hosted by DuckDuckGo.</li>
+<li>Brave (built-in, can be enabled/disabled) and Firefox (though Mozilla&rsquo;s <a href="https://addons.mozilla.org/en-US/firefox/addon/orbit-summarizer/">Orbit</a> extension) offer free access to some AIs, including Mixtral.</li>
+<li>Hugging Face often has various models available to try in a browser</li>
+</ul>
+<p>Now, if it only works with an internet connection and you have to rely on somebody else&rsquo;s (potentially proprietary) server, then it negates some of the benefits here. A local LLM is kinda like a Swiss army knife: good at a lot of things but great at none, so if you&rsquo;re in a browser it&rsquo;d probably just be better to navigate to something like Google Translate than it would be to navigate to Duck Chat and paste in text to translate.</p>
+<p>There are also usually limits to using free online services. You generally can&rsquo;t set a system prompt, though you can work around it by pasting the system prompt in the chatbox as instructions and then pasting in what you want to process below the system prompt. Similarly, you probably can&rsquo;t upload files, but opening them in a browser with AI built-in/added as an extension and prompting it to work with the file could give you similar results.</p>
+<h1 id="proofreading">Proofreading</h1>
+<p>I tried proofreading with four models: Karen the Editor (creative and strict), Google Gemma, and Dolphin. Karen the Editor is an AI model specifically tweaked for proofreading, strict being a slightly more conservative version that makes fewer changes and creative being more active in its changes. It could be my writing style or the fact that I generally proofread before giving them to a proofreading tool (be it an AI tool or something like Grammerly), but both versions gave nearly identical output for me. It works pretty well, but I got just about identical results with Dolphin using the system prompt below, so given I already have Dolphin installed, I might as well use that.</p>
+<p>Google Gemma, specifically the version quantized to 1.59 GB, ran into some issues. While it was lightning fast, no matter what I did for prompts, it kept rewording things in ways I didn&rsquo;t like. For example, changing &ldquo;looking for&rdquo; to &ldquo;searching for&rdquo; or turning a slightly long sentence into two stubby sentences. Overall, I&rsquo;ve had the best luck so far using Dolphin with the following system prompt.</p>
+<p><code>You are an advanced proofreading assistant. Your task is to review the provided text for spelling, punctuation, and grammatical errors. Make corrections as needed, ensuring that the text is clear and coherent. When rewording or rephrasing sentences, aim for a more conservative approach that maintains the original meaning while enhancing readability. Focus on subtle improvements rather than extensive rewrites.</code></p>
+<p>In my original AI post I had said that I sometimes found Dolphin changing more than I would have wanted when proofreading, but with the above system prompt it&rsquo;s almost too conservative when making changes. So far, I&rsquo;ve seen it mostly only fixes spelling and punctuation mistakes, sometimes fixing run-on sentences or swapping words for other words (or putting in missing words), but generally they seem to be decent improvements. While not as effective as something like Grammarly, it is by far the best open-source proofreading tool and the best offline proofreading tool I&rsquo;ve used.</p>
+<p>In my original blog post, I mentioned that it starts to try to summarize content instead of proofreading once I paste in something that exceeds a certain length (usually 600-800 words). However, Dolphin 2.8 seems to have fixed that, and feeding it a 2k-word blog post worked fine. It also works well with markdown, although if you start sticking html code into your text it&rsquo;ll start messing with that. While I will probably continue using Grammarly for the foreseeable future, LLMs are definitely working well.</p>
+<p>Finally, to clarify a point of worry some people might have, I&rsquo;ve proofread text written by me and then fed it through all the different free AI writing checkers - none thought the text was written with AI. I would exercise some caution if you&rsquo;re a student who&rsquo;d risk some sort of disciplinary action if your work was flagged as written by AI, but if you&rsquo;re just cautious about having people think that your writing wasn&rsquo;t your writing because you proofread it with an AI tool then you should be fine.</p>
+<h1 id="translation">Translation</h1>
+<p>As I mentioned in my last post, LLMs seem to do well with translation. Google Translate could probably be considered a good benchmark; while I&rsquo;m not sure if it&rsquo;s the best standard translation tool, I&rsquo;d guess it&rsquo;s the most used. I used the online version of Google Translate, the offline version of Google Translate, and Dolphin (I can&rsquo;t remember if it was 2.2.1 or 2.8). I also tried Gemma, though while it worked it seemed somewhat less accurate.</p>
+<p><em>Side note for those running Android ROMs: I wanted to give offline Google Translate a go and was pleasantly surprised. First, it works even if you don&rsquo;t have Google Play services installed on the device - a rarity for most Google software. It also works without a Google account, and once you initially download languages for offline use you can yoink the internet permission<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> away from the app and it&rsquo;ll never connect to a remote service again. I think I just unironically praised a Google app.</em></p>
+<p>To run the tests I stole a paragraph from <a href="https://www.yaroslavps.com/">Yaroslav de la Peña Smirnov</a>. I&rsquo;m hardly fluent in English, much less capable of understanding a second language, but the great thing about Yaroslav is that he publishes his content in English, Spanish, and Russian. Here we know exactly what he intended to say, which can provide us a fairly good way of judging how well the various translations succeeded in getting that across. His posts appear to vary slightly in wording across each language, but we can at least have a good idea of what he intended to say.</p>
+<p>For each AI translation I used the following system prompt:</p>
+<hr>
+<p><code>You are a highly accurate translation tool. Your primary function is to translate text from any language into English. When translating, please adhere to the following guidelines:</code></p>
+<p><code>Contextual Understanding: Consider the context of the text to ensure that idiomatic expressions, cultural references, and nuances are accurately conveyed in English.  </code></p>
+<p><code>Clarity and Precision: Aim for clear and precise translations. Avoid ambiguity and ensure that the meaning of the original text is preserved.  </code></p>
+<p><code>Grammar and Syntax: Maintain proper English grammar and syntax in your translations. The output should read naturally as if it were originally written in English.  </code></p>
+<p><code>Formatting: Retain the original formatting of the text where applicable, including punctuation, bullet points, and numbered lists.  </code></p>
+<p><code>Feedback Loop: If a phrase or term has multiple meanings, provide the most common translation first, and if necessary, offer alternative translations in parentheses.  </code></p>
+<p><code>Language Detection: Automatically detect the language of the input text and confirm the detected language before proceeding with the translation.  </code></p>
+<p><code>User Queries: If the user requests clarification or additional information about the translation, provide explanations or context as needed.  </code></p>
+<p><code>Your goal is to facilitate effective communication by providing accurate and reliable translations from any language to English.</code></p>
+<hr>
+<p><strong>Here&rsquo;s the unmodified English version of the paragraph:</strong></p>
+<p>Hello, and welcome to my weblog. As you may have read in my home page, I will be writing here mainly about what I do, and how I do it. That is, I aim to make a sort of compendium for myself as a self-learning tool; for future reference, when I need to refresh my memory, and of course for anybody else that shares my interests and wishes to learn something new. I am by no means an expert, but I believe that it is easier to learn by sharing your knowledge.</p>
+<p><strong>And here&rsquo;s the same paragraph from the Spanish version of his website:</strong></p>
+<p>Hola, y bienvenidos a mi diario. Como a lo mejor habrás leído en mi página principal, estaré escribiendo en este diario más que nada acerca de lo que hago, y como hago lo que hago (vaya pleonasmo que me he hechado). En otras palabras, mi propósito es hacer un tipo de cuaderno/diario digital con apuntes para mi mismo, acerca de qué es lo que hago y describiendo el proceso. Me sirve más que nada como herramienta autodidáctica, y para futura referencia, cuando necesite refrescar mi memoria, y por último, pero no menos importante, por si sirve de ayuda a otras personas que se interesan por lo mismo que yo. No soy un experto que todo lo sabe, pero bien se dice que se aprende mejor cuando compartes tus conocimientos.</p>
+<p><strong>And here&rsquo;s the same paragraph from the Russian version of his website:</strong></p>
+<p>Доброго времени суток, добро пожаловать в мой веб-журнал. В нем я буду рассказывать о том чем я занимаюсь, и буду писать о том как все это делаю. Цель данного журнала - сделать для себя такой вид электронных конспектов где для себя описываю процесс по которому я разрабатываю софт и сайты, настраиваю линукс, и тому подобные темы, чтобы таким образом я мог обратиться к своими же записям когда надо будет что-то вспомнить. Я также считаю что это может пригодиться и другим людям, и затем я записываю все жто в открытом доступе. Я не эксперт, но я считаю что делясь знаниями и опытом, я сам лучше учусь.</p>
+<p><strong>Google Translate (online) Spanish to English:</strong></p>
+<p>Hello, and welcome to my journal. As you may have read on my main page, I&rsquo;ll be writing in this journal mostly about what I do, and how I do what I do (what a pleonasm I&rsquo;ve made). In other words, my goal is to make a kind of digital notebook/diary with notes for myself, about what I do and describing the process. I use it mostly as a self-teaching tool, and for future reference when I need to refresh my memory, and last but not least, in case it helps other people who are interested in the same things as me. I&rsquo;m not an expert who knows everything, but it is well said that you learn better when you share your knowledge.</p>
+<p><strong>Google Translate (offline) Spanish to English:</strong></p>
+<p>Hello, and welcome to my diary. As you may have read on my home page, I will be writing in this newspaper more than anything about what I do, and how I do what I do (what a pleonasm that I have given myself). In other words, my purpose is to make a type of notebook/digital diary with notes for myself, about what I do and describing the process. It serves me more than anything as a self-taught tool, and for future reference, when I need to refresh my memory, and lastly, but not least, in case it helps other people who are interested in the same thing as me. I am not an expert who knows everything, but it is well said that you learn better when you share your knowledge.</p>
+<p><strong>Dolphin LLM Spanish to English:</strong></p>
+<p>Hi and welcome to my blog! As you may have read on my main page, I will be writing in this blog mainly about what I do and how I do it (what a pleonasm I made for myself). In other words, my purpose is to create some kind of digital notebook/diary with notes for myself, about what I do and describing the process. It serves me above all as a self-learning tool, and for future reference when I need to refresh my memory, and last but not least, but no less important, in case it helps others who are interested in the same things as I am. I&rsquo;m not an expert who knows everything, but as they say, you learn best by sharing your knowledge.</p>
+<p><strong>Google Translate (online) Russian to English:</strong></p>
+<p>Good day, welcome to my web journal. In it I will talk about what I do, and I will write about how I do it all. The purpose of this journal is to make for myself such a kind of electronic notes where I describe for myself the process by which I develop software and sites, configure Linux, and similar topics, so that in this way I can refer to my own notes when I need to remember something. I also believe that this can be useful to other people, and then I write it all down in the public domain. I am not an expert, but I believe that by sharing knowledge and experience, I myself learn better.</p>
+<p><strong>Google Translate (offline) Russian to English:</strong></p>
+<p>Good day, welcome to my web log. In it, I will talk about what I do, and I will write about how I do all this. The purpose of this magazine is to make for myself such a type of electronic notes where for myself I describe the process by which I develop software and sites, set up Linux, and similar topics, so that in this way I can turn to my own records when I need to remember something. I also believe that this may be useful to other people, and then I write everything in the public domain. I am not an expert, but I think that by sharing knowledge and experience, I myself study better.</p>
+<p><strong>Dolphin LLM Russian to English:</strong></p>
+<p>Good afternoon, welcome to my blog! Here I will talk about what I do and write about how I do it. The goal of this blog is to create a kind of electronic notebook where I describe the process by which I develop software and websites, configure Linux, and other related topics, so that I can refer back to them when needed. I also believe that this may be useful for others, and then I will post everything publicly. I am not an expert, but I believe that sharing knowledge and experience helps me learn better.</p>
+<hr>
+<p>Dolphin seems nearly on par with the online version of Google Translate. Dolphin might have an edge on that paragraph, although with a sample size of one I&rsquo;m not fully committed to concluding that Dolphin beats the online version of Google Translate. However, it looks like it beats the offline version of Google Translate, and with Dolphin being both fully offline and libre, I&rsquo;d say it seems the better choice of all three options if you have a computer powerful enough to run it.</p>
+<h3 id="translating-images--audio">Translating Images &amp; Audio</h3>
+<p>However, not everything is plain text, so how well can we use local AI to translate audio content or images? The LLM itself can only accept text based input, so I&rsquo;m going to take advantage of two other AIs to get us the text.</p>
+<p>First is Whisper AI by OpenAI, an open source audio transcription tool that runs entirely offline. It offers simple transcriptions in various languages and is perfect for this task. For this experiment I used the small algorithm. Secondly, Tesseract by Google is an OCR (optical character recognition) tool that&rsquo;s also open source and runs entirely offline. One minor thing of note: I had the English model installed already but never installed the Spanish one for the test.</p>
+<p>So, let&rsquo;s start out with audio. I started with the first minute and twelve seconds of <a href="https://www.youtube.com/watch?v=GABFYH58D-A">Maria Graciani&rsquo;s Tedx Talk</a> which I downloaded with YT-DLP.</p>
+<p>Google offers automatically translated subtitles, which come out to the following:</p>
+<p><em>Thank you very much Pablo</em>
+<em>When someone asks me who I am I love to answer I am illusion personified understanding illusion as incessant loyalty to oneself synergy of passion because when you believe in yourself you make others believe and so on you manage to create your world and</em>
+<em>This is what I did through the language of motivation and of course to make sure I did it perfectly well in the first place I consulted with the experts the children</em></p>
+<p>However, we&rsquo;re not too interested in Google&rsquo;s translation; I&rsquo;m more focused on what we can do with offline AI models. The first thing I did was run it through WhisperAI, getting the following output:</p>
+<p><code>[00:00.000 --&gt; 00:10.800\]  Muchísimas gracias Pablo. Cuando alguien me pregunta que quién soy, a mí me encanta</code>
+<code>[00:10.800 --&gt; 00:18.680]  responder. Soy la ilusión personificada. Entendiendo ilusión como incesante lealtad</code>
+<code>[00:18.680 --&gt; 00:27.360]  a uno mismo. Sinergia de la pasión. Ilusión. Porque cuando tú crees en ti mismo, haces</code>
+<code>[00:27.360 --&gt; 00:34.080]  que los demás crean y así logras crear tu mundo. Y esto fue lo que yo hice a través</code>
+<code>[00:34.080 --&gt; 00:40.640]  del lenguaje de la motivación. Y como no, para asegurarme de hacerlo perfectamente bien,</code>
+<code>[00:40.640 --&gt; 00:44.520]  en primer lugar, consulté con los expertos, los niños.</code></p>
+<p>Next, it was as simple as pasting in the output from Whisper AI to Dolphin. It returned the following:</p>
+<p><code>[00:00.000 --&gt; 00:10.800]  Thank you very much, Pablo. When someone asks me who I am, to me it's wonderful</code>
+<code>[00:10.800 --&gt; 00:18.680]  to respond. I am personified illusion. Understanding illusion as incessant loyalty</code>
+<code>[00:18.680 --&gt; 00:27.360]  to oneself. Synergy of passion. Illusion. Because when you believe in yourself, you make others</code>
+<code>[00:27.360 --&gt; 00:34.080]  believe and thus create your own world. And this is what I did through the language of motivation. And of course, to make sure I did it perfectly well, firstly</code>
+<code>[00:34.080 --&gt; 00:40.640]  I consulted with experts, the children.</code></p>
+<p>So yeah, it works pretty well here. Using two offline and open source AI models we can take an audio or video file and translate it to any language.</p>
+<hr>
+<p>But what about images? Pretty much the same deal, the LLM isn&rsquo;t going to be able to understand an image so I fed a screenshot of the same text from Yaroslav into Tesseract.</p>
+
+
+ <img src="https://i.postimg.cc/bwSPC27h/diffchecker-tesseract.png" alt="image of tesseract ocr output">
+
+
+<hr>
+<p>As you&rsquo;ll notice in the difference checker, it&rsquo;s missing some Spanish characters, likely because I used the English version of the model. Still, the LLM translated the text from Tesseract to the exact same output as it gave me when I pasted in the text from his website directly.</p>
+<h1 id="transcribing-an-audio-file-to-essayarticle">Transcribing an Audio File to Essay/Article</h1>
+<p>After using the speech-to-text, I wondered how well I could turn an audio transcript into something that has an essay/article layout. Spoiler: it worked flawlessly. So, why would you want to do this (aside from me doing it because I wanted to experiment with things)? I could see a few reasons:</p>
+<p>First, you could prefer to speak instead of type, either because of preference or a disability that makes typing hard. Talk into a microphone for a while then hand that off to some software and your computer will create a decently formatted essay style document.</p>
+<p>Or, perhaps you&rsquo;re primarily making audio content, but want to offer another way to consume said content. Video essayists, podcasters, etc. Large swaths of YouTube videos and just about any podcast is all audio content only - just in the case of YouTube there&rsquo;s some background footage or gameplay to keep people watching the video visually engaged. You could provide people with content on a blog or newsletter with a few quick clicks.</p>
+<p>Similarly, you could be consuming content from others in video/audio form and want to read it instead. Whether it be disability related, a preference, or a unique use case (say, an e-ink device with incredible battery life to consume content without access to the internet or electricity for long periods). Regardless, you&rsquo;re only a couple clicks away from having your computer convert audio/video content into an essay style text document to read.</p>
+<p>Lastly, archival is another great potential use for this. Say I wanted to archive a backlog of podcasts, video essays, speeches, or commentary videos. Sure, the audio/video versions would be ideal, but if you could turn a couple terabytes of audio or video into a couple hundred megabytes of text then that&rsquo;d be a pretty darn significant upgrade in how much content you could preserve. Talk about an effective compression algorithm<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
+<h3 id="transcribing-an-audio-file">Transcribing an Audio File</h3>
+<p>I started with <a href="https://www.youtube.com/watch?v=s_LncVnecLA">this video</a> of a speech by Winston Churchill. I initially decided to use it because I wanted to demonstrate an entire video to show accuracy, and angering copyright holders was not something I wanted to do. However, it worked out pretty well since it demonstrated success even with audio that&rsquo;s not super crisp and professionally recorded with modern equipment.</p>
+<p>The first thing I did was download the video using YT-DLP in M4A format. Afterwards, running it through whisper AI using the small English model gave the following results:</p>
+<hr>
+<details>
+  <summary>Dropdown: Output from Whisper AI</summary>
+  [00:00.000 &ndash;&gt; 00:11.500] When a week ago today, Mr. Speaker, I asked the House to fix this afternoon at the occasion
+[00:11.500 &ndash;&gt; 00:20.540] for a statement, I feared it would be my hard lot to announce the greatest military disaster
+[00:20.540 &ndash;&gt; 00:24.180] in our long history.
+[00:24.180 &ndash;&gt; 00:31.840] I thought, and some good judge agreed with me, that perhaps 20 or 30,000 men might be
+[00:31.840 &ndash;&gt; 00:32.840] <strong>reimbursed.</strong>
+[00:32.840 &ndash;&gt; 00:39.720] But it suddenly seemed that the whole of the French First Army and the whole of the
+[00:39.720 &ndash;&gt; 00:48.540] British Expeditionary Force, north of the Amia Abbeyal Yap, would be broken up in the
+[00:48.540 &ndash;&gt; 00:54.640] open field, or else would have to capitulate for lack of food and ammunition.
+[00:54.640 &ndash;&gt; 01:01.680] These were the hard and heavy tidings, which I called upon the House and the nations to
+[01:01.680 &ndash;&gt; 01:05.920] prepare themselves a week ago.
+[01:05.920 &ndash;&gt; 01:13.920] The whole root and core and brain of the British Army, on which and around which we were to
+[01:13.920 &ndash;&gt; 01:21.240] build and are to build, the great British armies in the later years of the war seemed
+[01:21.240 &ndash;&gt; 01:29.480] about to perish upon the field, or be led into an ignominious and starving captivity.
+[01:29.480 &ndash;&gt; 01:38.720] The enemy attacked us on all sides with great strength and fierceness, and their main power,
+[01:38.720 &ndash;&gt; 01:46.040] the power of their far more numerous air force, was thrown into the battle, or else concentrated
+[01:46.040 &ndash;&gt; 01:49.400] upon Dunkirk and the beaches.
+[01:49.400 &ndash;&gt; 01:56.200] Pressing in upon the narrow exit, both from the east and from the west, the enemy began
+[01:56.200 &ndash;&gt; 02:02.960] to fire with cannons upon the beaches by which alone the shipping could approach our depart.
+[02:02.960 &ndash;&gt; 02:07.040] They sowed magnetic mines in the channels and seas.
+[02:07.040 &ndash;&gt; 02:12.760] They sent repeated waves of hostile aircraft, sometimes more than a hundred strong in one
+[02:12.760 &ndash;&gt; 02:20.400] formation, to craft their bombs upon the single pier that remained, and upon the sand dunes
+[02:20.400 &ndash;&gt; 02:26.040] on which the troops had their only shelter.
+[02:26.040 &ndash;&gt; 02:33.040] Now <strong>you both,</strong> one of which were sunk, and their motor launches took the toll of the
+[02:33.040 &ndash;&gt; 02:36.200] vast traffic which now began.
+[02:36.200 &ndash;&gt; 02:39.960] For four or five days an intense struggle rained.
+[02:39.960 &ndash;&gt; 02:45.520] All their armored divisions, or what was left of them, together with great masses of infantry
+[02:45.520 &ndash;&gt; 02:53.000] and artillery, hurled themselves in vain upon the ever-narrowing, ever-contracting appendix
+[02:53.040 &ndash;&gt; 02:57.760] within which the British and French armies fought.
+[02:57.760 &ndash;&gt; 03:04.040] Meanwhile the Royal Navy, with the willing help of Countess Merchant Seaman, strained
+[03:04.040 &ndash;&gt; 03:09.440] every nerve to embark the British and Allied troops.
+[03:09.440 &ndash;&gt; 03:17.080] Two hundred and twenty light warships and six hundred and fifty other vessels were engaged.
+[03:17.080 &ndash;&gt; 03:23.280] They had to operate upon the difficult coast, and often in adverse weather, under an almost
+[03:23.280 &ndash;&gt; 03:29.800] ceaseless hail of bombs, and an increasing concentration of artillery fire.
+[03:29.800 &ndash;&gt; 03:36.160] Nor were the seas, as I have said, themselves free from mines and torpedoes.
+[03:36.160 &ndash;&gt; 03:43.120] It was in conditions such as these that our men carried on with little or no rest for
+[03:43.120 &ndash;&gt; 03:50.480] days and nights on end, making trip after trip across the dangerous waters, bringing
+[03:50.480 &ndash;&gt; 03:55.600] with them always men who may address you.
+[03:55.600 &ndash;&gt; 04:02.160] The numbers they have brought back are the measure of their devotion and their courage.
+[04:02.160 &ndash;&gt; 04:06.920] The hospital ships which brought off many thousands of British and French wounded, being
+[04:06.920 &ndash;&gt; 04:14.000] so plainly marked, were a special target for Nazi bombs, but the men and women on board
+[04:14.000 &ndash;&gt; 04:17.560] them never faltered in their duty.
+[04:17.560 &ndash;&gt; 04:24.880] Meanwhile the Royal Air Force, which had already been intervening in the battle, so far as
+[04:24.880 &ndash;&gt; 04:32.400] its range would allow, from our home bases, now used part of its main metropolitan fighter
+[04:32.400 &ndash;&gt; 04:40.680] strength, and struck at the German bombers, and at the fighters, which in large numbers
+[04:40.680 &ndash;&gt; 04:43.520] protected them.
+[04:43.520 &ndash;&gt; 04:46.160] This struggle was protracted in fear.
+[04:46.160 &ndash;&gt; 04:50.240] Suddenly, the scene is cleared.
+[04:50.240 &ndash;&gt; 04:57.760] The crash and <strong>sundry</strong> adds to the moment, but only for the moment, died away.
+[04:57.760 &ndash;&gt; 05:05.800] A miracle of deliverance achieved by valor, by perseverance, by perfect discipline, by
+[05:05.800 &ndash;&gt; 05:14.280] faultless service, by resource, by skill, by unconquerable fidelity, it manifests to us
+[05:14.280 &ndash;&gt; 05:16.520] all.
+[05:16.520 &ndash;&gt; 05:23.000] The enemy was hurled back by the retreating British troops.
+[05:23.000 &ndash;&gt; 05:29.040] They were so roughly handled that he did not carry their departure seriously.
+[05:29.040 &ndash;&gt; 05:39.040] Sir, we must be very careful not to assign to this deliverance the attributes of a victory.
+[05:39.040 &ndash;&gt; 05:45.800] Wars are not won by evacuations, but there was a victory inside this deliverance which
+[05:45.800 &ndash;&gt; 05:47.920] would be noted.
+[05:47.920 &ndash;&gt; 05:51.120] These were gained by the Air Force.
+[05:51.120 &ndash;&gt; 05:56.440] Many of our soldiers coming back have not seen the Air Force at work.
+[05:56.440 &ndash;&gt; 06:01.440] They saw only the bombers, which escaped its protective attack.
+[06:01.440 &ndash;&gt; 06:04.200] They underrated its achievements.
+[06:04.200 &ndash;&gt; 06:11.160] I&rsquo;ve heard much talk of this, and that is why I go out of my way to say this.
+[06:11.160 &ndash;&gt; 06:13.240] I will tell you about it.
+[06:13.240 &ndash;&gt; 06:19.400] This was a great trial of strength between the British and German Air Force.
+[06:19.400 &ndash;&gt; 06:27.400] Can you conceive a greater objective for the Germans in the air than to make evacuation
+[06:27.400 &ndash;&gt; 06:34.040] from these beaches impossible, and to sink all these ships which were displayed almost
+[06:34.040 &ndash;&gt; 06:36.960] to the extent of thousands?
+[06:36.960 &ndash;&gt; 06:42.320] Could there have been an objective of greater military importance and significance for the
+[06:42.320 &ndash;&gt; 06:45.080] old purpose of the wars of this?
+[06:45.080 &ndash;&gt; 06:48.680] They tried hard, and they were beaten back.
+[06:48.680 &ndash;&gt; 06:51.960] They were frustrated in their task.
+[06:51.960 &ndash;&gt; 07:01.360] We got the army away, and they have paid fourfold for any losses which they have inflicted.
+[07:01.360 &ndash;&gt; 07:07.960] Sir, when we consider how much greater would be our advantage in defending the air above
+[07:07.960 &ndash;&gt; 07:13.680] this island again for no overseas attack, I must say that I find in these facts a shrubb
+[07:13.680 &ndash;&gt; 07:19.520] basis upon which practical and reassuring thoughts may rest.
+[07:19.520 &ndash;&gt; 07:23.760] I will pay my tribute to these young Germans.
+[07:23.760 &ndash;&gt; 07:33.080] The great French army was very largely for the time being charged back and disturbed
+[07:33.080 &ndash;&gt; 07:38.080] by the enraged for a few thousands of armored vehicles.
+[07:38.080 &ndash;&gt; 07:47.800] May it not also be that the court of civilisation itself will be defended by the skill and devotion
+[07:47.800 &ndash;&gt; 07:51.000] of a few thousand Germans.
+[07:51.000 &ndash;&gt; 07:58.560] There never had been, I suppose, in all the world, in all the history of war, such an opportunity
+[07:58.560 &ndash;&gt; 07:59.560] for use.
+[07:59.560 &ndash;&gt; 08:07.080] The knights of the round table, the crusaders, all fall back into the past.
+[08:07.080 &ndash;&gt; 08:12.240] Not only distant, but protege.
+[08:12.240 &ndash;&gt; 08:17.360] These young men going forth every morn to guard their native land and all that we stand
+[08:17.360 &ndash;&gt; 08:25.400] for, holding in their hands the instruments of colossal and shattered power of whom it
+[08:25.400 &ndash;&gt; 08:32.520] may be said that every morn brought forth a noble chance, and every chance brought forth
+[08:32.520 &ndash;&gt; 08:42.720] a noble knight, deserve our gratitude, and do all the brave men in so many ways and on
+[08:42.720 &ndash;&gt; 08:51.880] so many occasions are ready and continue ready to give life and all their native land.
+[08:51.880 &ndash;&gt; 08:59.400] <strong>For this,</strong> our thankfulness, at the escape of our army, and so many men who loved ones
+[08:59.400 &ndash;&gt; 09:06.280] have passed through an agonising week, but not blind us to the fact that what happened
+[09:06.280 &ndash;&gt; 09:12.960] in France and Belgium is a colossal military disaster.
+[09:12.960 &ndash;&gt; 09:19.120] The French army has been weakened, the Belgian army has been lost, a large part of those
+[09:19.240 &ndash;&gt; 09:26.120] fortified lines upon which so much faith has been reposed, it&rsquo;s gone, many valuable mining
+[09:26.120 &ndash;&gt; 09:31.920] districts and factories have passed into the enemy&rsquo;s possession, a whole of the channel
+[09:31.920 &ndash;&gt; 09:39.560] ports, 90 hands, there&rsquo;s all the tragic consequences that follow from that, and we must expect
+[09:39.560 &ndash;&gt; 09:46.240] another blow to be struck, almost immediately, at us or at France.
+[09:46.360 &ndash;&gt; 09:52.920] We are told, sir, that&rsquo;s how Hitler had a plan for invading the British Isles.
+[09:52.920 &ndash;&gt; 09:56.440] This is often being thought of before.
+[09:56.440 &ndash;&gt; 10:03.680] When Napoleon laid Boulogne for a year with his fat bottom boats and his grand army, he
+[10:03.680 &ndash;&gt; 10:10.720] was told by someone, there are bitter weeds in England.
+[10:10.720 &ndash;&gt; 10:16.000] There are certainly a great many more of them since the British expeditionary force returned.
+[10:16.000 &ndash;&gt; 10:23.480] Sir, I have my self-full confidence that if all do their duty, if nothing is neglected,
+[10:23.480 &ndash;&gt; 10:29.560] and if the best arrangements are made, as they are being made, we should prove ourselves
+[10:29.560 &ndash;&gt; 10:36.360] once more able to defend our island home, to ride out to the storm of war, and to our
+[10:36.480 &ndash;&gt; 10:45.480] lives of menace of tyranny, if necessary, for years, if necessary, alone.
+[10:46.160 &ndash;&gt; 10:49.560] At any rate, that is what we are going to try to do.
+[10:49.560 &ndash;&gt; 10:53.960] That is the result of his majesty and government, every man of them.
+[10:53.960 &ndash;&gt; 10:56.520] That is the will of parliament and the nation.
+[10:56.520 &ndash;&gt; 11:02.160] The British Empire and the French Republic, linked together in their cause and in their
+[11:02.200 &ndash;&gt; 11:08.560] need, will defend to the death their native soil, aiding each other like good comrades
+[11:08.560 &ndash;&gt; 11:10.840] to the utmost of their strength.
+[11:10.840 &ndash;&gt; 11:17.200] We shall go on to the end, we shall fight in France, we shall fight on the seas and
+[11:17.200 &ndash;&gt; 11:24.200] oceans, we shall fight with growing confidence and growing strength in the air, we shall
+[11:25.120 &ndash;&gt; 11:31.640] defend our island, whatever the cost may be, we shall fight on the beaches, we shall fight
+[11:31.720 &ndash;&gt; 11:38.080] on the landing grounds, we shall fight in the fields and in the streets, we shall fight
+[11:38.080 &ndash;&gt; 11:45.080] in the hills, we shall never surrender, and if, which I do not for a moment believe, this
+[11:46.760 &ndash;&gt; 11:53.760] island or large part of it was subjugated and starving, then our empire beyond the seas
+[11:54.760 &ndash;&gt; 12:01.760] armed and guarded by the British fleet would carry on the struggle until, in God&rsquo;s good
+[12:02.280 &ndash;&gt; 12:09.280] time, the new world with all its power might step forth to the rescue and the liberation
+[12:10.200 &ndash;&gt; 12:11.000] of the old.
+</details>
+
+<hr>
+<p>The output worked really well. It&rsquo;s not 100% perfect; it made a few mistakes, such as &ldquo;U boats&rdquo; becoming &ldquo;You both&rdquo; and &ldquo;Thunder&rdquo; becoming &ldquo;Sundry,&rdquo; though I only found three mistakes, and I highlighted them in bold to make them easy to spot. I would guess that a modern monologue recorded on a cell phone mic would be a little more accurate and wouldn&rsquo;t have made those mistakes, though even with the older audio archive under the small model it is pretty good.</p>
+<p>Anyway, I fed the outputted text document to Dolphin and gave it the following system prompt:</p>
+<p><code>Attached is a copy of a transcribed speech. Reformat the transcribed speech in essay form, remove any timestamps, fix punctuation, and make sure it's broken up into readable paragraphs. Do not change any words, however, this has to be a perfect transcription.</code></p>
+<hr>
+<details>
+  <summary>Dropdown: Output from Whisper AI run through Dolphin 2.8 Mixtral</summary>
+  <p>When a week ago today, Mr. Speaker, I asked the House to fix this afternoon at the occasion for a statement, I feared it would be my hard lot to announce the greatest military disaster in our long history. I thought, and some good judge agreed with me, that perhaps 20 or 30,000 men might be <strong>reimbursed</strong>. But it suddenly seemed that the whole of the French First Army and the whole of the British Expeditionary Force, north of the Amia Abbeyal Yap, would be broken up in the open field, or else would have to capitulate for lack of food and ammunition. These were the hard and heavy tidings, which I called upon the House and the nations to prepare themselves a week ago.</p>
+<p>The whole root and core and brain of the British Army, on which and around which we were to build and are to build, the great British armies in the later years of the war seemed about to perish upon the field, or be led into an ignominious and starving captivity. The enemy attacked us on all sides with great strength and fierceness, and their main power, the power of their far more numerous air force, was thrown into the battle, or else concentrated upon Dunkirk and the beaches.</p>
+<p>Pressing in upon the narrow exit, both from the east and from the west, the enemy began to fire with cannons upon the beaches by which alone the shipping could approach our depart. They sowed magnetic mines in the channels and seas. They sent repeated waves of hostile aircraft, sometimes more than a hundred strong in one formation, to craft their bombs upon the single pier that remained, and upon the sand dunes on which the troops had their only shelter. Now <strong>you both,</strong> one of which were sunk, and their motor launches took the toll of the vast traffic which now began.</p>
+<p>For four or five days an intense struggle rained. All their armored divisions, or what was left of them, together with great masses of infantry and artillery, hurled themselves in vain upon the ever-narrowing, ever-contracting appendix within which the British and French armies fought. Meanwhile the Royal Navy, with the willing help of Countess Merchant Seaman, strained every nerve to embark the British and Allied troops. Two hundred and twenty light warships and six hundred and fifty other vessels were engaged.</p>
+<p>They had to operate upon the difficult coast, and often in adverse weather, under an almost ceaseless hail of bombs, and an increasing concentration of artillery fire. Nor were the seas, as I have said, themselves free from mines and torpedoes. It was in conditions such as these that our men carried on with little or no rest for days and nights on end, making trip after trip across the dangerous waters, bringing with them always men who may address you. The numbers they have brought back are the measure of their devotion and their courage.</p>
+<p>The hospital ships which brought off many thousands of British and French wounded, being so plainly marked, were a special target for Nazi bombs, but the men and women on board them never faltered in their duty. Meanwhile the Royal Air Force, which had already been intervening in the battle, so far as its range would allow, from our home bases, now used part of its main metropolitan fighter strength, and struck at the German bombers, and at the fighters, which in large numbers protected them.</p>
+<p>This struggle was protracted in fear. Suddenly, the scene is cleared. The crash and <strong>sundry</strong> adds to the moment, but only for the moment, died away. A miracle of deliverance achieved by valor, by perseverance, by perfect discipline, by faultless service, by resource, by skill, by unconquerable fidelity, it manifests to us all. The enemy was hurled back by the retreating British troops.</p>
+<p>They were so roughly handled that he did not carry their departure seriously. Sir, we must be very careful not to assign to this deliverance the attributes of a victory. Wars are not won by evacuations, but there was a victory inside this deliverance which would be noted. These were gained by the Air Force.</p>
+<p>Many of our soldiers coming back have not seen the Air Force at work. They saw only the bombers, which escaped its protective attack. They underrated its achievements. I&rsquo;ve heard much talk of this, and that is why I go out of my way to say this. I will tell you about it. This was a great trial of strength between the British and German Air Force.</p>
+<p>Can you conceive a greater objective for the Germans in the air than to make evacuation from these beaches impossible, and to sink all these ships which were displayed almost to the extent of thousands? Could there have been an objective of greater military importance and significance for the old purpose of the wars of this? They tried hard, and they were beaten back.</p>
+<p>They were frustrated in their task. We got the army away, and they have paid fourfold for any losses which they have inflicted. Sir, when we consider how much greater would be our advantage in defending the air above this island again for no overseas attack, I must say that I find in these facts a shrubb basis upon which practical and reassuring thoughts may rest.</p>
+<p>I will pay my tribute to these young Germans. The great French army was very largely for the time being charged back and disturbed by the enraged for a few thousands of armored vehicles. May it not also be that the court of civilisation itself will be defended by the skill and devotion of a few thousand Germans?</p>
+<p>There never had been, I suppose, in all the world, in all the history of war, such an opportunity for use. The knights of the round table, the crusaders, all fall back into the past. Not only distant, but protege. These young men going forth every morn to guard their native land and all that we stand for, holding in their hands the instruments of colossal and shattered power of whom it may be said that every morn brought forth a noble chance, and every chance brought forth a noble knight, deserve our gratitude, and do all the brave men in so many ways and on so many occasions are ready and continue ready to give life and all their native land.</p>
+<p><strong>For this</strong>, our thankfulness, at the escape of our army, and so many men who loved ones have passed through an agonising week, but not blind us to the fact that what happened in France and Belgium is a colossal military disaster. The French army has been weakened, the Belgian army has been lost, a large part of those fortified lines upon which so much faith has been reposed, it&rsquo;s gone, many valuable mining districts and factories have passed into the enemy&rsquo;s possession, a whole of the channel ports, 90 hands, there&rsquo;s all the tragic consequences that follow from that, and we must expect an another blow to be struck, almost immediately, at us or at France.</p>
+<p>We are told, sir, that&rsquo;s how Hitler had a plan for invading the British Isles. This is often being thought of before. When Napoleon laid Boulogne for a year with his fat bottom boats and his grand army, he was told by someone, there are bitter weeds in England. There are certainly a great many more of them since the British expeditionary force returned. Sir, I have my self-full confidence that if all do their duty, if nothing is neglected, and if the best arrangements are made, as they are being made, we should prove ourselves once more able to defend our island home, to ride out to the storm of war, and to our lives of menace of tyranny, if necessary, for years, if necessary, alone. At any rate, that is what we are going to try to do. That is the result of his majesty and government, every man of them.</p>
+<p>That is the will of parliament and the nation. The British Empire and the French Republic, linked together in their cause and in their need, will defend to the death their native soil, aiding each other like good comrades to the utmost of their strength. We shall go on to the end, we shall fight in France, we shall fight on the seas and oceans, we shall fight with growing confidence and growing strength in the air, we shall defend our island, whatever the cost may be, we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills, we shall never surrender, and if, which I do not for a moment believe, this island or large part of it was subjugated and starving, then our empire beyond the seas armed and guarded by the British fleet would carry on the struggle until, in God&rsquo;s good time, the new world with all its power might step forth to the rescue and the liberation of the old.</p>
+
+</details>
+
+<hr>
+<p>As you can see, there are no new mistakes. The transcription does contain three (that I noticed), which I bolded again, but they were made by Whisper and not the LLM. In this particular case Whisper AI added punctuation to its output. Although on some other video essays I tried this with Whisper AI did not produce punctuation, Dolphin was still able to add punctuation and paragraphs with no errors regardless.</p>
+<p>In the case of YouTube itself, using Whisper AI isn&rsquo;t necessary. YouTube auto-generates subtitles, which can be downloaded using something like YT-DLP or one of the many YouTube subtitle downloader websites. I was able to download subtitles from a few videos and feed them to the LLM with the same system prompt and was provided the same essay/blogpost style output without errors each time. However, this is me experimenting with transcribing audio, and while YouTube specifically could skip the transcription step, the goal is more so experimenting with taking an audio file of any kind and, without internet or anything proprietary, getting a transcribed document in an easy-to-read format.</p>
+<details>
+  <summary>Dropdown: Data Hoarding/Archiving Bonus Thoughts</summary>
+  <p>Heck, for something like YouTube, you could probably skip running them through an LLM and just grab subtitles for archiving. Say you wanted to archive every video by a YouTube commentary channel using consumer grade hardware; just point YT-DLP to the channel and tell it to grab the subtitles for all the videos on the channel. Optionally compress the subtitle files further using something like xz (use -9e for the most compression at the cost of the most time to run the job) and stash away everything.</p>
+<p>Then, if you want to read through a specific archive, you can feed it into the LLM. Running many archived subtitles through an LLM at once would take a lot of processing power and time, but if you archive the subtitles and run them through the LLM when/if you want to consume them it&rsquo;s suddenly a lot easier.</p>
+<p><em>Note after proofreading: I experimented with this a little bit more, subtitles from Whipser seem to work flawlessly. Subtitles from <a href="https://downsub.com/">subdownloader</a> in text form usually work, but sometimes take some coaxing. Subtitles from YT-DLP, even if they&rsquo;re converted to txt before feeding them in, keep failing.</em></p>
+
+</details>
+
+<p>There are some limitations to this. There&rsquo;s no headings or formatting, so reading the plain text output as provided by the LLM looks a bit bland. Further, doing this with video content loses all important imagery, so you&rsquo;re limited to doing something like this to only video essay/monologue type videos. Finally, Whisper AI will not differentiate audio from different speakers. If you&rsquo;re trying this on a video/audio file with multiple speakers it will transcribe the text, but there will be some missing context to the text that it outputs<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<h1 id="summarization">Summarization</h1>
+<p>Generic page/document summarization has had few updates in my experience since my last post. Summaries often miss the point of what I&rsquo;m giving it unless it&rsquo;s something really simple like a short news article, and it occasionally gives wrong information. Summarizing long content in Dolphin will usually result in a vague and useless summary (kinda pointless if it can only summarize short content), and the browser plugins often give worse results. Tell Brave to summarize a large page and gives you a heads up it&rsquo;s too long and summarizing the first x% of the content, and Orbit will refuse to summarize a large page.</p>
+<p>While complex stuff (say a comparison of microblogging protocols) is usually really bad, relatively short content with a simple/linear message (e.g., a brief news article that says XYZ happened) does summarize well. Unfortunately, however, it&rsquo;s probably less effort to skim over that sort of stuff for a summary rather than feed it to an AI. That said, there is some summarization adjacent stuff that I&rsquo;ve had luck with.</p>
+<h3 id="parsing-datadocuments">Parsing data/documents</h3>
+<p>While generic summarization often fails spectacularly, Dolphin&rsquo;s ability to parse a large document and answer questions about stuff in it is much more helpful. For example, I was able to give it an entire ebook and ask about its content. Not only did it provide an accurate answer to my questions, but it could also cite the location in the book that it was pulling from, so I could easily go to that spot and read it instead of relying on the LLM&rsquo;s interpretation of the words.</p>
+<p>Similarly, when I tested it previously, asking an LLM integrated into a browser about a webpage I was on was also accurate. When I did my original LLM post, I went to one of my blog posts and asked it a bunch of specific questions, all of which provided both detailed and correct responses.</p>
+<h3 id="podcasts">Podcasts</h3>
+<p>In between starting this post and now, Google released Notebook LM, a tool that can (among other things) generate a podcast based on the document(s) or webpage(s). I gave it a go a few times and <a href="https://njump.me/nevent1qqs2warpwl569tf0hnufyfvw6ltkpqkeydekkg6sc56y4veept90npgzyzgs47g8ph7khmhx8ux542kr2j6a59jddwere8y8dn04ynrjqnnx69zy0gq">posted one of the audio outputs on Nostr</a>, but I thought maybe I could rig something like Dolphin or Gemma to generate a script locally (which could be read by an open source neural voice tool like <a href="https://github.com/rhasspy/piper">piper</a>). Long story short, I had no luck. I could generate podcast scripts, but just like generic summaries, I wound up with ones that were too short and vague with occasionally incorrect information.</p>
+<h4 id="some-notes-about-notebook-lm">Some notes about Notebook LM</h4>
+<p>When I tried Notebook LM I generated a handful of &lsquo;podcasts&rsquo; based on my blog posts and took some notes thinking I might make a blog post about them later. I didn&rsquo;t have enough to say to justify a blog post, so I figured I&rsquo;d stuff my random notes here. If you&rsquo;re interested in a full sized blog post about Notebook LM <a href="https://simonwillison.net/2024/Sep/29/notebooklm-audio-overview/">Simon Wilison made a blog post</a> you might find interesting.</p>
+<p>Some random notes that I took about things that stood out:</p>
+<ul>
+<li>I got several ad breaks without ads, some variation of &ldquo;We&rsquo;ll be right back&rdquo; followed by a short pause and then a &ldquo;Now back to the topic.&rdquo;</li>
+<li>Like any LLM powered tool, it understands language but not its meaning. For example, I tried my EDC post, and when it got to the part about my watch freezing up every day at midnight it went on this long tangent about how when your own things have their quirks, it&rsquo;s a cool personalization that makes you unique. Um, no. My watch broke :(</li>
+<li>It occasionally got things wrong, like turning me mentioning my car broke down into me being stranded on a road trip.</li>
+<li>When it talked about gluing cuts together it made me sound all cool and hardcore instead of just a clumsy moron.</li>
+<li>It sometimes mis-summarizes complex things. I used my microblog protocol comparison post and it basically said Activity Pub was first, then Nostr was second and fixed some Activity Pub stuff, and then AT (Bluesky) was third and fixed some Nostr stuff. That&rsquo;s not what the blog post said.</li>
+<li>When I fed it my post about making a hat it endorsed Glacier Ware and the host said they&rsquo;ve purchased from the company and was pleased. In my hat post I did mention potentially purchasing a pelt from Glacier Ware in the future, but specifically specified that I had not bought anything from them at the time<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</li>
+<li>They said that you can buy a car for $900. I have no idea what digital drugs NotebookLM was on.</li>
+<li>It said &lsquo;sus,&rsquo; and I found that funny.</li>
+</ul>
+<p>I don&rsquo;t mean to be too negative; my notes were a little nitpicky because I probably listened to a couple hours of AI podcasts about my blog posts and only made a note when something was wrong or funny. It is worth toying around with, though there are more productive means of consuming information.</p>
+<h1 id="footnotes">Footnotes</h1>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>I don&rsquo;t mean that I&rsquo;ve done any extensive testing, just that I&rsquo;ve done it piece by piece over the course of a long time and eventually decided to assemble my notes into a blog post.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Graphene OS specifically added the network permission, unfortunately the network permission is not part of standard Android.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>I think I just invented the most effective compression algorithm ever. Download a backlog of videos/podcasts and transcribe them to text using an LLM. Then, train an AI model on the creator&rsquo;s voice and archive that AI model. At the initial cost of storing a few GBs for the AI model, you can compress any primarily audio content with an efficiency of like 99.99%.
+Yeah, no, I know it&rsquo;d kinda lose a lot of value in the work if we&rsquo;re listening to a robot that sounds vaguely like the creator read a text document. Still something to think on though, and archiving video/audio in text form might not be a bad idea; platforms don&rsquo;t last forever and archiving text/extracted subtitles is way more feasible. We consume content compressed with lossy compression all the time (compression that impacts the data quality). A good video essay would still be worth consuming as text or TTS audio, and from a data preservation standpoint, having a ton of data &lsquo;compressed&rsquo; in this manner is still infinitely better than not having it at all.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>There are tools like <a href="https://huggingface.co/spaces/Delik/pyannote-speaker-diarization-3.1">Pyannote</a> that can differentiat who is speaking. I ran that and gave the LLM a Whisper AI transcript plus the metadata from Pyannote. However, I had no luck getting the LLM to process something from multiple speakers and provide an easily read document. That said, I didn&rsquo;t try for more than a few minutes, so there could be a way to get it working.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>After making the blog post I purchased a pelt from them and made a hat with it. The hat turned out pretty good, and Glacier Ware seems like a great place to buy that sort of stuff. Still, my blog post clarified that I had not purchased from them at the time, and Notebook LM endorsed them regardless.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+    </div>
+<div class="post_comments">
+  
+  
+  
+</div>
+
+
+
+
+  </article>
+<aside class="sidebar">
+  <section class="sidebar_inner">
+    <br>
+    
+
+
+    
+    
+    <h2 class="mt-4">Recent Posts</h2>
+    <ul class="flex-column">
+      <li>
+        <a href="https://nate.mecca1.net/posts/2024-10-15_non-generative-llm-uses/" class="nav-link" title="Non-Generative uses of Local LLMs">Non-Generative uses of Local LLMs</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2024-09-09_hats/" class="nav-link" title="Making a Fur Hat">Making a Fur Hat</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2024-08-11_microbloggingv2/" class="nav-link" title="Microblogging Protocols Compared v2">Microblogging Protocols Compared v2</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2024-08-05_edc/" class="nav-link" title="EDC, Watches, &amp; Tactical Sporks">EDC, Watches, &amp; Tactical Sporks</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2024-07-03_browsers2/" class="nav-link" title="Browsers: Plummeting Off the Brink">Browsers: Plummeting Off the Brink</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2024-05-20_archiving/" class="nav-link" title="Confessions of a Data Hoarder">Confessions of a Data Hoarder</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2024-03-26_ai/" class="nav-link" title="Local LLMs and AI Ethics (mine makes nukes)">Local LLMs and AI Ethics (mine makes nukes)</a>
+      </li>
+      <li>
+        <a href="https://nate.mecca1.net/posts/2024-02-28_fermentation/" class="nav-link" title="Making Pickles and Sauerkraut (the lazy way)">Making Pickles and Sauerkraut (the lazy way)</a>
+      </li>
+    </ul>
+    <div>
+      <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
+      <nav class="tags_nav">
+        <a href='https://nate.mecca1.net/categories/hobbies/' class="post_tag button button_translucent" title="hobbies">
+          HOBBIES
+          <span class="button_tally">6</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/categories/stuff-i-like/' class="post_tag button button_translucent" title="stuff-i-like">
+          STUFF-I-LIKE
+          <span class="button_tally">6</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/categories/complaints/' class="post_tag button button_translucent" title="complaints">
+          COMPLAINTS
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/categories/informational/' class="post_tag button button_translucent" title="informational">
+          INFORMATIONAL
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/categories/personal-updates/' class="post_tag button button_translucent" title="personal-updates">
+          PERSONAL-UPDATES
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/categories/misc-essay/' class="post_tag button button_translucent" title="misc-essay">
+          MISC-ESSAY
+          <span class="button_tally">1</span>
+        </a>
+        
+        
+      </nav>
+    </div>
+    <div>
+      <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
+      <nav class="tags_nav">
+        <a href='https://nate.mecca1.net/tags/tech/' class="post_tag button button_translucent" title="tech">
+          TECH
+          <span class="button_tally">12</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/protocols/' class="post_tag button button_translucent" title="protocols">
+          PROTOCOLS
+          <span class="button_tally">7</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/misc/' class="post_tag button button_translucent" title="misc">
+          MISC
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/privacy/' class="post_tag button button_translucent" title="privacy">
+          PRIVACY
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/nostr/' class="post_tag button button_translucent" title="nostr">
+          NOSTR
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/projects/' class="post_tag button button_translucent" title="projects">
+          PROJECTS
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/windows/' class="post_tag button button_translucent" title="windows">
+          WINDOWS
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/android/' class="post_tag button button_translucent" title="android">
+          ANDROID
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/decentralized/' class="post_tag button button_translucent" title="decentralized">
+          DECENTRALIZED
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/mobile/' class="post_tag button button_translucent" title="mobile">
+          MOBILE
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/activitypub/' class="post_tag button button_translucent" title="activitypub">
+          ACTIVITYPUB
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/ai/' class="post_tag button button_translucent" title="ai">
+          AI
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/atproto/' class="post_tag button button_translucent" title="atproto">
+          ATPROTO
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/debian/' class="post_tag button button_translucent" title="debian">
+          DEBIAN
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/linux/' class="post_tag button button_translucent" title="linux">
+          LINUX
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/utility/' class="post_tag button button_translucent" title="utility">
+          UTILITY
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/archival/' class="post_tag button button_translucent" title="archival">
+          ARCHIVAL
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/cloud/' class="post_tag button button_translucent" title="cloud">
+          CLOUD
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/encryption/' class="post_tag button button_translucent" title="encryption">
+          ENCRYPTION
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/ipfs/' class="post_tag button button_translucent" title="ipfs">
+          IPFS
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://nate.mecca1.net/tags/opinion/' class="post_tag button button_translucent" title="opinion">
+          OPINION
+          <span class="button_tally">1</span>
+        </a>
+        
+        
+      </nav>
+    </div>
+  </section>
+</aside>
+
+  
+</div>
+    </main><svg width="0" height="0" class="hidden">
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.001 18.001" id="twitter">
+    <path d="M15.891 4.013c.808-.496 1.343-1.173 1.605-2.034a8.68 8.68 0 0 1-2.351.861c-.703-.756-1.593-1.14-2.66-1.14-1.043 0-1.924.366-2.643 1.078a3.56 3.56 0 0 0-1.076 2.605c0 .309.039.585.117.819-3.076-.105-5.622-1.381-7.628-3.837-.34.601-.51 1.213-.51 1.846 0 1.301.549 2.332 1.645 3.089-.625-.053-1.176-.211-1.645-.47 0 .929.273 1.705.82 2.388a3.623 3.623 0 0 0 2.115 1.291c-.312.08-.641.118-.979.118-.312 0-.533-.026-.664-.083.23.757.664 1.371 1.291 1.841a3.652 3.652 0 0 0 2.152.743C4.148 14.173 2.625 14.69.902 14.69c-.422 0-.721-.006-.902-.038 1.697 1.102 3.586 1.649 5.676 1.649 2.139 0 4.029-.542 5.674-1.626 1.645-1.078 2.859-2.408 3.639-3.974a10.77 10.77 0 0 0 1.172-4.892v-.468a7.788 7.788 0 0 0 1.84-1.921 8.142 8.142 0 0 1-2.11.593z"
+      ></path>
+  </symbol>
+  <symbol aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="mail">
+    <path  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="calendar">
+    <path d="M452 40h-24V0h-40v40H124V0H84v40H60C26.916 40 0 66.916 0 100v352c0 33.084 26.916 60 60 60h392c33.084 0 60-26.916 60-60V100c0-33.084-26.916-60-60-60zm20 412c0 11.028-8.972 20-20 20H60c-11.028 0-20-8.972-20-20V188h432v264zm0-304H40v-48c0-11.028 8.972-20 20-20h24v40h40V80h264v40h40V80h24c11.028 0 20 8.972 20 20v48z"></path>
+    <path d="M76 230h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 310h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 390h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80-80h40v40h-40z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="github">
+    <path d="M255.968 5.329C114.624 5.329 0 120.401 0 262.353c0 113.536 73.344 209.856 175.104 243.872 12.8 2.368 17.472-5.568 17.472-12.384 0-6.112-.224-22.272-.352-43.712-71.2 15.52-86.24-34.464-86.24-34.464-11.616-29.696-28.416-37.6-28.416-37.6-23.264-15.936 1.728-15.616 1.728-15.616 25.696 1.824 39.2 26.496 39.2 26.496 22.848 39.264 59.936 27.936 74.528 21.344 2.304-16.608 8.928-27.936 16.256-34.368-56.832-6.496-116.608-28.544-116.608-127.008 0-28.064 9.984-51.008 26.368-68.992-2.656-6.496-11.424-32.64 2.496-68 0 0 21.504-6.912 70.4 26.336 20.416-5.696 42.304-8.544 64.096-8.64 21.728.128 43.648 2.944 64.096 8.672 48.864-33.248 70.336-26.336 70.336-26.336 13.952 35.392 5.184 61.504 2.56 68 16.416 17.984 26.304 40.928 26.304 68.992 0 98.72-59.84 120.448-116.864 126.816 9.184 7.936 17.376 23.616 17.376 47.584 0 34.368-.32 62.08-.32 70.496 0 6.88 4.608 14.88 17.6 12.352C438.72 472.145 512 375.857 512 262.353 512 120.401 397.376 5.329 255.968 5.329z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 212" id="gitlab">
+    <path d="M12.3 74.7h54L43.3 3c-1-3.6-6.4-3.6-7.6 0L12.3 74.8z" />
+    <path d="M12.3 74.7L.5 111c-1 3.2 0 6.8 3 8.8l101.6 74-92.5-119z"/>
+    <path d="M105 193.7l-38.6-119h-54l92.7 119z"/>
+    <path d="M105 193.7l38.7-119H66.4l38.7 119z"/>
+    <path d="M105 193.7l38.7-119H198l-93 119z"/>
+    <path d="M198 74.7l11.6 36.2c1 3 0 6.6-3 8.6l-101.5 74 93-119z"/>
+    <path d="M198 74.7h-54.3L167 3c1.2-3.6 6.4-3.6 7.6 0L198 74.8z"/>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="rss">
+    <circle cx="3.429" cy="20.571" r="3.429"></circle>
+    <path d="M11.429 24h4.57C15.999 15.179 8.821 8.001 0 8v4.572c6.302.001 11.429 5.126 11.429 11.428z"></path>
+    <path d="M24 24C24 10.766 13.234 0 0 0v4.571c10.714 0 19.43 8.714 19.43 19.429z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="linkedin">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h362c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zM181 406h-60V196h60zm0-240h-60v-60h60zm210 240h-60V286c0-16.54-13.46-30-30-30s-30 13.46-30 30v120h-60V196h60v11.309C286.719 202.422 296.93 196 316 196c40.691.043 75 36.547 75 79.688zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612" id="to-top">
+    <path d="M604.501 440.509L325.398 134.956c-5.331-5.357-12.423-7.627-19.386-7.27-6.989-.357-14.056 1.913-19.387 7.27L7.499 440.509c-9.999 10.024-9.999 26.298 0 36.323s26.223 10.024 36.222 0l262.293-287.164L568.28 476.832c9.999 10.024 26.222 10.024 36.221 0 9.999-10.023 9.999-26.298 0-36.323z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="carly">
+    <path d="M504.971 239.029L448 182.059V84c0-46.317-37.682-84-84-84h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c19.851 0 36 16.149 36 36v108c0 6.365 2.529 12.47 7.029 16.971L454.059 256l-47.029 47.029A24.002 24.002 0 0 0 400 320v108c0 19.851-16.149 36-36 36h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c46.318 0 84-37.683 84-84v-98.059l56.971-56.971c9.372-9.372 9.372-24.568 0-33.941zM112 192V84c0-19.851 16.149-36 36-36h44c13.255 0 24-10.745 24-24S205.255 0 192 0h-44c-46.318 0-84 37.683-84 84v98.059l-56.971 56.97c-9.373 9.373-9.373 24.568 0 33.941L64 329.941V428c0 46.317 37.682 84 84 84h44c13.255 0 24-10.745 24-24s-10.745-24-24-24h-44c-19.851 0-36-16.149-36-36V320c0-6.365-2.529-12.47-7.029-16.971L57.941 256l47.029-47.029A24.002 24.002 0 0 0 112 192z"></path>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="copy">
+    <path d="M23 2.75A2.75 2.75 0 0 0 20.25 0H8.75A2.75 2.75 0 0 0 6 2.75v13.5A2.75 2.75 0 0 0 8.75 19h11.5A2.75 2.75 0 0 0 23 16.25zM18.25 14.5h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5z"></path>
+    <path d="M8.75 20.5a4.255 4.255 0 0 1-4.25-4.25V2.75c0-.086.02-.166.025-.25H3.75A2.752 2.752 0 0 0 1 5.25v16A2.752 2.752 0 0 0 3.75 24h12a2.752 2.752 0 0 0 2.75-2.75v-.75z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.001 512.001" id="closeme">
+    <path d="M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0 0 14.143 5.857 19.94 19.94 0 0 0 14.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="open-menu">
+    <path d="M492 236H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0-160H20C8.954 76 0 84.954 0 96s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0 320H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="instagram">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id=youtube>
+    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="stackoverflow">
+    <path d="M21 27v-8h3v11H0V19h3v8h18z"></path><path d="M17.1.2L15 1.8l7.9 10.6 2.1-1.6L17.1.2zm3.7 14.7L10.6 6.4l1.7-2 10.2 8.5-1.7 2zM7.2 12.3l12 5.6 1.1-2.4-12-5.6-1.1 2.4zm-1.8 6.8l13.56 1.96.17-2.38-13.26-2.55-.47 2.97zM19 25H5v-3h14v3z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="xing">
+    <path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 55" id="discord">
+    <path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" id="mastodon">
+    <path
+    fill="#ffffff"
+    d="m 15.054695,9.8859583 c -0.22611,1.1632697 -2.02517,2.4363497 -4.09138,2.6830797 -1.0774504,0.12856 -2.1382704,0.24673 -3.2694704,0.19484 -1.84996,-0.0848 -3.30971,-0.44157 -3.30971,-0.44157 0,0.1801 0.0111,0.35157 0.0333,0.51194 0.24051,1.82571 1.81034,1.93508 3.29737,1.98607 1.50088,0.0514 2.8373104,-0.37004 2.8373104,-0.37004 l 0.0617,1.35686 c 0,0 -1.0498104,0.56374 -2.9199404,0.66742 -1.03124,0.0567 -2.3117,-0.0259 -3.80308,-0.42069 -3.23454998,-0.85613 -3.79081998,-4.304 -3.87592998,-7.8024197 -0.026,-1.03871 -0.01,-2.01815 -0.01,-2.83732 0,-3.57732 2.34385998,-4.62587996 2.34385998,-4.62587996 1.18184,-0.54277 3.20976,-0.77101 5.318,-0.7882499985409 h 0.0518 C 9.8267646,0.01719834 11.856025,0.24547834 13.037775,0.78824834 c 0,0 2.34377,1.04855996 2.34377,4.62587996 0,0 0.0294,2.63937 -0.32687,4.47183"/>
+ <path
+    fill="#000000"
+    d="m 12.616925,5.6916583 v 4.3315297 h -1.71607 V 5.8189683 c 0,-0.88624 -0.37289,-1.33607 -1.1187604,-1.33607 -0.82467,0 -1.23799,0.53361 -1.23799,1.58875 v 2.30122 h -1.70594 v -2.30122 c 0,-1.05514 -0.4134,-1.58875 -1.23808,-1.58875 -0.74587,0 -1.11876,0.44983 -1.11876,1.33607 v 4.2042197 h -1.71607 V 5.6916583 c 0,-0.88527 0.22541,-1.58876 0.67817,-2.10922 0.46689,-0.52047 1.07833,-0.78727 1.83735,-0.78727 0.87816,0 1.54317,0.33752 1.98288,1.01267 l 0.42744,0.71655 0.42753,-0.71655 c 0.43961,-0.67515 1.10463,-1.01267 1.9828704,-1.01267 0.75893,0 1.37037,0.2668 1.83735,0.78727 0.45268,0.52046 0.67808,1.22395 0.67808,2.10922"/>
+  </symbol>
+</svg>
+
+<script type="text/javascript" src="https://nate.mecca1.net/en/js/bundle.ea04089d5378df052824a1c181cf96e36e6f1a1d04670069f0b8ac2efdd0b7d0703c1c94cfcb2ed1888892d38043289f06e9b22caa9a28b1601301db34fef4c2.js" integrity="sha512-6gQInVN43wUoJKHBgc&#43;W425vGh0EZwBp8LisLv3Qt9BwPByUz8su0YiIktOAQyifBumyLKqaKLFgEwHbNP70wg==" crossorigin="anonymous"></script>
+  </body>
+</html>

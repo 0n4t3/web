@@ -6,7 +6,23 @@
     <description>Recent content on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Non-Generative uses of Local LLMs</title>
+      <link>https://nate.mecca1.net/posts/2024-10-15_non-generative-llm-uses/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nate.mecca1.net/posts/2024-10-15_non-generative-llm-uses/</guid>
+      <description>
+        
+          
+            At this point we all know how LLMs can generate text, and I&amp;rsquo;m guessing that everybody reading this knows some relatively lightweight libre LLMs can be installed and run locally. But, as you can probably guess by reading this, I enjoy writing stuff, so text generation isn&amp;rsquo;t really something that I have a use for. The knowledge stored in them is helpful for sure; I use local LLMs to find data or troubleshoot something on probably more or less a once-a-week basis (because I&amp;rsquo;m not connected to the internet, can&amp;rsquo;t find what I&amp;rsquo;m looking for in search engines, want to ask about an error code in plain English, etc).
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Making a Fur Hat</title>
       <link>https://nate.mecca1.net/posts/2024-09-09_hats/</link>
