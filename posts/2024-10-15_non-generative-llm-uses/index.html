@@ -21,14 +21,14 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="At this point we all know how LLMs can generate text, and I&rsquo;m guessing that everybody reading this knows some relatively lightweight libre LLMs can be …" />
+<meta name="description" content="Update Oct. 21st: The transcription portion of the post has been updated, what I originally mistook as issues with how the data was formatted was an issue with …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="Non-Generative uses of Local LLMs" />
 <meta name="twitter:image" content="https://nate.mecca1.net/"/>
 <meta property="og:url" content="https://nate.mecca1.net/posts/2024-10-15_non-generative-llm-uses/" />
 <meta property="og:title" content="Non-Generative uses of Local LLMs" />
-<meta property="og:description" content="At this point we all know how LLMs can generate text, and I&rsquo;m guessing that everybody reading this knows some relatively lightweight libre LLMs can be …" />
+<meta property="og:description" content="Update Oct. 21st: The transcription portion of the post has been updated, what I originally mistook as issues with how the data was formatted was an issue with …" />
 <meta property="og:image" content="https://nate.mecca1.net/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://nate.mecca1.net/icons/apple-touch-icon.png">
@@ -109,7 +109,7 @@
 </span>
     <span class="post_date">
       Oct 15, 2024</span>
-    <span class="post_time"> · 43 min read</span><span>&nbsp;· <a href='https://nate.mecca1.net/tags/tech/' title="tech" class="post_tag button button_translucent">tech
+    <span class="post_time"> · 45 min read</span><span>&nbsp;· <a href='https://nate.mecca1.net/tags/tech/' title="tech" class="post_tag button button_translucent">tech
         </a><a href='https://nate.mecca1.net/tags/utility/' title="utility" class="post_tag button button_translucent">utility
         </a><a href='https://nate.mecca1.net/tags/ai/' title="ai" class="post_tag button button_translucent">ai
         </a>
@@ -117,7 +117,10 @@
     <span class="page_only">&nbsp;·</span>
   </div>
 
-    <div class="post_body"><p>At this point we all know how LLMs can generate text, and I&rsquo;m guessing that everybody reading this knows some relatively lightweight libre LLMs can be installed and run locally. But, as you can probably guess by reading this, I enjoy writing stuff, so text generation isn&rsquo;t really something that I have a use for. The knowledge stored in them is helpful for sure; I use local LLMs to find data or troubleshoot something on probably more or less a once-a-week basis (because I&rsquo;m not connected to the internet, can&rsquo;t find what I&rsquo;m looking for in search engines, want to ask about an error code in plain English, etc). They&rsquo;re also always fun to toy around with at first, but after using them for a while the fun wears off and it just becomes another tool.</p>
+    <div class="post_body"><p>Update Oct. 21st:
+The transcription portion of the post has been updated, what I originally mistook as issues with how the data was formatted was an issue with too many tokens in the transcript I wanted transcribed.</p>
+<hr>
+<p>At this point we all know how LLMs can generate text, and I&rsquo;m guessing that everybody reading this knows some relatively lightweight libre LLMs can be installed and run locally. But, as you can probably guess by reading this, I enjoy writing stuff, so text generation isn&rsquo;t really something that I have a use for. The knowledge stored in them is helpful for sure; I use local LLMs to find data or troubleshoot something on probably more or less a once-a-week basis (because I&rsquo;m not connected to the internet, can&rsquo;t find what I&rsquo;m looking for in search engines, want to ask about an error code in plain English, etc). They&rsquo;re also always fun to toy around with at first, but after using them for a while the fun wears off and it just becomes another tool.</p>
 <p>So, what else can we do with them? I&rsquo;ve touched on LLMs in the past, but this one will be more hyper-focused on three tasks I&rsquo;ve been experimenting with: proofreading, translating, and transcriptions. I touched on two of the three in the other post, but this one will be more detailed with examples instead of just saying, &ldquo;I tried it, seemed to work.&rdquo;</p>
 <h4 id="what-i-used">What I Used</h4>
 <p>Everything you&rsquo;ll see in the examples was accomplished using Dolphin 2.2.1 Mixtral 7b (Q 5.13 GB) in LM Studio 0.2.3 and Dolphin 2.8 Mixtral 7b (Q 3.83 GB) in LM Studio 0.3.2. The difference in versions is only because this has been a blog post built around a bunch of notes and tests I&rsquo;ve done over a relatively long period of time<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> and not because one version worked much better. I also tried these with Google Gemma and Dolphin Phi 2, both quantized around ~2GB. They output the data a lot faster, but they were a little less reliable.</p>
@@ -368,14 +371,25 @@
 <hr>
 <p>As you can see, there are no new mistakes. The transcription does contain three (that I noticed), which I bolded again, but they were made by Whisper and not the LLM. In this particular case Whisper AI added punctuation to its output. Although on some other video essays I tried this with Whisper AI did not produce punctuation, Dolphin was still able to add punctuation and paragraphs with no errors regardless.</p>
 <p>In the case of YouTube itself, using Whisper AI isn&rsquo;t necessary. YouTube auto-generates subtitles, which can be downloaded using something like YT-DLP or one of the many YouTube subtitle downloader websites. I was able to download subtitles from a few videos and feed them to the LLM with the same system prompt and was provided the same essay/blogpost style output without errors each time. However, this is me experimenting with transcribing audio, and while YouTube specifically could skip the transcription step, the goal is more so experimenting with taking an audio file of any kind and, without internet or anything proprietary, getting a transcribed document in an easy-to-read format.</p>
+<hr>
 <details>
   <summary>Dropdown: Data Hoarding/Archiving Bonus Thoughts</summary>
   <p>Heck, for something like YouTube, you could probably skip running them through an LLM and just grab subtitles for archiving. Say you wanted to archive every video by a YouTube commentary channel using consumer grade hardware; just point YT-DLP to the channel and tell it to grab the subtitles for all the videos on the channel. Optionally compress the subtitle files further using something like xz (use -9e for the most compression at the cost of the most time to run the job) and stash away everything.</p>
 <p>Then, if you want to read through a specific archive, you can feed it into the LLM. Running many archived subtitles through an LLM at once would take a lot of processing power and time, but if you archive the subtitles and run them through the LLM when/if you want to consume them it&rsquo;s suddenly a lot easier.</p>
-<p><em>Note after proofreading: I experimented with this a little bit more, subtitles from Whipser seem to work flawlessly. Subtitles from <a href="https://downsub.com/">subdownloader</a> in text form usually work, but sometimes take some coaxing. Subtitles from YT-DLP, even if they&rsquo;re converted to txt before feeding them in, keep failing.</em></p>
 
 </details>
 
+<details>
+  <summary>Dropdown: Attached Document &amp; Token Troubleshooting</summary>
+  <p>Every LLM is going to have a maximum token size, tokens being a measurement of how much data is in the text that you provide to it in a prompt. It&rsquo;s almost never an issue with general prompts, and often is not an issue on uploaded files either. For example, while an entire ebook on, say, the history of the Roman Empire might exceed it&rsquo;s size, it can still do things with parts relevant to the prompt. Say you ask how monetary policy contributed to it&rsquo;s collapse, it can then find the parts of the ebook file that speak about that, add those parts to it&rsquo;s memory, and then use those in it&rsquo;s answer while also providing the location of the info in the document.</p>
+<p>However, if you&rsquo;re doing something like asking it to transcribe an entire document it has to load the entire document, and if it&rsquo;s too long it might just give some generic response or act like you never shared the document at all. All data in attached documents count towards tokens; for example, while a plain text transcription from Whisper might be short enough, a YouTube auto subtitle file might be 80% bigger due to metadata, causing the latter to fail but not the former - even if they were both from the same audio/video file.</p>
+<p>If you&rsquo;re doing something that needs the entire file loaded in one prompt you&rsquo;ll want to keep an eye out for a &ldquo;full injection&rdquo; message. If it says &ldquo;citations found&rdquo; or &ldquo;no citations found&rdquo; it&rsquo;s not loading the entire document and will fail if you&rsquo;re expecting it to work on the whole document at once. Your best bet is to try again after breaking the document into multiple parts or use an LLM that can process more tokens.</p>
+<p>LM studio in developer mode does let you increase the max tokens it&rsquo;ll feed the LLM, although I&rsquo;ve found it often fails to load if you crank it up too high. Decreasing how much of the LLM is accelerated with my graphics card does seem to resolve the issues of it failing to load, although that also slows it down a lot. In the future maybe either the LLMs or the software they&rsquo;re running in will be able to break the file up into multiple pieces on it&rsquo;s own and then do them bit by bit, but in most cases your best bet is to break the file up into a couple pieces and do them one at a time.</p>
+<p><em>P.S. If you have a subtitle file in something like vtt or srt format just change the extension to .txt and it should work.</em></p>
+
+</details>
+
+<hr>
 <p>There are some limitations to this. There&rsquo;s no headings or formatting, so reading the plain text output as provided by the LLM looks a bit bland. Further, doing this with video content loses all important imagery, so you&rsquo;re limited to doing something like this to only video essay/monologue type videos. Finally, Whisper AI will not differentiate audio from different speakers. If you&rsquo;re trying this on a video/audio file with multiple speakers it will transcribe the text, but there will be some missing context to the text that it outputs<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
 <h1 id="summarization">Summarization</h1>
 <p>Generic page/document summarization has had few updates in my experience since my last post. Summaries often miss the point of what I&rsquo;m giving it unless it&rsquo;s something really simple like a short news article, and it occasionally gives wrong information. Summarizing long content in Dolphin will usually result in a vague and useless summary (kinda pointless if it can only summarize short content), and the browser plugins often give worse results. Tell Brave to summarize a large page and gives you a heads up it&rsquo;s too long and summarizing the first x% of the content, and Orbit will refuse to summarize a large page.</p>
