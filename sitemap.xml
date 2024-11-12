@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nate.mecca1.net/tags/ai/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nate.mecca1.net/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/categories/</loc>
+    <lastmod>2024-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/categories/hobbies/</loc>
+    <lastmod>2024-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/photos/</loc>
+    <lastmod>2024-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/posts/</loc>
+    <lastmod>2024-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/</loc>
+    <lastmod>2024-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/posts/2024-11-12_photo-filter-fun/</loc>
+    <lastmod>2024-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nate.mecca1.net/tags/ai/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/categories/informational/</loc>
@@ -17,20 +32,11 @@
     <loc>https://nate.mecca1.net/posts/2024-10-15_non-generative-llm-uses/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nate.mecca1.net/posts/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/tags/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nate.mecca1.net/tags/tech/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/tags/utility/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nate.mecca1.net/categories/hobbies/</loc>
-    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nate.mecca1.net/posts/2024-09-09_hats/</loc>
     <lastmod>2024-09-09T00:00:00+00:00</lastmod>
@@ -170,6 +176,8 @@
     <loc>https://nate.mecca1.net/pages/follow/</loc>
   </url><url>
     <loc>https://nate.mecca1.net/pages/</loc>
+  </url><url>
+    <loc>https://nate.mecca1.net/pages/photos/</loc>
   </url><url>
     <loc>https://nate.mecca1.net/pages/resume/</loc>
   </url>
