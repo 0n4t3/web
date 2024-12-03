@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+            color: #333;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+        }
+        p {
+            font-size: 1.2em;
+            text-align: center;
+            max-width: 800px; /* Optional: limit paragraph width */
+        }
+        .image-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%; /* Full width for the container */
+        }
+        .image-container img {
+            width: 50%;
+            height: auto;
+        }
+        .text {
+            text-align: center; /* Center the text */
+            margin: 0 20px; /* Add some margin for spacing */
+            flex: 1; /* Allow text to take available space */
+        }
+        .left {
+            justify-content: flex-start; /* Align items to the left */
+        }
+        .right {
+            justify-content: flex-end; /* Align items to the right */
+        }
+    </style>
+</head>
+<body>
+<a href="https://nate.mecca1.net">-- return to my blog</a>
+<h1>Photos</h1>
+<p>I was working on <a target="_blank" rel="noopener noreferrer" href="https://nate.mecca1.net/posts/2024-11-12_photo-filter-fun/">a post about using different photo effects</a> in tools like GIMP and ImageMagick, and while going through my photos looking for ones to demonstrate the effects with I eventually wound up collecting some favorites and sharing them here. So yeah, below are some of my favorite photos that don’t contain any personal information. They cover a fairly long time frame (2009-present) so you’ll probably see a lot of varying camera quality. Some have been edited, most just minor auto color adjustments in GIMP, and they’ve all been compressed as AVIF files to save space - going from ~850 MB to 70 MB with very little loss in quality.</p>
+
+<div class="image-container left">
+    <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/wny-landscapes/20.avif" width="4608" height="3456" alt="WNY Landscapes">
+    <h1 class="text"><a href="wny-scenery.html">WNY Landscapes</a></h1>
+</div>
+
+<div class="image-container right">
+    <h1 class="text">WNY Water</h1>
+    <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/wny-water/01.avif" width="4000" height="3000" alt="WNY Water">
+</div>
+
+<div class="image-container left">
+    <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/buildings/01.avif" width="4608" height="3456" alt="Buildings and Cities">
+    <h1 class="text">Buildings and Cities</h1>
+</div>
+
+<div class="image-container right">
+    <h1 class="text">Portraits of Animals, Plants, & Objects</h1>
+    <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/portraits/01.avif" width="4000" height="3000" alt="Portraits of Animals, Plants, & Objects">
+</div>
+
+<div class="image-container left">
+    <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/more/01.avif" width="4608" height="3456" alt="More Landscape Photos">
+    <h1 class="text">More landscape photos</h1>
+</div>
+
+</body>
+</html>
