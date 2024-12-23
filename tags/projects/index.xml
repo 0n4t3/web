@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>projects on An Untitled Blog</title>
-    <link>https://nate.mecca1.net/tags/projects/</link>
+    <link>/tags/projects/</link>
     <description>Recent content in projects on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making a Fur Hat</title>
-      <link>https://nate.mecca1.net/posts/2024-09-09_hats/</link>
+      <link>/posts/2024-09-09_hats/</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-09-09_hats/</guid>
+      <guid>/posts/2024-09-09_hats/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>EDC, Watches, &amp; Tactical Sporks</title>
-      <link>https://nate.mecca1.net/posts/2024-08-05_edc/</link>
+      <link>/posts/2024-08-05_edc/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-08-05_edc/</guid>
+      <guid>/posts/2024-08-05_edc/</guid>
       <description>
         
           
@@ -41,10 +41,10 @@
     
     <item>
       <title>Confessions of a Data Hoarder</title>
-      <link>https://nate.mecca1.net/posts/2024-05-20_archiving/</link>
+      <link>/posts/2024-05-20_archiving/</link>
       <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-05-20_archiving/</guid>
+      <guid>/posts/2024-05-20_archiving/</guid>
       <description>
         
           
@@ -57,10 +57,10 @@
     
     <item>
       <title>Platform Agnostic Following</title>
-      <link>https://nate.mecca1.net/posts/2023-12-20_followanything/</link>
+      <link>/posts/2023-12-20_followanything/</link>
       <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-12-20_followanything/</guid>
+      <guid>/posts/2023-12-20_followanything/</guid>
       <description>
         
           

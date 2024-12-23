@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mobile on An Untitled Blog</title>
-    <link>https://nate.mecca1.net/tags/mobile/</link>
+    <link>/tags/mobile/</link>
     <description>Recent content in Mobile on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quest to find a tablet, pt 2</title>
-      <link>https://nate.mecca1.net/posts/2023-12-01_tablets-2/</link>
+      <link>/posts/2023-12-01_tablets-2/</link>
       <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-12-01_tablets-2/</guid>
+      <guid>/posts/2023-12-01_tablets-2/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>Quest to find a tablet, pt 1</title>
-      <link>https://nate.mecca1.net/posts/2023-11-05_tablets-1/</link>
+      <link>/posts/2023-11-05_tablets-1/</link>
       <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-11-05_tablets-1/</guid>
+      <guid>/posts/2023-11-05_tablets-1/</guid>
       <description>
         
           
@@ -41,10 +41,10 @@
     
     <item>
       <title>Random Tech Tidbits if the Lights (or Router) Goes Out</title>
-      <link>https://nate.mecca1.net/posts/2023-10-23_cell-down/</link>
+      <link>/posts/2023-10-23_cell-down/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-10-23_cell-down/</guid>
+      <guid>/posts/2023-10-23_cell-down/</guid>
       <description>
         
           

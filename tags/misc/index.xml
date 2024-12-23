@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>misc on An Untitled Blog</title>
-    <link>https://nate.mecca1.net/tags/misc/</link>
+    <link>/tags/misc/</link>
     <description>Recent content in misc on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making Pickles and Sauerkraut (the lazy way)</title>
-      <link>https://nate.mecca1.net/posts/2024-02-28_fermentation/</link>
+      <link>/posts/2024-02-28_fermentation/</link>
       <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-02-28_fermentation/</guid>
+      <guid>/posts/2024-02-28_fermentation/</guid>
       <description>
         
           
@@ -26,10 +26,10 @@ So, the lazy way to make Sourkraut: Boil some water on the stove or in a kettle 
     
     <item>
       <title>Blogging in 2023</title>
-      <link>https://nate.mecca1.net/posts/2024-01-18_2023-review/</link>
+      <link>/posts/2024-01-18_2023-review/</link>
       <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-01-18_2023-review/</guid>
+      <guid>/posts/2024-01-18_2023-review/</guid>
       <description>
         
           
@@ -42,10 +42,10 @@ So, the lazy way to make Sourkraut: Boil some water on the stove or in a kettle 
     
     <item>
       <title>Defaults</title>
-      <link>https://nate.mecca1.net/posts/2023-11-14_defaults/</link>
+      <link>/posts/2023-11-14_defaults/</link>
       <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-11-14_defaults/</guid>
+      <guid>/posts/2023-11-14_defaults/</guid>
       <description>
         
           
@@ -59,10 +59,10 @@ My Devices I have three different devices: a PC running Debian, a tablet I just 
     
     <item>
       <title>Subdomain Change</title>
-      <link>https://nate.mecca1.net/posts/2023-09-24_subdomain-change/</link>
+      <link>/posts/2023-09-24_subdomain-change/</link>
       <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-09-24_subdomain-change/</guid>
+      <guid>/posts/2023-09-24_subdomain-change/</guid>
       <description>
         
           
@@ -76,10 +76,10 @@ Longer Update My domain predates my blog by about six years, so when I created m
     
     <item>
       <title>First Post</title>
-      <link>https://nate.mecca1.net/posts/2023-06-16_first-post/</link>
+      <link>/posts/2023-06-16_first-post/</link>
       <pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-06-16_first-post/</guid>
+      <guid>/posts/2023-06-16_first-post/</guid>
       <description>
         
           

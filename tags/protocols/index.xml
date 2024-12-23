@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>protocols on An Untitled Blog</title>
-    <link>https://nate.mecca1.net/tags/protocols/</link>
+    <link>/tags/protocols/</link>
     <description>Recent content in protocols on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/tags/protocols/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/protocols/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Microblogging Protocols Compared v2</title>
-      <link>https://nate.mecca1.net/posts/2024-08-11_microbloggingv2/</link>
+      <link>/posts/2024-08-11_microbloggingv2/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-08-11_microbloggingv2/</guid>
+      <guid>/posts/2024-08-11_microbloggingv2/</guid>
       <description>
         
           
@@ -26,10 +26,10 @@ Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) 
     
     <item>
       <title>I made a client, Nostr surpassed Mastodon, and BlueSky is open?</title>
-      <link>https://nate.mecca1.net/posts/2024-02-24_microblogging-anthology/</link>
+      <link>/posts/2024-02-24_microblogging-anthology/</link>
       <pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-02-24_microblogging-anthology/</guid>
+      <guid>/posts/2024-02-24_microblogging-anthology/</guid>
       <description>
         
           
@@ -43,10 +43,10 @@ I made a client So yeah, I made a client that can post to Nostr, Activity Pub, a
     
     <item>
       <title>ActivityPub/Nostr/AT-BlueSky Compared</title>
-      <link>https://nate.mecca1.net/posts/2024-01-30_microblogging-protocols/</link>
+      <link>/posts/2024-01-30_microblogging-protocols/</link>
       <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-01-30_microblogging-protocols/</guid>
+      <guid>/posts/2024-01-30_microblogging-protocols/</guid>
       <description>
         
           
@@ -61,10 +61,10 @@ I have some good and bad news regarding this post. First, I made two mistakes. A
     
     <item>
       <title>Platform Agnostic Following</title>
-      <link>https://nate.mecca1.net/posts/2023-12-20_followanything/</link>
+      <link>/posts/2023-12-20_followanything/</link>
       <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-12-20_followanything/</guid>
+      <guid>/posts/2023-12-20_followanything/</guid>
       <description>
         
           
@@ -77,10 +77,10 @@ I have some good and bad news regarding this post. First, I made two mistakes. A
     
     <item>
       <title>Nostr</title>
-      <link>https://nate.mecca1.net/posts/2023-12-11_nostr/</link>
+      <link>/posts/2023-12-11_nostr/</link>
       <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-12-11_nostr/</guid>
+      <guid>/posts/2023-12-11_nostr/</guid>
       <description>
         
           
@@ -93,10 +93,10 @@ I have some good and bad news regarding this post. First, I made two mistakes. A
     
     <item>
       <title>MITM Risks in Signal? Mitigation &#43; Monologue</title>
-      <link>https://nate.mecca1.net/posts/2023-11-19_signal-cons/</link>
+      <link>/posts/2023-11-19_signal-cons/</link>
       <pubDate>Sun, 19 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-11-19_signal-cons/</guid>
+      <guid>/posts/2023-11-19_signal-cons/</guid>
       <description>
         
           
@@ -111,10 +111,10 @@ A vanilla implementation of the Signal protocol relies on public key infrastruct
     
     <item>
       <title>What is IPFS &#43; basic use</title>
-      <link>https://nate.mecca1.net/posts/2023-08-28_ipfs/</link>
+      <link>/posts/2023-08-28_ipfs/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-08-28_ipfs/</guid>
+      <guid>/posts/2023-08-28_ipfs/</guid>
       <description>
         
           

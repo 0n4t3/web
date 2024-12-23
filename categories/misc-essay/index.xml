@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>misc-essay on An Untitled Blog</title>
-    <link>https://nate.mecca1.net/categories/misc-essay/</link>
+    <link>/categories/misc-essay/</link>
     <description>Recent content in misc-essay on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/categories/misc-essay/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="/categories/misc-essay/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Local LLMs and AI Ethics (mine makes nukes)</title>
-      <link>https://nate.mecca1.net/posts/2024-03-26_ai/</link>
+      <link>/posts/2024-03-26_ai/</link>
       <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-03-26_ai/</guid>
+      <guid>/posts/2024-03-26_ai/</guid>
       <description>
         
           

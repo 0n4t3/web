@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IPFS on An Untitled Blog</title>
-    <link>https://nate.mecca1.net/tags/ipfs/</link>
+    <link>/tags/ipfs/</link>
     <description>Recent content in IPFS on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/tags/ipfs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/ipfs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is IPFS &#43; basic use</title>
-      <link>https://nate.mecca1.net/posts/2023-08-28_ipfs/</link>
+      <link>/posts/2023-08-28_ipfs/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-08-28_ipfs/</guid>
+      <guid>/posts/2023-08-28_ipfs/</guid>
       <description>
         
           

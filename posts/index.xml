@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on An Untitled Blog</title>
-    <link>https://nate.mecca1.net/posts/</link>
+    <link>/posts/</link>
     <description>Recent content in Posts on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Toying around with photo filters</title>
-      <link>https://nate.mecca1.net/posts/2024-11-12_photo-filter-fun/</link>
+      <link>/posts/2024-11-12_photo-filter-fun/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-11-12_photo-filter-fun/</guid>
+      <guid>/posts/2024-11-12_photo-filter-fun/</guid>
       <description>
         
           
@@ -26,10 +26,10 @@ You might have played around with AI image generation, getting a little hit of d
     
     <item>
       <title>Non-Generative uses of Local LLMs</title>
-      <link>https://nate.mecca1.net/posts/2024-10-15_non-generative-llm-uses/</link>
+      <link>/posts/2024-10-15_non-generative-llm-uses/</link>
       <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-10-15_non-generative-llm-uses/</guid>
+      <guid>/posts/2024-10-15_non-generative-llm-uses/</guid>
       <description>
         
           
@@ -43,10 +43,10 @@ At this point we all know how LLMs can generate text, and I&amp;rsquo;m guessing
     
     <item>
       <title>Making a Fur Hat</title>
-      <link>https://nate.mecca1.net/posts/2024-09-09_hats/</link>
+      <link>/posts/2024-09-09_hats/</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-09-09_hats/</guid>
+      <guid>/posts/2024-09-09_hats/</guid>
       <description>
         
           
@@ -59,10 +59,10 @@ At this point we all know how LLMs can generate text, and I&amp;rsquo;m guessing
     
     <item>
       <title>Microblogging Protocols Compared v2</title>
-      <link>https://nate.mecca1.net/posts/2024-08-11_microbloggingv2/</link>
+      <link>/posts/2024-08-11_microbloggingv2/</link>
       <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-08-11_microbloggingv2/</guid>
+      <guid>/posts/2024-08-11_microbloggingv2/</guid>
       <description>
         
           
@@ -76,10 +76,10 @@ Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) 
     
     <item>
       <title>EDC, Watches, &amp; Tactical Sporks</title>
-      <link>https://nate.mecca1.net/posts/2024-08-05_edc/</link>
+      <link>/posts/2024-08-05_edc/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-08-05_edc/</guid>
+      <guid>/posts/2024-08-05_edc/</guid>
       <description>
         
           
@@ -92,10 +92,10 @@ Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) 
     
     <item>
       <title>Browsers: Plummeting Off the Brink</title>
-      <link>https://nate.mecca1.net/posts/2024-07-03_browsers2/</link>
+      <link>/posts/2024-07-03_browsers2/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-07-03_browsers2/</guid>
+      <guid>/posts/2024-07-03_browsers2/</guid>
       <description>
         
           
@@ -108,10 +108,10 @@ Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) 
     
     <item>
       <title>Confessions of a Data Hoarder</title>
-      <link>https://nate.mecca1.net/posts/2024-05-20_archiving/</link>
+      <link>/posts/2024-05-20_archiving/</link>
       <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-05-20_archiving/</guid>
+      <guid>/posts/2024-05-20_archiving/</guid>
       <description>
         
           
@@ -124,10 +124,10 @@ Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) 
     
     <item>
       <title>Local LLMs and AI Ethics (mine makes nukes)</title>
-      <link>https://nate.mecca1.net/posts/2024-03-26_ai/</link>
+      <link>/posts/2024-03-26_ai/</link>
       <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-03-26_ai/</guid>
+      <guid>/posts/2024-03-26_ai/</guid>
       <description>
         
           
@@ -140,10 +140,10 @@ Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) 
     
     <item>
       <title>Making Pickles and Sauerkraut (the lazy way)</title>
-      <link>https://nate.mecca1.net/posts/2024-02-28_fermentation/</link>
+      <link>/posts/2024-02-28_fermentation/</link>
       <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-02-28_fermentation/</guid>
+      <guid>/posts/2024-02-28_fermentation/</guid>
       <description>
         
           
@@ -157,10 +157,10 @@ So, the lazy way to make Sourkraut: Boil some water on the stove or in a kettle 
     
     <item>
       <title>I made a client, Nostr surpassed Mastodon, and BlueSky is open?</title>
-      <link>https://nate.mecca1.net/posts/2024-02-24_microblogging-anthology/</link>
+      <link>/posts/2024-02-24_microblogging-anthology/</link>
       <pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-02-24_microblogging-anthology/</guid>
+      <guid>/posts/2024-02-24_microblogging-anthology/</guid>
       <description>
         
           
@@ -174,10 +174,10 @@ I made a client So yeah, I made a client that can post to Nostr, Activity Pub, a
     
     <item>
       <title>ActivityPub/Nostr/AT-BlueSky Compared</title>
-      <link>https://nate.mecca1.net/posts/2024-01-30_microblogging-protocols/</link>
+      <link>/posts/2024-01-30_microblogging-protocols/</link>
       <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-01-30_microblogging-protocols/</guid>
+      <guid>/posts/2024-01-30_microblogging-protocols/</guid>
       <description>
         
           
@@ -192,10 +192,10 @@ I have some good and bad news regarding this post. First, I made two mistakes. A
     
     <item>
       <title>Blogging in 2023</title>
-      <link>https://nate.mecca1.net/posts/2024-01-18_2023-review/</link>
+      <link>/posts/2024-01-18_2023-review/</link>
       <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-01-18_2023-review/</guid>
+      <guid>/posts/2024-01-18_2023-review/</guid>
       <description>
         
           
@@ -208,10 +208,10 @@ I have some good and bad news regarding this post. First, I made two mistakes. A
     
     <item>
       <title>Firefox: a brink of their own making?</title>
-      <link>https://nate.mecca1.net/posts/2023-12-27_mozillasbrink/</link>
+      <link>/posts/2023-12-27_mozillasbrink/</link>
       <pubDate>Wed, 27 Dec 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-12-27_mozillasbrink/</guid>
+      <guid>/posts/2023-12-27_mozillasbrink/</guid>
       <description>
         
           
@@ -225,10 +225,10 @@ I have been made aware that Firefox for Android no longer includes Google Analyt
     
     <item>
       <title>Platform Agnostic Following</title>
-      <link>https://nate.mecca1.net/posts/2023-12-20_followanything/</link>
+      <link>/posts/2023-12-20_followanything/</link>
       <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-12-20_followanything/</guid>
+      <guid>/posts/2023-12-20_followanything/</guid>
       <description>
         
           
@@ -241,10 +241,10 @@ I have been made aware that Firefox for Android no longer includes Google Analyt
     
     <item>
       <title>Nostr</title>
-      <link>https://nate.mecca1.net/posts/2023-12-11_nostr/</link>
+      <link>/posts/2023-12-11_nostr/</link>
       <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-12-11_nostr/</guid>
+      <guid>/posts/2023-12-11_nostr/</guid>
       <description>
         
           
@@ -257,10 +257,10 @@ I have been made aware that Firefox for Android no longer includes Google Analyt
     
     <item>
       <title>Quest to find a tablet, pt 2</title>
-      <link>https://nate.mecca1.net/posts/2023-12-01_tablets-2/</link>
+      <link>/posts/2023-12-01_tablets-2/</link>
       <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-12-01_tablets-2/</guid>
+      <guid>/posts/2023-12-01_tablets-2/</guid>
       <description>
         
           
@@ -273,10 +273,10 @@ I have been made aware that Firefox for Android no longer includes Google Analyt
     
     <item>
       <title>MITM Risks in Signal? Mitigation &#43; Monologue</title>
-      <link>https://nate.mecca1.net/posts/2023-11-19_signal-cons/</link>
+      <link>/posts/2023-11-19_signal-cons/</link>
       <pubDate>Sun, 19 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-11-19_signal-cons/</guid>
+      <guid>/posts/2023-11-19_signal-cons/</guid>
       <description>
         
           
@@ -291,10 +291,10 @@ A vanilla implementation of the Signal protocol relies on public key infrastruct
     
     <item>
       <title>Defaults</title>
-      <link>https://nate.mecca1.net/posts/2023-11-14_defaults/</link>
+      <link>/posts/2023-11-14_defaults/</link>
       <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-11-14_defaults/</guid>
+      <guid>/posts/2023-11-14_defaults/</guid>
       <description>
         
           
@@ -308,10 +308,10 @@ My Devices I have three different devices: a PC running Debian, a tablet I just 
     
     <item>
       <title>Quest to find a tablet, pt 1</title>
-      <link>https://nate.mecca1.net/posts/2023-11-05_tablets-1/</link>
+      <link>/posts/2023-11-05_tablets-1/</link>
       <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-11-05_tablets-1/</guid>
+      <guid>/posts/2023-11-05_tablets-1/</guid>
       <description>
         
           
@@ -324,10 +324,10 @@ My Devices I have three different devices: a PC running Debian, a tablet I just 
     
     <item>
       <title>Get The Most of Win 11 (and the least bloat)</title>
-      <link>https://nate.mecca1.net/posts/2023-11-02_win11/</link>
+      <link>/posts/2023-11-02_win11/</link>
       <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-11-02_win11/</guid>
+      <guid>/posts/2023-11-02_win11/</guid>
       <description>
         
           
@@ -341,10 +341,10 @@ If you read my first post here you probably got the idea I have strong feelings 
     
     <item>
       <title>Random Tech Tidbits if the Lights (or Router) Goes Out</title>
-      <link>https://nate.mecca1.net/posts/2023-10-23_cell-down/</link>
+      <link>/posts/2023-10-23_cell-down/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-10-23_cell-down/</guid>
+      <guid>/posts/2023-10-23_cell-down/</guid>
       <description>
         
           
@@ -357,10 +357,10 @@ If you read my first post here you probably got the idea I have strong feelings 
     
     <item>
       <title>Subdomain Change</title>
-      <link>https://nate.mecca1.net/posts/2023-09-24_subdomain-change/</link>
+      <link>/posts/2023-09-24_subdomain-change/</link>
       <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-09-24_subdomain-change/</guid>
+      <guid>/posts/2023-09-24_subdomain-change/</guid>
       <description>
         
           
@@ -374,10 +374,10 @@ Longer Update My domain predates my blog by about six years, so when I created m
     
     <item>
       <title>What is IPFS &#43; basic use</title>
-      <link>https://nate.mecca1.net/posts/2023-08-28_ipfs/</link>
+      <link>/posts/2023-08-28_ipfs/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-08-28_ipfs/</guid>
+      <guid>/posts/2023-08-28_ipfs/</guid>
       <description>
         
           
@@ -390,10 +390,10 @@ Longer Update My domain predates my blog by about six years, so when I created m
     
     <item>
       <title>Microsoft&#39;s All-Cloud Windows is what I dislike about Modern Computing</title>
-      <link>https://nate.mecca1.net/posts/2023-07-24_cloud-oss/</link>
+      <link>/posts/2023-07-24_cloud-oss/</link>
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-07-24_cloud-oss/</guid>
+      <guid>/posts/2023-07-24_cloud-oss/</guid>
       <description>
         
           
@@ -406,10 +406,10 @@ Longer Update My domain predates my blog by about six years, so when I created m
     
     <item>
       <title>First Post</title>
-      <link>https://nate.mecca1.net/posts/2023-06-16_first-post/</link>
+      <link>/posts/2023-06-16_first-post/</link>
       <pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-06-16_first-post/</guid>
+      <guid>/posts/2023-06-16_first-post/</guid>
       <description>
         
           

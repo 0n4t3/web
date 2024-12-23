@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personal Updates on An Untitled Blog</title>
-    <link>https://nate.mecca1.net/categories/personal-updates/</link>
+    <link>/categories/personal-updates/</link>
     <description>Recent content in Personal Updates on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/categories/personal-updates/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="/categories/personal-updates/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blogging in 2023</title>
-      <link>https://nate.mecca1.net/posts/2024-01-18_2023-review/</link>
+      <link>/posts/2024-01-18_2023-review/</link>
       <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-01-18_2023-review/</guid>
+      <guid>/posts/2024-01-18_2023-review/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>Subdomain Change</title>
-      <link>https://nate.mecca1.net/posts/2023-09-24_subdomain-change/</link>
+      <link>/posts/2023-09-24_subdomain-change/</link>
       <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-09-24_subdomain-change/</guid>
+      <guid>/posts/2023-09-24_subdomain-change/</guid>
       <description>
         
           
@@ -42,10 +42,10 @@ Longer Update My domain predates my blog by about six years, so when I created m
     
     <item>
       <title>First Post</title>
-      <link>https://nate.mecca1.net/posts/2023-06-16_first-post/</link>
+      <link>/posts/2023-06-16_first-post/</link>
       <pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-06-16_first-post/</guid>
+      <guid>/posts/2023-06-16_first-post/</guid>
       <description>
         
           

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>informational on An Untitled Blog</title>
-    <link>https://nate.mecca1.net/categories/informational/</link>
+    <link>/categories/informational/</link>
     <description>Recent content in informational on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nate.mecca1.net/categories/informational/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="/categories/informational/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Non-Generative uses of Local LLMs</title>
-      <link>https://nate.mecca1.net/posts/2024-10-15_non-generative-llm-uses/</link>
+      <link>/posts/2024-10-15_non-generative-llm-uses/</link>
       <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-10-15_non-generative-llm-uses/</guid>
+      <guid>/posts/2024-10-15_non-generative-llm-uses/</guid>
       <description>
         
           
@@ -26,10 +26,10 @@ At this point we all know how LLMs can generate text, and I&amp;rsquo;m guessing
     
     <item>
       <title>Confessions of a Data Hoarder</title>
-      <link>https://nate.mecca1.net/posts/2024-05-20_archiving/</link>
+      <link>/posts/2024-05-20_archiving/</link>
       <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2024-05-20_archiving/</guid>
+      <guid>/posts/2024-05-20_archiving/</guid>
       <description>
         
           
@@ -42,10 +42,10 @@ At this point we all know how LLMs can generate text, and I&amp;rsquo;m guessing
     
     <item>
       <title>Get The Most of Win 11 (and the least bloat)</title>
-      <link>https://nate.mecca1.net/posts/2023-11-02_win11/</link>
+      <link>/posts/2023-11-02_win11/</link>
       <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-11-02_win11/</guid>
+      <guid>/posts/2023-11-02_win11/</guid>
       <description>
         
           
@@ -59,10 +59,10 @@ If you read my first post here you probably got the idea I have strong feelings 
     
     <item>
       <title>Random Tech Tidbits if the Lights (or Router) Goes Out</title>
-      <link>https://nate.mecca1.net/posts/2023-10-23_cell-down/</link>
+      <link>/posts/2023-10-23_cell-down/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nate.mecca1.net/posts/2023-10-23_cell-down/</guid>
+      <guid>/posts/2023-10-23_cell-down/</guid>
       <description>
         
           
