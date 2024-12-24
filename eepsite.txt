@@ -1,7 +1,0 @@
-I'm currently playing around with an I2P mirror of my site, although no promises in regards to uptime and longevity. If you're currently on the clearnet and want to check it out you can find it at:
-
-war5vjmd5iwtkiaembdalthe3cckiogoh2o3gp2dnbbfao6wjdpa.b32.i2p
-
-If you're on I2P and wanted to check my site out on the clearweb you can find it at:
-
-nate.mecca1.net
