@@ -2,25 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/2024-12-30_2024-retrospective/</loc>
-    <lastmod>2024-12-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/</loc>
-    <lastmod>2024-12-29T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/android/</loc>
+    <lastmod>2025-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
+    <lastmod>2025-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/mobile/</loc>
+    <lastmod>2025-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/2025-02-09_phone-reviews/</loc>
+    <lastmod>2025-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2025-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/review/</loc>
+    <lastmod>2025-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/stuff-i-like/</loc>
+    <lastmod>2025-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2025-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/tech/</loc>
+    <lastmod>2025-02-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/2024-12-30_2024-retrospective/</loc>
     <lastmod>2024-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/meta/</loc>
     <lastmod>2024-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/personal-updates/</loc>
-    <lastmod>2024-12-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2024-12-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2024-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/hobbies/</loc>
@@ -39,9 +57,6 @@
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2024-10-15_non-generative-llm-uses/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/tech/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/utility/</loc>
@@ -66,9 +81,6 @@
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/protocols/</loc>
-    <lastmod>2024-08-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/stuff-i-like/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2024-08-05_edc/</loc>
@@ -125,16 +137,10 @@
     <loc>/posts/2023-12-11_nostr/</loc>
     <lastmod>2023-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/android/</loc>
-    <lastmod>2023-12-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/debian/</loc>
     <lastmod>2023-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/linux/</loc>
-    <lastmod>2023-12-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/mobile/</loc>
     <lastmod>2023-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2023-12-01_tablets-2/</loc>
