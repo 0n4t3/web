@@ -2,13 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
-    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
+    <loc>/tags/activitypub/</loc>
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/android/</loc>
-    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
+    <loc>/tags/ai/</loc>
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/hobbies/</loc>
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/nostr/</loc>
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/2025-04-13_vibe-coding-chronicles/</loc>
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/android/</loc>
     <lastmod>2025-04-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/emulation/</loc>
@@ -23,13 +44,7 @@
     <loc>/tags/mobile/</loc>
     <lastmod>2025-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/categories/stuff-i-like/</loc>
-    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2025-04-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2025-02-09_phone-reviews/</loc>
@@ -50,17 +65,11 @@
     <loc>/categories/personal-updates/</loc>
     <lastmod>2024-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/hobbies/</loc>
-    <lastmod>2024-11-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/photos/</loc>
     <lastmod>2024-11-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2024-11-12_photo-filter-fun/</loc>
     <lastmod>2024-11-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/ai/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/informational/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
@@ -77,16 +86,10 @@
     <loc>/tags/projects/</loc>
     <lastmod>2024-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/activitypub/</loc>
-    <lastmod>2024-08-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/atproto/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2024-08-11_microbloggingv2/</loc>
-    <lastmod>2024-08-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/nostr/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/protocols/</loc>
