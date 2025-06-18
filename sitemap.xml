@@ -3,27 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/tags/activitypub/</loc>
-    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/i2p/</loc>
+    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/ipfs/</loc>
+    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/2025-06-18_standard-server-alternatives/</loc>
+    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/nostr/</loc>
+    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/projects/</loc>
+    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/protocols/</loc>
+    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/tor/</loc>
+    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/tutorials/</loc>
+    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/ai/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/categories/hobbies/</loc>
-    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/nostr/</loc>
-    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2025-04-13_vibe-coding-chronicles/</loc>
@@ -83,16 +104,10 @@
     <loc>/posts/2024-09-09_hats/</loc>
     <lastmod>2024-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/projects/</loc>
-    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/atproto/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2024-08-11_microbloggingv2/</loc>
-    <lastmod>2024-08-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/protocols/</loc>
     <lastmod>2024-08-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2024-08-05_edc/</loc>
@@ -182,9 +197,6 @@
     <loc>/posts/2023-09-24_subdomain-change/</loc>
     <lastmod>2023-09-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/ipfs/</loc>
-    <lastmod>2023-08-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/posts/2023-08-28_ipfs/</loc>
     <lastmod>2023-08-28T00:00:00+00:00</lastmod>
   </url><url>
@@ -196,8 +208,6 @@
   </url><url>
     <loc>/posts/2023-06-16_first-post/</loc>
     <lastmod>2023-06-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/pages/nate/</loc>
   </url><url>
     <loc>/pages/follow/</loc>
   </url><url>
