@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
@@ -8,16 +10,99 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
     <title>Desaturated</title>
     <style>
+        :root {
+            --primary-gradient: linear-gradient(to right, #d3d3d3, #a9a9a9, #808080, #696969);
+            --text-color: #333;
+            --link-color: #2c3e50;
+            --link-hover-color: #1a252f;
+            --container-max-width: 1200px;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 3rem;
+            --border-radius: 12px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            background: linear-gradient(to right, #d3d3d3, #a9a9a9, #808080, #696969);
+            background: var(--primary-gradient);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: var(--spacing-md) var(--spacing-sm);
+            color: var(--text-color);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-sm);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: var(--spacing-md);
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            color: var(--link-hover-color);
+            transform: translateX(-4px);
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            text-align: center;
+            margin: var(--spacing-md) 0;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .description {
+            text-align: center;
+            font-size: 1.1rem;
+            margin: 1.5rem auto 2rem;
+            max-width: 600px;
+            color: #444;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: var(--spacing-sm);
+            border-radius: var(--border-radius);
+        }
+
+        .description a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .description a:hover {
+            color: var(--link-hover-color);
+        }
+
+        #ngy2p {
+            margin-top: var(--spacing-md);
         }
     </style>
   </head>
   <body>
-    <a href="/photos/">-- all photos</a>
-    <h1>Desaturated</h1>
-Photos that are either partially or fully desaturated. I made some <a href="https://github.com/0n4t3/Darktable-Styles/tree/main">Darktable styles</a> that I used for some if you're interested.
-    <div ID="ngy2p" data-nanogallery2='{
+    <div class="container">
+      <a href="/photos/" class="back-link">← all photos</a>
+      <h1>Desaturated</h1>
+      <div class="description">
+        Photos that are either partially or fully desaturated. I made some <a href="https://github.com/0n4t3/Darktable-Styles/tree/main">Darktable styles</a> that I used for some if you're interested.
+      </div>
+      
+      <div ID="ngy2p" data-nanogallery2='{
         "itemsBaseURL": "https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/desat/",
         "thumbnailWidth": "200",
         "thumbnailLabel": {
@@ -37,7 +122,7 @@ Photos that are either partially or fully desaturated. I made some <a href="http
       <a href="08.avif" data-ngthumb="tb/08.avif" data-ngdesc=""></a>
       <a href="09.avif" data-ngthumb="tb/09.avif" data-ngdesc=""></a>
       <a href="10.avif" data-ngthumb="tb/10.avif" data-ngdesc=""></a>
+      </div>
     </div>
-    
   </body>
 </html>

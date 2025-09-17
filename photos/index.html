@@ -5,97 +5,252 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photos</title>
     <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+            --text-color: #333;
+            --link-color: #2563eb;
+            --link-hover-color: #1d4ed8;
+            --container-max-width: 1200px;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 3rem;
+            --border-radius: 12px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
-            color: #333;
+            padding: var(--spacing-md);
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: var(--primary-gradient);
+            color: var(--text-color);
+            line-height: 1.6;
         }
+
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-sm);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: var(--spacing-md);
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            color: var(--link-hover-color);
+            transform: translateX(-4px);
+        }
+
         h1 {
-            font-size: 2.5em;
+            font-size: clamp(2rem, 5vw, 3.5rem);
             text-align: center;
+            margin-bottom: var(--spacing-lg);
+            font-weight: 300;
+            letter-spacing: -0.02em;
         }
-        p {
-            font-size: 1.2em;
-            text-align: center;
-            max-width: 800px; /* Optional: limit paragraph width */
+
+        .gallery {
+            display: grid;
+            gap: var(--spacing-lg);
         }
+
         .image-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+            min-height: 300px;
+        }
+
+        .image-container:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            object-fit: cover;
+            aspect-ratio: 4/3;
+            transition: var(--transition);
+        }
+
+        .image-container img:hover {
+            transform: scale(1.02);
+        }
+
+        .text {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
-            width: 100%; /* Full width for the container */
+            justify-content: center;
+            text-align: center;
+            padding: var(--spacing-sm);
         }
-        .image-container img {
-            width: 50%;
-            height: auto;
+
+        .text h2 {
+            margin: 0;
+            font-size: clamp(1.25rem, 3vw, 2rem);
+            font-weight: 400;
+            line-height: 1.3;
         }
-        .text {
-            text-align: center; /* Center the text */
-            margin: 0 20px; /* Add some margin for spacing */
-            flex: 1; /* Allow text to take available space */
+
+        .text a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: var(--transition);
+            position: relative;
         }
-        .left {
-            justify-content: flex-start; /* Align items to the left */
+
+        .text a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--link-color);
+            transition: var(--transition);
         }
-        .right {
-            justify-content: flex-end; /* Align items to the right */
+
+        .text a:hover::after {
+            width: 100%;
+        }
+
+        .text a:hover {
+            color: var(--link-color);
+        }
+
+        .left img {
+            order: 1;
+        }
+
+        .left .text {
+            order: 2;
+        }
+
+        .right img {
+            order: 2;
+        }
+
+        .right .text {
+            order: 1;
+        }
+
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            body {
+                padding: var(--spacing-sm);
+            }
+
+            .image-container {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-sm);
+                padding: var(--spacing-sm);
+                min-height: auto;
+            }
+
+            .image-container img {
+                aspect-ratio: 16/9;
+            }
+
+            .left img,
+            .right img {
+                order: 1;
+            }
+
+            .left .text,
+            .right .text {
+                order: 2;
+            }
+
+            .gallery {
+                gap: var(--spacing-md);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0;
+            }
+            
+            .image-container {
+                border-radius: 8px;
+            }
+            
+            .image-container img {
+                border-radius: 8px;
+            }
         }
     </style>
 </head>
 <body>
-<a href="/">-- return to my blog</a>
-<h1>Photos</h1>
-<p>I was working on <a target="_blank" rel="noopener noreferrer" href="/posts/2024-11-12_photo-filter-fun/">a post about using different photo effects</a> in tools like GIMP and ImageMagick, and while going through my photos looking for ones to demonstrate the effects with I eventually wound up collecting some favorites and sharing them here. So yeah, below are some of my favorite photos that don’t contain any personal information. They cover a fairly long time frame (2009-present) so you’ll probably see a lot of varying camera quality. Some have been edited, most just minor auto color adjustments in GIMP, and they’ve all been compressed as AVIF files to save space - going from ~850 MB to 70 MB with very little loss in quality.</p>
+<div class="container">
+    <a href="/" class="back-link">← return to my blog</a>
+    <h1>Photos</h1>
 
-<div class="image-container left">
-    <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/wny-landscapes/20.avif" width="4608" height="3456" alt="WNY Landscapes">
-    <h1 class="text"><a href="wny-scenery.html">WNY Landscapes</a></h1>
+    <div class="gallery">
+        <div class="image-container left">
+            <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/wny-landscapes/20.avif" width="4608" height="3456" alt="WNY Landscapes">
+            <div class="text"><h2><a href="wny-scenery.html">WNY Landscapes</a></h2></div>
+        </div>
+
+        <div class="image-container right">
+            <div class="text"><h2><a href="wny-water.html">WNY Water</a></h2></div>
+            <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/wny-water/01.avif" width="4000" height="3000" alt="WNY Water">
+        </div>
+
+        <div class="image-container left">
+            <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/buildings/01.avif" width="4608" height="3456" alt="Buildings and Cities">
+            <div class="text"><h2><a href="buildings.html">Buildings and Cities</a></h2></div>
+        </div>
+
+        <div class="image-container right">
+            <div class="text"><h2><a href="portraits.html">Portraits of Animals, Plants, & Objects</a></h2></div>
+            <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/portraits/01.avif" width="4000" height="3000" alt="Portraits of Animals, Plants, & Objects">
+        </div>
+
+        <div class="image-container left">
+            <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/more/01.avif" width="4608" height="3456" alt="More Landscape Photos">
+            <div class="text"><h2><a href="more-scenery.html">More Landscape Photos</a></h2></div>
+        </div>
+
+        <div class="image-container right">
+            <div class="text"><h2><a href="flip.html">Flip Phone</a></h2></div>
+            <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/flipphone/01.avif" width="4000" height="3000" alt="Flip Phone Photos">
+        </div>
+
+        <div class="image-container left">
+            <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/film/01.avif" width="4608" height="3456" alt="film">
+            <div class="text"><h2><a href="film.html">Film</a></h2></div>
+        </div>
+
+        <div class="image-container right">
+            <div class="text"><h2><a href="edit.html">Heavily Edited</a></h2></div>
+            <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/edit/02.avif" width="4000" height="3000" alt="Heavily Edited">
+        </div>
+
+        <div class="image-container left">
+            <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/desat/01.avif" width="4608" height="3456" alt="desat">
+            <div class="text"><h2><a href="desat.html">Desaturated</a></h2></div>
+        </div>
+    </div>
 </div>
-
-<div class="image-container right">
-    <h1 class="text"><a href="wny-water.html">WNY Water</a></h1>
-    <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/wny-water/01.avif" width="4000" height="3000" alt="WNY Water">
-</div>
-
-<div class="image-container left">
-    <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/buildings/01.avif" width="4608" height="3456" alt="Buildings and Cities">
-    <h1 class="text"><a href="buildings.html">Buildings and Cities</a></h1>
-</div>
-
-<div class="image-container right">
-    <h1 class="text"><a href="portraits.html">Portraits of Animals, Plants, & Objects</a></h1>
-    <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/portraits/01.avif" width="4000" height="3000" alt="Portraits of Animals, Plants, & Objects">
-</div>
-
-<div class="image-container left">
-    <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/more/01.avif" width="4608" height="3456" alt="More Landscape Photos">
-    <h1 class="text"><a href="more-scenery.html">More Landscape Photos</a></h1>
-</div>
-
-<div class="image-container right">
-    <h1 class="text"><a href="flip.html">Flip Phone</a></h1>
-    <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/flipphone/01.avif" width="4000" height="3000" alt="Flip Phone Photos">
-</div>
-
-<div class="image-container left">
-    <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/film/01.avif" width="4608" height="3456" alt="film">
-    <h1 class="text"><a href="film.html">Film</a></h1>
-</div>
-
-<div class="image-container right">
-    <h1 class="text"><a href="edit.html">Heavily Edited</a></h1>
-    <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/edit/02.avif" width="4000" height="3000" alt="Heavily Edited">
-</div>
-
-<div class="image-container left">
-    <img src="https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/desat/01.avif" width="4608" height="3456" alt="desat">
-    <h1 class="text"><a href="desat.html">Desaturated</a></h1>
-</div>
-
 </body>
 </html>

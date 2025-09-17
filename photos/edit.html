@@ -10,14 +10,67 @@
     <style>
         body {
             background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem 1rem;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        a {
+            color: #6a4c93;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #4a3069;
+            transform: translateX(-4px);
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            text-align: center;
+            margin: 2rem 0;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .description {
+            font-size: 1rem;
+            margin: 2rem 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #444;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 12px;
+        }
+
+        .description p {
+            margin: 0.5rem 0;
+        }
+
+        #ngy2p {
+            margin-top: 2rem;
         }
     </style>
   </head>
   <body>
-    <a href="/photos/">-- all photos</a>
-    <h1>Heavily Edited</h1>
+    <div class="container">
+      <a href="/photos/">← all photos</a>
+      <h1>Heavily Edited</h1>
 
-    <div ID="ngy2p" data-nanogallery2='{
+      <div ID="ngy2p" data-nanogallery2='{
         "itemsBaseURL": "https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/",
         "thumbnailWidth": "200",
         "thumbnailLabel": {
@@ -47,13 +100,16 @@
       <a href="/filters/im/06.avif" data-ngthumb="filters/im/06.avif" data-ngdesc=""></a>
       <a href="/edit/08.avif" data-ngthumb="/edit/tb/08.avif" data-ngdesc=""></a>
 
+      </div>
+
+      <div class="description">
+        <p>Photos 1, 4, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 are all <a href="/posts/2024-11-12_photo-filter-fun/">filters using Gimp and ImageMagick</a>.</p>
+        <p>Photo 2 was just me shifting the hue to mimic Aerochrome</p>
+        <p>Photo 3 is just a Gaussian Blur effect</p>
+        <p>Photo 5 was the result of me telling a spot fixer AI tool to delete everything in an image</p>
+        <p>Photo 7 was fake light painting (evident by the fact light trails go over objects in the foreground lol)</p>
+        <p>Photo 19 was fake long exposure</p>
+      </div>
     </div>
-    </br>
-    Photos 1, 4, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 are all <a href="/posts/2024-11-12_photo-filter-fun/">filters using Gimp and ImageMagick</a>. </br>
-    Photo 2 was just me shifting the hue to mimic Aerochrome </br>
-    Photo 3 is just a Gaussion Blur effect </br>
-    Photo 5 was the result of me telling a spot fixer AI tool to delete everything in an image </br>
-    Photo 7 was fake light painting (evident by the fact light trails go over objects in the foreground lol) </br>
-    Photo 19 was fake long exposure </br>
-    </body>
+  </body>
 </html>

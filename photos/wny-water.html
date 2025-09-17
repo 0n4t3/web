@@ -10,14 +10,50 @@
     <style>
         body {
             background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem 1rem;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #1a252f;
+            transform: translateX(-4px);
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            text-align: center;
+            margin: 2rem 0;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #ngy2p {
+            margin-top: 2rem;
         }
     </style>
   </head>
   <body>
-    <a href="/photos">-- all photos</a>
-    <h1>WNY Water</h1>
+    <div class="container">
+      <a href="/photos">← all photos</a>
+      <h1>WNY Water</h1>
 
-    <div ID="ngy2p" data-nanogallery2='{
+      <div ID="ngy2p" data-nanogallery2='{
         "itemsBaseURL": "https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/wny-water/",
         "thumbnailWidth": "200",
         "thumbnailLabel": {
@@ -94,7 +130,7 @@
       <a href="66.avif" data-ngthumb="tb/66.avif" data-ngdesc=""></a>
       <a href="67.avif" data-ngthumb="tb/67.avif" data-ngdesc=""></a>
 
+      </div>
     </div>
-    
   </body>
 </html>

@@ -10,14 +10,65 @@
     <style>
         body {
             background: linear-gradient(135deg, rgba(255, 204, 153, 1) 0%, rgba(255, 153, 102, 1) 50%, rgba(102, 51, 0, 1) 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem 1rem;
+            color: #2c1810;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        a {
+            color: #5d2e0a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #3d1e07;
+            transform: translateX(-4px);
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            text-align: center;
+            margin: 2rem 0;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .description {
+            text-align: center;
+            font-size: 1.1rem;
+            margin: 1.5rem auto 2rem;
+            max-width: 600px;
+            color: #3d2317;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 12px;
+        }
+
+        #ngy2p {
+            margin-top: 2rem;
         }
     </style>
   </head>
   <body>
-    <a href="/photos/">-- all photos</a>
-    <h1>Film</h1>
- Some real film, some fake film using the Old Roll app, and some fake film using t3mujinpack's Darktable styles with some tweaking. Can you guess which is which?
-    <div ID="ngy2p" data-nanogallery2='{
+    <div class="container">
+      <a href="/photos/">← all photos</a>
+      <h1>Film</h1>
+      <div class="description">
+        Some real film, some fake film using the Old Roll app, and some fake film using t3mujinpack's Darktable styles with some tweaking.
+      </div>
+      
+      <div ID="ngy2p" data-nanogallery2='{
         "itemsBaseURL": "https://raw.githubusercontent.com/0n4t3/photos/refs/heads/main/film/",
         "thumbnailWidth": "200",
         "thumbnailLabel": {
@@ -80,6 +131,6 @@
       <a href="51.avif" data-ngthumb="tb/51.avif" data-ngdesc=""></a>
 
       </div>
-    
+    </div>
   </body>
 </html>
