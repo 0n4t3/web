@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/activitypub/</loc>
-    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/</loc>
-    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/2025-10-31_random-update/</loc>
+    <lastmod>2025-10-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
+    <lastmod>2025-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/misc/</loc>
+    <lastmod>2025-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/personal-updates/</loc>
+    <lastmod>2025-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2025-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2025-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/activitypub/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/i2p/</loc>
@@ -23,16 +38,10 @@
     <loc>/tags/nostr/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/projects/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/protocols/</loc>
-    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/tor/</loc>
@@ -81,9 +90,6 @@
     <lastmod>2024-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/meta/</loc>
-    <lastmod>2024-12-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/personal-updates/</loc>
     <lastmod>2024-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/photos/</loc>
@@ -138,9 +144,6 @@
     <lastmod>2024-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2024-02-28_fermentation/</loc>
-    <lastmod>2024-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/misc/</loc>
     <lastmod>2024-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2024-02-24_microblogging-anthology/</loc>
