@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2025-10-31T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/miniblog/miniblog_about/</loc>
+    <lastmod>2025-11-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/miniblog/</loc>
+    <lastmod>2025-11-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2025-10-31_random-update/</loc>
     <lastmod>2025-10-31T00:00:00+00:00</lastmod>
@@ -215,10 +221,6 @@
     <loc>/pages/follow/</loc>
   </url><url>
     <loc>/miniblog/miniblog/</loc>
-  </url><url>
-    <loc>/miniblog/miniblog_about/</loc>
-  </url><url>
-    <loc>/miniblog/</loc>
   </url><url>
     <loc>/pages/eepsite/</loc>
   </url><url>
