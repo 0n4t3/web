@@ -1,0 +1,653 @@
+
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-figures=""
+  
+    class="page"
+  
+  
+  >
+  <head>
+<title>This is Fine: an Interim Microblogging Protocols Update | An Untitled Blog</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+
+
+<meta property="og:locale" content="en" />
+
+<meta property="og:type" content="article">
+<meta name="description" content="As is customary on my microblogging posts, let&rsquo;s get us started with an original meme. Also, if you&rsquo;d like to read my previous Microblogging …" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="">
+<meta name="twitter:title" content="This is Fine: an Interim Microblogging Protocols Update" />
+<meta name="twitter:image" content="/"/>
+<meta property="og:url" content="/posts/2025-12-07_microblog-protocols-update/" />
+<meta property="og:title" content="This is Fine: an Interim Microblogging Protocols Update" />
+<meta property="og:description" content="As is customary on my microblogging posts, let&rsquo;s get us started with an original meme. Also, if you&rsquo;d like to read my previous Microblogging …" />
+<meta property="og:image" content="/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+<link rel="manifest" href="/icons/site.webmanifest">
+
+<link rel="canonical" href="/posts/2025-12-07_microblog-protocols-update/">
+
+
+
+<link rel="preload" href="/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity = "sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" as="style" crossorigin="anonymous">
+
+
+
+<link rel="preload" href="/en/js/bundle.ba98dd820e3f5b00fae5ae15848b76ff601514006d975a21d306b7bc92c6d60676d220137e39d2a86ff2696653d0ab03e33a3bf7decf81447c2183bede6c189e.js" as="script" integrity=
+"sha512-upjdgg4/WwD65a4VhIt2/2AVFABtl1oh0wa3vJLG1gZ20iATfjnSqG/yaWZT0KsD4zo7997PgUR8IYO&#43;3mwYng==" crossorigin="anonymous">
+
+
+<link rel="stylesheet" type="text/css" href="/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity="sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" crossorigin="anonymous">
+
+  </head>
+  <body
+    data-code="100"
+    data-lines="false"
+    id="documentTop"
+    data-lang="en"
+  >
+
+<header class="nav_header" >
+  <nav class="nav"><a href='/' class="nav_brand nav_item" title="An Untitled Blog">An Untitled Blog
+  <div class="nav_close">
+    <div><svg class="icon">
+  <title>open-menu</title>
+  <use xlink:href="#open-menu"></use>
+</svg>
+<svg class="icon">
+  <title>closeme</title>
+  <use xlink:href="#closeme"></use>
+</svg>
+</div>
+  </div>
+</a>
+
+    <div class='nav_body nav_body_left'>
+      
+      
+      
+        
+
+  <div class="nav_parent">
+    <a href="/pages/follow/" class="nav_item" title="Follow/Contact">Follow/Contact </a>
+  </div>
+  <div class="nav_parent">
+    <a href="/miniblog/miniblog/" class="nav_item" title="Miniblog">Miniblog </a>
+  </div>
+  <div class="nav_parent">
+    <a href="/pages/eepsite/" class="nav_item" title="Mirrors">Mirrors </a>
+  </div>
+  <div class="nav_parent">
+    <a href="/photos/index.html" class="nav_item" title="Photos">Photos </a>
+  </div>
+  <div class="nav_parent">
+    <a href="/pages/resume/" class="nav_item" title="Resume">Resume </a>
+  </div>
+      
+<div class='follow'>
+<div class="color_mode">
+  <input type="checkbox" class="color_choice" id="mode">
+</div>
+
+</div>
+
+    </div>
+  </nav>
+</header>
+
+    <main>
+  
+<div class="grid-inverse wrap content">
+  <article class="post_content">
+    <h1 class="post_title">This is Fine: an Interim Microblogging Protocols Update</h1>
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Dec 7, 2025</span>
+    <span class="post_time"> · 43 min read</span><span>&nbsp;· <a href='/tags/tech/' title="tech" class="post_tag button button_translucent">tech
+        </a><a href='/tags/protocols/' title="protocols" class="post_tag button button_translucent">protocols
+        </a><a href='/tags/nostr/' title="nostr" class="post_tag button button_translucent">nostr
+        </a><a href='/tags/activitypub/' title="activitypub" class="post_tag button button_translucent">activitypub
+        </a><a href='/tags/atproto/' title="atproto" class="post_tag button button_translucent">atproto
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·</span>
+  </div>
+
+    <div class="post_body"><p><em>As is customary on my microblogging posts, let&rsquo;s get us started with an original meme.</em>
+<div>
+    <video width="720" height="480" controls>
+  <source src="/img/protocol-meme-3.mp4" type="video/mp4">
+</video>
+</div>
+</p>
+<p><em>Also, if you&rsquo;d like to read my previous Microblogging Protocols compared posts, you can read <a href="/posts/2024-01-30_microblogging-protocols/">v1 here</a> and <a href="/posts/2024-08-11_microbloggingv2/">v2 here</a>.</em></p>
+<p>It&rsquo;s been a little over a year since I made my updated microblogging protocols comparison. Since then a few things have happened, and my previous could use some trimming. In the spirit of keeping things shorter (and keeping the comparison v3 post relevant longer), I figured I&rsquo;d split the post into two parts: this one, which includes random updates and things that happened over the last year or so - and a second one, &ldquo;Microblogging Protocols Compared v3&rdquo; which will be a more streamlined protocol comparison. Anyway, as you can probably tell by the meme, the microblogging protocols have been going through a rough patch lately - though it&rsquo;s not all bad news.</p>
+<h2 id="activity-pub">Activity Pub</h2>
+<p>There’s been some news in the Activity Pub world; some good, some bad. Like all three protocols it’s user base has stagnated since I last posted about them in 2024 - Mastodon, the bulk of Activity Pub, being down to about 667k<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> monthly active users (~800k last time, 2.5 million at it’s peak a few years ago).</p>
+<h4 id="leadership-change">Leadership change</h4>
+<p>One of the biggest changes, which is new enough it came partway through me drafting this post, is that Mastodon’s founder, and former CEO, Eugen Rochko stepped down to be replaced by and Felix Hlatky in a leadership role. There are, afaik, no power struggles or scandals - just a dude who was getting a bit burnt out and wanted to pass the torch. It’s a bit too soon to know if it’ll result in any changes to how the organization runs, but best of luck to the team.</p>
+<h4 id="cool-new-code">Cool new code</h4>
+<p>Before I become too much of a Debbie Downer, there’s also been some nice developments on the code side. Loops - an Activity Pub alternative to Tiktok - was developed and is now fully integrated into the ecosystem. Mastodon has implemented quote posts, and while other Activity Pub software has supported quote posts for a while<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, with Mastodon being a majority of the AP space it’s a cool new development in the ecosystem.</p>
+<p>However, I’m most excited for Fedilab’s upcoming project <a href="https://holos.social/">Holos</a>. Holos’s idea is to be more relay focused, having your client do most of the heavy lifting and decision making; the relay used to store a copy of your profile &amp; posts, as well as keep a temporary copy of incoming information (e.g. posts from those you follow) until your client comes back online again. I&rsquo;ve been <a href="https://nate.mecca1.net/posts/2024-08-11_microbloggingv2/#server-overhead">hoping</a> something like this would be built for a while, and Holos looks like it&rsquo;ll be a boon to compatibility and server scalability.</p>
+<p>As for compatibility, they seem to be leaning into a more Nostr style “if your client makes it, we’ll host it” model, and it seems to be designed to handle just about any kind of event (shortform posts, longform posts, videos, etc). Most Activity Pub servers are really monolithic and won’t handle things they don’t understand. On something like Mastodon, things like groups (Lemmy/Mbin/Piefed) have a lot of jank when you interact with them, and things like Peertube only provide links to videos to be watched in a web browser. If it falls on the client to interpret the data instead of the server, all you need to do is slap a little functionality into whatever Holos client you’re using and you can immediately consume and post all forms of content.</p>
+<p>Also, with a more minimal server, it&rsquo;d make setting one up a lot more approachable. From offloading some processing to the client, to avoiding keeping an indefinite hold of remote posts and images, the smaller the server the less resources it&rsquo;ll need. And those benefits are pretty universal, from trying to host it on an existing home lab setup or tiny VPS, to a rather large community server - less resource costs makes things more likely to be built and stick around.</p>
+<p>Like anything, it&rsquo;ll have it&rsquo;s trade offs. Anybody who doesn&rsquo;t log in for longer than the server&rsquo;s cap on holding cached information won&rsquo;t see incoming data, things will be a bit more resource heavy and inconvenient on the end user&rsquo;s device (no simply logging in with a web app), and the learning curve to get onboarded will probably be a lot more steep. Still, as an option to exist alongside everything else, I expect it to be a very handy tool.</p>
+<p><em>Also, as a side note, <a href="https://mastodon.social/@HolosSocial/115611619454059898">I reached out</a> and it sounds like custom domains are a potential possibility (sorta similar to <a href="https://github.com/jointakahe/takahe">Takahe</a>). Something that allows users to &lsquo;own&rsquo; their account on Activity Pub without needing to host a server is something I&rsquo;ve felt the protocol could really use. It&rsquo;s not in any immediate plans, but sounds like something that may be considered as the project goes on. I&rsquo;m not a dev<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, so I dunno how feasible it would be, but if it was I think it&rsquo;d make the project even that much cooler.</em></p>
+<h4 id="community-toxicity">Community Toxicity</h4>
+<p>While all anecdotal, I personally feel as if things have gone a bit downhill in terms of the community. <a href="https://kevquirk.com/blog/linux-elitism-again/">Bashing people for saying we should be nice to Windows users</a> definitely left a bad taste in my mouth<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>, and seem to be a pretty good barometer of how insular the community is. Of recent things that come to mind - there&rsquo;s been some community chaos and mass defederation with Fosstodon <a href="https://coreysnipes.com/thoughts-on-fosstodon.html">1</a> - <a href="https://kevquirk.com/blog/my-thoughts-on-the-fosstodon-drama/">2</a>, there&rsquo;s been figures leaving<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> while citing some similar issues <a href="https://bsky.app/profile/did:plc:dr6cavavqbbtzeknnl76tp54/post/3lbs4ihb2gs24">1</a> - <a href="https://www.youtube.com/watch?v=iMeQ9hSG8Ac">2</a>, as well as some attacks on bridges that I&rsquo;ll separate into a different section.</p>
+<p>My guess is that, as Activity Pub has shrunk, a lot of the people less likely to cause drama like this have been edged out. Protocols like Nostr probably siphoned away some of the more &ldquo;ooh shiny protocol&rdquo; people, and protocols like AT probably siphoned away people who were looking for a more mainstream place (BlueSky has changed a lot since it first launched, see it&rsquo;s section below). Not to mention a lot of people probably returned to X (or never left it, and only checked out AP alongside it) after finding it wasn&rsquo;t what they were looking for (technical barrier to entry and/or a protocol culture).</p>
+<p>Other people (such as myself) are still on AP every so often; hiding in quieter corners via smaller servers and/or bridges - places not hit by strays from instance wide flame wars or siloed off by massive defederation. The beauty of a fairly distributed ecosystem is that things are pretty well spread out, and you can still find places minimally effected by the issues mentioned above. Still, I think it&rsquo;s a trend as a whole that needs to be discussed openly, else it might end up overshadowing everything else.</p>
+<hr>
+<details>
+  <summary>Dropdown: A Threadiverse Anecdote</summary>
+  <p>On the Threadiverse (Lemmy, Mbin, Piefed), everybody is coalesced into a small number of communities. Just about everyone has a cookie cutter view on technology and politics, and things tend to get echo chambery with toxic discussions, a more pronounced version of what I described above amongst the broader fediverse. I&rsquo;ve got an anecdote to better elaborate how it effects the day to day experience, but before I continue, let&rsquo;s go on a little tangent. Don&rsquo;t worry, it&rsquo;s not controversial or anything - just about politics and internet debates.</p>
+<p>Lets say you wanted to convey the belief that the United States is fascist. Generally speaking, there&rsquo;d be two different ways to convey that meaning. First, you could make a proper argument. Let&rsquo;s steelman that sentiment as an example:</p>
+<p><code>I'm worried that the US is veering towards fascism [an authoritarian right wing government with a top down economy]. Ever since World War II the government has ballooned in size, gaining an increasing control over the economy (becoming 40% of the GDP), as well as trampling civil liberties and cracking down on dissent. Large companies have been increasingly involved in the government, at the expense of the government's loyalty to it's citizenry. Things really kicked off around the September 11th attacks, with each successive administration only growing the government larger while more aggressively surveilling citizens and cracking down on dissent. Trump's strongman personality is another large step in the wrong direction, and I fear we're getting very close to full blown fascism.</code></p>
+<p>So, what does that argument do? Well, first, it lays out a clear and well explained interpretation of the world (not just worthless buzzwords that have lost all meaning) - while also providing a chain of logic that&rsquo;s used to reach it&rsquo;s conclusion. It leaves room for others to discuss or disagree, avoids personal attacks, and stays clear of hyperbole. Further, by using statements like &ldquo;I&rsquo;m worried&rdquo; or &ldquo;I fear&rdquo; it adds some humanity to the argument. Most people with above room temp IQs are capable of understanding that: A) people have differing opinions, and B) that most people want to see the world become a better place, and fear it&rsquo;ll become a worse place, even if they disagree on the exact problems &amp; solutions.</p>
+<p>Or, alternatively, you could convey such a sentiment through the lens of political brainrot.</p>
+<p><code>The US is a facist nation!</code><br>
+<code>Trump is a literal Nazi.</code><br>
+<code>There is no difference between the US and 1940s Germany!</code></p>
+<p>The politics here are irrelevant, it&rsquo;s the distinction between political debate and political brainrot that I&rsquo;m getting at. Run of the mill political brainrot, regardless of it&rsquo;s flavor, produces nothing of value. Lemmy, if you haven&rsquo;t guessed, trends towards the brainrot side of things (often of the Tankie variety). That, and hyper fixation on very specific technological ideas, is present in just about every discussion.</p>
+<p>Recently I thought &ldquo;Hey, I got a motorcycle license recently, I should go check out Lemmy&rsquo;s communities on the topic. I hardly ever use Lemmy, but something like that would probably be a much tamer niche.&rdquo; The top thread was a guy asking about what people do in cold weather, and the top comment was something along the lines of &ldquo;I moved to the Northwest US so cold weather isn&rsquo;t an issue for me, but now I have to deal with a fascist government.&rdquo; The user didn&rsquo;t even answer the OP&rsquo;s question, just strait to politics of the brainrot variety.</p>
+<p><em>Note: I tried to find the thread to link it, but had no luck.</em></p>
+<p>And no, if you&rsquo;re wondering, I&rsquo;m not writing this out of spite after getting in some sort of argument. I don&rsquo;t think I&rsquo;ve ever been in an argument on Lemmy (or the Fediverse in general) before, much less attacked/been attacked over politics. The problem is it&rsquo;s a place where you literally can&rsquo;t even talk about the weather without it turning to politics or Linux.</p>
+<p>Things are quick to devolve into Reddit politics and Linux puritanism, and I don&rsquo;t believe the average user wants that. It appeals to a very small subset of people, but likely pushes most people away from the protocol. Again, the Threadiverse is much more saturated with this than the rest of the protocol, but similar sentiments exist across the whole ecosystem.</p>
+
+</details>
+
+<hr>
+<h4 id="isolationism">Isolationism</h4>
+<p>As of lately, there also seems to be some more pushes against having an open ecosystem. If you&rsquo;ve read my last couple posts on the topic you&rsquo;ll know I think it&rsquo;s really important everything is interconnected - and the ecosystem&rsquo;s only shot at becoming something greater than a handful of weirdos on their preferred protocols. However, from the top down, there&rsquo;s been <a href="https://deadsuperhero.com/something-about-the-swf-makes-me-feel-icky/">pushback</a> against bridges and other protocols.</p>
+<p>There&rsquo;s also been another, more &lsquo;grassroots,&rsquo; round of outrage at the existence of BridgyFed (AP &lt;&gt; AT) and Mostr (AP &lt;&gt; Nostr). There was even some <a href="https://primal.net/e/nevent1qqsrj54de9l4vluw7ff7e880qyy0dkrx5cfu23fgxqzk76un528kenspftxkp">false DMCA strikes and legal threats</a> against the Mostr
+bridge, and you can read <a href="https://primal.net/e/nevent1qqsp85429nftc22jm50ygwdfvknj793l7am7lqwszd0au9fscemzqzqm7dfhn">my realtime crash out here</a>.</p>
+<p>This is a rather silly outlook, for a number of reasons.</p>
+<p>First, bridges are exactly how the protocols are supposed to work. All three large protocols are designed to create posts, formatted in JSON, and distribute them to any number of clients and servers. The idea that a server is doing something wrong by fetching it over Activity Pub, then serving it over something else (Nostr, AT, the Mastodon API, Diaspora, RSS, etc) seems to stem from a lack of understanding of how the protocol works. It&rsquo;s literally designed to allow centralized servers to copy content, then deliver it to clients or browsers through a bunch of different means. If you try to stop servers from copying than it ceases to be federated.</p>
+<p>Secondly, bridges aren&rsquo;t new, they predate Activity Pub itself. Platforms like GNU Social and Friendica existed before Activity Pub did, and after it came about those platforms added Activity Pub to the list of protocols they bridged to. A big chunk of &ldquo;Fediverse&rdquo; software isn&rsquo;t native to Activity Pub, but can interact via bridges and plugins. Some prominent non-ActivityPub software includes Friendica, Hubzilla, Streams, and GNU Social - supporting (natively and via bridges/plugins) Activity Pub, Nomad, DFRN, Zot, Diaspora, RSS, and Ostatus. Had there been no bridging Activity Pub probably would have never taken off.</p>
+<p>Finally, it&rsquo;s a bit too late to do an embrace, extend, extinguish. If people on Activity Pub wanted to utilize bridges to gain a foothold, then try to stop bridges to prevent other protocols from gaining a foothold, their only chance to do so would have been when they were at the top. It&rsquo;s already been supplanted as the largest protocol, and at this point it&rsquo;s too late to do anything other than play nice or get left behind - especially in a federated space where the community can&rsquo;t act in unison.</p>
+<h4 id="no-updates-on-nomadic-identities">No updates on Nomadic identities</h4>
+<p>Speaking of different protocols, in my last post I mentioned there was an attempt to port Zot/The Nomad Protocol&rsquo;s nomadic identities into Activity Pub. The last update on the effort, to my knowledge, was about a year ago from the <a href="https://opennomad.net/channel/nomad">Nomad protocol&rsquo;s page</a>. Things might be happening behind the scenes that I&rsquo;m unaware of, but to my knowledge the effort appears to have stalled out.</p>
+<h4 id="migrations-and-identities-are-still-annoying">Migrations and identities are still annoying</h4>
+<p>Finally, though it&rsquo;s largely a personal thing and not an update in the space, I&rsquo;m again having trouble with the lack of easy migrations &amp; user owned identities. If I recall my account journey correctly, I started on Mastodon.Social (Mastodon), then eventually migrated to Nerdica.Net (Friendica) - there may be stuff in between, or just random experimentation without migrating, it&rsquo;s been a few years. Nerdica.Net got nuked, so then I migrated to Mstdn.Plus (Mastodon). I started missing Friendica, and Mstdn started limiting/blocking things I wanted (bridges and accounts like GrapheneOS), so I migrated over to Trom (Friendica).</p>
+<p>Friendica isn&rsquo;t perfect though, it&rsquo;s kinda slow and a lot of times it can&rsquo;t find remote events in search. Say I want to reply to a blog post, sometimes Friendica won&rsquo;t find the post itself if I search the link. It can find the poster&rsquo;s profile, but won&rsquo;t fetch that specific post unless I (or somebody else on Trom) was following them <em>prior</em> to that post. Then I recently noticed occasional posts from people or groups I follow wind up in my feed days late or not a all, the server having issues syncing remote posts<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>.</p>
+<p>So, my thought is maybe just create a second profile somewhere else, and use both. I like Trom, but sometimes it&rsquo;s too clunky. And besides, even if I did want to migrate, my options would be limited. Friendica lets you migrate to other Friendica instances, but I don&rsquo;t think you can migrate to anything outside of Friendica<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>. Of course none of that matters if the server gets nuked like Nerdica, in which I lost all my following, followers, and post history instantly.</p>
+<p>I&rsquo;ve thought about registering elsewhere, just creating an &lsquo;alt&rsquo; on some different software that works when Friendica decides not to. Holos is tempting to do that with, though since I don&rsquo;t use the Fediverse all that crazy often (much less an alt) I might end up missing stuff. Point is, I guess, that the identity, community, and infrastructure all being wrapped into one server has caused me trouble in the past and is likely about to again. Even if there&rsquo;s nothing major changed like altering how identification works, improving migrations would be nice.</p>
+<p>Again, not really a protocol/community update, but something that&rsquo;s personally caused me trouble in between my last post and now.</p>
+<h2 id="nostr">Nostr</h2>
+<p>Like Activity Pub, Nostr has shrunk since my last post. The core reasons are likely the same; namely the push to move away from the centralized services seems to by less strong, and without hitting critical mass a number of people have probably lost interest. Based on vibes alone I feel like community culture might be a bit less of a debuff on the protocol<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>, but given the protocol is a lot more technical I have a feeling it&rsquo;s nearly saturated the market of people who&rsquo;d be interested in joining<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.</p>
+<p>Outside of a couple minor spam attacks, however, unlike AP/AT there really hasn&rsquo;t been a ton of stuff on Nostr that I went &ldquo;uh oh&rdquo; on. The other side of that coin is, outside of some minor technical developments and the really recent DiVine, there really hasn&rsquo;t been <em>anything</em> that happened on Nostr worth bringing up. Just a slow userbase bleed while the learning curve keeps new users at bay.</p>
+<h4 id="outbox-model">Outbox Model</h4>
+<p>On a more positive note, however, implementation of the outbox model solved the centralization issue on Nostr that I&rsquo;ve talked about in the past<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. Without using the outbox model, when you configure relays in your client, you set the relays that you post to and/or pull other people&rsquo;s events from. It works pretty good from a user control standpoint: you set exactly where your posts are published to, and choose where you pull other&rsquo;s posts from. However, that also pretty much forces the network to choose a dozen or so big relays per language that just about everyone uses. Sure, you can set up your own relay, but few people are going to manually add Jimbob Goober&rsquo;s home relay into their client, so unless Jimbob Goober is publishing to one or more of the big relays that everybody uses, most people won&rsquo;t see his content.</p>
+<p>The outbox model fixes that perfectly, allowing you to set &ldquo;outbox&rdquo; and &ldquo;inbox&rdquo; relays. Your outbox is simply the relays that you&rsquo;re publishing content to, and the place that other clients will automatically pull your posts from. Your inbox is a list of relays that clients should use when replying/reacting to your posts, and where they should check for other people&rsquo;s replies &amp; reactions to your posts. Importantly, you don&rsquo;t need to manually add other people&rsquo;s inbox/outbox relays into your client, a client that supports the outbox model simply goes &ldquo;I&rsquo;m following Jimbob Goober. Here&rsquo;s where he&rsquo;s publishing his posts, and here&rsquo;s where I should send my replies.&rdquo;</p>
+<p>It&rsquo;s not 100% free from needing big relays, your client will still need to find a user&rsquo;s profile data that contains their relay information. That information can be gleaned from the user&rsquo;s NIP-05 (domain based username) independent from relays, and otherwise - even if the user doesn&rsquo;t use the big relays or relays in their NIP-05 - if anybody who does use the big relays has reposted/reacted/replied to their post that information will have been broadcasted to the the big relays anyway.</p>
+<p>Not all clients support the outbox model, but if you and the person following you are both on one that does, you can now have people fetch &amp; reply to your posts on the relays that you&rsquo;ve chosen instead of needing to rely on the larger, centralized relays. This completely solves the centralization of relays I talked about in my last post, and pretty much turns Nostr into a decentralized &amp; cryptographically verified interactive RSS. Amythest (Android) and Nostrudel (Web/PWA - all platforms) both are great options to give the outbox model some love.</p>
+<h4 id="divine-and-proper-platforms">DiVine, and proper platforms</h4>
+<p>Speaking of new clients and features, the Nostr platform DiVine is being released as I&rsquo;m drafting this. I feel like it&rsquo;s due for it&rsquo;s own section for two reasons:</p>
+<p>A) It&rsquo;s making the rounds on the internet, outside of the usual tech spaces - and - B) It&rsquo;s actually a real deal platform.</p>
+<p>DiVine is more or less intended to be a spiritual successor to Vine (hence Di<em>Vine</em>), hosting short term video content. It&rsquo;s spear headed by Rabble, a former Twitter employee, and it&rsquo;s been making the rounds as of late. It&rsquo;s new, so it&rsquo;s largely speculation as to where it&rsquo;s headed, but it seems like it&rsquo;s probably going to make a splash. And, unlike most microblogging protocol stuff, it&rsquo;ll probably be used by people seeking out short form video content (as apposed to most distributed microblogging stuff, which is largely driven by people such as myself going &ldquo;ooh, shiny protocol&rdquo;). It&rsquo;s been my longstanding opinion that all three protocols&rsquo; only shot at mainstream use is large user accessible platforms in addition to the smaller decentralized stuff, and I think this is a great move in that direction<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>.</p>
+<p>It&rsquo;s also a shining example of how to make a platform on a protocol like Nostr. When signing up you get a few options, and you can sign in using your usual Nostr stuff (signing extensions, nsec bunkers, or just pasting your nsec into the web app like a madman). However, similar to something like BlueSky, you can instead choose to sign in with an email and a password, forgoing all forms of key management, and simply use it like any other platform. However, if you want to control your own keys (and/or use a relay aside from the main DiVine relay) you can do so just as easily. It&rsquo;s the best of both worlds - the choice between ease of use and user sovereignty<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup> - and DiVine could easily become like Activity Pub&rsquo;s Threads or AT&rsquo;s BlueSky.</p>
+<h4 id="misc-developments">Misc Developments</h4>
+<p>Beyond the outbox model and DiVine, there&rsquo;s also been some additional developments on the protocol that don&rsquo;t require a couple paragraphs to break down. First, there&rsquo;s some progress on NIP-23, Nostr&rsquo;s markdown supported blogging. Some feed readers like <a href="https://github.com/spacecowboy/Feeder">Feeder</a> and <a href="https://github.com/fiatjaf/narr">Narr</a> support it - enabling you to mix Nostr blogs in with your traditional RSS feeds.</p>
+<p>Some newer experimental clients have been developed to work on more niche use cases, such as Treasures.To - a geocaching app built on Nostr - as well as things like Chorus for Reddit style groups. There&rsquo;s also some additional focus on individual communities within Nostr, using relays for specific groups or interests, as well as experiments using WoT (Web of Trust) as a way to limit spam or optionally limit who&rsquo;s allowed to interact with you on WoT enabled relays.</p>
+<p>Finally, <a href="https://nate.mecca1.net/posts/2025-06-18_standard-server-alternatives/#nostrs-nsite">Nsite</a> was released, it being a way to host static sites on Nostr via Blossom<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup>. Nsites can be accessed via a web browser using a gateway, or via a Nostr client if any integrate Nsite support directly. And, unlike something like IPFS that uses only a content hash, Nsites use a Nostr key as an identifier that points to a hash on a Blossom server. This gives Nsite some of the redundancy that IPFS has, as well as identifying a site by content instead of location, but supporting changes to the site without changes to the identifier.</p>
+<h2 id="at-bluesky">AT (BlueSky)</h2>
+<p>AT, mostly centralized around BlueSky, has probably had the most drastic changes since my last post (as it did between my first and second post). Despite being the largest of the three, it&rsquo;s likely shrunk the most, going from approximately 30 million to 5.18 million monthly active users as of Nov 2025. There&rsquo;s been a number of changes, some good and some bad.</p>
+<h4 id="new-software">New Software</h4>
+<p>There’s been some new software in the works, notably the development of Red Dwarf, a client that directly pulls from PDSs as apposed to going through a relay. This could really boost AT’s decentralization, forgoing reliance on one big centralized relay. And, with Lexicons limiting interoperability (I’ll touch on that in a bit), this sort of structure might help solve some compatibility issues across platforms - similar to how I was praising Holos for potentially solving some of Activity Pub’s compatibility issues by separating hosting data and processing data.</p>
+<p>Another promising new piece of software is Wisp.Place, a means of hosting a site via the AT protocol. Similar to Nostr’s Nsite, it allows you to place static files on AT infrastructure (in this case, your PDS), which is served through a gateway/CDN and accessible in a standard browser. It&rsquo;s a bit more centralized, using your PDS as a sole centralized source of the web page, but it otherwise serves a very similar set of functions.</p>
+<p>Similarly, blogging platforms like Leaflet and WhiteWind have been released. Like Activity Pub&rsquo;s WriteFreely, or Nostr&rsquo;s NIP-23, those platforms allow you to write longform posts with formatting from within the AT protocol.</p>
+<p>Finally, there&rsquo;s been progress running relays in more lightweight setups. Large centralized relays have been regularly critiqued as something that would prevent a more distributed AT protocol, but there&rsquo;s been advancements like Jetrelay - a much lighter relay meant to be run on comsumer hardware. There&rsquo;s even been progress running a relay locally on devices as light as a Raspberry Pi 4, which you <a href="https://whtwnd.com/futur.blue/3lkubavdilf2m">can read about here</a> on WhiteWind.</p>
+<h4 id="new-platforms">New Platforms</h4>
+<p>There have been a number of new platforms announced and/or launched on the AT protocol, some of the recent ones including Pinksy (Instagram like), Skylight (Tiktok like), Northsky (Twitter/X like), and Blacksky (Twitter/X like). The latter uses their own infrastructure, with the rest relying in part or whole on BlueSky’s infrastructure<sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup>. This is in addition to some upcoming platforms like Gander.Social, as well as some platforms like Frontpage that existed around when my second post was being made.</p>
+<p>If AT is to succeed as a protocol, seeing more platforms built on top of it is important. It’s one thing to build a protocol and then a platform on top of it, but if no other platforms can communicate with it, you just created a centralized platform with extra steps and more overhead. Most AT based platforms are relying on BlueSky for some or all of their infrastructure, so AT is considerably more centralized than something like Activity Pub/Nostr, but it’s certainly a step in the right direction towards making an actual decentralized ecosystem.</p>
+<h4 id="stunted-development">Stunted Development</h4>
+<p>In my first microblogging protocols comparison BlueSky was entirely closed, making the AT protocol effectively theoretical. In the second comparison BlueSky had opened up, both on the protocol side (by pulling content from remote PDSs) and the platform side (by opening registrations to BlueSky itself). My first comparison was predictably rather negative, with my second comparison being rather positive, assuming since they’d made progress opening things they’d continue on the same trajectory.</p>
+<p>From the header text, you can probably guess that development has been rather slow since I last spoke about it. There has been some changes, with account identifiers and migrations being worked on. However, both the DID (decentralized identifiers) system and Account Migrations are still a work in progress; their documentation expressing an intention to update the system in the future. Account migrations are complex, and the DID:PLC system used by AT at the moment is little more than a centralized phone book entirely controlled by BlueSky corporate.</p>
+<p>Direct messages and other forms of private data, however, are still not implemented. BlueSky <em>did</em> add DMs shortly after my previous post, but they’re not actually part of the AT protocol - simply being unencrypted DMs built on BlueSky the platform. Since they’re not part of the AT protocol you won’t be able to use them with other people on AT who aren’t on BlueSky.</p>
+<h4 id="cross-platform-compatibility">Cross Platform Compatibility</h4>
+<p>Now that we&rsquo;ve had a chance to see AT working in the wild, with a small handful of non-BlueSky platforms cropping up, we&rsquo;ve been able to see how well things are interconnected. Although it isn&rsquo;t necessarily indicative of the AT protocol itself, BlueSky appears to be enforcing it&rsquo;s Lexicon rather strictly on posts made outside of the platform. However, given BlueSky is pretty much synonymous with AT at the moment, a policy on BlueSky is basically a policy for the protocol as a whole.</p>
+<p>Every AT Relay has a Lexicon, something that defines what kind of posts the relay will accept and how to interpret them. Among other things it covers things like post character length, video size/length, and post formatting. Currently, if you go outside the bounds that BlueSky sets (such as exceeding the character limit), your posts will not be visible on BlueSky. This is in sharp contrast to something like Activity Pub; while your home server can set post specifications like char limits, Activity Pub servers generally aim to display all posts, regardless of character limits or post formatting. While the aim to display posts in all forms can lead to a bit of jank, it creates a very open feeling protocol.</p>
+<p>AT&rsquo;s more restrictive mindset could lead to more siloed services. In that case a PDS would still work with multiple platforms - but it would effectively just become an unnecessarily complex single sign on solution. It&rsquo;d be like being able to sign into Facebook and YouTube with the same GPG key; sure, you&rsquo;d &lsquo;own&rsquo; your identity via cryptography and be able to host a copy of your posts locally - but you couldn&rsquo;t do any form of cross YouTube &lt;&gt; Facebook communication, and they&rsquo;d remain otherwise centralized platforms.</p>
+<p>I don&rsquo;t know if that is ultimately what AT is headed towards, but with BlueSky limiting what forms of content it&rsquo;ll display, it could end up squashing alternative implementations of the protocol. Or, instead, it could end up pushing AT towards becoming a protocol focused on creating mostly centralized platforms with very minimal inter-connectivity.</p>
+<h4 id="platformification">Platformification</h4>
+<p>In the <a href="https://dl.acm.org/doi/10.1145/3694809.3700740">article</a> <em>Bluesky and the AT Protocol: Usable Decentralized Social Media</em> members of the BlueSky team state the following:</p>
+<blockquote>
+<p>Even though the majority of BlueSky services are currently operated by a single company, we nevertheless consider the system to be decentralized because it provides credible exit: if Bluesky Social PBC goes out of business or loses users’ trust, other providers can step in to provide an equivalent service using the same dataset and the same protocols.</p>
+</blockquote>
+<p>There’s nothing technically incorrect about that statement, if you have your own PDS than you can use it anywhere the AT protocol is used. Furthermore, any AT based service that has a Lexicon compatible with the posts stored on your PDS could display those posts there as well<sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>. Still, it’s not exactly in the ethos of making decentralized &amp; federated communication, which BlueSky seems to be trending away from to a degree.</p>
+<p>They&rsquo;ve also begun behaving more like a standard social media platform, including requiring ID to create an account and blocking accounts at the requests of governments. It&rsquo;s a bit of a no win situation, (aside from some US state ID requirements) they&rsquo;re not under a direct threat of force from various governments - so it comes down to risking getting the site blocked, or caving to outside pressure and complying with foreign laws. Being a super majority of the AT infrastructure, however, it&rsquo;s effectively applied some authoritarian foreign laws across the entire protocol.</p>
+<p>Finally, they seem to be at the &ldquo;We need revenue&rdquo; crossroads of creating a centralized platform. For now they&rsquo;ve stayed that by taking some venture capital money (with unknown strings attached), but I foresee some needs to do aggressive monetization since they don&rsquo;t seem to have a plan for consistent funding while also losing the hype they had.</p>
+<h4 id="neutral-infrastructure-abandonment">Neutral Infrastructure Abandonment</h4>
+<p>Something I praised in my 2024 post, if you used BlueSky infrastructure you could put just about anything on the BlueSky PDSs, with the exception of the most extreme or illegal content. Moderation was handled in a separate layer, automatically hiding things that violated a more or less ‘standard’ social media rule set. After registration, however, you can enable viewing content labeled by BlueSky - either fine tuned (allowing specific things like NSFW, spam, hate, etc) - or forgo all of BlueSky’s moderation entirely, for an unmoderated feed or a feed moderated using custom blocklists/filters. Furthermore, if you were building your own platform that in part used BlueSky infrastructure, it would allow you to effectively set your own rules and filter content based on your choices and labels.</p>
+<p>Neutral infrastructure, in my opinion, is very important if you’re trying to bootstrap a protocol. It allows BlueSky to substitute a more decentralized network by providing infrastructure and a user base to any platform on the protocol; allowing BlueSky’s users and other platforms to choose exactly what form of moderation they would like to see, while still providing a moderated feed by default. Since then, however, they’ve abandoned neutral infrastructure, applying moderation at the PDS/account level instead of at the relay level. This new moderation has a reputation for being very strict and fairly partisan; banning first and asking questions later, blocking links to remote content, and banning people for off platform behavior<sup id="fnref:16"><a href="#fn:16" class="footnote-ref" role="doc-noteref">16</a></sup>.</p>
+<p>On something like Mastodon.Social, enforcing rules at the infrastructure level doesn’t matter. Other instances exists that with different policies and communities, and the community is spread out enough that there’d be people to interact with even if you couldn’t interact with Mastodon.Social<sup id="fnref:17"><a href="#fn:17" class="footnote-ref" role="doc-noteref">17</a></sup>. On AT, however, the protocol is nearly exclusively BlueSky. This decision effectively forces the entirety of the AT protocol to comply with BlueSky’s moderation: not only does the BlueSky corporation host pretty much all of AT’s infrastructure (including for most alternative services built on AT), but even if you have an entirely separate set of infrastructure from BlueSky, you’d still be prohibited from interacting with nearly the entire network. And of course, with a sudden 180, it’d probably make developers a lot more hesitate to use the protocol for fear of what else could change suddenly.</p>
+<h4 id="partisanship">Partisanship</h4>
+<p>Finally, as far as AT goes, there&rsquo;s the giant elephant in the room of BlueSky&rsquo;s shift into partisanship. Around the 2024 election there was a big push to turn it into an explicitly left wing version of X, and it went from a rather neutral platform with a somewhat left wing leaning, to a rather explicitly partisan platform. It initially sparked a lot of growth, with a number of high profile individuals migrating to it, but like any hardcore partisan collective it purity spiraled pretty hard. A lot of people wound up leaving - including notable people like Mark Cuban, who&rsquo;d been helping fund some alternative infrastructure and projects, as well as various celebrities and content creators - the userbase having since plummeted.</p>
+<p>From a machiavellianistic &ldquo;I want non-centralized communication to grow&rdquo; perspective, this isn&rsquo;t necessarily bad. There&rsquo;s a place for everyone, so to speak. Even if BlueSky is relegated to a rather strong flavor of leftism, losing it&rsquo;s more mainstream appeal - it&rsquo;s still interconnected with the rest of the ecosystem and that&rsquo;s still five million more people participating in it. From that perspective, it doesn&rsquo;t really matter if BlueSky succeeds in becoming a larger general platform or remains for a more niche audience - there&rsquo;ll be other platforms and services for other niches/ideologies, as well as others for more general audiences - and they&rsquo;ll all be interconnected.</p>
+<p>That said, AT has some cool aspects to it, and at the time it looked like BlueSky might have been capable of bringing decentralized social media to a mainstream audience. Instead, however, perception is reality. Once it&rsquo;s been labeled as partisan, BlueSky (and potentially AT as a whole) will only attract a more niche audience. While it&rsquo;ll remain part of the overall ecosystem, unlike Activity Pub and Nostr, I&rsquo;m willing to guess that AT&rsquo;s glass ceiling is right about where it&rsquo;s at now.</p>
+<h2 id="platforms">Platforms</h2>
+<p>As I&rsquo;ve stated before, I believe that the microblogging protocols have a decent chance of becoming widespread, largely through the use of platforms. New platforms are always going to be incentivized to include compatibility with at least one of them; not only is it a day one user base in the millions (all protocols combined, remember, they’re all connected), but it’ll also be interoperable with any other large platform that’s also implemented the protocols.</p>
+<p>Platforms also benefit us nerds already on the protocols, greatly increasing the community we can reach without requiring us to modify our protocols and servers to be more easy for the average person to join. They also provide some legitimate funding in the ecosystem - while you might host your own infrastructure, and the flagship instances/servers of a protocol might be funded by donations<sup id="fnref:18"><a href="#fn:18" class="footnote-ref" role="doc-noteref">18</a></sup>, the charitable nerd model can’t fund the infrastructure for a mainstream social platform (or, in this case, an entire decentralized network the size of a standard platform).</p>
+<p>That said, to the more hardcore purists, they’re a bit of a monkey’s paw - you’ll get everything you wanted, but not in the way you want it. We could have a world where most platforms integrate at least one protocol, which can interconnect with all the other protocols, but they’ll still be centralized platforms. A successor to YouTube on one of these protocols will still have ads &amp; paid subscriptions, algorithms that prioritize local content, and when a user makes a post it’ll probably be in link form to open the content in a browser - even if you can like/reply from within the protocol (similar to how YouTube supports RSS now). And of course most people won’t care about the protocol under the hood - few will host their own Activity Pub Instance/AT PDS, or control their own Nostr/AT keys.</p>
+<p>That said, if I’m right and that sort of ecosystem comes to pass, I’ll be good with that. It might break down walled gardens a bit if most platforms become semi interchangeable, and I’ll be happy to be able to interact with other people on other platforms from within my own infrastructure. Just like email, while it’s largely comprised of a few centralized providers, you can still interact with those providers from the provider of your choosing or your own infrastructure. It’s miles better than AOL messenger and company wide intra-mail, and just as non-centralized protocols like email &amp; SMS took over the initial fully centralized forms of internet communication, I think that social media might follow in a similar pattern.</p>
+<h4 id="threads">Threads</h4>
+<p>After already discussing BlueSky and DiVine, Threads is the only other major platform to discuss. It’s currently sitting at ~400 million monthly active users<sup id="fnref:19"><a href="#fn:19" class="footnote-ref" role="doc-noteref">19</a></sup>, however, very few of those people are participating in Activity Pub. I’ve heard people claim that between 20k and 50k people have federation enabled, although those numbers are mostly guesswork based on Threads accounts known to other federated services (Meta doesn’t give numbers). It’s not nothing: at 50K that’d make Threads the third most used Activity Pub enabled software, and second largest individual Activity Pub enabled instance/server (excluding bridges). Still, it’s a pretty lackluster amount of people percentage wise.</p>
+<p>My initial thought was to blame Meta, they were pretty slow to roll out federated features, and disabled federation by default (making users manually enable it). Most defaults are never changed, and it’s easy to assume that Meta did so to prevent losing market dominance. After some thought, though, there’s some other factors in play that might explain those low numbers (instead of, or more likely in addition to, Meta wanting to have a mostly walled garden).</p>
+<p>The first is probably a lack of Activity Pub content interesting to Threads users. The de-Fediverse struck again - a majority of servers (albeit hosting a minority of total users) <a href="https://fedipact.veganism.social/">defederated from threads</a> once federation was implemented. Combine that with the rather niche topics on the Fediverse, it’s occasional toxicity, and the average person having very little interest in the wacky world of federated &amp; decentralized social media protocols - and you probably run into a situation where few people want to go out of their way to seek it out.</p>
+<p>Further, Meta is probably worried about people freaking out about federation. If people who specifically sought out federated protocols have had legendary meltdowns over their posts being copied (i.e. ‘federated’), then who knows how the average Jimbob Goober is going to react when he sees his posts on other platforms, or when he sees posts that exist outside Meta’s more stringent content moderation.</p>
+<p>And last, I think people in the tech space (including myself at times) will forget that people have agency when getting annoyed by defaults. If people don’t want to change their settings (from federation on Threads to their default search engine) it likely means they’re either happy with the default, or are too apathetic to change it. While some dark patterns can be problematic, if something’s a couple clicks away in settings, it comes to a point where it’s a user decision as apposed to a big tech evil.</p>
+<p>Now, that decision (either made by the users, or the setting as a default) might change quickly if Activity Pub grows. Even if the average Threads user doesn’t want a Linux lecture from a Mastodon user, they might wind up seeking out federation if their favorite personality has a Mastodon account or they find out they can follow &amp; comment on Tumblr posts from within Threads. But, as it is, Threads has made a lot less of a splash than I predicted.</p>
+<h4 id="some-other-platform-news">Some other Platform News</h4>
+<p>Tumblr still intends to implement Activity Pub, although things have been indefinitely delayed after they announced a move to WordPress on the background. Speaking of which, Automatic (WordPress&rsquo;s ownership) has taken over development of the Activity Pub plugin, although the amount of WordPress blogs that are configured to support it is rather limited (Fedi DB detects 12k WordPress blogs with AP support as of Dec 2025, as apposed to nearly half the internet that is run on WordPress). The WordPress alternative Ghost also added AP support natively, surpassing WordPress with 13k AP supported Ghost blogs.</p>
+<h2 id="bridges">Bridges</h2>
+<p>As mentioned above, bridging protocols predates all three of the big protocols. Just because something has existed for a while doesn’t necessarily mean that it’s important, however, I believe bridges are very important for the ecosystem. And, as you might not even have noticed, I said <em>the</em> ecosystem. Without bridges, non-centralized social media protocols effectively become a zero sum game - there’s likely only a limited amount of people interested in the tech in general, and every person who joins one subtracts their presence from the others. If there’s going to be a chance of the ecosystem growing without bridges it necessitates squashing the other protocols, and each time a protocol starts becoming niche (such as AT with politics or Nostr with it’s technical barrier to entry) it squashes that protocol&rsquo;s chance of growing.</p>
+<p>With bridges, however, all three protocols become one big ecosystem. Every new user on one suddenly brings value to everyone on all, and suddenly it doesn’t matter if one person you want to follow is on one and another on an other. Protocols can serve more niche communities while still having a connection to a wider community, and large platforms that only implement one protocol wind up connected to all three.</p>
+<p>In short, with bridges, the momentum of all interconnected social media protocols - plus the platforms that adopt them - could collectively be enough to achieve escape velocity. Without bridges, or some other form of inter-connectivity, everything will probably collapse with a mess of fragmentation and mini fiefs.</p>
+<h4 id="bridges-updates">Bridges Updates</h4>
+<p>Outside of the defederation and attacks on bridges, which I mentioned in the Activity Pub section, there hasn’t been a lot of news on bridges. There has been a new bridge, eclipse.pub, which bridges Nostr and AT together; although thanks to chaining Bridgy Fed and Mostr together, there was already plenty of people (including myself) following people on BlueSky from Nostr or vice versa. Outside of more internal bridging (e.g. Friendica) or more bespoke bridges (e.g. Bounce - an Activity Pub &lt;&gt; AT migration tool) there are now four large general purpose bridges.</p>
+<ul>
+<li>Bridgy Fed: Activity Pub &lt;&gt; AT</li>
+<li>Eclipse: Nostr &lt;&gt; AT</li>
+<li>Momostr (Mostr fork): Nostr &lt;&gt; Activity Pub</li>
+<li>Mostr: Nostr &lt;&gt; Activity Pub</li>
+</ul>
+<h2 id="post-wrap-up">Post Wrap Up</h2>
+<p>Anyway, that&rsquo;s about all that I can recall occurring over the last year and a half since I last posted about microblogging protocols (at least that I figured was worth covering). A fair bit has happened, mostly good on the tech side, and bad in the sense that every community has dwindled since my last post.</p>
+<p>Overall things might still be looking up. Like I said in my last post, only a few handful of weird computer people will ever care about protocols, but with growing platform support there could be plenty of people who enjoy the benefits of inter-connectivity and (depending on the protocol) a fair bit of user freedom. If there&rsquo;s a good technical base behind it, and a halfway decent community spread throughout the ecosystem, it really doesn&rsquo;t matter what the numbers are now - just what they&rsquo;ll be if/when new platforms spring up or when existing platforms start supporting them.</p>
+<p>Stay tuned for a revised comparison post sometime early 2026. Like I said, my aim is to provide all the updates and stuff in this post (plus maybe a supplementary post or two if anything happens between then and now). Afterwards, I can slim down my comparison post and hopefully provide one that&rsquo;s a little less easily dated.</p>
+<h2 id="footnotes">Footnotes</h2>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>666,032 monthly active users to be exact, per <a href="https://fedidb.com/">fedidb</a> Nov 2025. All of Activity Pub is estimated to be at 895,069 monthly active users, although that number appears to be incomplete (e.g. bridged users listed as 0, Threads users not included). I generally use Mastodon as a benchmark since that&rsquo;s easy to track, tracking a protocol as a whole is hard if not impossible.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>There is some irony in that I was able to quote post on Activity Pub using my janky homemade bridge years before Mastodon officially implemented it.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>To quote Jack Black, &ldquo;If you define playing an instrument as making noise with it, then I can play a lot of instruments.&rdquo; I&rsquo;m probably misremembering the quote, but lol, I guess to clarify I can&rsquo;t write anything complex or competent. I can write some short janky code, or prompt an AI, but understanding how to implement something into a complex project like that is well above my ($0) pay grade.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Honestly, the situation is absurd. Of course we should be nice to people on Windows. First off, because who the f cares what somebody else uses as their OS. I use what&rsquo;s best for me, you use what&rsquo;s best for you, and the world goes &lsquo;round all the same. And - to make a general sweeping statement - I swear, it&rsquo;s always the people who installed PopOS as their first taste of Linux last week that are the loudest. Windows is the most popular operating system in the world, we&rsquo;re the weirdos on the penguin PC. Just chill and be nice to each other.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>Up until more recently, BlueSky was the most &lsquo;mainstream&rsquo; place in the distributed social media ecosystem. That&rsquo;s changed quite a bit as of late, I&rsquo;ll touch on that in a later portion of this post.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6">
+<p>Yes, I know there&rsquo;s an option to only show limited posts from highly active users. And no, the setting isn&rsquo;t on.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7">
+<p>Remember, Friendica isn&rsquo;t natively on Activity Pub, it uses DFRN. You can migrate from Mastodon to Friendica since Friendica supports Activity Pub and all Mastodon&rsquo;s features. However, as far as I am able to tell, you can only migrate from Friendica to another Friendica instance.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8">
+<p>Around the 2024 US election I saw some people on Nostr not only acknowledge their political differences, but speak well of each other in spite of it. Sure that&rsquo;s a Tuesday IRL, but for microbloging, that&rsquo;s not something you see often. Of the three protocols I feel like Nostr is the least politically captured, the culture being more focused on tech nerd and cypherpunk stuff (as apposed to large cells of people going &ldquo;I want Twitter, but hyper fixated on my specific political beliefs&rdquo; like there are on parts of Activity Pub and most of AT). While tech nerds and cypherpunks might be annoyingly fixated on tech, they&rsquo;re probably a lot more palatable to the average &rsquo;normie&rsquo; for lack of a better term. Just like how early Facebook/Twitter/Reddit transitioned from tech nerds to mainstream - but how TruthSocial, BlueSky, LemmyGrad, and Poast are all politically captured and probably permanently limited to people with very specific politics.&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9">
+<p>As I&rsquo;ll touch on in a bit when I talk about DiVine, and as I brought up in my previous post, most people (if they use these protocols) will end up on platforms, not protocols. It doesn&rsquo;t matter that the average user won&rsquo;t know how to manage private keys if the platform gives them the option to have it managed for them. AT&rsquo;s Bluesky does a very similar thing - users can just sign up with an email instead of needing to generate keys and host their own PDS. Still, in Nostr&rsquo;s current state, there&rsquo;s not a lot of options to delegate key management to a platform, so it&rsquo;s kinda bottle necked by the limited pool of people interested in owning their account at the cost of managing cryptographic keys.&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10">
+<p>I actually mentioned doing something like this in my previous post. Not that I can claim any credit for making it happen, just cool to see my spitballing had some sort of logic to it.&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11">
+<p>Some guy named Jack <a href="https://nostr.com/nevent1qqsw97qflxpfwr7d0arml30pmjx3amkg4sy3twsv4aauq7wcz4l53tcppemhxue69uhkummn9ekx7mp0qgsgydql3q4ka27d9wnlrmus4tvkrnc8ftc4h8h5fgyln54gl0a7dgsrqsqqqqqp9vfrd8">said something in a similar vein</a>, but then again, what would he know about social media?&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:12">
+<p>I was once called a fascist for suggesting that users have the option of key delegation. Lol, I guess that&rsquo;s the opposite side of the coin to a protocol captured by tech nerds as apposed to political brainrot. But yeah, I stand by my long standing opinion: user owned accounts via keys is very cool - but the option of having your keys managed elsewhere, since not many people know what asymmetric encryption is, is important if you want everybody to be able to join. But yeah, outside of being <a href="https://youtube.com/shorts/iBL9P7p1dUY">unable to pronounce Spaghetti</a>, Mussolini was next best known for believing it&rsquo;s important that clients always cryptographically sign data, making sure the user does not have the option to delegate that process to a remote server if they choose to.&#160;<a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:13">
+<p>Blossom is Nostr&rsquo;s answer to decentralized file storage/distribution. <a href="https://onnostr.substack.com/p/the-blossom-protocol-supercharging">I found a post</a> explaining it in greater detail, but it&rsquo;s sort of a lightweight <a href="https://nate.mecca1.net/posts/2023-08-28_ipfs/#what-is-ipfs">IPFS</a>. Long story short, you upload a file, then that file is identified by it&rsquo;s hash. When somebody else goes to access the file they can pull it from any server that has a copy of that file, which their client can then use to mathematically verify that the file was the exact file they were seeking. It&rsquo;s not peer to peer, the files are hosted on Blossom servers (unlike IPFS or BitTorrent where users help host the file), but it does help reduce centralization as Blossom servers are interchangeable as long as they have a copy of the file.&#160;<a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:14">
+<p>Free our Feeds, a campaign to build infrastructure on AT outside of BlueSky, was launched about a year ago. To my knowledge they&rsquo;re yet to built anything, but I&rsquo;m sure these things take time, and they may help decentralized AT in the future.&#160;<a href="#fnref:14" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:15">
+<p>If you don&rsquo;t host your own PDS, and are instead relying on BlueSky&rsquo;s infrastructure, the ability to move is still theoretically the same - assuming they don&rsquo;t go down or lock you out of doing so.&#160;<a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:16">
+<p>Unlike something like user statistics (which are already hard to quantify on a decentralized protocol), it&rsquo;s real hard to quantify how rules are enforced - hence &ldquo;Has a reputation of.&rdquo; I&rsquo;ll touch on partisan stuff on the next section, but I&rsquo;ve got a few anecdotal references that have stood out as shaping my understanding of how things are being enforced. The journalist Micheal Kruse was perma banned for <a href="https://www.politico.com/news/magazine/2024/12/12/bluesky-twitter-x-alternative-toxic-00193862">seemingly going against the status quo</a> on the network, though the ban was later reversed. It may have been a mistake, evidence of a &ldquo;ban first and ask questions later&rdquo; mentality, or it could be cooperation of the many unsubstantiated claims that BlueSky generally bans people who go against their narrative (only to be reversed in this instance when Micheal began to make some noise about it). BlueSky also has a habit of scanning linked content, banning anything that&rsquo;d violate their own terms of service (<a href="https://archive.is/EE3wU">including mistakenly</a>), and has seemingly banned commentators and infulencers (such as the right wing YouTuber &ldquo;The Quartering&rdquo;) for unlinked off-platform content.&#160;<a href="#fnref:16" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:17">
+<p>This isn&rsquo;t unheard of, either. Mastodon.Social blocks some bridges and occasionally does some <a href="https://blog.mbirth.uk/2025/05/30/mastodon-social-and-shadowbanning.html">arbitrary blocking</a>. At the same time, as of Dec 2025, Mastodon.Social makes up 38.9% of Mastodon&rsquo;s user base. Not exactly ideal for decentralization, but by no means does it have the power define the network in the way that something like BlueSky does.&#160;<a href="#fnref:17" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:18">
+<p>That said, Mastodon.Social has closed registrations at various times due to sudden influxes of users, and this is with Mastodon being incredibly niche. Mastodon.Social generally works fine being funded by donations when it has hundreds of thousands right now, but if it had millions? Tens of millions? Hundreds of millions? There is no way to run a gigantic platform without a business plan.&#160;<a href="#fnref:18" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:19">
+<p>A lot of people have cried foul at those numbers, however. A lot of people believe that, since Threads and Instagram are linked, people who actively use Instagram and have an inactive Threads account are counted as an active Threads user. The number &lsquo;feels&rsquo; a little inflated to me, but I could easily be convinced that it&rsquo;s real or fake.&#160;<a href="#fnref:19" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+    </div>
+<div class="post_comments">
+  
+  
+  
+</div>
+
+
+
+
+  </article>
+<aside class="sidebar">
+  <section class="sidebar_inner">
+    <br>
+    
+
+
+    
+    
+    <h2 class="mt-4">Recent Posts</h2>
+    <ul class="flex-column">
+      <li>
+        <a href="/posts/2025-12-07_microblog-protocols-update/" class="nav-link" title="This is Fine: an Interim Microblogging Protocols Update">This is Fine: an Interim Microblogging Protocols Update</a>
+      </li>
+      <li>
+        <a href="/posts/2025-11-10_avif-file-format/" class="nav-link" title="Rather Impressive Image Compression">Rather Impressive Image Compression</a>
+      </li>
+      <li>
+        <a href="/posts/2025-10-31_random-update/" class="nav-link" title="Anyone out there hiring? &#43; 10 pointless facts">Anyone out there hiring? + 10 pointless facts</a>
+      </li>
+      <li>
+        <a href="/posts/2025-06-18_standard-server-alternatives/" class="nav-link" title="NFTs and Dark Web Shenanagins">NFTs and Dark Web Shenanagins</a>
+      </li>
+      <li>
+        <a href="/posts/2025-04-13_vibe-coding-chronicles/" class="nav-link" title="The Vibe Coding Chronicles">The Vibe Coding Chronicles</a>
+      </li>
+      <li>
+        <a href="/posts/2025-04-02_retro-gaming/" class="nav-link" title="Flip 2 pre-order, handheld style controllers, and misc retro gameing ramblings">Flip 2 pre-order, handheld style controllers, and misc retro gameing ramblings</a>
+      </li>
+      <li>
+        <a href="/posts/2025-02-09_phone-reviews/" class="nav-link" title="Phone Reviews (Pixel 5a, 8a &#43; Mystery Phone)">Phone Reviews (Pixel 5a, 8a + Mystery Phone)</a>
+      </li>
+      <li>
+        <a href="/posts/2024-12-30_2024-retrospective/" class="nav-link" title="2024 Writing Retrospective">2024 Writing Retrospective</a>
+      </li>
+    </ul>
+    <div>
+      <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
+      <nav class="tags_nav">
+        <a href='/categories/stuff-i-like/' class="post_tag button button_translucent" title="stuff-i-like">
+          STUFF-I-LIKE
+          <span class="button_tally">9</span>
+        </a>
+        
+        <a href='/categories/hobbies/' class="post_tag button button_translucent" title="hobbies">
+          HOBBIES
+          <span class="button_tally">8</span>
+        </a>
+        
+        <a href='/categories/informational/' class="post_tag button button_translucent" title="informational">
+          INFORMATIONAL
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='/categories/personal-updates/' class="post_tag button button_translucent" title="personal-updates">
+          PERSONAL-UPDATES
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='/categories/complaints/' class="post_tag button button_translucent" title="complaints">
+          COMPLAINTS
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='/categories/misc-essay/' class="post_tag button button_translucent" title="misc-essay">
+          MISC-ESSAY
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/categories/tutorials/' class="post_tag button button_translucent" title="tutorials">
+          TUTORIALS
+          <span class="button_tally">1</span>
+        </a>
+        
+        
+      </nav>
+    </div>
+    <div>
+      <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
+      <nav class="tags_nav">
+        <a href='/tags/tech/' class="post_tag button button_translucent" title="tech">
+          TECH
+          <span class="button_tally">15</span>
+        </a>
+        
+        <a href='/tags/protocols/' class="post_tag button button_translucent" title="protocols">
+          PROTOCOLS
+          <span class="button_tally">9</span>
+        </a>
+        
+        <a href='/tags/nostr/' class="post_tag button button_translucent" title="nostr">
+          NOSTR
+          <span class="button_tally">7</span>
+        </a>
+        
+        <a href='/tags/activitypub/' class="post_tag button button_translucent" title="activitypub">
+          ACTIVITYPUB
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='/tags/android/' class="post_tag button button_translucent" title="android">
+          ANDROID
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='/tags/misc/' class="post_tag button button_translucent" title="misc">
+          MISC
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='/tags/mobile/' class="post_tag button button_translucent" title="mobile">
+          MOBILE
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='/tags/privacy/' class="post_tag button button_translucent" title="privacy">
+          PRIVACY
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='/tags/projects/' class="post_tag button button_translucent" title="projects">
+          PROJECTS
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='/tags/windows/' class="post_tag button button_translucent" title="windows">
+          WINDOWS
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='/tags/ai/' class="post_tag button button_translucent" title="ai">
+          AI
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='/tags/atproto/' class="post_tag button button_translucent" title="atproto">
+          ATPROTO
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='/tags/decentralized/' class="post_tag button button_translucent" title="decentralized">
+          DECENTRALIZED
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='/tags/cloud/' class="post_tag button button_translucent" title="cloud">
+          CLOUD
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='/tags/debian/' class="post_tag button button_translucent" title="debian">
+          DEBIAN
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='/tags/ipfs/' class="post_tag button button_translucent" title="ipfs">
+          IPFS
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='/tags/linux/' class="post_tag button button_translucent" title="linux">
+          LINUX
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='/tags/meta/' class="post_tag button button_translucent" title="meta">
+          META
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='/tags/photos/' class="post_tag button button_translucent" title="photos">
+          PHOTOS
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='/tags/utility/' class="post_tag button button_translucent" title="utility">
+          UTILITY
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='/tags/archival/' class="post_tag button button_translucent" title="archival">
+          ARCHIVAL
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/emulation/' class="post_tag button button_translucent" title="emulation">
+          EMULATION
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/encryption/' class="post_tag button button_translucent" title="encryption">
+          ENCRYPTION
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/gaming/' class="post_tag button button_translucent" title="gaming">
+          GAMING
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/i2p/' class="post_tag button button_translucent" title="i2p">
+          I2P
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/opinion/' class="post_tag button button_translucent" title="opinion">
+          OPINION
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/review/' class="post_tag button button_translucent" title="review">
+          REVIEW
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/tor/' class="post_tag button button_translucent" title="tor">
+          TOR
+          <span class="button_tally">1</span>
+        </a>
+        
+        
+      </nav>
+    </div>
+  </section>
+</aside>
+
+  
+</div>
+    </main><svg width="0" height="0" class="hidden">
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.001 18.001" id="twitter">
+    <path d="M15.891 4.013c.808-.496 1.343-1.173 1.605-2.034a8.68 8.68 0 0 1-2.351.861c-.703-.756-1.593-1.14-2.66-1.14-1.043 0-1.924.366-2.643 1.078a3.56 3.56 0 0 0-1.076 2.605c0 .309.039.585.117.819-3.076-.105-5.622-1.381-7.628-3.837-.34.601-.51 1.213-.51 1.846 0 1.301.549 2.332 1.645 3.089-.625-.053-1.176-.211-1.645-.47 0 .929.273 1.705.82 2.388a3.623 3.623 0 0 0 2.115 1.291c-.312.08-.641.118-.979.118-.312 0-.533-.026-.664-.083.23.757.664 1.371 1.291 1.841a3.652 3.652 0 0 0 2.152.743C4.148 14.173 2.625 14.69.902 14.69c-.422 0-.721-.006-.902-.038 1.697 1.102 3.586 1.649 5.676 1.649 2.139 0 4.029-.542 5.674-1.626 1.645-1.078 2.859-2.408 3.639-3.974a10.77 10.77 0 0 0 1.172-4.892v-.468a7.788 7.788 0 0 0 1.84-1.921 8.142 8.142 0 0 1-2.11.593z"
+      ></path>
+  </symbol>
+  <symbol aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="mail">
+    <path  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="calendar">
+    <path d="M452 40h-24V0h-40v40H124V0H84v40H60C26.916 40 0 66.916 0 100v352c0 33.084 26.916 60 60 60h392c33.084 0 60-26.916 60-60V100c0-33.084-26.916-60-60-60zm20 412c0 11.028-8.972 20-20 20H60c-11.028 0-20-8.972-20-20V188h432v264zm0-304H40v-48c0-11.028 8.972-20 20-20h24v40h40V80h264v40h40V80h24c11.028 0 20 8.972 20 20v48z"></path>
+    <path d="M76 230h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 310h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 390h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80-80h40v40h-40z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="github">
+    <path d="M255.968 5.329C114.624 5.329 0 120.401 0 262.353c0 113.536 73.344 209.856 175.104 243.872 12.8 2.368 17.472-5.568 17.472-12.384 0-6.112-.224-22.272-.352-43.712-71.2 15.52-86.24-34.464-86.24-34.464-11.616-29.696-28.416-37.6-28.416-37.6-23.264-15.936 1.728-15.616 1.728-15.616 25.696 1.824 39.2 26.496 39.2 26.496 22.848 39.264 59.936 27.936 74.528 21.344 2.304-16.608 8.928-27.936 16.256-34.368-56.832-6.496-116.608-28.544-116.608-127.008 0-28.064 9.984-51.008 26.368-68.992-2.656-6.496-11.424-32.64 2.496-68 0 0 21.504-6.912 70.4 26.336 20.416-5.696 42.304-8.544 64.096-8.64 21.728.128 43.648 2.944 64.096 8.672 48.864-33.248 70.336-26.336 70.336-26.336 13.952 35.392 5.184 61.504 2.56 68 16.416 17.984 26.304 40.928 26.304 68.992 0 98.72-59.84 120.448-116.864 126.816 9.184 7.936 17.376 23.616 17.376 47.584 0 34.368-.32 62.08-.32 70.496 0 6.88 4.608 14.88 17.6 12.352C438.72 472.145 512 375.857 512 262.353 512 120.401 397.376 5.329 255.968 5.329z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 212" id="gitlab">
+    <path d="M12.3 74.7h54L43.3 3c-1-3.6-6.4-3.6-7.6 0L12.3 74.8z" />
+    <path d="M12.3 74.7L.5 111c-1 3.2 0 6.8 3 8.8l101.6 74-92.5-119z"/>
+    <path d="M105 193.7l-38.6-119h-54l92.7 119z"/>
+    <path d="M105 193.7l38.7-119H66.4l38.7 119z"/>
+    <path d="M105 193.7l38.7-119H198l-93 119z"/>
+    <path d="M198 74.7l11.6 36.2c1 3 0 6.6-3 8.6l-101.5 74 93-119z"/>
+    <path d="M198 74.7h-54.3L167 3c1.2-3.6 6.4-3.6 7.6 0L198 74.8z"/>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="rss">
+    <circle cx="3.429" cy="20.571" r="3.429"></circle>
+    <path d="M11.429 24h4.57C15.999 15.179 8.821 8.001 0 8v4.572c6.302.001 11.429 5.126 11.429 11.428z"></path>
+    <path d="M24 24C24 10.766 13.234 0 0 0v4.571c10.714 0 19.43 8.714 19.43 19.429z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="linkedin">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h362c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zM181 406h-60V196h60zm0-240h-60v-60h60zm210 240h-60V286c0-16.54-13.46-30-30-30s-30 13.46-30 30v120h-60V196h60v11.309C286.719 202.422 296.93 196 316 196c40.691.043 75 36.547 75 79.688zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612" id="to-top">
+    <path d="M604.501 440.509L325.398 134.956c-5.331-5.357-12.423-7.627-19.386-7.27-6.989-.357-14.056 1.913-19.387 7.27L7.499 440.509c-9.999 10.024-9.999 26.298 0 36.323s26.223 10.024 36.222 0l262.293-287.164L568.28 476.832c9.999 10.024 26.222 10.024 36.221 0 9.999-10.023 9.999-26.298 0-36.323z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="carly">
+    <path d="M504.971 239.029L448 182.059V84c0-46.317-37.682-84-84-84h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c19.851 0 36 16.149 36 36v108c0 6.365 2.529 12.47 7.029 16.971L454.059 256l-47.029 47.029A24.002 24.002 0 0 0 400 320v108c0 19.851-16.149 36-36 36h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c46.318 0 84-37.683 84-84v-98.059l56.971-56.971c9.372-9.372 9.372-24.568 0-33.941zM112 192V84c0-19.851 16.149-36 36-36h44c13.255 0 24-10.745 24-24S205.255 0 192 0h-44c-46.318 0-84 37.683-84 84v98.059l-56.971 56.97c-9.373 9.373-9.373 24.568 0 33.941L64 329.941V428c0 46.317 37.682 84 84 84h44c13.255 0 24-10.745 24-24s-10.745-24-24-24h-44c-19.851 0-36-16.149-36-36V320c0-6.365-2.529-12.47-7.029-16.971L57.941 256l47.029-47.029A24.002 24.002 0 0 0 112 192z"></path>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="copy">
+    <path d="M23 2.75A2.75 2.75 0 0 0 20.25 0H8.75A2.75 2.75 0 0 0 6 2.75v13.5A2.75 2.75 0 0 0 8.75 19h11.5A2.75 2.75 0 0 0 23 16.25zM18.25 14.5h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5z"></path>
+    <path d="M8.75 20.5a4.255 4.255 0 0 1-4.25-4.25V2.75c0-.086.02-.166.025-.25H3.75A2.752 2.752 0 0 0 1 5.25v16A2.752 2.752 0 0 0 3.75 24h12a2.752 2.752 0 0 0 2.75-2.75v-.75z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.001 512.001" id="closeme">
+    <path d="M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0 0 14.143 5.857 19.94 19.94 0 0 0 14.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="open-menu">
+    <path d="M492 236H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0-160H20C8.954 76 0 84.954 0 96s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0 320H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="instagram">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id=youtube>
+    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="stackoverflow">
+    <path d="M21 27v-8h3v11H0V19h3v8h18z"></path><path d="M17.1.2L15 1.8l7.9 10.6 2.1-1.6L17.1.2zm3.7 14.7L10.6 6.4l1.7-2 10.2 8.5-1.7 2zM7.2 12.3l12 5.6 1.1-2.4-12-5.6-1.1 2.4zm-1.8 6.8l13.56 1.96.17-2.38-13.26-2.55-.47 2.97zM19 25H5v-3h14v3z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="xing">
+    <path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 55" id="discord">
+    <path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" id="mastodon">
+    <path
+    fill="#ffffff"
+    d="m 15.054695,9.8859583 c -0.22611,1.1632697 -2.02517,2.4363497 -4.09138,2.6830797 -1.0774504,0.12856 -2.1382704,0.24673 -3.2694704,0.19484 -1.84996,-0.0848 -3.30971,-0.44157 -3.30971,-0.44157 0,0.1801 0.0111,0.35157 0.0333,0.51194 0.24051,1.82571 1.81034,1.93508 3.29737,1.98607 1.50088,0.0514 2.8373104,-0.37004 2.8373104,-0.37004 l 0.0617,1.35686 c 0,0 -1.0498104,0.56374 -2.9199404,0.66742 -1.03124,0.0567 -2.3117,-0.0259 -3.80308,-0.42069 -3.23454998,-0.85613 -3.79081998,-4.304 -3.87592998,-7.8024197 -0.026,-1.03871 -0.01,-2.01815 -0.01,-2.83732 0,-3.57732 2.34385998,-4.62587996 2.34385998,-4.62587996 1.18184,-0.54277 3.20976,-0.77101 5.318,-0.7882499985409 h 0.0518 C 9.8267646,0.01719834 11.856025,0.24547834 13.037775,0.78824834 c 0,0 2.34377,1.04855996 2.34377,4.62587996 0,0 0.0294,2.63937 -0.32687,4.47183"/>
+ <path
+    fill="#000000"
+    d="m 12.616925,5.6916583 v 4.3315297 h -1.71607 V 5.8189683 c 0,-0.88624 -0.37289,-1.33607 -1.1187604,-1.33607 -0.82467,0 -1.23799,0.53361 -1.23799,1.58875 v 2.30122 h -1.70594 v -2.30122 c 0,-1.05514 -0.4134,-1.58875 -1.23808,-1.58875 -0.74587,0 -1.11876,0.44983 -1.11876,1.33607 v 4.2042197 h -1.71607 V 5.6916583 c 0,-0.88527 0.22541,-1.58876 0.67817,-2.10922 0.46689,-0.52047 1.07833,-0.78727 1.83735,-0.78727 0.87816,0 1.54317,0.33752 1.98288,1.01267 l 0.42744,0.71655 0.42753,-0.71655 c 0.43961,-0.67515 1.10463,-1.01267 1.9828704,-1.01267 0.75893,0 1.37037,0.2668 1.83735,0.78727 0.45268,0.52046 0.67808,1.22395 0.67808,2.10922"/>
+  </symbol>
+</svg>
+
+<script type="text/javascript" src="/en/js/bundle.ba98dd820e3f5b00fae5ae15848b76ff601514006d975a21d306b7bc92c6d60676d220137e39d2a86ff2696653d0ab03e33a3bf7decf81447c2183bede6c189e.js" integrity="sha512-upjdgg4/WwD65a4VhIt2/2AVFABtl1oh0wa3vJLG1gZ20iATfjnSqG/yaWZT0KsD4zo7997PgUR8IYO&#43;3mwYng==" crossorigin="anonymous"></script>
+  </body>
+</html>
