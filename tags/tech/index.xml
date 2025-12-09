@@ -6,18 +6,18 @@
     <description>Recent content in tech on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>This is Fine: an Interim Microblogging Protocols Update</title>
-      <link>/posts/2025-12-07_microblog-protocols-update/</link>
-      <pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate>
+      <link>/posts/2025-12-09_defaults-2025/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2025-12-07_microblog-protocols-update/</guid>
+      <guid>/posts/2025-12-09_defaults-2025/</guid>
       <description>
         
           
-            As is customary on my microblogging posts, let&amp;rsquo;s get us started with an original meme. Also, if you&amp;rsquo;d like to read my previous Microblogging Protocols compared posts, you can read v1 here and v2 here.
-It&amp;rsquo;s been a little over a year since I made my updated microblogging protocols comparison. Since then a few things have happened, and my previous could use some trimming. In the spirit of keeping things shorter (and keeping the comparison v3 post relevant longer), I figured I&amp;rsquo;d split the post into two parts: this one, which includes random updates and things that happened over the last year or so - and a second one, &amp;ldquo;Microblogging Protocols Compared v3&amp;rdquo; which will be a more streamlined protocol comparison.
+            In 2023 Robb Knight started the defaults trend, covering what people used as their default apps for specific purposes. I did a 2023 version, and while I mentioned planning to do a late 2024 version in my 2024 year end wrap up post, I never wound up getting to it. I&amp;rsquo;ve got a 2025 edition of my default apps below, with changes in bold.
+PC Tablet Phone Mail Client Proton Web N/A Proton App Mail Server ^ ^ ^ Notes Joplin Joplin Joplin Tasks N/A N/A Tasks (org.
           
           
         
@@ -26,10 +26,10 @@ It&amp;rsquo;s been a little over a year since I made my updated microblogging p
     
     <item>
       <title>This is Fine: an Interim Microblogging Protocols Update</title>
-      <link>/posts/2025-12-09_defaults-2025/</link>
+      <link>/posts/2025-12-07_microblog-protocols-update/</link>
       <pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2025-12-09_defaults-2025/</guid>
+      <guid>/posts/2025-12-07_microblog-protocols-update/</guid>
       <description>
         
           
