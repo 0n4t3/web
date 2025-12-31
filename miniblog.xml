@@ -7,6 +7,13 @@
     <!-- top of entries -->
     <!-- entry divider -->
     <item>
+      <title>Holos Is Adding Custom Domain Support</title>
+      <link>https://text.tchncs.de/1nate/holos-is-adding-custom-domain-support</link>
+      <description>Holos just made another cool step towards providing a really cool unique way to use Activity Pub.</description>
+      <pubDate>Wed, 31 Dec 2025 12:40:00 EST</pubDate>
+    </item>
+    <!-- entry divider -->
+    <item>
       <title>Google is re supporting JPEG XL in Chromium</title>
       <link>https://text.tchncs.de/1nate/google-is-re-supporting-jpeg-xl-in-chromium</link>
       <description>After quietly removing JPEG Xl support in Chromium a few years back it might be making a comeback. JPG XL and AVIF are both pretty impressive formats, and their support is good to see.</description>
