@@ -2,22 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/2025-12-09_defaults-2025/</loc>
-    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+    <loc>/posts/2026-01-10_2025-retrospective/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
-    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/meta/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/personal-updates/</loc>
-    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/2025-12-09_defaults-2025/</loc>
     <lastmod>2025-12-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/tech/</loc>
@@ -114,9 +120,6 @@
     <lastmod>2025-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2024-12-30_2024-retrospective/</loc>
-    <lastmod>2024-12-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/meta/</loc>
     <lastmod>2024-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2024-11-12_photo-filter-fun/</loc>
