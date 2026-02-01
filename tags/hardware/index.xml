@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hardware on An Untitled Blog</title>
+    <link>/tags/hardware/</link>
+    <description>Recent content in hardware on An Untitled Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The RAM wars: mini penguin to the rescue</title>
+      <link>/posts/2026-02-01_old-laptop/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2026-02-01_old-laptop/</guid>
+      <description>
+        
+          
+            Originally, I was drafting this in September, planning on dedicating it to Windows 10 Home becoming EOL. I also figured I’d share a meme that contained something along the following:
+Instead, however, it’s early 2026, and I feel like a dedication to RAM prices would be a more fitting start:
+Memes aside, the lightweight laptop - what I’m typing this post on - has a whopping total of 2 GB of ram (1.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
