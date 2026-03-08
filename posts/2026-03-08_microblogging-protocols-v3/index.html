@@ -1,0 +1,911 @@
+
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-figures=""
+  
+    class="page"
+  
+  
+  >
+  <head>
+<title>A Technical Comparison of Distributed Social Media Protocols v3 | An Untitled Blog</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+
+
+<meta property="og:locale" content="en" />
+
+<meta property="og:type" content="article">
+<meta name="description" content="Hello, I&rsquo;m back for round three of my social media protocol comparisons. I wrote v2 because of some mistakes on my part, although it&rsquo;s been two …" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="">
+<meta name="twitter:title" content="A Technical Comparison of Distributed Social Media Protocols v3" />
+<meta name="twitter:image" content="/"/>
+<meta property="og:url" content="/posts/2026-03-08_microblogging-protocols-v3/" />
+<meta property="og:title" content="A Technical Comparison of Distributed Social Media Protocols v3" />
+<meta property="og:description" content="Hello, I&rsquo;m back for round three of my social media protocol comparisons. I wrote v2 because of some mistakes on my part, although it&rsquo;s been two …" />
+<meta property="og:image" content="/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+<link rel="manifest" href="/icons/site.webmanifest">
+
+<link rel="canonical" href="/posts/2026-03-08_microblogging-protocols-v3/">
+
+
+
+<link rel="preload" href="/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity = "sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" as="style" crossorigin="anonymous">
+
+
+
+<link rel="preload" href="/en/js/bundle.ba98dd820e3f5b00fae5ae15848b76ff601514006d975a21d306b7bc92c6d60676d220137e39d2a86ff2696653d0ab03e33a3bf7decf81447c2183bede6c189e.js" as="script" integrity=
+"sha512-upjdgg4/WwD65a4VhIt2/2AVFABtl1oh0wa3vJLG1gZ20iATfjnSqG/yaWZT0KsD4zo7997PgUR8IYO&#43;3mwYng==" crossorigin="anonymous">
+
+
+<link rel="stylesheet" type="text/css" href="/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity="sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" crossorigin="anonymous">
+
+  </head>
+  <body
+    data-code="100"
+    data-lines="false"
+    id="documentTop"
+    data-lang="en"
+  >
+
+<header class="nav_header" >
+  <nav class="nav"><a href='/' class="nav_brand nav_item" title="An Untitled Blog">An Untitled Blog
+  <div class="nav_close">
+    <div><svg class="icon">
+  <title>open-menu</title>
+  <use xlink:href="#open-menu"></use>
+</svg>
+<svg class="icon">
+  <title>closeme</title>
+  <use xlink:href="#closeme"></use>
+</svg>
+</div>
+  </div>
+</a>
+
+    <div class='nav_body nav_body_left'>
+      
+      
+      
+        
+
+  <div class="nav_parent">
+    <a href="/pages/follow/" class="nav_item" title="Follow/Contact">Follow/Contact </a>
+  </div>
+  <div class="nav_parent">
+    <a href="/miniblog/miniblog/" class="nav_item" title="Miniblog">Miniblog </a>
+  </div>
+  <div class="nav_parent">
+    <a href="/pages/eepsite/" class="nav_item" title="Mirrors">Mirrors </a>
+  </div>
+  <div class="nav_parent">
+    <a href="/photos/index.html" class="nav_item" title="Photos">Photos </a>
+  </div>
+  <div class="nav_parent">
+    <a href="/pages/resume/" class="nav_item" title="Resume">Resume </a>
+  </div>
+      
+<div class='follow'>
+<div class="color_mode">
+  <input type="checkbox" class="color_choice" id="mode">
+</div>
+
+</div>
+
+    </div>
+  </nav>
+</header>
+
+    <main>
+  
+<div class="grid-inverse wrap content">
+  <article class="post_content">
+    <h1 class="post_title">A Technical Comparison of Distributed Social Media Protocols v3</h1>
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Mar 8, 2026</span>
+    <span class="post_time"> · 82 min read</span><span>&nbsp;· <a href='/tags/tech/' title="tech" class="post_tag button button_translucent">tech
+        </a><a href='/tags/protocols/' title="protocols" class="post_tag button button_translucent">protocols
+        </a><a href='/tags/nostr/' title="nostr" class="post_tag button button_translucent">nostr
+        </a><a href='/tags/activitypub/' title="activitypub" class="post_tag button button_translucent">activitypub
+        </a><a href='/tags/atproto/' title="atproto" class="post_tag button button_translucent">atproto
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·</span>
+  </div>
+
+    <div class="post_body"><p>Hello, I&rsquo;m back for round three of my social media protocol comparisons. I wrote v2 because of some mistakes on my part, although it&rsquo;s been two years since writing it, and it&rsquo;s become a bit out of date. It&rsquo;s also a bit long, with a bunch of explainers and clutter right at the start of it, so for this round, I figured I&rsquo;d get things up to date while shortening the text (or at least moving ramblings to footnotes) and move a lot of the explainers to the end.</p>
+<p>In this version, I&rsquo;ve added a section or so, such as moderation. While each protocol&rsquo;s moderation features could likely be inferred from a coming together of their other aspects, it&rsquo;s probably useful to compare how it works in practice. I&rsquo;ve also removed a few sections, such as comparing communities and growth. Some of it is being more focused on a technical comparison, some because the protocols are less different now (e.g. all have similar community features, and all have stagnating userbases), and some because I&rsquo;ve mixed those details into other sections (e.g. a note that says ActivityPub excels the most in communities instead of having a dedicated section).</p>
+<p>A big thanks to those who shared my earlier versions or reached out with kind words and corrections. And, without further ado, let&rsquo;s get into the customary meme, then jump straight into the protocols.</p>
+<div>
+    <video width="720" height="480" controls>
+  <source src="/img/protocol-meme-4.mp4" type="video/mp4">
+</video>
+</div>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+<p><strong>Protocol Introductions</strong></p>
+<ul>
+<li><a href="#activitypub">ActivityPub</a>
+<ul>
+<li><a href="#activitypub-strengths">Unique Strengths</a></li>
+<li><a href="#activitypub-issues">Unique Issues</a></li>
+</ul>
+</li>
+<li><a href="#nostr">Nostr</a>
+<ul>
+<li><a href="#nostr-strengths">Unique Strengths</a></li>
+<li><a href="#nostr-issues">Unique Issues</a></li>
+</ul>
+</li>
+<li><a href="#at-blueskys-protocol">AT</a>
+<ul>
+<li><a href="#at-strengths">Unique Strengths</a></li>
+<li><a href="#at-issues">Unique Issues</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>Protocol Comparisons</strong></p>
+<ul>
+<li><a href="#ease-of-use">Ease of Use</a></li>
+<li><a href="#user-owned-identifiers">User Owned Identifiers</a></li>
+<li><a href="#protocol-malleabilitycompatibility">Protocol Malleability/Compatibility</a></li>
+<li><a href="#portability--migrations">Portability &amp; Migrations</a></li>
+<li><a href="#moderation">Moderation</a></li>
+<li><a href="#resource-requirements--scalability">Resource Requirements &amp; Scalability</a></li>
+<li><a href="#spam-mitigation">Spam Mitigation</a></li>
+</ul>
+<p><strong>More Stuff</strong></p>
+<ul>
+<li><a href="#universal-issues">Universal Issues</a>
+<ul>
+<li><a href="#private-data">Private Data</a></li>
+<li><a href="#funding">Funding</a></li>
+<li><a href="#onboarding">Onboarding</a></li>
+</ul>
+</li>
+<li><a href="#platforms-not-protocols">Platforms not Protocols</a></li>
+<li><a href="#bridges">Bridges (they&rsquo;re important)</a></li>
+<li><a href="#honorable-mentions">Honorable Mention</a></li>
+<li><a href="#definitions-and-clarifications">Definitions and Clarifications</a>
+<ul>
+<li><a href="#decentralized-vs-federated-vs-distributed">Decentralized vs Federated vs Distributed</a></li>
+<li><a href="#web-3">Web3 <em>(read it BEFORE sending me angry emails)</em></a></li>
+<li><a href="#infrastructure--services">Infrastructure</a></li>
+</ul>
+</li>
+<li><a href="#what-i-use-and-why">What I use, and why</a></li>
+</ul>
+<h1 id="protocol-introductions">Protocol Introductions</h1>
+<p><em>A brief overview of the three protocols before comparing them directly.</em></p>
+<h2 id="activitypub">ActivityPub</h2>
+<p>ActivityPub is the oldest still widely used protocol, its development starting in 2014, and its standardization as a W3C standard in 2018. It historically had the largest user base, although it’s been supplanted by AT as of recently.</p>
+<p>ActivityPub is federated, which entails having individual centralized instances (servers). An individual instance is generally fairly monolithic: identifying users with the instance’s domain, processing &amp; parsing posts, and hosting user data - a structure reminiscent of a standard social media service at first glance. However, ActivityPub allows one’s local instance to retrieve a copy of remote profiles and posts, serving the mirrored content and allowing reactions/replies to be sent to their originating instance.</p>
+<h4 id="activitypub-strengths">Unique Strengths</h4>
+<p>ActivityPub is THE protocol for communities. While it varies across implementations, beyond a home timeline of people the user chose to follow, they&rsquo;ll also generally have a timeline of members on their instance. Instances can be focused on a variety of interests, with varying rules and federation policies, offering a large variety of experiences while remaining part of the network. This creates the possibility of a more concrete community, instead of the more nebulous protocol wide &lsquo;community,&rsquo; still capable of interacting with users across the network (de-federation notwithstanding).</p>
+<p>Furthermore, being the oldest of the three, it has historically had the greatest adoption. There are communities going back the better part of a decade, and when other projects have entertained the idea of implementing distributed communication (Threads, Tumblr, Gitlab, etc), ActivityPub has generally been the one they’ve looked towards. Finally, being older and a W3C standard, ActivityPub is a rather mature protocol. Having an unchanging standard is very important when implementing the protocol into a project, as well as important to keeping projects properly federating with each other<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<h4 id="activitypub-issues">Unique Issues</h4>
+<p>ActivityPub has an issue with de-federation, or more specifically, too much of it. On a larger, more well known instance, users will often find they’re unable to communicate with large swaths of the protocol - even amongst only well meaning instances - because their instance defederated with a very large number of remote instances or vice versa<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. In short (see the footnote for further reading), the fediverse can sometimes be not one big community, but small isolated islands<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
+<p>Another issue, somewhat unique to ActivityPub, is the community’s toxicity. A good barometer of the community is the fact you can’t say “We should be nice to people who use Windows” without <a href="https://kevquirk.com/blog/linux-elitism-again/">being attacked</a>. I elaborated a bit more in the <a href="https://nate.mecca1.net/posts/2025-12-07_microblog-protocols-update/#community-toxicity">toxicity section of my previous update post</a>, but in short, drama and community wars seem to be fairly common in many sections of ActivityPub. Be it operating systems, politics - or simple overuse of the content warning feature - ActivityPub has a handful of subcultures, which sometimes don&rsquo;t play nice or easily welcome newcomers.</p>
+<p>Third - and sort of an extension to the above issue - by nature of being the oldest of the three, a lot of fringe groups wound up on ActivityPub. Nazis<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>, Tankies, child abusers, and political fringes<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> - the kinds not welcomed in more mainstream places - made their homes on the protocol. It’s not inherent to the protocol, it’s just a nature of it being first, and some of these communities have largely become isolated (places like Gab going so far as to disable federation entirely). Still, in contrast to the over de-federation, seeing an unmoderated public ActivityPub firehose is not a heartwarming experience; being considerably spicier than the other protocols.</p>
+<p>Finally, and the only unique ActivityPub issue more directly related to the code, is that development tends to be slow and limited. This includes the protocol directly (e.g. standardized quote posts taking 15+ years), and in many individual ActivityPub implementations (e.g. don’t expect most servers to understand groups, despite them being around for a while).</p>
+<h2 id="nostr">Nostr</h2>
+<p>Nostr is the second oldest protocol<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>, with its development beginning in 2019, entering a fairly stable state in 2020. The smallest of the three large protocols, it had some fairly meteoric growth - coming close once to dethroning ActivityPub a few years ago - before its userbase heavily stagnated<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>.</p>
+<p>Unlike ActivityPub, which uses a more standard server structure, Nostr is more partitioned. Users are identified by a <strong>key pair</strong><sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>, which is used to cryptographically sign posts. Users interact with the protocol using a <strong>client</strong>, a program or web app that signs posts, submitting them to relays of the user’s choosing, and fetching other people’s posts from relays. A <strong>relay</strong> is Nostr’s server, but relays are a lot simpler than an ActivityPub instance. There’s no form of cross relay communication, that’s handled by the client; instead, a relay is a simple repository of posts a client can pull from.</p>
+<p>Nostr, at its core, is the simplest of the three big protocols<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>. However, it can expand its functionality through NIPs (Nostr Implementation Possibilities). For example, while a standard post on Nostr is plain text, NIP-23 posts - aimed at longform blogging - support markdown formatting. Dividing more complicated formatting into distinct types of notes allows better compatibility across clients, for example, a livestream client ignoring long text posts and a longform writing client ignoring livestreams<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. While there are many clients aimed at a broad range of functions, it offers easy partitioning of more niche features to supported clients without complicating the protocol across the entire environment.</p>
+<h4 id="nostr-strengths">Unique Strengths</h4>
+<p>The most unique strengths of Nostr is its redundancy, and ability to permanently reference posts. As for redundancy, because most users generally use more than one relay, it’s the only protocol where a user&rsquo;s preferred infrastructure can go down without them noticing. On any other protocol, if one&rsquo;s infrastructure goes down, they either need to migrate (e.g. AT, Zot/Nomad), or their account is irrevocably lost (e.g. ActivityPub, DFRN).</p>
+<p>Permanent reference is also part of this same structure. Posts are identified by hashes, and comprise of cryptographically signed json formatted text. Since they’re simple, standalone pieces of content, they&rsquo;re not tied to any particular relay. Even if the relay(s) content was originally published to go down, as long as posts have been rebroadcast to new relays, they’ll still be locatable via the same hash. While this level of preservation is likely not necessary for short, Tweet like content, in terms of longform blogging and other more valuable standalone text or historical content, this may be a very valuable feature.</p>
+<p>Additionally, Nostr is the most customizable of all three protocols. Because all processing is delegated to the client, and relays simply serve as a repository of posts, the user is given the most control over their experience. They decide which users to see and not, where their posts go (as well as who can see their posts if NIP-42 authentication is used), and who is allowed to reply to their content (if the outbox relay model is combined with a user trusted or controlled relay). In exchange for the time/knowledge cost of configuring such options, the user is granted the most control over their account and experience across all three protocols.</p>
+<p>Finally, I’ve found the Nostr community seems less fractured, despite seeming more diverse in nationalities and schools of thought. I believe this developed because of two reasons: first, because the protocol is more connected to a community as a whole, unlike ActivityPub, where individual communities are often more isolated. I also believe that the protocol, being the most technical, has largely attracted people who are united in their interest in technology. People seem more likely to associate with others who hold differing beliefs, even acknowledging political differences and speaking well of each other despite them. While that’s not uncommon in person, it’s a rarity in the online world<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>.</p>
+<h4 id="nostr-issues">Unique Issues</h4>
+<p>The community, however, cuts both ways. There is generally plenty of content within the cypherpunk type genres (crypto, privacy &amp; security, Linux/technology, AI, etc), but people will often struggle to find consistent content on topics outside of those. While the content exists, it’s generally intermingled with other tech related content. Similarly, the community generally holds strong to a more idealized version of cypherpunk stuff. For example, when discussing the idea of key delegation<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup>, I was called a fascist for my support of offering the option to people.</p>
+<p>Additionally, on a more technical side, an account will be lost if it&rsquo;s keys are lost (or if somebody else gets hold of them). This is inherent in any cryptographically based identification, although in Nostr’s case, there is no key rotation. In technical terms: <em>no taksies backsies</em>.</p>
+<h2 id="at-blueskys-protocol">AT (BlueSky&rsquo;s Protocol)</h2>
+<p>The AT protocol is the newest of the three big protocols; beginning development in 2019, but only more recently opened to the public in 2024. The largest of the big three protocols, even after losing roughly 80% of its userbase, it remains several times larger than ActivityPub and Nostr <em>combined</em>.</p>
+<p>AT is the most partitioned out of the three protocols, first having users identified with a <strong>domain or key</strong>. While domains can be from the service host (e.g. user.bluesky.social), and keys can be delegated to a third party, the user is (theoretically) free to use their own domain or generate their own keys - in either case, controlling their own identity without needing to control their own infrastructure. The next layer is a <strong>PDS</strong>, which is a simple server that hosts a copy of a user’s posts. PDSs do not communicate with each other, only hosting a user&rsquo;s content to be parsed by external services. Posts on PDSs are then parsed<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup> at the <strong>Relay/Appview</strong> level<sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup>, services that index content from PDSs; parsing the data, applying moderation/filtering, then serving it to clients. Finally, <strong>Clients</strong>, in program or web app form, serve the content to users<sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>.</p>
+<p><em>An important distinction, however, is that BlueSky is nearly the entire sum of AT infrastructure. Unlike the other protocols, which are more spread out, having one big centralized platform often causes the AT ecosystem to be somewhat different in practice from how the protocol would theoretically work. There will be a lot of times where I opine on how AT could theoretically work, but caveat with how it’s acting in practice due to a particular choice BlueSky has made.</em></p>
+<h4 id="at-strengths">Unique Strengths</h4>
+<p>AT, being broken into so many interworking parts, is really efficient for self hosters and power users. If one simply wanted to control their own identity, they could generate a key pair or update the DNS records on their domain, controlling their identifier without needing to host anything. If they only wanted to host their own account, they could do so by hosting a PDS, leaving the more resource intensive infrastructure like the Relay layer to others. Or, of course, it would still be possible to host that layer as well, if one wanted to host everything. AT is fairly flexible in terms of what layers are handled by the user, and what layers are handled by community infrastructure.</p>
+<p>Additionally, AT seems to be focused on creating a somewhat flexible experience (somewhere between ActivityPub and Nostr). While the Relay layer would generally handle moderation, it would often be through labels that the user could manually enable or disable. Similarly, one could enable custom algorithms or moderation lists, seeing or avoiding their preferred kinds of content.</p>
+<p><em>However, BlueSky - which is the overwhelming majority of AT - has moved away from this sort of model. They’re now applying moderation at every level<sup id="fnref:16"><a href="#fn:16" class="footnote-ref" role="doc-noteref">16</a></sup> (banning people from PDSs outright, instead of handling it at the Relay level as before). In practicality, most users of AT do not get much flexibility in terms of customized moderation.</em></p>
+<h4 id="at-issues">Unique Issues</h4>
+<p>The first issue fairly unique to AT, related to the caveat on AT’s user flexibility above, is the fact things are centralized around BlueSky. BlueSky hosts a vast majority of AT, and most other platforms running on AT rely in part or whole on BlueSky infrastructure (although there are rare exceptions like Blacksky). This creates the ideological issue of effectively doing away with a distributed network, and the practical issue that anything BlueSky does (post type limitations, moderation, off protocol features<sup id="fnref:17"><a href="#fn:17" class="footnote-ref" role="doc-noteref">17</a></sup>, etc) effectively applies to the entire ecosystem.</p>
+<p>Additionally, AT is still in development. As of Q1 2026, migrations have been implemented, although they are somewhat janky, and the AT proto team has expressed an intention to further develop them. Identity management is still centralized, managing user IDs across the protocol in one big centralized database, with plans to decentralize it at an unknown date. Finally, there’s currently no private data (including DMs<sup id="fnref:18"><a href="#fn:18" class="footnote-ref" role="doc-noteref">18</a></sup>), with again, intention expressed to add that functionality at some point.</p>
+<p>Further, similar to Nostr, controlling one&rsquo;s identity means taking on the risk of messing up said identity. Whether it be keys, and the risk of them being lost or compromised; or whether it be a domain, and the risk of improperly configuring it or forgetting to renew it - the freedom to control one&rsquo;s account contains the freedom to lose it.</p>
+<p>Finally, it’s rather impossible to bring up AT without touching on its partisanship<sup id="fnref:19"><a href="#fn:19" class="footnote-ref" role="doc-noteref">19</a></sup>. BlueSky, as a platform (which again, comprises most of AT), has taken on an aggressively left-leaning partisan userbase and moderation practices. As with any explicitly partisan platform, it becomes a self fulfilling cycle, in this case driving away moderates and right-leaning people, moving further left. Many people who originally joined it with the intention of participating in a decentralized ecosystem and/or a mainstream leftist platform have abandoned the platform &amp; protocol, citing an extremist bent and purity spirals.</p>
+<h2 id="ease-of-use">Ease of Use</h2>
+<p>A protocol&rsquo;s ease of use is both the most important, and least important, feature of a protocol - depending on perspective. It&rsquo;s the least in the sense that every protocol (from email to AT) has only been popularized by platforms - generally for profit companies which build a user friendly on ramp, abstracting it from the more complicated underlying protocol. Even ActivityPub, which is arguably the easiest overall, was deemed too complicated by most non-technical people who considered joining. In another sense, however, it&rsquo;s the most important. Before big platforms come, a userbase is needed, one of people using the protocol directly. Beyond that, even after platforms come along, the more cypherpunky idealists such as myself would certainly prefer some platform users eventually migrate to the protocol directly.</p>
+<h4 id="activitypub-1">ActivityPub</h4>
+<p>In my original comparison, I gave ActivityPub the rating of &ldquo;Moderate difficulty to join, moderate difficulty to master.&rdquo; Joining ActivityPub requires one already know the basics: i.e. how federation works, and what type of instance or federation policies would be best. Joining an instance<sup id="fnref:20"><a href="#fn:20" class="footnote-ref" role="doc-noteref">20</a></sup> that&rsquo;s either over moderated or under moderated, that is unstable, or that is defederated with people the user wants to communicate with is a quick recipe for ending the ActivityPub experiment of somebody who doesn&rsquo;t understand how the protocol works.</p>
+<p>However, ActivityPub as a whole is likely the easiest to understand. The &ldquo;It&rsquo;s like email&rdquo; mantra isn&rsquo;t far from the truth, and not a hard concept to grasp. And, with the basics learned, the rest isn&rsquo;t too hard to follow. Once basic federation is learned, understanding concepts like defederation, how moderation works, or local/remote accounts would be rather straightforward.</p>
+<h4 id="nostr-1">Nostr</h4>
+<p>In my original comparison, I gave Nostr the rating of &ldquo;Easy to join, difficult to master.&rdquo; Joining Nostr is likely the simplest of the bunch; since relays are not connected to an account and are semi-interchangeable, joining the protocol is as simple as opening a website or downloading an app. Most clients will give the user a basic overview, which can be summarized to &ldquo;<em>Your NPUB is your username, your NSEC is your password. Don&rsquo;t lose your NSEC!</em>&rdquo; From there, the user can immediately begin posting and following others.</p>
+<p>However, beyond that, things take a more difficult turn. I can imagine trying to explain asymettric encryption to somebody who&rsquo;s rather tech illiterate, only to pivot and explain they&rsquo;re cryptographically signing messages and mirroring them on servers called relays, only to turn around and tell them to get and manually configure a NIP-05 domain based username so they&rsquo;re less likely caught by anti-spam filtering would be a rather long conversation<sup id="fnref:21"><a href="#fn:21" class="footnote-ref" role="doc-noteref">21</a></sup>. While easier to join, Nostr has a rather steep learning curve.</p>
+<h4 id="at">AT</h4>
+<p>In my original comparison, I gave AT the rating of &ldquo;Difficult to join, difficult to master.&rdquo; Similar to Nostr, the user will need to either understand key based accounts and generate one; then either simultaneously (or only if using a soley domain based username), understand DNS, and configure a domain to act as a handle. They will also need to understand the protocol itself - i.e. what a PDS is, which ones can be joined (or how to host one), and how to sign into an Appview with a remote PDS. However, while it has a similar structure to Nostr, since PDSs are not interchangeable the user needs to know all that information <em>before</em> joining - no opportunity to learn along the way.</p>
+<p><em>Bluesky, however - as an example of how platforms make things easier - creates a very different experience from AT&rsquo;s theoretical entry barrier. At the cost of likely not controlling your account, it&rsquo;s possible to register with a username + password and go on using it like any other centralized service. In practice, the AT protocol has the least barrier to entry since it&rsquo;s effectively just one big centralized service; letting people optionally set up their own infrastructure that communicates with the mothership.</em></p>
+<h2 id="user-owned-identifiers">User owned identifiers</h2>
+<p>User owned identifiers are, in my opinion, very important<sup id="fnref:22"><a href="#fn:22" class="footnote-ref" role="doc-noteref">22</a></sup>. When infrastructure goes offline, or if the user is banned from said infrastructure, the question of what happens to their account will vary. Whether the user&rsquo;s identity is lost, or if they&rsquo;re able to carry on from other infrastructure<sup id="fnref:23"><a href="#fn:23" class="footnote-ref" role="doc-noteref">23</a></sup>, is an important consideration when looking at protocols. Though I personally haven&rsquo;t been banned<sup id="fnref:24"><a href="#fn:24" class="footnote-ref" role="doc-noteref">24</a></sup>, I have had my account nuked when Nerdica&rsquo;s SQL database was corrupted, so I&rsquo;ve experienced firsthand the value of user owned identities.</p>
+<h4 id="activitypub-2">ActivityPub</h4>
+<p>ActivityPub, with its more monolithic structure, handles identities at the instance level; identifying users with the instance&rsquo;s domain name. Identities cannot be recovered if the instance goes offline, and there&rsquo;s no path towards migration if a user is banned<sup id="fnref:25"><a href="#fn:25" class="footnote-ref" role="doc-noteref">25</a></sup>. This is somewhat unique in that most other protocols <sup id="fnref:26"><a href="#fn:26" class="footnote-ref" role="doc-noteref">26</a></sup> offer some degree of user ownership over their accounts.</p>
+<p>There have historically been a few exceptions, such as Tahake<sup id="fnref:27"><a href="#fn:27" class="footnote-ref" role="doc-noteref">27</a></sup>, which allowed the use of a user owned domain on a third party server (albeit Tahake remaining in control of the account<sup id="fnref:28"><a href="#fn:28" class="footnote-ref" role="doc-noteref">28</a></sup>). There have also been rumblings of implementing Zot/Nomad&rsquo;s nomadic identities, although that effort seems to have stalled out. Finally, some platforms like Streams/Hubzilla (Nomad &amp; Zot respectively) offer limited user account ownership, bridging internally to ActivityPub. However, if a server went down, the user would retain their Nomad/Zot following while losing their ActivityPub followers/following.</p>
+<p>Recently, however, Holos has provided a truely user controlled identifier within ActivityPub. While ActivityPub generally requires the server to control the account, it circumvents the requirement by making the client the &lsquo;server&rsquo; - the Holos <em>Relay</em> a CDN or Nostr relay style server which keeps a copy of the profile online regardless of whether the client is. The client controls the account RSA key, allowing the use of custom domains, and even permitting offline migration. While Holos remains a very small portion of the ActivityPub scene, and requires Nostr levels of technical overhead (plus risk of a lost account from user error), it offers a truely user owned identifier.</p>
+<h4 id="nostr-2">Nostr</h4>
+<p>Nostr, unlike ActivityPub, separates identity management from infrastructure. Identities are key based, created and managed by the user. Additionally, there&rsquo;s also optional NIP-05 usernames: a human memorable <code>user@domain</code> type username, pointing to the hash of a public key - which can be used with a user&rsquo;s domain without requiring a user hosted relay. With identities separate from infrastructure, a user can continue using their identity on other infrastructure even if their main relay(s) go down or ban them. This works similarly to how one can continue using their domain if their host goes offline/bans them, or their GPG key if an email provider does the same.</p>
+<h4 id="at-1">AT</h4>
+<p>AT has two means of identifying users: keys and domains. Starting with keys, similar to Nostr, users can generate a key pair and control their account without needing to host their own infrastructure. Unlike Nostr, an AT account will be tied to a home PDS; however, as long as the user controls their keys, a migration can be performed on an offline or banned PDS. As an alternative to keys, users can also use a domain as a user identifier on the AT protocol. While key based accounts can still have a domain based username, using a domain as a main identifier forgos keys entirely and permanently ties the account to the domain itself; allowing one to control their identity without keys or hosting infrastructure.</p>
+<p><em>It&rsquo;s worth noting that, controlling account keys - if registered on BlueSky (using both their relay and PDSs) - is currently not possible. It is possible to use a user owned domain within BlueSky, however. It is also possible to use a user owned key based account on the BlueSky Relay, but that requires a self hosted or third party PDS.</em></p>
+<h2 id="protocol-malleabilitycompatibility">Protocol Malleability/Compatibility</h2>
+<p>All three protocols are capable of doing more than a standard, unformatted, Tweet-like post; which is good, as social media is more diverse than simple microblogging. While each can do a variety of content types, some implementations are more hacky than others, and it&rsquo;s important to consider how well different types of infrastructure or content interact with the ecosystem.</p>
+<h4 id="activitypub-3">ActivityPub</h4>
+<p>Like most things open, ActivityPub can be used in a variety of ways - from a microblogging post on Mastodon (plain text &amp; generally limited to 500 chars), to longform markdown enabled text on WriteFreely, to video on Peertube. Of all the forms in which public content is posted to social media, there is probably an ActivityPub enabled implementation that supports it.</p>
+<p>Compatibility across the ActivityPub ecosystem is generally possible, although sometimes limited. Given instances interpret all data<sup id="fnref:29"><a href="#fn:29" class="footnote-ref" role="doc-noteref">29</a></sup>, anytime there&rsquo;s something the server doesn&rsquo;t understand, things begin to break. There are times when things are aligned with the ActivityPub spec, but not implemented into the user&rsquo;s instance itself. For example, Mastodon - which makes up a majority of ActivityPub - will display rich text incorrectly, or struggle to interact with groups<sup id="fnref:30"><a href="#fn:30" class="footnote-ref" role="doc-noteref">30</a></sup>. When platforms do things outside of the ActivityPub spec, such as Peertube delivering videos via webtorrent, it&rsquo;s even more limited; most other instances providing PeerTube videos as links to be viewed in a web browser instead of providing the video through ActivityPub itself.</p>
+<h4 id="nostr-3">Nostr</h4>
+<p>Nostr, likely the most malleable protocol, separates its functionality into NIPs - specs for how to interpret the formatting of posts. There are a little over one hundred official NIPs (longform markdown enabled content, videos, instant messaging, etc), as well as the ability to implement custom NIPs (such as for chess or geocaching). Most forms of public content is possible within Nostr, and if the use case is too niche, it&rsquo;s fairly simple to add that functionality without breaking compatibility with other services.</p>
+<p>Compatibility on Nostr works different from compatibility on ActivityPub. Since clients interpret all data, and since users can use multiple clients with the same profile, there is never any situation when a particular account is unable to participate within a portion of the network. However, clients still need to support a given NIP. The most heavily used ones (standard shortform notes, longform text, etc) will be supported by all clients, while more niche official NIPs (community forums, ecommerce) will only be supported by a handful of clients. Custom NIPs are generally only supported by a single client, such as Treasures.to with a custom geocaching NIP<sup id="fnref:31"><a href="#fn:31" class="footnote-ref" role="doc-noteref">31</a></sup>.</p>
+<h4 id="at-2">AT</h4>
+<p>While the AT ecosystem is a little less broad (due to adoption, not due to the protocol itself), it supports a number of different post types from shortform content, longform content, video, and more. Similar to Nostr&rsquo;s relays, AT PDSs are &lsquo;dumb,&rsquo; generally hosting any content uploaded by the client to be retrieved and parsed by a separate layer of infrastructure.</p>
+<p>Unlike Nostr, and more like ActivityPub, however; AT will generally rely on a service at the Relay layer to retrieve and parse data<sup id="fnref1:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup>. A Lexicon, the Relay layer&rsquo;s instructions on how to interpret posts - as well as rules for what a post may or may not consist of - separates what is and is not part of any given ecosystem. This severely limits interoperability between services, as any post outside the bounds of the Lexicon (such as BlueSky&rsquo;s 300 char. limit) cannot be viewed from within the service the Lexicon belongs to. This effectively partitions the network into different independent networks: BlueSky and similar shortform plain text content, WhiteWind and similar longform rich text content, etc<sup id="fnref:32"><a href="#fn:32" class="footnote-ref" role="doc-noteref">32</a></sup>.</p>
+<h2 id="portability--migrations">Portability &amp; Migrations</h2>
+<p>Your favorite server goes down, you tried self hosting but want to call it quits, or you simply want to migrate and take your account elsewhere. Related to, but different from, user owned identifiers; how easy you can go from one piece of infrastructure to another is important for the longevity of your account.</p>
+<h4 id="activitypub-4">ActivityPub</h4>
+<p>ActivityPub, being based on a server’s domain, is predictably not very portable. Users can perform migrations<sup id="fnref:33"><a href="#fn:33" class="footnote-ref" role="doc-noteref">33</a></sup>, sending existing followers to a new profile, and most software will let you export a following list to import into other software. Some software will also let you import your posts from your old account, but not a lot of software supports that.</p>
+<p>There are, however, some limitations. First, and most notably, the username is not kept. The old username still exists as a separate account, simply pointing to a new account with a different username. Migrations are also limited to compatible implementations. For example, while you can migrate from ActivityPub native software (e.g. Mastodon, Pleroma/Akkoma, GoToSocial) to one internally bridged via plugins (e.g. Friendica, Streams, Hubzilla), you usually can’t go in reverse. For example, while migrating from Mastodon (ActivityPub) to Friendica (DRFN, internally bridged) is possible, afterwards, the only possible next migration would be to another Friendica instance. Finally, without controlling the identifier, migrations can only happen if the instance is online and the account is in good standing<sup id="fnref1:29"><a href="#fn:29" class="footnote-ref" role="doc-noteref">29</a></sup>; followers only carrying over if they are federated with both the old and new instances.</p>
+<h4 id="nostr-4">Nostr</h4>
+<p>Nostr is by far the most portable, with accounts publishing which relays they’re utilizing, but not being tied to any particular relay. Relays can be updated at any time, with followers&rsquo; clients automatically fetching posts from the updated relay list. Old posts are not moved from old relays to new ones when the list is updated, but a rebroadcast will copy posts to the new relays, and a deletion request will optionally remove posts from the older relays.</p>
+<h4 id="at-3">AT</h4>
+<p>AT, similar to Nostr, uses user owned identifiers - foregoing the limitations of ActivityPub’s migrations. Unlike Nostr, however - and similar to ActivityPub - AT accounts are tied to a home PDS. Although PDS migration is still in development, it’s possible to migrate from one PDS to another PDS - even if that PDS is offline.</p>
+<p><em>However, in the case of BlueSky (or a similar platform built on AT), migrations are more limited. Account identities are often tied to the domain of the service, and it’s often impossible to control account keys, making migration more limited or impossible for the vast majority of users.</em></p>
+<h2 id="moderation">Moderation</h2>
+<p>In many ways, moderation is the same across all three: admins can prevent particular content or identities from interacting with their infrastructure. Often, moderation tools on the protocols have as much intra-protocol variation as inter-protocol variation. However, what levels moderation occurs on, the effects it has on users &amp; communities, as well as the degree to which the user can control the moderation, create practical differences across each protocol. I have also seen some confusion as to how moderation works on user owned identifiers, including by more technical people than I<sup id="fnref:34"><a href="#fn:34" class="footnote-ref" role="doc-noteref">34</a></sup>, so using my limited reach to clarify things might be useful.</p>
+<h4 id="activitypub-5">ActivityPub</h4>
+<p>ActivityPub most resembles a centralized social media service, with the user&rsquo;s instance handling most moderation decisions. Local instance moderation is fairly straightforward: an admin can apply restrictions or a temporary ban to an account, and a permanent ban renders the account unusable. Admins can prevent the viewing of remote content, either by blocking individual remote accounts or entire remote instances. In which case, no content from that remote instance will be fetched by the local instance, and accounts or posts on that remote instance will not be available to users on the local instance. Some software has additional features, such as Mastodon&rsquo;s ability to &lsquo;silence&rsquo; a remote user or server (effectively a shadowban<sup id="fnref:35"><a href="#fn:35" class="footnote-ref" role="doc-noteref">35</a></sup>), although moderation features like that are not universal across the protocol.</p>
+<p>Individual users have a few, but limited, options to control moderation. Users are unable to alter admin set moderation, but in most cases, are able to apply additional moderation to their feed. Most ActivityPub compatible services permit users to block other users or entire domains, allowing them to add additional moderation to what their instance admins had set. Because the user&rsquo;s instance rebroadcasts incoming replies &amp; likes to their post, this blocking isn&rsquo;t simply hiding content, but an outright prevention of replies, likes, or quote posts from the blocked user<sup id="fnref:36"><a href="#fn:36" class="footnote-ref" role="doc-noteref">36</a></sup>. Beyond that, most clients support additional moderation at the client level - hiding keywords, users, or tags. Unlike other levels of moderation, however, filtering at the client level simply prevents the content from being displayed; the content still delivered to the instance/user, and any hidden posts/replies visible to all other users in local and remote instances.</p>
+<h4 id="nostr-5">Nostr</h4>
+<p>Similar to ActivityPub, moderation on Nostr can be performed at the relay layer. Owners of relays control what users are allowed to upload content to them; either only allowing a specific set of users by default - updating the list (manually or via some form of registration) to allow new users - or by allowing all users by default, but manually blocking/removing specific posts or users. Relays can, at any time, remove particular posts or prevent identities from using that relay; however, unlike ActivityPub, the user account still exists and is capable of continuing to participate in the network using other relays. The exact moderation features on any particular relay software vary, with some offering no more than a CLI tool to configure the mode (allow/deny unknown users) and to manually remove content/users. Others have much more fine tuned moderation features, such as Ditto, which support much more in depth content filtering options, and even support the Mastodon API for content/user management.</p>
+<p>Individual users on Nostr have a fairly wide margin for controlling moderation. Using the OutBox model, users can set the relays that other users fetch their posts and send their replies; meaning if a user sets their inbox/outbox relays to ones they control - or hosted by a third party with the moderation policies the user is seeking - they can keep replies and interactions within a specific set of moderation policies. Similar to ActivityPub, most Nostr clients are also capable of filtering out content by keyword/tag, NIP-05 domain names, standard blocking, and/or automatically blocking people who were blocked or reported by several people you follow<sup id="fnref:37"><a href="#fn:37" class="footnote-ref" role="doc-noteref">37</a></sup>. Unlike moderation at the relay level, and similar to client level moderation on ActivityPub, this moderation at the client level on Nostr will only prevent the content from being displayed to you and will not prevent it from being displayed to others.</p>
+<p>Beyond relay and client moderation, however, Nostr&rsquo;s simplicity often causes it to be moderated in a similar way to how RSS would be. Unlike ActivityPub, where servers directly reach out to other servers to transmit posts/replies, Nostr operates more like RSS, with a client simply fetching content from people it&rsquo;s told to do so, on relays it has been configured to do so. On Nostr, if <code>wss://jimbobgoober.example</code> created a relay full of spam, if no clients are ever configured to reach it, then that content will never be fetched. Similar to RSS, most users simply &lsquo;moderate&rsquo; their feed by choosing to follow specific users on specific relays that post content they want to see.</p>
+<h4 id="at-4">AT</h4>
+<p>On AT, moderation can occur at both the PDS and Relay layer, in addition to client side moderation. PDSs, which resemble Nostr relays or websites with RSS, are fairly simple and do not have any form of cross PDS communication. Admin(s) of a PDS can choose which users are allowed to join a PDS, as well as remove misbehaving users from their PDS if required. Users of a PDS cannot continue using a PDS they have been removed from; however - similar to Nostr - an AT user removed from a PDS can use their key (or domain) to migrate their account to another PDS. However, setting aside clients like Red Dwarf<sup id="fnref:38"><a href="#fn:38" class="footnote-ref" role="doc-noteref">38</a></sup>, most clients pull content from an intermediary and not from PDSs directly.</p>
+<p>At the Relay layer, AT relays pull content from PDSs to be rendered and distributed to clients. These relays choose which PDSs to index, allowing the admin(s) of a relay to prevent particular users or PDSs from participating in the service the relay is a part of. Different relay/appview implementations will likely be able to de-index content based on specific filters, and some will automatically hide content such as replies that have been blocked<sup id="fnref:39"><a href="#fn:39" class="footnote-ref" role="doc-noteref">39</a></sup>. Many Relays require manual approval for a PDS to be indexed, for example: BlueSky previously required users to contact them via Discord to have their PDS indexed. And, similar to ActivityPub &amp; Nostr, AT clients may support additional moderation features; hiding content based on keywords/tags or muting individual users. Although, like other protocols, client level moderation does not prevent that content from being shown to other users.</p>
+<p><em>As with other aspects of AT, however, BlueSky&rsquo;s dominance of the protocol changes how it works in practice. BlueSky makes up the vast majority of the network - with most alternative AT platforms using BlueSky hosted PDSs, and many alternative platforms using the BlueSky Relay. In effect, the BlueSky corporation has a centralized social media style moderation control over the vast majority of the AT protocol. Even the few people outside of BlueSky infrastructure will likely be following and followed by people on BlueSky infrastructure, in essence placing them under the same moderation policies.</em></p>
+<h2 id="resource-requirements--scalability">Resource Requirements &amp; Scalability</h2>
+<p>Resource requirements, while not as flashy as identifiers or cross platform compatibility, are certainly worth taking into consideration. On the single user scale, a small service piggybacking on an existing home server or VPS is a lot less likely to be decommissioned than something requiring a lot of dedicated resources or its own host. The cost of a small community platform, likely run off donations or - more likely - the pocketbook of it&rsquo;s admin, is a lot more likely to stick around if the monthly cost is one or two figures instead of two or three. On the large platform scale, hardware/cloud costs could mean the difference between much more lax monetization practices and much more invasive monetization practices. While funding distributed protocols creates shared issues, which will have its own section, not all protocols are equal in terms of resource requirements.</p>
+<h4 id="activitypub-6">ActivityPub</h4>
+<p>ActivityPub, with its monolithic instance structure, has fairly high resource requirements when compared to the other protocols here. At the cost of providing a more straightforward, universal experience across all users of a particular instance, the host needs to handle all forms of retrieving, processing, and hosting user content. Remote content is generally retrieved and mirrored on the local instance, either indefinitely or for a set period of time, depending on the particular implementation and configuration. There is, however, a lot of variance between different implementations. Something like Mastodon or Friendica will generally require a lot more resources than something lightweight like GoToSocial or Holos<sup id="fnref:40"><a href="#fn:40" class="footnote-ref" role="doc-noteref">40</a></sup>.</p>
+<h4 id="nostr-6">Nostr</h4>
+<p>Nostr is generally the lightest of all three protocols. Relays are a lot simpler, offloading most processing to the client. While processing data locally is trivial for the device<sup id="fnref:41"><a href="#fn:41" class="footnote-ref" role="doc-noteref">41</a></sup>, it quickly multiplies if a server is attempting to perform the same operations for a number of users. For example, when experimenting, I was able to run two relays and the Ditto front end on a single core, 1 GB of RAM VM. Even sending many posts to both simultaneously, they performed fine on a server that had failed to even install many ActivityPub implementations due to its lean resource allocation.</p>
+<h4 id="at-5">AT</h4>
+<p>AT, being effectively broken into three layers (PDS, Relay/Appview, and Client), makes quantifying AT&rsquo;s resource requirements more difficult. PDSs, similar to Nostr relays, are generally very lightweight - hosting simple content to be accessed and processed by other devices. A user, community, or platform only wishing to host PDSs - relying on other infrastructure for everything else - would find AT to be very lightweight. Some clients, such as Red Dwarf, forgo the Relay layer entirely - operating similar to Nostr: infrastructure is lightweight, serving static content to be processed by the client. A personal relay can also be <a href="https://whtwnd.com/futur.blue/3lkubavdilf2m">run on fairly lightweight hardware</a>, likely similar in resources to most ActivityPub instances. However, most of AT runs on large semi-centralized platforms such as BlueSky.  While I don’t know the resource requirements a platform like that requires - or if they would be similar to something like an ActivityPub platform of a similar size - by nature of centralizing an entire community or protocol around one service, the resource requirements are likely very high.</p>
+<h2 id="spam-mitigation">Spam Mitigation</h2>
+<p>Spam<sup id="fnref:42"><a href="#fn:42" class="footnote-ref" role="doc-noteref">42</a></sup> is universal across any ecosystem, not specific to any platform or protocol - but with anything distributed and lacking a single centralized gatekeeper - all three protocols risk getting hit especially hard. Spam has been fairly limited on all three, largely due to their obscurity, but both ActivityPub and Nostr have experienced several large spam attacks. AT has also had spam in the past, but to my knowledge, the only major spam attacks have been through bridges<sup id="fnref:43"><a href="#fn:43" class="footnote-ref" role="doc-noteref">43</a></sup>. If the protocols themselves grow, expect spam to be an increasingly persistent issue.</p>
+<h4 id="activitypub-7">ActivityPub</h4>
+<p>Likely the most spam resistant in theory, ActivityPub requires both a server and a domain to begin creating posts on the network. Instance admins control who is allowed to register, limiting the creation of unlimited spam accounts. Bypassing remote admins by creating a server and purchasing a domain, or hijacking an existing instance, requires some combination of money, hardware, and time - creating a barrier to entry for would-be spammers. ActivityPub&rsquo;s main method of dealing with spam once it occurs is de-federation. While the vast majority of instances federate with all other instances unless actively blocked, creating an on road for a malicious/hijacked instance to spam, de-federating from the instance will immediately cause all spam from said instance to cease. While there could be an unlimited number of accounts on a spamming instance, blocking that instance&rsquo;s domain would block all accounts simultaneously, forcing a spammer to cycle through a large number of domains.</p>
+<h4 id="nostr-7">Nostr</h4>
+<p>Nostr is by far the most susceptible to spam, requiring nothing more than a generated key pair to begin creating posts. Most relays do not require registration to post to them, making the most popular public relays an easy target. While Nostr&rsquo;s RSS like structure prevents regular post spam from reaching most users, spam on replies or tags can quickly become overwhelming. Because of its susceptibility, there have been a number of methods of mitigating spam implemented in parts of the Nostr ecosystem. The first, and likely most widely used, is requiring NIP-05 domain based usernames. By not accepting posts from users (either new users with unestablished accounts, or all users across the board) who don&rsquo;t have a domain based username, spam mitigation can be performed similar to ActivityPub. Some services will provide a NIP-05 username using their domain<sup id="fnref:44"><a href="#fn:44" class="footnote-ref" role="doc-noteref">44</a></sup>, but require registration or a captcha to prevent mass use. Otherwise, spammers could register domains to use themselves, but all accounts within the spammer&rsquo;s domain could be blocked in an instant.</p>
+<p>Proof Of Work, or <em>PoW</em> for short, is a less widely used tool, but a rather effective way to prevent spam. PoW requires a client to perform a basic math equation, similar to anti DDOS tools like Cloudflare or Anubis, before making a post. While it may only take a phone or computer a second or so, barely interrupting one&rsquo;s workflow; to a bot that intends to spam posts, it becomes extremely prohibitive.</p>
+<p>Web Of Trust, or <em>WoT</em> for short, is another more experimental tool for combating spam. It uses a map of follows to determine who appears trustworthy. It can be configured to be more universal, starting with a well known figure or widely followed account. In that way, it would work something like X follows Y, Y follows Z, and Z follows you - meaning others should be able to trust you&rsquo;re not a spammer. WoT can also be set by the user themselves, using their account as the center of the web, giving users a good idea of who runs in their circle (friends of friends, and friends of friends of friends, etc). WoT can be used as a more general guide, displaying all posts but providing a WoT score of the profile, or it can be used to hide content by default from untrusted accounts. WoT can be implemented at the client level (ranking and/or hiding content from relays) or at the relay level (individual relays not accepting events from untrusted accounts). However, WoT is new and experimental, so it&rsquo;s not very widespread across the network.</p>
+<p>Beyond specific tools, since clients process most data, moderation tools are also often used by clients to limit spam. Clients can automatically filter out specific keywords (e.g. the name of a &lsquo;company&rsquo;/&lsquo;product&rsquo; being spammed), specific pieces of content (e.g. a Blossom hash or link to a piece of spammed media), users who post more than a reasonable human could, or specific NIP-05 domain names. Some clients also support automatically blocking profiles that were publicly reported &amp;/or blocked by people the user follows, providing a form of grassroots community blocking. Finally, there&rsquo;s the ability to use uneffected relays. Some relays require payment &amp;/or manual registration to participate, effectively cutting spam to zero. With the outbox model enabled, users can use relays that have been configured to reject spam in most forms (by the user or a third party), even if some public relays are struggling to mitigate a particular spam attack.</p>
+<h4 id="at-6">AT</h4>
+<p>AT has been, in practice, the most spam resistant protocol. While similar to ActivityPub &amp; Nostr, it&rsquo;s rather easy to spin up a PDS or generate a keypair, AT&rsquo;s centralization around BlueSky has rendered it very resistant to spam. Most resembling a centralized service, in order to participate in the largest platform within the protocol, one will need to register with BlueSky to create an account there or to get their independent PDS to be indexed by the BlueSky relay. This centralized control has made AT nearly immune from spam attacks. To my knowledge, there has only been one notable spam attack, and that came from spammers who started on Nostr, only to chain the Mostr bridge and BridgyFed together to put spam on AT<sup id="fnref:45"><a href="#fn:45" class="footnote-ref" role="doc-noteref">45</a></sup>. While the protocol may need to implement additional technical measures if it becomes more decentralized, with its current more top down structure, it remains the least susceptible to spam of all three protocols.</p>
+<hr>
+<h1 id="more-stuff">More Stuff</h1>
+<p>This officially wraps up the protocol comparisons, which is long enough already, so if you only wanted to see how the protocols compare you can close this tab. From here, however, I thought I&rsquo;d go over a few different things: potential improvements, the state of funding, and some universal issues - as well as go over some definitions and clarify a few things.</p>
+<h2 id="potential-improvements">Potential Improvements</h2>
+<p>It&rsquo;s important to note I have a habit of sounding more knowledgeable than I am. I&rsquo;m going to suggest a few different aspects of the protocols (and/or their implementations) that could be improved, but you may want to take them with a grain of salt.</p>
+<h4 id="activitypub-8">ActivityPub</h4>
+<p><strong>Identity management</strong> is likely ActivityPub&rsquo;s greatest foil. Relying on the host&rsquo;s database, as well as the host&rsquo;s domain name, is a recipe for everyone&rsquo;s account to be lost eventually<sup id="fnref:46"><a href="#fn:46" class="footnote-ref" role="doc-noteref">46</a></sup>. Owning a domain is a potential solution. However, that requires a user pay for (and configure) their own domain, and on the vast majority of implementations, that also requires the user to host their instance. Something like porting Zot&rsquo;s Nomadic Identities is also possible, using cryptography to verify ownership while mirroring an account on another host. The idea of porting it to ActivityPub proper seemed to float around for a while, although the effort seems to have stalled out.</p>
+<p>The ideal solution to me, however, is cryptography. Changing to a key as the main identifier isn&rsquo;t feasible on a mature protocol that&rsquo;s always operated on the host&rsquo;s domain, but creating a keypair on registration - then sharing it when servers request the user&rsquo;s profile - would likely be more doable. It would be a lot less invasive than a major change - simply a recovery code provided to the user to be saved/printed. Using that key to verify the user&rsquo;s identity, however, would allow the user to contact remote instances using their client/new instance and perform a migration regardless of the state their original host or domain is in<sup id="fnref:47"><a href="#fn:47" class="footnote-ref" role="doc-noteref">47</a></sup>.</p>
+<p><strong>Patchwork Federation</strong> is the other big issue. While not an issue with the protocol itself, being such a pervasive issue across the ecosystem, it&rsquo;s still worth bringing up. Every ActivityPub implementation is going to handle federation slightly differently, but all can block federation, and some like Mastodon have a form of &rsquo;limited&rsquo; federation (shadowbanning a user/instance), or are capable of blocking media from instances while allowing text content. Being more of a community culture issue than a technical issue, there&rsquo;s not really a technical fix to it - much less a protocol wide solution. That said, if I were ActivityPub king for a day, I would make it so admins could allow domain blocks to be overridden by the user on a case by case basis. Admins must be capable of fully blocking things instance wide - be it for legal purposes, technological purposes (e.g. spam), or simple preferences (it&rsquo;s their server, it should answer to them). However, some blocks are intended to provide a particular admin-prescribed experience, and offering the user the ability to customize that experience could go a long way.</p>
+<p>Beyond that, while unrelated to the protocol or its implementations, it might be worth better clarifying federation policies on the various onboarding sites (joinmastodon.org, or the various join <em>insert implementation</em> type sites). Migration is somewhat limited on ActivityPub, so joining a server fit for the user on the first try is fairly important. New users are likely not going to know to open an instance, then check its federation policies (assuming that&rsquo;s even public); much less know what things to look for (e.g. knowing Bridgy Fed &amp; Mostr are bridges - or what bridges even are). Giving the user a basic idea of how federation works, as well as how strict a particular instance is, could be important for onboarding.</p>
+<p>Finally, if you are managing federation policies on an instance, consider this reminder: ActivityPub is usually sold as an open protocol that allows you to interact across the entire network. Every time a well meaning instance, a platform like Threads, or the various bridges are blocked, it breaks that. If a new user picks a random joinmastodon.org instance and finds they can&rsquo;t reach a large chunk of the network - if not an outright majority - they&rsquo;re probably not going to scour the internet for another instance to join. They&rsquo;re probably going to look at the arbitrary restrictions and conclude it&rsquo;s no different from centralized platforms, then give up on the distributed protocol experimentation.</p>
+<h4 id="nostr-8">Nostr</h4>
+<p><strong>Key rotation</strong>, or more specifically, the lack of it, is the largest issue I see facing Nostr on a technical level. Keys cannot be rotated, meaning that the single keypair generated upon registration - and used for every function of your account - remains the user&rsquo;s sole identifier. One malicious client, compromised device, or accidental upload is all that stands between users and lost accounts. While there are some forms of delegation like an nsec bunker<sup id="fnref:48"><a href="#fn:48" class="footnote-ref" role="doc-noteref">48</a></sup>, ultimately, the key will still need to be on a device exposed to the internet to use the protocol<sup id="fnref:49"><a href="#fn:49" class="footnote-ref" role="doc-noteref">49</a></sup>. Adding some form of rotation, like supported on AT, would make accounts much safer and more easily recovered.</p>
+<p>Similar to key rotation, <strong>domain based identification</strong> may also be worth considering. Whether it be truely domain based (e.g. the (sub)domain points to a list of JSON events to be parsed by the client) - or more likely, key rotation using a domain as the final authority<sup id="fnref:50"><a href="#fn:50" class="footnote-ref" role="doc-noteref">50</a></sup> - domain based accounts may be useful in a handful of circumstances. The largest use case I see for something like this would be platforms and bridges - services that might handle a large number of account keys on behalf of users. In that case, instead of a single rogue employee or unauthorized user effectively destroying the service (hijacking every account on the service), those who control the domain could ultimately restore access. Similarly, for a corporate account - or even a standard user who trusted their domain provider more than they trusted their ability to store a key - having a domain as an ultimate authority over an identity could be important<sup id="fnref:51"><a href="#fn:51" class="footnote-ref" role="doc-noteref">51</a></sup>.</p>
+<p>Finally, some form of platform like service (possibly in conjunction with domain based accounts) is likely vital for the Nostr ecosystem. Some form of self hosted service - or outright large platform - allowing users to join without needing to manage keys or anything technical, is effectively the only viable means of onboarding aside from luring in technical users from other protocols. While the in development DiVine - which already has promising interest - is a great example of the concept, a more general purpose implementation similar to a platform like BlueSky or a standalone self hosted Mastodon instance is likely a large factor holding back Nostr adoption.</p>
+<h4 id="at-7">AT</h4>
+<p>As far as AT goes, its <strong>ongoing development</strong> is covering some things I could see improving the protocol. The developers have expressed intentions to continue working on private data (such as DMs), improving PDS migrations, and decentralizing the PLC directory. Some form of private data and easier PDS migrations are important for the protocol. Changing how identities are cataloged, from a centralized database to some form of a decentralized system, is vital for getting a truly decentralized protocol.</p>
+<p>Beyond protocol development, it would probably be beneficial to <strong>improve compatibility</strong> between platforms with different Lexicons. While there&rsquo;s nothing - to my knowledge - in the protocol itself that would prevent better compatibility, platforms like BlueSky have rather aggressive restrictions on what posts will be indexed and served to other users. A transition towards less restrictive Lexicons, or the ability to view posts that fall out of the Lexicon&rsquo;s requirements, would likely be a large stride towards decentralizing the network.</p>
+<p>Further, it might benefit users if they were more easily able to use <strong>key based accounts on platforms</strong>. As it stands now, while users can use domain names on platforms like BlueSky, in order to use a key based account, the user would need to host their own PDS. Enabling users to more easily control their accounts with a key, offering them control over their own identifier without need to host their own PDS, would be a useful decentralizing feature. Like lexicons, this isn&rsquo;t necessarily something in the protocol itself, just how platforms on the protocol currently seem to be operating.</p>
+<p>Finally, decentralization from BlueSky is a necessity if AT is to take off. Being largely BlueSky, with its partisanship baggage creating a glass ceiling of a userbase, potential growth will likely have to be outside of BlueSky itself. Beyond that, the AT ecosystem has been growing increasingly under the control of the BlueSky corporation: both because BlueSky has been performing more strict moderation at more levels of the protocol, and because more external projects on the protocol rely on BlueSky infrastructure. Without somewhat rapid decentralization, AT will simply become BlueSky plus things that connect with BlueSky.</p>
+<h2 id="universal-issues">Universal Issues</h2>
+<p>Beyond comparing protocols, there are four different issues universal across them that are worth discussing here: private data, funding, the difficulty of onboarding to a decentralized system, and identity verification laws. While each protocol might be affected in slightly different ways, they&rsquo;re very similar, and worth discussing as a group instead of comparing them separately.</p>
+<h4 id="identity-verification">Identity Verification</h4>
+<p>Identity verification is rapidly becoming required for any form of social media service<sup id="fnref:52"><a href="#fn:52" class="footnote-ref" role="doc-noteref">52</a></sup> in many nations and US states. While there is <a href="https://www.houstonpublicmedia.org/articles/technology/2025/12/24/539606/federal-judge-blocks-texas-app-store-age-verification-law-from-taking-effect-in-the-new-year/">some precedent of US courts looking unfavorably on those laws</a>, a preliminary injunction in a lower court is by no means concrete, and most other countries won&rsquo;t have similar powers curbing such laws. I am, to be clear, absolutely against blanket social media or OS ID/age verification requirements; I hope they&rsquo;re struck down so we in the US can be a beacon of freedom, offering information worldwide without the need for anyone to show their papers. But I&rsquo;m also not going to go to jail, or get hit with a 6-7<sup id="fnref:53"><a href="#fn:53" class="footnote-ref" role="doc-noteref">53</a></sup> figure fine, all so that I can run some infrastructure without requiring verification.</p>
+<p>Verification requirements may hit the distributed protocols ecosystem like a freight train. If similar requirements become widespread, especially in North America and Europe where most of the infrastructure sits, a large majority of the ecosystem could become closed to registration or outright shuttered. Identity verification of strangers would likely entail paying for expensive third party services, or labor intensive manual verification (such as showing ID via video call) - requiring a lot of trust in a third party. Identity verification is also very unpopular within the technical crowd (perhaps a further indication it&rsquo;s a bad idea), so even on services that do enable it, their userbase would likely never recover regardless.</p>
+<p>These laws will likely not impact all implementations the same. Clients, just like a web browser, would likely not be affected by such laws. Some more infrastructure like components (AT PDSs, Nostr Relays, Holos Relays) might be able to skirt by, being closer to AWS buckets or Cloudflare than they are standard social media services - although I wouldn&rsquo;t risk my freedom on a bunch of baby boomer judges and politicians agreeing with (or even understanding) my non-legal technical interpretation. Large platforms like BlueSky and Threads likely wouldn&rsquo;t be affected as much, having the budget to verify their users, and self hosted platforms with closed registration (single user and/or IRL known users) also wouldn&rsquo;t be affected.</p>
+<p>Ignoring the laws, however, will not be an option. If these laws are implemented and enforced - and no feasible solutions to comply with these laws on these protocols are developed - expect a large chunk of community infrastructure on AT &amp; Nostr, as well as most ActivityPub instances, to disappear from any jurisdictions with similar laws. First, as admins willingly take them down - be it because of feasibility, cost, or ideological aversion to verifying accounts. Later, with holdouts coming down when enforcement is acted out.</p>
+<h4 id="private-data">Private Data</h4>
+<p>In social media, private data generally comes in two forms: direct messages and posts only visible to friends (or another specified group of users). All three protocols struggle, or outright fail to implement, one or both of those.</p>
+<p><strong>ActivityPub</strong> supports direct messages. They&rsquo;re not end-to-end encrypted, and occasionally different implementations will struggle to share DMs (sometimes accidentally making them public), but the protocol supports basic direct messages. Sharing posts to a limited audience is another story. Generally speaking<sup id="fnref:54"><a href="#fn:54" class="footnote-ref" role="doc-noteref">54</a></sup>, private posts on ActivityPub boil down to &lsquo;follower only&rsquo; posts. While you can choose to allow or disallow a follow on the protocol, it&rsquo;s rather limited in terms of choosing who can or cannot see a &lsquo;private&rsquo; post. There&rsquo;s also no ability to prevent a follower from publicly re-sharing the post, and oftentimes other ActivityPub implementations won&rsquo;t honor the followers only state and will instead list the post in the public feed.</p>
+<p><strong>Nostr</strong> has made progress in the direct messaging department. They have always been end-to-end encrypted, but under the old standard (NIP-04), the encrypted messages were public, and anyone could see who contacted who. The newer standard (NIP-17) has resolved that, providing more private DMs. Properly private posts, on the other hand, are not very supported. There have been attempts to handle &lsquo;private&rsquo; posts similar to ActivityPub&rsquo;s followers only solution - providing an unencrypted public post, but only to clients of specific users<sup id="fnref:55"><a href="#fn:55" class="footnote-ref" role="doc-noteref">55</a></sup>. Still, support for them is very low, and there&rsquo;s a lot of jank - not to mention the second a client re-broadcasts the event to a public relay (many do this automatically when replying/reacting/reposting) it becomes visible to everyone.</p>
+<p><strong>AT</strong> is a lot simpler, in that it has no support for private data whatsoever. There are direct messages built into BlueSky, but as mentioned above, they&rsquo;re not part of the protocol and don&rsquo;t work with non-BlueSky users. Everything you do on AT is 100% public.</p>
+<h4 id="funding">Funding</h4>
+<p>All three protocols, as they are now, cannot financially scale. There are some exceptions: self hosted infrastructure is generally financially secure, you probably don&rsquo;t worry about the $2 in electrical costs or $5 in VPS costs to run it. Flagship instances have survived so far<sup id="fnref:56"><a href="#fn:56" class="footnote-ref" role="doc-noteref">56</a></sup>, protocol authors likely getting the brunt of donations in the ecosystem. But, there&rsquo;s a lot more to a network than flagship and self hosted instances, and they won&rsquo;t be so easily funded on the current model.</p>
+<p>Most of the ecosystem today runs off the charitable nerd model. Instances are run and funded by volunteers who cover the costs, and/or users who make donations. It works for now, largely because there aren&rsquo;t a lot of people in the ecosystem. ActivityPub and Nostr are both in the six figures of users (albeit ActivityPub closer to 7 figures, and Nostr closer to 5 figures). With such a small userbase, and the fact hobbyists like you and me are more willing to make donations to keep things running, everything has stayed online so far.</p>
+<p>However, try scaling that to 9 or 10 figures; the kind of scale mainstream social media platforms have. Most social media users <a href="https://raphael.lullis.net.community-is-not-enough/">won&rsquo;t donate</a> or pay for something they&rsquo;ve been conditioned to think of as free - if they can even afford to do so to begin with. Even a jump from 6 figures to 7 figures can already stress an ecosystem, as we&rsquo;ve seen BlueSky forced to take on venture capital money, while still not having a monetization strategy. And BlueSky is mainly text, attempting to fund such an ecosystem surrounding images or video would be even more impossible.</p>
+<h4 id="onboarding">Onboarding</h4>
+<p>While funding a diverse set of free to use services using the current model would likely fail, that brings up another problem: onboarding to those services to begin with. ActivityPub - likely the easiest overall to onboard - found that out the hard way during the attempted mass migration to it. Sifting through thousands of random services<sup id="fnref:57"><a href="#fn:57" class="footnote-ref" role="doc-noteref">57</a></sup> is already friction, and something that would likely turn the average user away - even if they did know what metrics to compare services by. Most new users, however, likely won&rsquo;t understand how to choose the best infrastructure for them, so they wind up in more or less the following situation: <em>Pick some infrastructure you don&rsquo;t know how to compare, hosted by a random stranger, then use it to interact with a protocol you probably don&rsquo;t fully understand. Let&rsquo;s hope it&rsquo;s still online by this time next year, and that they don&rsquo;t randomly ban you or defederate from people you want to follow.</em></p>
+<p>The other option, hosting things yourself, isn&rsquo;t going to be the solution. It&rsquo;s always been the nerd utopian idea, everyone having their own server in their closet. Everyone was going to host their own website, then everyone was going to host their own email, then everyone was going to host their own XMPP server, then now everyone is going to host their own social media service. Yes, self hosting isn&rsquo;t that hard - but neither is buying cloth and making your own clothes, fixing your own car, or butchering your own meat. Like self hosting, none of those are particularly hard, and they can all bring their own benefits or cost savings. We live in a specialized society; people have limited time, and it&rsquo;s more efficient to focus on certain things while outsourcing the rest. To any self rightchous IT guys<sup id="fnref:58"><a href="#fn:58" class="footnote-ref" role="doc-noteref">58</a></sup>, try taking on one of those or something like it before you expect everyone else to do the thing you&rsquo;re specializing in.</p>
+<p>So, small independent infrastructure is unfundable and not feasible to onboard new users to, with self hosting remaining niche and inaccessible to the average user. That leads us into the next section.</p>
+<h2 id="platforms-not-protocols">Platforms, not Protocols</h2>
+<p>Platforms are the hardcore cypherpunk&rsquo;s or self hoster&rsquo;s monkey paw; you&rsquo;ll get everything you ever wanted, but not in the way you want. But, to the more jaded realist, platforms that implement these protocols are the best guess as to what the internet will look like in the coming years. Like email, few people will host their own; most congregating around a handful of large services that make up the protocol. Unlike a centralized service like AOL Messenger or company intramail, however, it remains open - nothing&rsquo;s stopping you from hosting your own or using a more niche provider that suits your needs better. The trend appears consistent across most technologies; something is niche and only used by nerds, until several companies provide a centralized option accessible to the average user - one usually winning out and engulfing the market. Time goes on, however, and eventually that single service is replaced by a semi oligarchical group of new services, all standardized around one or a couple open standards<sup id="fnref:59"><a href="#fn:59" class="footnote-ref" role="doc-noteref">59</a></sup>.</p>
+<p>First off, <strong>platforms have an incentive</strong> to implement the above protocols. There&rsquo;s nothing new under the sun; every type of platform has already been built, and marginal improvements to something that already exists isn&rsquo;t reason to try a platform that has no user base. Implementing one of these protocols alleviates that; day one users suddenly capable of communicating with millions of people across a number of different protocols and platforms (see bridges section). If, beyond the platform&rsquo;s userbase, you can also follow and communicate with Threads users, WordPress and Tumblr blogs, BlueSky users, and everyone across native ActivityPub, Nostr, and AT - suddenly, the value proposition of a new platform with marginal improvements to an old formula increases. And, as more platforms implement at least one protocol, it becomes a self fulfilling cycle: a wider ecosystem brings more value, more value means more incentive to integrate, ad infinitum.</p>
+<p>Secondly, and important to this discussion, <strong>platforms bring value</strong> to those on the native protocol. Suddenly, instead of being restricted to a handful of nerds who joined the protocol, you&rsquo;re capable of interacting with a wider world from within your technological bubble. Without leaving your community or self hosted infrastructure, you&rsquo;re suddenly able to reach anything and everything you would have on a centralized social media platform. More widespread use, and easy two way communication, also means more people migrating from the platforms to the raw protocols themselves. More users mean a bigger userbase outside of platforms, as well as better prices and more offerings on semi-self-hosted services<sup id="fnref:60"><a href="#fn:60" class="footnote-ref" role="doc-noteref">60</a></sup> (eg. Masto Host).</p>
+<p>It&rsquo;s <strong>not all sunshine and rainbows</strong>. Platforms are likely going to prioritize native content over remote content in their recommendations and algorithms. For more resource heavy content, like YouTube or its successor - if they implement one of these protocols - will still likely show ads or require payment when viewing video content. Further, unlike text content, content like video would likely be viewed in a browser or app; protocols relegated solely to following users and providing interactions. <strong>But, it&rsquo;s not all bad</strong>. Lighter content like text will likely be transmitted over the protocols themselves, and even for content that&rsquo;s not, that&rsquo;s the two sided bargain of platforms. They might not play as nicely as community infrastructure, but they also provide the only feasible source of onboarding and funding; simultaneously becoming semi interchangeable<sup id="fnref:61"><a href="#fn:61" class="footnote-ref" role="doc-noteref">61</a></sup>, and letting us interact from behind the more private and ad free barrier of our own infrastructure.</p>
+<h2 id="bridges">Bridges</h2>
+<p>ActivityPub, on its own, is a niche place where nerds who wish tech returned to the 1990s congregate. Nostr, on its own, is a niche place for cypherpunks and people overhyping new tech to congregate. AT, on its own, is mostly just BlueSky; a small platform locked to a somewhat extreme flavor of partisan politics, creating its own userbase glass ceiling. Without bridges, protocol usage becomes a zero sum game, the limited attention from a limited userbase of technical users in one subtracting from another.</p>
+<p>Bridges act as translation layers, requesting profile/post data over the original protocol in the same way that any native server would do, before re-formatting the JSON data into the new protocol and serving it to the client/server that requested it. Bridging can be done by dedicated bridges (BridgyFed, Mostr, Eclipse), as well as through internal plugins (Friendica, Hubzilla, Streams, GNU Social, etc). When content is bridged, users across the bridge can view and interact with posts from a user on either protocol.</p>
+<p>Bridges, and inter-connectivity in general, are the only means of legitimately growing the space<sup id="fnref:62"><a href="#fn:62" class="footnote-ref" role="doc-noteref">62</a></sup>. Several niche ecosystems turn into one large one; every new user or platform adopting a protocol providing value to all three as a whole. Each protocol can shine in its own way, while bolstering each other&rsquo;s userbase, and (hopefully) achieving escape velocity. While there is sometimes jank within bridges, especially when multiple are chained together (e.g. DMs not working or <code>@</code>s not showing up), it&rsquo;s possible for somebody on one protocol to be following people across all three without having a non-native experience.</p>
+<p>As of February 2026, there are a total of four large standalone bridges:</p>
+<ul>
+<li>Bridgy Fed (ActivityPub &lt;&gt; BlueSky)</li>
+<li>Mostr, and its fork Momostr (Nostr &lt;&gt; ActivityPub)</li>
+<li>Eclipse (AT &lt;&gt; Nostr)</li>
+</ul>
+<h2 id="honorable-mentions">Honorable Mentions</h2>
+<p>If you&rsquo;re a weirdo like me who likes reading about protocols, then you might enjoy reading about some of these protocols as well. Each one sets out to achieve the same goal as the three above, but have their own take on achieving it, bringing various pros and cons to the table. That said, they have a rather small userbase. For reference: ActivityPub, Nostr, and AT all have userbases in the six or seven figure range<sup id="fnref1:53"><a href="#fn:53" class="footnote-ref" role="doc-noteref">53</a></sup>, while each one below struggles (or fails) to pass four figures of monthly active users. Some can work alongside existing protocols (e.g. Streams, Hubzilla, &amp; Friendica internally bridging to ActivityPub), so if you were looking to join the ActivityPub space, then those options may very well be a great choice<sup id="fnref:63"><a href="#fn:63" class="footnote-ref" role="doc-noteref">63</a></sup>. Outside of that, however, you&rsquo;re probably better off joining one of the big three.</p>
+<ul>
+<li><strong>RSS</strong> is something you&rsquo;re probably aware of if you&rsquo;re reading this blog. But, if you&rsquo;re not, it&rsquo;s the OG means of following content outside of platforms. It&rsquo;s more or less simply a list of links and a description, which you can load in any RSS reader to check for new content and track what you&rsquo;ve already read. It&rsquo;s supported by most blogging platforms, as well as a surprisingly long list of centralized platforms (such as YouTube &amp; Substack).</li>
+<li><strong>Webfinger</strong> is also worth bringing up. It&rsquo;s rather obsolete, but provides a way for web servers to &lsquo;ping&rsquo; each other, providing replies to posts or notification of mentions.</li>
+<li><strong>Ostatus</strong>, and its successor <strong>pump.io</strong>, were the first protocols to combine Webfinger with an RSS style list of posts; providing a social media like feed with two way communication. It&rsquo;s still used today on occasion, although most compatible projects have migrated to ActivityPub; Ostatus compatibility being a relic of still maintained software that pre-dated ActivityPub.</li>
+<li><strong>SecureScuttleButt</strong>, and it&rsquo;s attempted successors like <strong>PZP</strong>, are unique in that they&rsquo;re the only truely peer to peer protocols listed here. Forgoing all forms of servers or infrastructure, users are identified with a key pair, then create posts to be hosted on their own device. Nostr is somewhat of a spiritual successor to SSB, being developed to offer similar features, except to cache posts on relays so content remains online regardless of the user&rsquo;s device.</li>
+<li><strong>Diaspora</strong>, built for the social media server of the same name, is another protocol similar to ActivityPub in structure. Unlike ActivityPub, however, it&rsquo;s built to provide a more Facebook style user experience (friend circles and detailed post viewing permissions) as opposed to ActivityPub&rsquo;s more X/Twitter style experience (generally fully public). Diaspora also predates ActivityPub, however, unlike Ostatus, the Diaspora project never adopted ActivityPub<sup id="fnref:64"><a href="#fn:64" class="footnote-ref" role="doc-noteref">64</a></sup>. That said, there is still a small community on Diaspora - with internal bridging to Diaspora available via plugin on Friendica and Hubzilla.</li>
+<li><strong>Zot</strong>, and it&rsquo;s official successor <strong>Nomad</strong>, are built for <strong>Hubzilla</strong> and it&rsquo;s successor <strong>Streams</strong><sup id="fnref:65"><a href="#fn:65" class="footnote-ref" role="doc-noteref">65</a></sup> respectively. Both support Nomadic identities, which operate a lot like a standard ActivityPub setup at first glance (home instance with accounts identified by the instance&rsquo;s domain). However, behind the facade, they hide the ability to mirror your account on multiple services for redundancy; in addition to a keypair for better account migrations. Both protocols also offer Diaspora style post permissions, again, giving a more Facebook style social network. Hubzilla and Streams internally bridge to ActivityPub, offering communication with ActivityPub accounts, while still offering advanced features (permissions, migrations, redundancy) when interacting with other accounts native to the protocol(s).</li>
+<li><strong>PolyProto</strong>, the new protocol on the metaphorical block, is experimental and not fully implemented into any server as of yet. Similar to Zot/Nomad, while it has ActivityPub style instances, it uses keys on the back end to provide easy migrations and user owned identifiers. It also, similar to Nostr &amp; AT, supports custom extensions to the protocol, allowing interactions outside of the standard protocol if both servers/clients support it. A while back somebody on Lemmy asked people&rsquo;s thoughts on the protocol, and you can see my more in depth ramblings <a href="/img/poly.avif">here</a>.</li>
+</ul>
+<h2 id="definitions-and-clarifications">Definitions and Clarifications</h2>
+<p><em>A few notes on terminology.</em></p>
+<h4 id="decentralized-vs-federated-vs-distributed">Decentralized vs Federated vs Distributed</h4>
+<p>Decentralized and federated services are similar, but somewhat different, and it&rsquo;s worth making a distinction<sup id="fnref:66"><a href="#fn:66" class="footnote-ref" role="doc-noteref">66</a></sup>. <strong>Federated services</strong> consist of centralized services that can communicate with each other. Examples of federated social media protocols include ActivityPub or DFRN, and examples outside of social media would include email or the Matrix protocol. In short: you have your account on a centralized home instance, and your account/content is (more or less) tied to that particular instance. Your instance is then able to connect to other instances, getting copies of data from remote users and serving them as if they were part of your instance.</p>
+<p><strong>Decentralized services</strong> are protocols where users and/or data exist outside of any particular node/infrastructure. Examples of decentralized social media include Nostr and AT, and examples outside of social media include IPFS or the Briar messenger. In short: infrastructure hosts a copy of your posts and profile data, but your identity and post identifiers exist outside of any particular piece of infrastructure, moving between different nodes with minimal or no friction. <strong>Distributed</strong> is just my placeholder term that encompasses anything federated or decentralized.</p>
+<h4 id="web-3">Web 3</h4>
+<p>I used the term Web 3 a couple times in this post, and everytime I do, I figure it&rsquo;s worth offering a quick clarification. Web 3, at least in the way I&rsquo;ve come to understand the term, encompasses the wider (potential) shift towards a decentralized internet. Web 1 was the early nerds running closet web servers, and Web 2 was Facebook, YouTube, and Google. Web 3 covers a variety of things: from cryptocurrencies, to decentralized messengers, to file sharing protocols like IPFS. In the case of this post here, it mostly refers to distributed social media protocols.</p>
+<p>If you&rsquo;ve only heard of Web 3 in regard to NFTs, that&rsquo;s because NFTs really didn&rsquo;t have a selling feature outside of being trading cards built on decentralized web technologies. None of the protocols here are built on a blockchain or NFTs - a blockchain (distributed database) is useful for anything that requires consensus (e.g. transactions), but it would be unbelievably unwieldy to store all content on a social network in one database that&rsquo;s distributed across every client or server.</p>
+<h4 id="infrastructure--services">Infrastructure &amp; Services</h4>
+<p>I used the words <em>infrastructure</em> and <em>services</em> a lot through this post, and figured I should clarify those too. Throughout this post <em>infrastructure</em> simply refers to anything hosted - the sort of stuff you use outside of a client - such as ActivityPub instances, Nostr relays, or AT PDSs, Relays, &amp; Appviews. I used <em>services</em> to refer to a setup hosted by somebody else, including one or more pieces of <em>infrastructure</em>. For example, I might call an ActivityPub instance, Nostr relay, or AT PDS a piece of <em>infrastructure</em> - and might refer to an ActivityPub instance or BlueSky (AT PDS + Relay + Appview) as a service. Like &ldquo;distributed protocols&rdquo; I&rsquo;m just using it as my own made up terminology; agnostically referring to externally hosted things regardless of which protocol. The vibe is more or less aimed at <em>infrastructure</em> being anything somebody connects to or utilizes, and a <em>service</em> being a complete package a user might interact with through a client or web browser.</p>
+<h2 id="what-i-use-and-why">What I use, and why</h2>
+<p>If you&rsquo;ve been following me for a while, you&rsquo;ll probably know that Nostr is my favorite of the three. I like the protocol&rsquo;s flexibility, and the protocol effectively gives you self-hosted ActivityPub instance level control over your experience - while not requiring you to host anything, and not barring you from participating in communities on other infrastructure. That said, I&rsquo;m not married to the protocol, and I&rsquo;m on all three (albeit less of AT lately, outside of bridged AT). That said, other protocols have their purposes too. You can&rsquo;t beat ActivityPub&rsquo;s ease of use and community building, and in plenty of circumstances I&rsquo;d recommend it instead (or something like Streams bridged to ActivityPub).</p>
+<p>And, of course, as time changes protocols might too - either changes to existing protocols, or entirely new ones being developed. This is, again, another reason why bridges are important. ActivityPub came along, likely only sticking around since existing projects internally bridged to it (Friendica, GNU social, etc); Nostr and AT likely benefiting from bridging in and out of ActivityPub. Things change rapidly - ActivityPub hasn&rsquo;t even been standardized for a decade, and it was supplanted as the top dog several years ago. If/when platforms start adopting things, and as protocol development continues, who knows what will fall into place?</p>
+<h2 id="footnotes">Footnotes</h2>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Assuming that the spec is followed - which, I&rsquo;ve heard, is not always the case.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Like I said, I&rsquo;m trying to trim this post down a bit. That said, if you&rsquo;d like to see my ramblings on the topic, you can check out the <a href="https://nate.mecca1.net/posts/2025-12-07_microblog-protocols-update/#isolationism">isolation section in my update post</a> or the first part of the <a href="https://nate.mecca1.net/posts/2024-08-11_microbloggingv2/#oddball-potential-issues">oddball activity pub issues in v2</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>If you&rsquo;re looking to avoid this issue, my recommendation is to find a smaller instance. Generally, the big instances won&rsquo;t block small instances (as apposed to large instances blocking other large instances because of community bickering/drama, or because one instance doesn&rsquo;t like the other&rsquo;s blocklist). On the right smaller instance, you can be federated with just about everyone, at least everyone who&rsquo;s a well meaning participant of the protocol.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>When I say Nazis I mean literal Neo-Nazis, the kind of people who praise Hitler and have a swastica profile picture. I&rsquo;m not talking about an &ldquo;Anyone who disagrees with me is a Nazi&rdquo; sentiment, which has caused the term to lose most of its meaning.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>And I mean fringe people. Not the heavily partisan Bluesky kind, but the kinds of people on the right who make Truth Social look like Bluesky and the kinds of people on the left that make Bluesky look like Truth Social.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6">
+<p>It&rsquo;s the second oldest by completion date, to be specific. AT&rsquo;s development started before Nostr, but Nostr was in a usable state and used in a distributed manner years before AT was opened up.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7">
+<p>All three protocols, at the time of writing, have shrinking userbases. However, Nostr&rsquo;s is the most noteable here since it went from the second largest (and close to the largest) to the smallest. See my <a href="https://nate.mecca1.net/posts/2025-12-07_microblog-protocols-update/">latest update post</a> for some late 2025/early 2026 context.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8">
+<p>You are capable of identifying yourself with a username via domains on Nostr, however, on the back end everything always links to the key pair.&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9">
+<p>It&rsquo;s been described as the spiritual sucessor to RSS by me and others. Although I feel like the most accurate, albeit less descriptive, summary of Nostr would be &ldquo;The result of a love triangle between GPG, RSS, and Twitter.&rdquo;&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10">
+<p>Because your keys, your client, and your preferred relays are different layers, you&rsquo;re able to use different clients with the same account. Some clients are designed for specific purposes (e.g. long form blogging) while others are designed for general use (e.g. Amythest or Nostrudel). I&rsquo;ll discuss this further in the compatibility section.&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11">
+<p>It&rsquo;s also worth noting that, in the past, tech nerd hubs seem more likely to become mainstream than politically partisan places. The OG big tech social media sites (Reddit, Twitter, etc) were populated by tech nerds before they transitioned to a mainstream audience. I can&rsquo;t think of any services that were primarily partisan, before transitioning to a more mainstream audience.&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:12">
+<p>Key delegation is the process of having an external service manage your keys. While controlling your own keys is a very useful tool for controlling your own account, Jimbob Goober off the street isn&rsquo;t going to know what asymmetric encryption is - much less the proper procedures of protecting one&rsquo;s keys. Having the option of key delegation, alongside managing your own keys, is (in my opinion) the only means of opening the protocol to a wider audience. But trusting another service to manage your keys goes against the ethos of cypherpunk ideals, so it&rsquo;s a somewhat controversial opinion to suggest that be an offered option.&#160;<a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:13">
+<p>There are a few exceptions, such as Red Dwarf, which is a client that directly retreives content from PDSs instead of relying on the relay layer, parsing it in the client locally in a similar way to Nostr.&#160;<a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:14">
+<p>A <em>Relay</em> and <em>Appview</em> are effectivly the same layer of infrastructure. A relay is a tool that fetches content from remote PDSs and makes it available in one centralized source. An Appview is a tool that parses a firehose of data (generally from a relay), and provides that content to a client. Some Appviews can fetch data directly from PDSs - forgoing a relay, and some clients may connect directly to a relay firehose - forgoing an Appview. For simplicity&rsquo;s sake (and my two braincells not holding onto big words), I&rsquo;ll going to refer the Relay/Appview combination as the Relay &ldquo;layer&rdquo; for the rest of this post like I normally do.&#160;<a href="#fnref:14" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:15">
+<p>If you&rsquo;re curious as to how this differs from Nostr, think of Nostr as an RSS client, and AT as Feedly. In your local RSS client - similar to Nostr - your device will manually reach out to each server that&rsquo;s hosting a feed; parsing that data locally and providing it to you. On Feedly - similar to AT - a third party server has already fetched that data and parsed it on your behalf, providing it to you via a simple web interface or app. There&rsquo;s pros and cons to both approaches: having a server parse it lessens the load on your device, provides a streamlined experience, and prevents you from needing to fix problems yourself when they arise. Having your device process things locally cuts out the middleman (nobody to tell you you&rsquo;re not allowed to fetch a particular feed), provides you a greater degree of customization/control, and can&rsquo;t go offline as a centralized service could.&#160;<a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:16">
+<p>If you&rsquo;d like to read more about BlueSky&rsquo;s abandonment of neutral infrastructure, I went into greater depth <a href="https://nate.mecca1.net/posts/2025-12-07_microblog-protocols-update/#neutral-infrastructure-abandonment">here</a> in my previous <a href="https://nate.mecca1.net/posts/2025-12-07_microblog-protocols-update/">update post</a>.&#160;<a href="#fnref:16" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:17">
+<p>For example, as I&rsquo;ll talk about in a few paragraphs, DMs on BlueSky are not part of the AT protocol. Any BlueSky feature that is not part of the protocol itself could start interfering with how other people implement or use the protocol, as there&rsquo;s no other ecosystem of services that could all come together and reach a consensus.&#160;<a href="#fnref:17" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:18">
+<p>Again, BlueSky has DMs, but they&rsquo;re not part of the protocol. They&rsquo;re unencrypted and part of the BlueSky platform, not part of the AT protocol itself.&#160;<a href="#fnref:18" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:19">
+<p>If you would like to read about things in a bit more depth, you can check out the <a href="https://nate.mecca1.net/posts/2025-12-07_microblog-protocols-update/#partisanship">partisanship</a> and <a href="https://nate.mecca1.net/posts/2025-12-07_microblog-protocols-update/#neutral-infrastructure-abandonment">moderation/neutral infrastructure</a> sections of my previous <a href="https://nate.mecca1.net/posts/2025-12-07_microblog-protocols-update/">update post</a>.&#160;<a href="#fnref:19" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:20">
+<p>Telling people to just join Mastodon.Social is not always viable. First, because they have closed registrations in the past during sudden influxes of users. Secondly, because they have a rather large blocklist (including bridges), which may impair or entirely prevent a user from properly experiencing an open protocol.&#160;<a href="#fnref:20" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:21">
+<p>It&rsquo;s not that your run of the mill Jimbob Goober can&rsquo;t figure out any of these protocols, and that they&rsquo;re some arcane magic us fellow tech nerds can congratulate ourselves for understanding. For example, there&rsquo;s a community of people from Tailand on Nostr because it went viral there on Tiktok. If Tiktokers can figure it out, it&rsquo;s not all that crazy of a concept to understand. Still, like changing your car&rsquo;s oil, it&rsquo;s something the person would need to go out of their way to learn.&#160;<a href="#fnref:21" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:22">
+<p>An example of user owned identifiers separate from social media protocols would be email. I used to host my email with Tuta, but had my own domain, so when Tuta had an extended outage, I was able to change a few DNS records and get incoming email sent to a different mail server. Had I been using an @tuta.io email address, my account would have been gone for as long as Tuta&rsquo;s infrastructure remained offline. While having my own domain wouldn&rsquo;t prevent Tuta from going down or banning me, it would allow me to keep my identifier (email address) regardless of which mail server I&rsquo;m using.&#160;<a href="#fnref:22" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:23">
+<p>Something to note, which I&rsquo;ll delve into more deeply in the moderation section, is that portable identities/user owned identifiers do not affect moderation. On all three protocols, servers and communities can ban a user all the same, the only difference is that protocols with user owned identities can allow that user to participate in other places (that they&rsquo;re permitted to participate in) using that same identity.&#160;<a href="#fnref:23" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:24">
+<p>Many bans are warranted, and in a decentralized ecosystem (or any ecosystem really) it&rsquo;s absolutely the right of admins to decide who&rsquo;s allowed to use their infrastructure. That said, there&rsquo;s also the issue of unfair bans to contend with (with &lsquo;unfair&rsquo; being a relative term that will differ depending on who&rsquo;s defining it). The fediverse in particular has some toxicity issues (see <a href="https://nate.mecca1.net/posts/2025-12-07_microblog-protocols-update/#community-toxicity">that section in my previous post</a>), and this risk of losing your account after disagreeing on Linux distros or tax policy is probably something that should give you pause (or at least direct you towards using infrastructure run by moderators who are known to be reliable). Regardless, the question of what should happen to a user after they&rsquo;re kicked off of infrastructure (for fair or unfair reasons) is something important to consider.&#160;<a href="#fnref:24" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:25">
+<p>Theoretically, an instance admin/mod could inform a user that they&rsquo;re about to be banned and not welcome on that particular instance, but allow them to migrate to another one. However, to my knowledge, no ActivityPub enabled software would allow a banned user to migrate to another service in spite of the wishes of their admins - except Holos.&#160;<a href="#fnref:25" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:26">
+<p>Protocols such as Nostr, AT, SecureScuttleButt (and its successors like PZP) all use key based accounts nearly entirely. Protocols like Nomad, Zot, and the (in development) Poly Proto also all use some form of keys and/or alternative means of migration outside of relying on a single home server. While there are a few other protocols (DRFN, Diaspora) still in use that lean more towards an identity centralized around one&rsquo;s instance, protocols newer than ActivityPub seem to have accounts somewhat or entirely separate from their infrastructure layer.&#160;<a href="#fnref:26" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:27">
+<p><a href="https://github.com/jointakahe/takahe">Tahake</a>&rsquo;s last commit was in 2024, and it has 10 monthly active users, so I&rsquo;m unsure of whether it&rsquo;s a legitimate potential option for users who want to control their own identity.&#160;<a href="#fnref:27" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:28">
+<p>There is still the potential risk of losing an account even if you&rsquo;re using your own domain. If you&rsquo;re on something like Tahake, a mod could still ban your account (which may nuke your followers list), or a hacker could get into the server you&rsquo;re on (such as a Tahake instance or your own personal server) and delete your account or migrate your followers list to another remote account that&rsquo;s not you. Still, it gives you much more control than in other cases.&#160;<a href="#fnref:28" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:29">
+<p>With the exception of something like Holos.&#160;<a href="#fnref:29" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:29" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:30">
+<p>Groups, part of the Activity Pub spec, are the boards you&rsquo;ll find in the Threadiverse (Lemmy, Piefed, Mbin), as well as communities in Friendica. You can participate within them from something like Mastodon, but it involves work arounds like <code>@</code>ing a community to post to it (with the first line being the title, the rest being the body - no support for link/image submissions).&#160;<a href="#fnref:30" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:31">
+<p>If another client were to be developed to use the same custom NIP it would still work with the Treasures web app. However, if a custom NIP is written it&rsquo;s likely going to be for a niche use case with only one or a handful of clients supporting it.&#160;<a href="#fnref:31" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:32">
+<p>You can still use your same account and PDS across the different ecosystems, but can&rsquo;t interact across each ecosystem. It&rsquo;d be like if you could sign into YouTube and Facebook with the same account, and keep a local copy of your data, but couldn&rsquo;t have any YouTube &lt;&gt; Facebook interactions (follows, replies, etc). Activity Pub and Nostr take a more laissez-faire approach - you may have some jank in Activity Pub, or need to use a second client on Nostr - but things remain interconnected.&#160;<a href="#fnref:32" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:33">
+<p>Well, most ActivityPub enabled software calls them migrations, but I’m not quite sure migration would be the right word. I feel like re-direct would be more fitting: like an email, you might forward incoming mail to a new address and give your friends and services you use your new email, but the old account remains a separate, independent account. Then again, I’m just a dumbo arguing semantics.&#160;<a href="#fnref:33" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:34">
+<p>Now, to be clear, I&rsquo;m not really qualified to do too much in terms of deep technical stuff. I&rsquo;m just a guy who finds things interesting. If you&rsquo;re a dev or otherwise looking for a deep technical understanding, I&rsquo;m probably not the person to go to. My point isn&rsquo;t that I deeply understand technical things and that my thoughts should be listened to on such a level, just that I&rsquo;ve seen technical people and devs who know a lot about other protocols not fully understand how moderation works on key based stuff like AT and Nostr - which made me think covering it would be a good idea.&#160;<a href="#fnref:34" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:35">
+<p>To better clarify, it works by hiding content from &lsquo;silenced&rsquo; people/instances - only being visible to those who specifically followed them. If I followed <code>jimbobgoober@example.com</code>, but my hypothetical Mastodon instance silenced his instance/account, I would still be able to view his content like any other user. However, his posts would be hidden from anyone who didn&rsquo;t intentionally follow him. His posts would not show up in the remote timeline, and if I reposted any Jimbob Goober content, my reposts would be hidden from all my followers who weren&rsquo;t already following Mr Goober. While the word shadowban might have a negative connotation, it&rsquo;s still the best word to describe it, though it&rsquo;s worth noting that the silence feature isn&rsquo;t inherently good or bad, just a tool that could be used in a good or bad way.&#160;<a href="#fnref:35" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:36">
+<p>There are a couple exceptions to this. First, if <code>user@domain</code> blocks <code>jimbob@goober</code>, and jimbob replies to a post, people on the goober instance will still see the reply. However, people outside of the goober instance won&rsquo;t be able to see the reply, as all other remote instances fetch the post and replies from the domain instance, which won&rsquo;t forward that reply. Secondly, that&rsquo;s assuming that <a href="https://web.archive.org/web/20260213152823/https://evilmaid.net/blog/trusting-trust-fediverse/index.html">events are not forged</a>.&#160;<a href="#fnref:36" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:37">
+<p>For example, JimBobGoober follows Alice and Bob. Alice and/or Bob blocked and/or reported TotallyNotABot. Many clients, such as Amythest, will automatically hide TotallyNotABot if configured to do so.&#160;<a href="#fnref:37" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:38">
+<p>Something like the Red Dwarf client fetches content directly from PDSs, forgoing the AT Relay layer (similar to Nostr or an RSS reader). In that case, AT would function similarly to Nostr, pulling account data from PDSs that you chose to follow, with minimal to no intermediaries to set additional moderation policies.&#160;<a href="#fnref:38" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:39">
+<p>For example, <code>JimBob</code> is blocked by <code>Goober</code>. While nothing in their PDSs will prevent JimBob from replying to Goober&rsquo;s posts, some appviews may automatically hide JimBob&rsquo;s replies to Goober from all users of that service.&#160;<a href="#fnref:39" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:40">
+<p>It&rsquo;s worth bringing up that, while I believe it would be much lighter in theory, I haven&rsquo;t tested running a Holos relay. I did try giving it a go, but I went to install it and got some dependency errors I couldn&rsquo;t resolve, and I&rsquo;m lazy, so that wrapped up my experimentation for now (it&rsquo;s still in development, I expect the script will be updated soon if it&rsquo;s not by the time I post this). Still (theoretically), with it offloading a lot of processing and content caching to the client, it should be much lighter. But, with all the different implementations of all three protocols, the resource requirements/scalability are largely &lsquo;vibes&rsquo; based, painting with a broad brush.&#160;<a href="#fnref:40" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:41">
+<p>For reference, I often read Nostr on <a href="https://nate.mecca1.net/posts/2026-02-01_old-laptop/">a very underpowered laptop</a>, which sports a total of 2 GB RAM and an old Intel Bay Trail processor. Even with the Outbox model enabled on Nostrudel, likely the most resource intensive setup one could be in, slowness is fairly minimal. Any modern device, or even simply slightly less outdated devices, should be able to perform those sorts of functions without struggling.&#160;<a href="#fnref:41" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:42">
+<p>To note, while spam and bots sometimes overlap, they don&rsquo;t always. Spam here refers to a mass creation of posts, often identical, with several potential motivations: pushing out information (e.g. spamming links to a particular product or service), attempting to overload infrastructure with a large number of posts, or attempting to degrade the experience of people using the protocols. No protocol has specs that would prevent LLM powered bots that attempt to push propaganda, or something similar, that would appear to be a standard user at first glance. Those types of bots, to the limited cases where they could be detected, would have to be managed by real people performing manual moderation.&#160;<a href="#fnref:42" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:43">
+<p>Meaning that the spam, while targeting AT, originated on Activity Pub &amp;/or Nostr - using bridges to make its way onto AT.&#160;<a href="#fnref:43" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:44">
+<p>If you&rsquo;re unfamiliar, NIP-05 domain based usernames just point to your key - providing a human readable means of finding your key based accounts. While services to provide a NIP-05 username with their domain exist, that does not mean handing over the control of your account. Even if the service becomes malicious or goes down, users who followed you will remain since they follow keys instead of domain based usernames. While technologically not the same, think of it as clicking a link from a URL shortener and then bookmarking the URL that it lead you to.&#160;<a href="#fnref:44" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:45">
+<p>In order to have the BlueSky relay index an unlimited number of accounts from your PDS you need a special exemption manually given to you. Bridges are one of the handful of services that have been granted that, and BlueSky would likely be hesitant to block a bridge to combat spam attacks, so that&rsquo;s likely why the spammers chose a bridge. Outside of bridges, there are not a lot of inroads for spam that don&rsquo;t require a clean IP, as well as email verification and captcha completion, to begin participating in mainstream AT.&#160;<a href="#fnref:45" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:46">
+<p>To further expound on that, what&rsquo;s the median lifespan of an instance? Sure, Mastodon.social is probably going to be around for a while, but not every instance is going to be as long lasting. Even long lasting ones go down eventually, like Nerdica.net, which stuck around for 10+ years before a SQL database error nuked it (and my account). People die - or abruptly give up on hosting an instance, domain renewal can be forgotten (or seized by the Taliban), and servers can be hacked or randomly go ka-boom. Your instance is probably going to survive the next year, but how about the next 10 years? 30 years? For people planning to have an account for the long haul, if identity management isn&rsquo;t altered a bit, there are a lot of people set to be disappointed when they lose their account.&#160;<a href="#fnref:46" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:47">
+<p>Holos does that, and if you&rsquo;re looking for an account you control, then it might be worth looking into. However, this isn&rsquo;t part of the Activity Pub spec, or doable in most implementations. Holos gets around the protocol with metaphorical duct tape and bubble gum, making a Holos client an Activity Pub server, and a Holos server more of a CDN than a standard Activity Pub instance. Implementing something that allowed a client to forcibly migrate from an offline instance is, in my opinion, a much needed tool.&#160;<a href="#fnref:47" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:48">
+<p>An NSEC bunker, or remote signer, is generally an app on a phone or computer that signs events. For example, I can setup an NSEC bunker on my phone, then sign into a client on my laptop I take to work; my phone signing events instead of copying my NSEC to the laptop. Ideally, you would use an NSEC bunker for most clients and apps, having only one (hopefully) well trusted app that has your NSEC on a (hopefully) well trusted device. If anything else were to be compromised, or you wanted to delegate access to your account (e.g. a corporate account accessed by employees), you could revoke that access and not lose your account. However, you still need to trust the bunker app and the device it&rsquo;s on.&#160;<a href="#fnref:48" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:49">
+<p>There would be exceptions, like signing events offline and copying them to an online device to be broadcasted. Or simple hardware signers. But those are exceptions, not the rule, and would add a lot of friction to a protocol that already is not friction free.&#160;<a href="#fnref:49" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:50">
+<p>To clarify, this would be separate from a NIP-05 domain based username. Under NIP-05, the username <code>jimbobgoober@example.com</code> might point to the key <code>npub123xyz</code>. However, if a user follows <code>jimbobgoober@example.com</code>, then the NIP-05 username is later changed to point to <code>npub321xyz</code>, the user who already followed <code>jimbobgoober@example.com</code> would still be following <code>npub123xyz</code>. Under NIP-05 the key is the real identity; the domain username simply being a more readable shortcut to get the hash of the user&rsquo;s key. In my hypothetical example, the domain would be the ultimate authority. In that case there might be a text DNS entry in the domain <code>example.com</code> that says <code>npub123xyz=jimbobgoober</code>. If the DNS entry was updated to <code>npubabc321=jimbobgoober</code> then people following <code>jimbobgoober@example.com</code> would go from following <code>npub123xyz</code> to <code>npubabc321</code>.&#160;<a href="#fnref:50" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:51">
+<p>To any cypherpunks about to send me an angry email, yes, I prefer to control my own keys. And yes, I think most individual users would be better off controlling keys instead of controlling a rented domain. Still, that doesn&rsquo;t always scale. &ldquo;Not your keys, not your account&rdquo; also translates to &ldquo;Everyone who controls the keys controls the account&rdquo; which would be bad in a corporate setting, which might prefer a domain name owned by the company - said ownership being enforced/reversible by courts - to be the final authority. It also wouldn&rsquo;t matter in a situation the user is already delegating keys (platforms/bridges), in that case they don&rsquo;t control the account either way, but the person they&rsquo;re delegating to might be able to recover accounts or give them over to the user more easily. And finally, some people might just prefer to use their domain instead. Having that option (or something similar) could be very useful, and be a deciding factor in whether many people, platforms, and companies adopt the protocol.&#160;<a href="#fnref:51" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:52">
+<p>That, and verification at other levels too (e.g. OSs). But this particular level is the only part relevant to these protocols.&#160;<a href="#fnref:52" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:53">
+<p>Ha, six seven&#160;<a href="#fnref:53" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:53" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:54">
+<p>Remember, software like Friendica - with it&rsquo;s Facebook style friends lists and post visibility options - is native to DFRN. There are actually several protocols adjacent to Activity Pub like Diaspora, DFRN, Zot, and Streams that have more fine tuned post permissions figured out. It&rsquo;s not that it can&rsquo;t be done, just that none of the big three do it well.&#160;<a href="#fnref:54" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:55">
+<p>Most notably, there&rsquo;s Lockbox by Fiatjaf, a relay that delivers posts only to people you&rsquo;re following, using NIP-42 for cryptographic verification. Just like Activity Pub, however, it&rsquo;s a bit janky since the protocol is focused on public content. There&rsquo;s also nothing stopping the user&rsquo;s client from automatically re-broadcasting it to public relays, even accidentally (such as after a reaction or re-post). I also attempted to write a <a href="https://nostrhub.io/naddr1qvzqqqrcvypzpyg2lyrsmlttamnr7r224tp4fdw6zexkhv3unjrkeh6jf3eqfendqqrkvun9deehgusdsjwna">custom NIP</a> to add groups style functionality to something like that, but current (working) client support is 0 - while still running into the same issue of things easily being re-broadcasted as public.&#160;<a href="#fnref:55" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:56">
+<p>Well, I should say, they&rsquo;ve survived so far on a very limited userbase. YouTube has ~2.6 billion monthly active users, and Facebook has ~3 billion monthly active users. Even a &lsquo;smaller&rsquo; social media platform like X has ~600 million monthly active users. Something like Mastodon.Social has ~300 thousand monthly active users, and Activity Pub and Nostr as a whole have network wide userbases in the hundreds of thousands. Trying to scale them up, even to a tenth of what larger platforms have, would require radical changes to funding. We&rsquo;re already seeing that with AT/Bluesky - even at 1% the size of X, it&rsquo;s already needed to take venture capital funding because they don&rsquo;t have a stable monetization strategy.&#160;<a href="#fnref:56" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:57">
+<p>Mastodon.social has closed registrations before when there&rsquo;s been mass influxes of people, so just joining the flagship service is not always possible.&#160;<a href="#fnref:57" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:58">
+<p>No shade against people earnestly promoting self hosting, or self hosters in general (I self host several things myself). My complaint is directed more towards people who just assume everybody&rsquo;s going to self host eventually (baking that into their mental model of how the ecosystem will work), and people who push it more aggressively. Ironically, it&rsquo;s those people who&rsquo;ll likely pave the way for platforms. &ldquo;Yeah, of course, people will commit to forever hosting their own Peertube instance to share the occasional video&rdquo; then &ldquo;Oh no, why is our ecosystem not taking off?&rdquo;&#160;<a href="#fnref:58" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:59">
+<p>Aside from email, a few other examples could include: web browsers; instead of needing specific browsers like IE for sites, you can pretty much use any browser you want, even if most browsers are built on WebKit or Blink. Or operating systems, instead of just Unix, then Windows; most operating systems are based on the Linux or BSD family of OSs (such as Android, ChromeOS, SteamOS - even PlayStation and Apple devices, despite the latter two being closed source on account of the MIT license). And yes, as much as Windows still has a hold on desktop operating systems, Android is the world&rsquo;s most popular operating system (not to mention embedded things from cars to fridges). SMS, Git for source control, even in the future potentially Matrix for chat applications, the list goes on.&#160;<a href="#fnref:59" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:60">
+<p>For example, even if a static 5% of people changed their own oil, more drivers means more people changing their own oil. And, with that, come more stores stocking oil changing supplies at competitive rates, more online tutorials, and more people IRL to give guidance or advice on oil changes.&#160;<a href="#fnref:60" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:61">
+<p>Like using RSS for content, if platforms implement the protocols, they become a lot more interchangeable. If you can follow people across many different platforms using one centralized account, migration from one platform to another becomes a lot more trivial.&#160;<a href="#fnref:61" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:62">
+<p>There have been some, in my opinion, very misguided controversies over bridges in the Activity Pub space. If you&rsquo;d like to hear my thoughts, check out the <a href="https://nate.mecca1.net/posts/2025-12-07_microblog-protocols-update/#isolationism">isolationism section in my Dec 2025 update post</a>.&#160;<a href="#fnref:62" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:63">
+<p>Streams, Zot, DRFN, and Diaspora all have all Activity Pub features, plus bonuses. If you join something like Streams, Hubzilla, or Friendica you&rsquo;ll be able to participate in the Activity Pub ecosystem as if you&rsquo;re on an Activity Pub native platform (I&rsquo;ve seen plenty of people not even realize they&rsquo;re based on another protocol). That said, the bonus features won&rsquo;t carry over. For example, if you&rsquo;re on Streams and your server goes down, your Streams friends will carry over while your Activity Pub friends will not.&#160;<a href="#fnref:63" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:64">
+<p>Dennis Schubert made two posts on the topic of why Diaspora never adopted Activity Pub in the project if you&rsquo;re interested: <a href="https://overengineer.dev/blog/2018/02/01/activitypub-one-protocol-to-rule-them-all/">Activit Pub: One Protocol to Rule Them All</a> &amp; <a href="https://overengineer.dev/blog/2019/01/13/activitypub-final-thoughts-one-year-later/">Activity Pub: One Year Later - Final Thoughts</a>&#160;<a href="#fnref:64" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:65">
+<p>Yes, I know, some people like to call it (streams) because it&rsquo;s an &ldquo;unbranded&rdquo; project, and only the git repo has a name. But, come on, guys, that feels a bit silly. It has a name given to it in the codebase, and we need to call it something, so I&rsquo;m just going to call it Streams.&#160;<a href="#fnref:65" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:66">
+<p>For a more in depth read, check out <a href="https://kevincox.ca/2023/07/20/decentralized-vs-federated/">Kevin Cox&rsquo;s post on the topic</a>&#160;<a href="#fnref:66" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+    </div>
+<div class="post_comments">
+  
+  
+  
+</div>
+
+
+
+
+  </article>
+<aside class="sidebar">
+  <section class="sidebar_inner">
+    <br>
+    
+
+
+    
+    
+    <h2 class="mt-4">Recent Posts</h2>
+    <ul class="flex-column">
+      <li>
+        <a href="/posts/2026-03-08_microblogging-protocols-v3/" class="nav-link" title="A Technical Comparison of Distributed Social Media Protocols v3">A Technical Comparison of Distributed Social Media Protocols v3</a>
+      </li>
+      <li>
+        <a href="/posts/2026-02-01_old-laptop/" class="nav-link" title="The RAM wars: mini penguin to the rescue">The RAM wars: mini penguin to the rescue</a>
+      </li>
+      <li>
+        <a href="/posts/2026-01-10_2025-retrospective/" class="nav-link" title="2025 Wrap Up Post">2025 Wrap Up Post</a>
+      </li>
+      <li>
+        <a href="/posts/2025-12-09_defaults-2025/" class="nav-link" title="2025 Defaults">2025 Defaults</a>
+      </li>
+      <li>
+        <a href="/posts/2025-12-07_microblog-protocols-update/" class="nav-link" title="This is Fine: an Interim Microblogging Protocols Update">This is Fine: an Interim Microblogging Protocols Update</a>
+      </li>
+      <li>
+        <a href="/posts/2025-11-10_avif-file-format/" class="nav-link" title="Rather Impressive Image Compression">Rather Impressive Image Compression</a>
+      </li>
+      <li>
+        <a href="/posts/2025-10-31_random-update/" class="nav-link" title="Anyone out there hiring? &#43; 10 pointless facts">Anyone out there hiring? + 10 pointless facts</a>
+      </li>
+      <li>
+        <a href="/posts/2025-06-18_standard-server-alternatives/" class="nav-link" title="NFTs and Dark Web Shenanagins">NFTs and Dark Web Shenanagins</a>
+      </li>
+    </ul>
+    <div>
+      <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
+      <nav class="tags_nav">
+        <a href='/categories/stuff-i-like/' class="post_tag button button_translucent" title="stuff-i-like">
+          STUFF-I-LIKE
+          <span class="button_tally">11</span>
+        </a>
+        
+        <a href='/categories/hobbies/' class="post_tag button button_translucent" title="hobbies">
+          HOBBIES
+          <span class="button_tally">8</span>
+        </a>
+        
+        <a href='/categories/personal-updates/' class="post_tag button button_translucent" title="personal-updates">
+          PERSONAL-UPDATES
+          <span class="button_tally">7</span>
+        </a>
+        
+        <a href='/categories/informational/' class="post_tag button button_translucent" title="informational">
+          INFORMATIONAL
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='/categories/complaints/' class="post_tag button button_translucent" title="complaints">
+          COMPLAINTS
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='/categories/misc-essay/' class="post_tag button button_translucent" title="misc-essay">
+          MISC-ESSAY
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/categories/tutorials/' class="post_tag button button_translucent" title="tutorials">
+          TUTORIALS
+          <span class="button_tally">1</span>
+        </a>
+        
+        
+      </nav>
+    </div>
+    <div>
+      <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
+      <nav class="tags_nav">
+        <a href='/tags/tech/' class="post_tag button button_translucent" title="tech">
+          TECH
+          <span class="button_tally">18</span>
+        </a>
+        
+        <a href='/tags/protocols/' class="post_tag button button_translucent" title="protocols">
+          PROTOCOLS
+          <span class="button_tally">10</span>
+        </a>
+        
+        <a href='/tags/nostr/' class="post_tag button button_translucent" title="nostr">
+          NOSTR
+          <span class="button_tally">8</span>
+        </a>
+        
+        <a href='/tags/activitypub/' class="post_tag button button_translucent" title="activitypub">
+          ACTIVITYPUB
+          <span class="button_tally">6</span>
+        </a>
+        
+        <a href='/tags/android/' class="post_tag button button_translucent" title="android">
+          ANDROID
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='/tags/misc/' class="post_tag button button_translucent" title="misc">
+          MISC
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='/tags/mobile/' class="post_tag button button_translucent" title="mobile">
+          MOBILE
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='/tags/privacy/' class="post_tag button button_translucent" title="privacy">
+          PRIVACY
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='/tags/projects/' class="post_tag button button_translucent" title="projects">
+          PROJECTS
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='/tags/atproto/' class="post_tag button button_translucent" title="atproto">
+          ATPROTO
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='/tags/windows/' class="post_tag button button_translucent" title="windows">
+          WINDOWS
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='/tags/ai/' class="post_tag button button_translucent" title="ai">
+          AI
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='/tags/debian/' class="post_tag button button_translucent" title="debian">
+          DEBIAN
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='/tags/decentralized/' class="post_tag button button_translucent" title="decentralized">
+          DECENTRALIZED
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='/tags/linux/' class="post_tag button button_translucent" title="linux">
+          LINUX
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='/tags/meta/' class="post_tag button button_translucent" title="meta">
+          META
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='/tags/cloud/' class="post_tag button button_translucent" title="cloud">
+          CLOUD
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='/tags/ipfs/' class="post_tag button button_translucent" title="ipfs">
+          IPFS
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='/tags/photos/' class="post_tag button button_translucent" title="photos">
+          PHOTOS
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='/tags/utility/' class="post_tag button button_translucent" title="utility">
+          UTILITY
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='/tags/archival/' class="post_tag button button_translucent" title="archival">
+          ARCHIVAL
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/emulation/' class="post_tag button button_translucent" title="emulation">
+          EMULATION
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/encryption/' class="post_tag button button_translucent" title="encryption">
+          ENCRYPTION
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/gaming/' class="post_tag button button_translucent" title="gaming">
+          GAMING
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/hardware/' class="post_tag button button_translucent" title="hardware">
+          HARDWARE
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/i2p/' class="post_tag button button_translucent" title="i2p">
+          I2P
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/opinion/' class="post_tag button button_translucent" title="opinion">
+          OPINION
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/review/' class="post_tag button button_translucent" title="review">
+          REVIEW
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/tor/' class="post_tag button button_translucent" title="tor">
+          TOR
+          <span class="button_tally">1</span>
+        </a>
+        
+        
+      </nav>
+    </div>
+  </section>
+</aside>
+
+  
+</div>
+    </main><svg width="0" height="0" class="hidden">
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.001 18.001" id="twitter">
+    <path d="M15.891 4.013c.808-.496 1.343-1.173 1.605-2.034a8.68 8.68 0 0 1-2.351.861c-.703-.756-1.593-1.14-2.66-1.14-1.043 0-1.924.366-2.643 1.078a3.56 3.56 0 0 0-1.076 2.605c0 .309.039.585.117.819-3.076-.105-5.622-1.381-7.628-3.837-.34.601-.51 1.213-.51 1.846 0 1.301.549 2.332 1.645 3.089-.625-.053-1.176-.211-1.645-.47 0 .929.273 1.705.82 2.388a3.623 3.623 0 0 0 2.115 1.291c-.312.08-.641.118-.979.118-.312 0-.533-.026-.664-.083.23.757.664 1.371 1.291 1.841a3.652 3.652 0 0 0 2.152.743C4.148 14.173 2.625 14.69.902 14.69c-.422 0-.721-.006-.902-.038 1.697 1.102 3.586 1.649 5.676 1.649 2.139 0 4.029-.542 5.674-1.626 1.645-1.078 2.859-2.408 3.639-3.974a10.77 10.77 0 0 0 1.172-4.892v-.468a7.788 7.788 0 0 0 1.84-1.921 8.142 8.142 0 0 1-2.11.593z"
+      ></path>
+  </symbol>
+  <symbol aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="mail">
+    <path  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="calendar">
+    <path d="M452 40h-24V0h-40v40H124V0H84v40H60C26.916 40 0 66.916 0 100v352c0 33.084 26.916 60 60 60h392c33.084 0 60-26.916 60-60V100c0-33.084-26.916-60-60-60zm20 412c0 11.028-8.972 20-20 20H60c-11.028 0-20-8.972-20-20V188h432v264zm0-304H40v-48c0-11.028 8.972-20 20-20h24v40h40V80h264v40h40V80h24c11.028 0 20 8.972 20 20v48z"></path>
+    <path d="M76 230h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 310h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 390h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80-80h40v40h-40z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="github">
+    <path d="M255.968 5.329C114.624 5.329 0 120.401 0 262.353c0 113.536 73.344 209.856 175.104 243.872 12.8 2.368 17.472-5.568 17.472-12.384 0-6.112-.224-22.272-.352-43.712-71.2 15.52-86.24-34.464-86.24-34.464-11.616-29.696-28.416-37.6-28.416-37.6-23.264-15.936 1.728-15.616 1.728-15.616 25.696 1.824 39.2 26.496 39.2 26.496 22.848 39.264 59.936 27.936 74.528 21.344 2.304-16.608 8.928-27.936 16.256-34.368-56.832-6.496-116.608-28.544-116.608-127.008 0-28.064 9.984-51.008 26.368-68.992-2.656-6.496-11.424-32.64 2.496-68 0 0 21.504-6.912 70.4 26.336 20.416-5.696 42.304-8.544 64.096-8.64 21.728.128 43.648 2.944 64.096 8.672 48.864-33.248 70.336-26.336 70.336-26.336 13.952 35.392 5.184 61.504 2.56 68 16.416 17.984 26.304 40.928 26.304 68.992 0 98.72-59.84 120.448-116.864 126.816 9.184 7.936 17.376 23.616 17.376 47.584 0 34.368-.32 62.08-.32 70.496 0 6.88 4.608 14.88 17.6 12.352C438.72 472.145 512 375.857 512 262.353 512 120.401 397.376 5.329 255.968 5.329z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 212" id="gitlab">
+    <path d="M12.3 74.7h54L43.3 3c-1-3.6-6.4-3.6-7.6 0L12.3 74.8z" />
+    <path d="M12.3 74.7L.5 111c-1 3.2 0 6.8 3 8.8l101.6 74-92.5-119z"/>
+    <path d="M105 193.7l-38.6-119h-54l92.7 119z"/>
+    <path d="M105 193.7l38.7-119H66.4l38.7 119z"/>
+    <path d="M105 193.7l38.7-119H198l-93 119z"/>
+    <path d="M198 74.7l11.6 36.2c1 3 0 6.6-3 8.6l-101.5 74 93-119z"/>
+    <path d="M198 74.7h-54.3L167 3c1.2-3.6 6.4-3.6 7.6 0L198 74.8z"/>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="rss">
+    <circle cx="3.429" cy="20.571" r="3.429"></circle>
+    <path d="M11.429 24h4.57C15.999 15.179 8.821 8.001 0 8v4.572c6.302.001 11.429 5.126 11.429 11.428z"></path>
+    <path d="M24 24C24 10.766 13.234 0 0 0v4.571c10.714 0 19.43 8.714 19.43 19.429z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="linkedin">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h362c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zM181 406h-60V196h60zm0-240h-60v-60h60zm210 240h-60V286c0-16.54-13.46-30-30-30s-30 13.46-30 30v120h-60V196h60v11.309C286.719 202.422 296.93 196 316 196c40.691.043 75 36.547 75 79.688zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612" id="to-top">
+    <path d="M604.501 440.509L325.398 134.956c-5.331-5.357-12.423-7.627-19.386-7.27-6.989-.357-14.056 1.913-19.387 7.27L7.499 440.509c-9.999 10.024-9.999 26.298 0 36.323s26.223 10.024 36.222 0l262.293-287.164L568.28 476.832c9.999 10.024 26.222 10.024 36.221 0 9.999-10.023 9.999-26.298 0-36.323z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="carly">
+    <path d="M504.971 239.029L448 182.059V84c0-46.317-37.682-84-84-84h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c19.851 0 36 16.149 36 36v108c0 6.365 2.529 12.47 7.029 16.971L454.059 256l-47.029 47.029A24.002 24.002 0 0 0 400 320v108c0 19.851-16.149 36-36 36h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c46.318 0 84-37.683 84-84v-98.059l56.971-56.971c9.372-9.372 9.372-24.568 0-33.941zM112 192V84c0-19.851 16.149-36 36-36h44c13.255 0 24-10.745 24-24S205.255 0 192 0h-44c-46.318 0-84 37.683-84 84v98.059l-56.971 56.97c-9.373 9.373-9.373 24.568 0 33.941L64 329.941V428c0 46.317 37.682 84 84 84h44c13.255 0 24-10.745 24-24s-10.745-24-24-24h-44c-19.851 0-36-16.149-36-36V320c0-6.365-2.529-12.47-7.029-16.971L57.941 256l47.029-47.029A24.002 24.002 0 0 0 112 192z"></path>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="copy">
+    <path d="M23 2.75A2.75 2.75 0 0 0 20.25 0H8.75A2.75 2.75 0 0 0 6 2.75v13.5A2.75 2.75 0 0 0 8.75 19h11.5A2.75 2.75 0 0 0 23 16.25zM18.25 14.5h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5z"></path>
+    <path d="M8.75 20.5a4.255 4.255 0 0 1-4.25-4.25V2.75c0-.086.02-.166.025-.25H3.75A2.752 2.752 0 0 0 1 5.25v16A2.752 2.752 0 0 0 3.75 24h12a2.752 2.752 0 0 0 2.75-2.75v-.75z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.001 512.001" id="closeme">
+    <path d="M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0 0 14.143 5.857 19.94 19.94 0 0 0 14.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="open-menu">
+    <path d="M492 236H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0-160H20C8.954 76 0 84.954 0 96s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0 320H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="instagram">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id=youtube>
+    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="stackoverflow">
+    <path d="M21 27v-8h3v11H0V19h3v8h18z"></path><path d="M17.1.2L15 1.8l7.9 10.6 2.1-1.6L17.1.2zm3.7 14.7L10.6 6.4l1.7-2 10.2 8.5-1.7 2zM7.2 12.3l12 5.6 1.1-2.4-12-5.6-1.1 2.4zm-1.8 6.8l13.56 1.96.17-2.38-13.26-2.55-.47 2.97zM19 25H5v-3h14v3z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="xing">
+    <path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 55" id="discord">
+    <path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" id="mastodon">
+    <path
+    fill="#ffffff"
+    d="m 15.054695,9.8859583 c -0.22611,1.1632697 -2.02517,2.4363497 -4.09138,2.6830797 -1.0774504,0.12856 -2.1382704,0.24673 -3.2694704,0.19484 -1.84996,-0.0848 -3.30971,-0.44157 -3.30971,-0.44157 0,0.1801 0.0111,0.35157 0.0333,0.51194 0.24051,1.82571 1.81034,1.93508 3.29737,1.98607 1.50088,0.0514 2.8373104,-0.37004 2.8373104,-0.37004 l 0.0617,1.35686 c 0,0 -1.0498104,0.56374 -2.9199404,0.66742 -1.03124,0.0567 -2.3117,-0.0259 -3.80308,-0.42069 -3.23454998,-0.85613 -3.79081998,-4.304 -3.87592998,-7.8024197 -0.026,-1.03871 -0.01,-2.01815 -0.01,-2.83732 0,-3.57732 2.34385998,-4.62587996 2.34385998,-4.62587996 1.18184,-0.54277 3.20976,-0.77101 5.318,-0.7882499985409 h 0.0518 C 9.8267646,0.01719834 11.856025,0.24547834 13.037775,0.78824834 c 0,0 2.34377,1.04855996 2.34377,4.62587996 0,0 0.0294,2.63937 -0.32687,4.47183"/>
+ <path
+    fill="#000000"
+    d="m 12.616925,5.6916583 v 4.3315297 h -1.71607 V 5.8189683 c 0,-0.88624 -0.37289,-1.33607 -1.1187604,-1.33607 -0.82467,0 -1.23799,0.53361 -1.23799,1.58875 v 2.30122 h -1.70594 v -2.30122 c 0,-1.05514 -0.4134,-1.58875 -1.23808,-1.58875 -0.74587,0 -1.11876,0.44983 -1.11876,1.33607 v 4.2042197 h -1.71607 V 5.6916583 c 0,-0.88527 0.22541,-1.58876 0.67817,-2.10922 0.46689,-0.52047 1.07833,-0.78727 1.83735,-0.78727 0.87816,0 1.54317,0.33752 1.98288,1.01267 l 0.42744,0.71655 0.42753,-0.71655 c 0.43961,-0.67515 1.10463,-1.01267 1.9828704,-1.01267 0.75893,0 1.37037,0.2668 1.83735,0.78727 0.45268,0.52046 0.67808,1.22395 0.67808,2.10922"/>
+  </symbol>
+</svg>
+
+<script type="text/javascript" src="/en/js/bundle.ba98dd820e3f5b00fae5ae15848b76ff601514006d975a21d306b7bc92c6d60676d220137e39d2a86ff2696653d0ab03e33a3bf7decf81447c2183bede6c189e.js" integrity="sha512-upjdgg4/WwD65a4VhIt2/2AVFABtl1oh0wa3vJLG1gZ20iATfjnSqG/yaWZT0KsD4zo7997PgUR8IYO&#43;3mwYng==" crossorigin="anonymous"></script>
+  </body>
+</html>

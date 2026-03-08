@@ -6,7 +6,23 @@
     <description>Recent content in atproto on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/atproto/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="/tags/atproto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Technical Comparison of Distributed Social Media Protocols v3</title>
+      <link>/posts/2026-03-08_microblogging-protocols-v3/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2026-03-08_microblogging-protocols-v3/</guid>
+      <description>
+        
+          
+            Hello, I&amp;rsquo;m back for round three of my social media protocol comparisons. I wrote v2 because of some mistakes on my part, although it&amp;rsquo;s been two years since writing it, and it&amp;rsquo;s become a bit out of date. It&amp;rsquo;s also a bit long, with a bunch of explainers and clutter right at the start of it, so for this round, I figured I&amp;rsquo;d get things up to date while shortening the text (or at least moving ramblings to footnotes) and move a lot of the explainers to the end.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>This is Fine: an Interim Microblogging Protocols Update</title>
       <link>/posts/2025-12-07_microblog-protocols-update/</link>
