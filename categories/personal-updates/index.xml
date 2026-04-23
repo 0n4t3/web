@@ -16,7 +16,7 @@
       <description>
         
           
-            So, I guess there goes 2025. I’m a bit late on the wrap up post, though as much as I’d like to blame a cold I’ve been dealing with for a while (lol I wrote that several days ago when drafting, and I&amp;rsquo;ve still just now gotten around to posting my finished draft), it’s mostly just laziness. All things considered, it’s been a pretty eventful year for myself - namely that I left my job and returned to my home state.
+            &lt;p&gt;So, I guess there goes 2025. I’m a bit late on the wrap up post, though as much as I’d like to blame a cold I’ve been dealing with for a while (lol I wrote that several days ago when drafting, and I&amp;rsquo;ve still just now gotten around to posting my finished draft), it’s mostly just laziness. All things considered, it’s been a pretty eventful year for myself - namely that I left my job and returned to my home state. It’s been a little busy, and finding local work has been a slog, but all things considered it’s been a good year (and a very extended vacation has been nice).&lt;/p&gt;
           
           
         
@@ -32,8 +32,262 @@
       <description>
         
           
-            In 2023 Robb Knight started the defaults trend, covering what people used as their default apps for specific purposes. I did a 2023 version, and while I mentioned planning to do a late 2024 version in my 2024 year end wrap up post, I never wound up getting to it. I&amp;rsquo;ve got a 2025 edition of my default apps below, with changes in bold.
-PC Tablet Phone Mail Client Proton Web N/A Proton App Mail Server ^ ^ ^ Notes Joplin Joplin Joplin Tasks N/A N/A Tasks (org.
+            &lt;p&gt;In 2023 &lt;a href=&#34;https://defaults.rknight.me/&#34;&gt;Robb Knight started the defaults trend&lt;/a&gt;, covering what people used as their default apps for specific purposes. I did a &lt;a href=&#34;/posts/2023-11-14_defaults/&#34;&gt;2023 version&lt;/a&gt;, and while I mentioned planning to do a late 2024 version in my 2024 year end wrap up post, I never wound up getting to it. I&amp;rsquo;ve got a 2025 edition of my default apps below, with changes in &lt;strong&gt;bold&lt;/strong&gt;.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;PC&lt;/th&gt;
+          &lt;th&gt;Tablet&lt;/th&gt;
+          &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Mail Client&lt;/td&gt;
+          &lt;td&gt;Proton Web&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Proton App&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Mail Server&lt;/td&gt;
+          &lt;td&gt;^&lt;/td&gt;
+          &lt;td&gt;^&lt;/td&gt;
+          &lt;td&gt;^&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Notes&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Tasks&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Tasks (org.tasks Android App)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Photo Shooting&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;OpenCam, G Cam&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Photo Management&lt;/td&gt;
+          &lt;td&gt;File Manager&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;AOSP Gallery&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Calendar&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Fossify Calendar&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Cloud Storage&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;AWS, Proton, Syncthing&lt;/td&gt;
+          &lt;td&gt;Syncthing&lt;/td&gt;
+          &lt;td&gt;Proton, Syncthing&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RSS&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;FreshRSS&lt;/td&gt;
+          &lt;td&gt;FreshRSS&lt;/td&gt;
+          &lt;td&gt;FreshRSS (via Read You App)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Contacts&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;AOSP Contacts&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Browser&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Brave &amp;amp; LibreWolf&lt;/td&gt;
+          &lt;td&gt;Brave&lt;/td&gt;
+          &lt;td&gt;Brave &amp;amp; Fennec&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Chat&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Google Chat (web)&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Beeper, Signal, Simplex&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Bookmarks&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Brave Sync&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Brave Sync&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Read It Later&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;SingleFile Plugin + Syncthing&lt;/td&gt;
+          &lt;td&gt;SingleFile Plugin + Syncthing&lt;/td&gt;
+          &lt;td&gt;Brave’s MHTML or Single File Plugin + Syncthing&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Word Processing&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Abiword&lt;/td&gt;
+          &lt;td&gt;Abiword&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Speedsheets&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Presentations&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Shopping Lists&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Meal Planning&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Budgeting&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;MoneyWallet App&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;News&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;FreshRSS&lt;/td&gt;
+          &lt;td&gt;FreshRSS&lt;/td&gt;
+          &lt;td&gt;FreshRSS (via Read You)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Music&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Clementine&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Podcasts/Audiobooks&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Phone via Bluetooth&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Audio Anchor&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Password Management&lt;/td&gt;
+          &lt;td&gt;Keepass&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Keepass&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;my-own-custom-additions-to-the-prompt&#34;&gt;My own custom additions to the prompt:&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;PC&lt;/th&gt;
+          &lt;th&gt;Tablet&lt;/th&gt;
+          &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Operating System&lt;/td&gt;
+          &lt;td&gt;Debian (+ KDE)&lt;/td&gt;
+          &lt;td&gt;Debian (+ Gnome)&lt;/td&gt;
+          &lt;td&gt;GrapheneOS&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2FA&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Agis&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Ebook Reader&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Calibre&lt;/td&gt;
+          &lt;td&gt;Librera (via Waydroid)&lt;/td&gt;
+          &lt;td&gt;Librera&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Microblogging Protocols&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Nostrudel (Nostr) - Friendica Web (ActivityPub &amp;amp; more)&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Amythest (Nostr) - Friendica PWA (ActivityPub &amp;amp; more)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;IRC&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Hexchat&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Photo Editor&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Gimp + Darktable&lt;/td&gt;
+          &lt;td&gt;Darktable&lt;/td&gt;
+          &lt;td&gt;Snapseed&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;SMS&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Flip Phone&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Text Editor&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Emacs, Kate, VS Code&lt;/td&gt;
+          &lt;td&gt;Emacs&lt;/td&gt;
+          &lt;td&gt;Nano (via Termux)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Terminal&lt;/td&gt;
+          &lt;td&gt;Konsole&lt;/td&gt;
+          &lt;td&gt;Gnome Terminal&lt;/td&gt;
+          &lt;td&gt;Termux&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;TTS&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Festival&lt;/td&gt;
+          &lt;td&gt;e-speak&lt;/td&gt;
+          &lt;td&gt;Google Voice Synthesis&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Virtual Keyboard&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Gnome Keyboard&lt;/td&gt;
+          &lt;td&gt;Futo Keyboard&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;YouTube &amp;amp; Other Platforms&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;FreshRSS + FreeTube or a Private Tab&lt;/td&gt;
+          &lt;td&gt;FreshRSS + FreeTube or a Private Tab&lt;/td&gt;
+          &lt;td&gt;FreshRSS + Grayjay or a Private Tab&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Local LLMs&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LM Studio&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;PocketPal&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Local Translation&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LM Studio&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;G Translate, PocketPal, Amythest&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;why-i-changed-specific-things&#34;&gt;Why I changed specific things:&lt;/h3&gt;
+&lt;p&gt;I haven&amp;rsquo;t actually changed my &lt;strong&gt;Notes App&lt;/strong&gt; yet, but I might in the future. Before Joplin, I used to keep a directory of markdown files which I&amp;rsquo;d sync using Syncthing. This was before I had any sort of server, so both my phone and PC would have to be online and running Syncthing to sync the files. Joplin fixed that by letting me import the markdown directory, then sync to a Dropbox account using E2E encryption. I later set up Nextcloud, then replaced it with a server running FreshRSS &amp;amp; Syncthing. With an instance of Syncthing running 24/7, I can get the same instant sync regardless of what other devices are online, as well as sync other files (e.g. scanned notebook pages as PDFs) in addition to markdown files. Joplin can both import &amp;amp; export notebooks as markdown directories, so there&amp;rsquo;s no real cost of giving my new (old) setup another try.&lt;/p&gt;
           
           
         
@@ -49,8 +303,8 @@ PC Tablet Phone Mail Client Proton Web N/A Proton App Mail Server ^ ^ ^ Notes Jo
       <description>
         
           
-            I was thinking about making a personal update, then saw a post on Joelchrono’s blog about the 10 useless facts about me challenge, so I thought I’d combine both of those into one post.
-Fairly recently, I left my job to relocate back to my home state of New York, and have been looking for work more locally. I kind of expected work to be a bit hard to come by, and planned accordingly, but that still doesn’t make the job search any less of a slog.
+            &lt;p&gt;&lt;em&gt;I was thinking about making a personal update, then saw a post on Joelchrono’s blog about the &lt;a href=&#34;https://joelchrono.xyz/blog/when-blogging-topics-popup-again/&#34;&gt;10 useless facts about me&lt;/a&gt; challenge, so I thought I’d combine both of those into one post.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Fairly recently, I left my job to relocate back to my home state of New York, and have been looking for work more locally. I kind of expected work to be a bit hard to come by, and planned accordingly, but that still doesn’t make the job search any less of a slog. If by any chance there&amp;rsquo;s anyone hiring - either in WNY or hiring for remote positions - hit me up. I’ve got experience with the standard Microsoft stack (both your local DC setup, as well as the MS cloud), Linux, VMware, and networking equipment (nearly exclusively Cisco).&lt;/p&gt;
           
           
         
@@ -66,7 +320,7 @@ Fairly recently, I left my job to relocate back to my home state of New York, an
       <description>
         
           
-            Another wild and wacky year is wrapping up, and with it the customary year end wrap up/retrospective. This year I posted a total of 11 posts1, two being update/revised posts and nine standalone posts. My longest post (by far) was my revised microblogging comparison post at 15,411 words2 3, and my shortest was my pickles/sauerkraut recipe post at 722 words (the only post under 1k words). My average post length was 4991 words, my median post length being a similar 5169 words.
+            &lt;p&gt;Another wild and wacky year is wrapping up, and with it the customary year end wrap up/retrospective. This year I posted a total of 11 posts&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, two being update/revised posts and nine standalone posts. My longest post (by far) was my revised microblogging comparison post at 15,411 words&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;, and my shortest was my pickles/sauerkraut recipe post at 722 words (the only post under 1k words). My average post length was 4991 words, my median post length being a similar 5169 words.&lt;/p&gt;
           
           
         
@@ -82,7 +336,7 @@ Fairly recently, I left my job to relocate back to my home state of New York, an
       <description>
         
           
-            It is (or was at least) a new year and I thought I would reflect on my 2023 posts and talk about what kind of content I follow. I originally thought about doing this on Dec 31st, but I tend to work pretty slowly on posts so here I am whenever this actually gets finished and goes live. Since June I posted a total of thirteen posts, two of which were more generic updates (a quick first post and a notice about a URL change), which leaves me a little under two posts per month.
+            &lt;p&gt;It is (or was at least) a new year and I thought I would reflect on my 2023 posts and talk about what kind of content I follow. I originally thought about doing this on Dec 31st, but I tend to work pretty slowly on posts so here I am whenever this actually gets finished and goes live. Since June I posted a total of thirteen posts, two of which were more generic updates (a quick first post and a notice about a URL change), which leaves me a little under two posts per month. My first and last &amp;lsquo;real&amp;rsquo; posts were both complaining about the state of tech, &lt;a href=&#34;https://nate.mecca1.net/posts/2023-07-24_cloud-oss/&#34;&gt;Microsoft&amp;rsquo;s Windows 365&lt;/a&gt; and &lt;a href=&#34;https://nate.mecca1.net/posts/2023-12-27_mozillasbrink/&#34;&gt;The State of Firefox&lt;/a&gt; respectively, and the rest were all about various tech topics that interest me or that I&amp;rsquo;d been working on/using in some way.&lt;/p&gt;
           
           
         
@@ -98,8 +352,10 @@ Fairly recently, I left my job to relocate back to my home state of New York, an
       <description>
         
           
-            TLDR Even though it&amp;rsquo;s only been three months since I created my blog here, I&amp;rsquo;m going to change the domain from www.mecca1.net to nate.mecca1.net instead. Nothing&amp;rsquo;s should break, www.mecca1.net will forward to nate.mecca1.net for now. Still, if you&amp;rsquo;re following me through RSS or you have my site bookmarked it might be worth swapping out the URL.
-Longer Update My domain predates my blog by about six years, so when I created my blog a few months ago I opted to just use the www subdomain.
+            &lt;h2 id=&#34;tldr&#34;&gt;TLDR&lt;/h2&gt;
+&lt;p&gt;Even though it&amp;rsquo;s only been three months since I created my blog here, I&amp;rsquo;m going to change the domain from &lt;a href=&#34;https://www.mecca1.net&#34;&gt;www.mecca1.net&lt;/a&gt; to nate.mecca1.net instead. Nothing&amp;rsquo;s should break, &lt;a href=&#34;https://www.mecca1.net&#34;&gt;www.mecca1.net&lt;/a&gt; will forward to nate.mecca1.net for now. Still, if you&amp;rsquo;re following me through RSS or you have my site bookmarked it might be worth swapping out the URL.&lt;/p&gt;
+&lt;h2 id=&#34;longer-update&#34;&gt;Longer Update&lt;/h2&gt;
+&lt;p&gt;My domain predates my blog by about six years, so when I created my blog a few months ago I opted to just use the www subdomain. Since I use my domain for multiple things I didn&amp;rsquo;t like the idea of using the root record for my blog and opted to leave it blank. The best way to describe my thought process was along the lines that my domain is my own corner of the internet that can be built in any way I want, and that by leaving the root domain blank I can have it branch out in a whole bunch of different ways instead of being one main thing and a few spin-offs. &amp;ldquo;www&amp;rdquo; is also fitting as it would be the &amp;ldquo;world wide web&amp;rdquo; facing portion it.&lt;/p&gt;
           
           
         
@@ -115,7 +371,7 @@ Longer Update My domain predates my blog by about six years, so when I created m
       <description>
         
           
-            I think I&amp;rsquo;m going to start a blog here. I got this domain with some DNS records just collecting dust, and have an interest in writing stuff casually. I figure I&amp;rsquo;ll write about projects I work on or opinions about things in my field whenever something interests me enough to talk about it. I probably won&amp;rsquo;t write too much about myself personally though, if you&amp;rsquo;re reading this you probably A) know me already and somehow got roped into reading this, B) we&amp;rsquo;re working on some sort of project and you&amp;rsquo;re interested in reading about my writing about it, or C) find my writing about something interesting or useful (the latter being the most unlikely).
+            &lt;p&gt;I think I&amp;rsquo;m going to start a blog here. I got this domain with some DNS records just collecting dust, and have an interest in writing stuff casually. I figure I&amp;rsquo;ll write about projects I work on or opinions about things in my field whenever something interests me enough to talk about it. I probably won&amp;rsquo;t write too much about myself personally though, if you&amp;rsquo;re reading this you probably A) know me already and somehow got roped into reading this, B) we&amp;rsquo;re working on some sort of project and you&amp;rsquo;re interested in reading about my writing about it, or C) find my writing about something interesting or useful (the latter being the most unlikely). In any of those cases you probably aren&amp;rsquo;t interested in what I had for breakfast.&lt;/p&gt;
           
           
         

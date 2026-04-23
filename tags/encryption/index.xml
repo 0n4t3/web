@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>encryption on An Untitled Blog</title>
+    <title>Encryption on An Untitled Blog</title>
     <link>/tags/encryption/</link>
-    <description>Recent content in encryption on An Untitled Blog</description>
+    <description>Recent content in Encryption on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/encryption/index.xml" rel="self" type="application/rss+xml" />
@@ -16,9 +16,11 @@
       <description>
         
           
-            Update 11/25: I was made aware that Signal has some proprietary anti-spam code and added the TLDR.
-A More Technical TLDR I never know how much jargon I should include or how much I should explain, and as long as I&amp;rsquo;m writing I&amp;rsquo;m enjoying myself meaning I&amp;rsquo;ve been all over the place. But here&amp;rsquo;s a shortened version for those familiar with encryption.
-A vanilla implementation of the Signal protocol relies on public key infrastructure to perform a handshake between devices.
+            &lt;p&gt;&lt;em&gt;Update 11/25: I was made aware that Signal has some proprietary anti-spam code and added the TLDR.&lt;/em&gt;&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;&lt;strong&gt;A More Technical TLDR&lt;/strong&gt;&lt;/summary&gt;
+  &lt;p&gt;I never know how much jargon I should include or how much I should explain, and as long as I&amp;rsquo;m writing I&amp;rsquo;m enjoying myself meaning I&amp;rsquo;ve been all over the place. But here&amp;rsquo;s a shortened version for those familiar with encryption.&lt;/p&gt;
+&lt;p&gt;A vanilla implementation of the Signal protocol relies on public key infrastructure to perform a handshake between devices. As you may know, a public key server can certify that any device/key belongs to an account if you have nothing more to go on than a phone number. Furthermore, at any point the server may say keys have changed and direct you to start communicating with a device other than the one you expect.&lt;/p&gt;
           
           
         

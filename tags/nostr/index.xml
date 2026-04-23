@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nostr on An Untitled Blog</title>
+    <title>Nostr on An Untitled Blog</title>
     <link>/tags/nostr/</link>
-    <description>Recent content in nostr on An Untitled Blog</description>
+    <description>Recent content in Nostr on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="/tags/nostr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="/tags/nostr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NMail is Neat</title>
+      <link>/posts/2026-04-23_nmail-is-neat/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2026-04-23_nmail-is-neat/</guid>
+      <description>
+        
+          
+            &lt;p&gt;I&amp;rsquo;ve written a lot of longer blog posts lately, time to get back into the classic &amp;ldquo;Nate talks about the thing he just read about and finds neat.&amp;rdquo; So, without further ado, I just read about &lt;a href=&#34;https://nostrmail.org/&#34;&gt;NMail&lt;/a&gt; (&lt;a href=&#34;https://github.com/nogringo/nostr-mail-client&#34;&gt;github&lt;/a&gt;) - and I think it&amp;rsquo;s neat. In fact, I think it&amp;rsquo;s actually one of the most interesting decentralized communication tools I&amp;rsquo;ve seen in a while.&lt;/p&gt;
+&lt;h3 id=&#34;email-is-still-king&#34;&gt;Email is still king&lt;/h3&gt;
+&lt;p&gt;Email is still the king of communication - according to Wikipedia, 50 million non-spam emails are sent every day. Whether it&amp;rsquo;s a contact feature for a blog, the need to send a (small) file, or helping setup a church website - email is usually my go to because of its ubiquity. Unlike something like messengers, which vary a lot between different communities, nationalities, and interests; you&amp;rsquo;ll have a hard time finding somebody without an email address. Even if it&amp;rsquo;s becoming a little less popular in my generation (gen z) and lower - probably because companies like to spam like no tomorrow, and I doubt most people use filters on their inbox - it&amp;rsquo;s still universal across all age groups as well. Not to mention it&amp;rsquo;s, unlike most messengers or social media platforms, an open protocol where you can feasibly own&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; your own identifier and server&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>A Technical Comparison of Distributed Social Media Protocols v3</title>
       <link>/posts/2026-03-08_microblogging-protocols-v3/</link>
@@ -16,8 +34,8 @@
       <description>
         
           
-            Update 3/14/2026: I&amp;rsquo;ve updated the post to reflect that porting Nomadic Identities to Activity Pub is still ongoing. Shoutout to silverpill@mitra.social. Also, less than 24 hours posting this, BlueSky CEO Jay Grabber has stepped down from her roll. A change in leadership may change the state of the platform, which may cause this post to be somewhat inaccurate in the future.
-Hello, I&amp;rsquo;m back for round three of my social media protocol comparisons.
+            &lt;p&gt;&lt;em&gt;Update 3/14/2026: I&amp;rsquo;ve updated the post to reflect that porting Nomadic Identities to Activity Pub is still ongoing. Shoutout to silverpill@mitra.social. Also, less than 24 hours posting this, BlueSky CEO Jay Grabber has stepped down from her roll. A change in leadership may change the state of the platform, which may cause this post to be somewhat inaccurate in the future.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Hello, I&amp;rsquo;m back for round three of my social media protocol comparisons. I wrote v2 because of some mistakes on my part, although it&amp;rsquo;s been two years since writing it, and it&amp;rsquo;s become a bit out of date. It&amp;rsquo;s also a bit long, with a bunch of explainers and clutter right at the start of it, so for this round, I figured I&amp;rsquo;d get things up to date while shortening the text (or at least moving ramblings to footnotes) and move a lot of the explainers to the end.&lt;/p&gt;
           
           
         
@@ -33,8 +51,15 @@ Hello, I&amp;rsquo;m back for round three of my social media protocol comparison
       <description>
         
           
-            As is customary on my microblogging posts, let&amp;rsquo;s get us started with an original meme. Also, if you&amp;rsquo;d like to read my previous Microblogging Protocols compared posts, you can read v1 here and v2 here.
-It&amp;rsquo;s been a little over a year since I made my updated microblogging protocols comparison. Since then a few things have happened, and my previous could use some trimming. In the spirit of keeping things shorter (and keeping the comparison v3 post relevant longer), I figured I&amp;rsquo;d split the post into two parts: this one, which includes random updates and things that happened over the last year or so - and a second one, &amp;ldquo;Microblogging Protocols Compared v3&amp;rdquo; which will be a more streamlined protocol comparison.
+            &lt;p&gt;&lt;em&gt;As is customary on my microblogging posts, let&amp;rsquo;s get us started with an original meme.&lt;/em&gt;
+&lt;div&gt;
+    &lt;video width=&#34;720&#34; height=&#34;480&#34; controls&gt;
+  &lt;source src=&#34;/img/protocol-meme-3.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Also, if you&amp;rsquo;d like to read my previous Microblogging Protocols compared posts, you can read &lt;a href=&#34;/posts/2024-01-30_microblogging-protocols/&#34;&gt;v1 here&lt;/a&gt; and &lt;a href=&#34;/posts/2024-08-11_microbloggingv2/&#34;&gt;v2 here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s been a little over a year since I made my updated microblogging protocols comparison. Since then a few things have happened, and my previous could use some trimming. In the spirit of keeping things shorter (and keeping the comparison v3 post relevant longer), I figured I&amp;rsquo;d split the post into two parts: this one, which includes random updates and things that happened over the last year or so - and a second one, &amp;ldquo;Microblogging Protocols Compared v3&amp;rdquo; which will be a more streamlined protocol comparison. Anyway, as you can probably tell by the meme, the microblogging protocols have been going through a rough patch lately - though it&amp;rsquo;s not all bad news.&lt;/p&gt;
           
           
         
@@ -50,15 +75,18 @@ It&amp;rsquo;s been a little over a year since I made my updated microblogging p
       <description>
         
           
-            A based design that makes a web that&amp;rsquo;s true
-ICANNs and NATs embrace shall be no more
-Behind a Pi or in the cloud for you
-We use that tool be I2P or Tor
-Come join a world of speech that can flow free
-The words by truths of math they shall be bound
-A power built right in that&amp;rsquo;s DHT
-Identity by key pairs holds its ground
-IPFS a poggers web design
+            &lt;p&gt;A based design that makes a web that&amp;rsquo;s true&lt;br&gt;
+ICANNs and NATs embrace shall be no more&lt;br&gt;
+Behind a Pi or in the cloud for you&lt;br&gt;
+We use that tool be I2P or Tor&lt;/p&gt;
+&lt;p&gt;Come join a world of speech that can flow free&lt;br&gt;
+The words by truths of math they shall be bound&lt;br&gt;
+A power built right in that&amp;rsquo;s DHT&lt;br&gt;
+Identity by key pairs holds its ground&lt;/p&gt;
+&lt;p&gt;IPFS a poggers web design&lt;br&gt;
+ID by content not by where it is&lt;br&gt;
+Defi domain to own your name online&lt;br&gt;
+A world that&amp;rsquo;s free of gov and free of biz&lt;/p&gt;
           
           
         
@@ -74,7 +102,16 @@ IPFS a poggers web design
       <description>
         
           
-            POV: You&amp;rsquo;re a professional dev watching me talk about vibe coding: Your browser does not support the video tag. I&amp;rsquo;m not exactly a stranger to using AI code, parts of nipy-bridge like the part that handles posts based on size was written by Chat GPT via Duck.AI, and I regularly use a Mixtral-Dolphin written bash script to convert files with avifenc. Recently, however, I came across Bookstr by MK Fain, which is being vibe coded.
+            &lt;p&gt;POV: You&amp;rsquo;re a professional dev watching me talk about vibe coding:
+&lt;div&gt;
+    &lt;video width=&#34;480&#34; height=&#34;360&#34; controls&gt;
+  &lt;source src=&#34;/img/cringe.mp4&#34; type=&#34;video/mp4&#34;&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I&amp;rsquo;m not exactly a stranger to using AI code, parts of &lt;a href=&#34;https://github.com/0n4t3/nipy-bridge&#34;&gt;nipy-bridge&lt;/a&gt; like the part that handles posts based on size was written by Chat GPT via Duck.AI, and I regularly use a Mixtral-Dolphin written bash script to convert files with avifenc. Recently, however, I came across &lt;a href=&#34;https://bookstr.xyz/&#34;&gt;Bookstr&lt;/a&gt; by MK Fain, which is being vibe coded. It&amp;rsquo;s a site that takes books people are talking about on Nostr and combines them with OpenLibrary data to offer reading material recommendations and reviews. The site alone is a cool concept, and the fact it was vibe coded and working with a lot of moving parts made me think I need to check out how good AI code has gotten. So yeah, here I chronicle my vibe coding adventure.&lt;/p&gt;
           
           
         
@@ -90,8 +127,10 @@ IPFS a poggers web design
       <description>
         
           
-            Update: September 20th, 2024: I was incorrect regarding AT&amp;rsquo;s (BlueSky) inability to fully delete things, the protocol DOES support fully deleting posts from the user&amp;rsquo;s repo and I&amp;rsquo;ve updated the post to reflect that. Read more. Big thanks to Ryan for providing the info.
-Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) - in keeping tradition with the original post - Bluesky has managed to change rapidly shortly after I finished this.
+            &lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Update: September 20th, 2024:&lt;/strong&gt;
+I was incorrect regarding AT&amp;rsquo;s (BlueSky) inability to fully delete things, the protocol DOES support fully deleting posts from the user&amp;rsquo;s repo and I&amp;rsquo;ve updated the post to reflect that. &lt;a href=&#34;https://atproto.com/specs/repository&#34;&gt;Read more&lt;/a&gt;. Big thanks to &lt;a href=&#34;https://snarfed.org/&#34;&gt;Ryan&lt;/a&gt; for providing the info.&lt;/p&gt;
+&lt;p&gt;Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) - in keeping tradition with the original post - Bluesky has managed to change rapidly shortly after I finished this. It&amp;rsquo;s good news again, in this case a huge influx of users, many from Brazil after Twitter/X was blocked. Additionally, I also recently saw &lt;a href=&#34;https://frontpage.fyi/&#34;&gt;Frontpage&lt;/a&gt;, an AT based link aggregator. In the post I mention a few times hoping more will be built on AT now that it&amp;rsquo;s opened up, and it appears exactly that is happening.&lt;/p&gt;
           
           
         
@@ -107,8 +146,9 @@ Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) 
       <description>
         
           
-            So after two very long posts, one complaining about web browsers and one comparing the three big non-centralized social media protocols, I thought about writing two shorter posts about random things (hats and making sour krout specifically). However, between then and now stuffs happened and I thought I would make an anthology post with three different mini topics I wanted to share.
-I made a client So yeah, I made a client that can post to Nostr, Activity Pub, and BlueSky (hopefully all of AT once it&amp;rsquo;s fully opened).
+            &lt;p&gt;So after two very long posts, one complaining about web browsers and one comparing the three big non-centralized social media protocols, I thought about writing two shorter posts about random things (hats and making sour krout specifically). However, between then and now stuffs happened and I thought I would make an anthology post with three different mini topics I wanted to share.&lt;/p&gt;
+&lt;h2 id=&#34;i-made-a-client&#34;&gt;I made a client&lt;/h2&gt;
+&lt;p&gt;So yeah, I made a client that can post to Nostr, Activity Pub, and BlueSky (hopefully all of AT once it&amp;rsquo;s fully opened). It&amp;rsquo;s a bit hacky, and written in Python using dependencies that do all the heavy lifting, but it works. It can broadcast the same post to all three, post different posts to different protocols, or skip posting to a protocol altogether. There&amp;rsquo;s a version that uses Keyring to have your OS manage your credentials instead of baking them into a script, and it&amp;rsquo;ll run on just about everything. I&amp;rsquo;m not a programmer by trade, and it&amp;rsquo;s been a very long time since I wrote any code for public consumption, so I&amp;rsquo;m excited to get it working and share it. Apparently I&amp;rsquo;m the second person to do this, as shortly under two weeks before I released mine somebody else made Nootti, so if you like this idea, are on IOS, and want something more polished that is also an option as well.&lt;/p&gt;
           
           
         
@@ -124,9 +164,10 @@ I made a client So yeah, I made a client that can post to Nostr, Activity Pub, a
       <description>
         
           
-            Note: This post is out of date, here&amp;rsquo;s a more up to date version
-Update August 5th 2024
-I have some good and bad news regarding this post. First, I made two mistakes. AT crawlers are not in fact crawlers, they are called relays. Also, shared inboxes are actually part of the Activity Pub W3C standard as apposed to hacky additions to the protocol by third party servers. I was wrong about Activity Pub servers sending multiple messages to the same server remote to update it about a single post.
+            &lt;p&gt;Note: This post is out of date, &lt;a href=&#34;https://nate.mecca1.net/posts/2024-08-11_microbloggingv2/&#34;&gt;here&amp;rsquo;s a more up to date version&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Update August 5th 2024&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I have some good and bad news regarding this post. First, I made two mistakes. AT crawlers are not in fact crawlers, they are called relays. Also, shared inboxes are actually part of the Activity Pub W3C standard as apposed to hacky additions to the protocol by third party servers. I was wrong about Activity Pub servers sending multiple messages to the same server remote to update it about a single post.&lt;/p&gt;
           
           
         
@@ -142,7 +183,7 @@ I have some good and bad news regarding this post. First, I made two mistakes. A
       <description>
         
           
-            I have recently been re-dipping my toes into Nostr (tried it a while back just to experiment with it but never really stuck around), and so far it&amp;rsquo;s become my preferred microblogging platform. There&amp;rsquo;s a handful of reasons surrounding that, both in the protocol itself and what&amp;rsquo;s being built up around it, and I think it has a lot of promise that merits its very quick growth. Today I thought I would go over why I am a fan of it, and why I think it might be worth checking out if you&amp;rsquo;re interested in a more decentralized web.
+            &lt;p&gt;I have recently been re-dipping my toes into Nostr (tried it a while back just to experiment with it but never really stuck around), and so far it&amp;rsquo;s become my preferred microblogging platform. There&amp;rsquo;s a handful of reasons surrounding that, both in the protocol itself and what&amp;rsquo;s being built up around it, and I think it has a lot of promise that merits its very quick growth. Today I thought I would go over why I am a fan of it, and why I think it might be worth checking out if you&amp;rsquo;re interested in a more decentralized web.&lt;/p&gt;
           
           
         

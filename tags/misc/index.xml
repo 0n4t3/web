@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>misc on An Untitled Blog</title>
+    <title>Misc on An Untitled Blog</title>
     <link>/tags/misc/</link>
-    <description>Recent content in misc on An Untitled Blog</description>
+    <description>Recent content in Misc on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/misc/index.xml" rel="self" type="application/rss+xml" />
@@ -16,8 +16,8 @@
       <description>
         
           
-            I was thinking about making a personal update, then saw a post on Joelchrono’s blog about the 10 useless facts about me challenge, so I thought I’d combine both of those into one post.
-Fairly recently, I left my job to relocate back to my home state of New York, and have been looking for work more locally. I kind of expected work to be a bit hard to come by, and planned accordingly, but that still doesn’t make the job search any less of a slog.
+            &lt;p&gt;&lt;em&gt;I was thinking about making a personal update, then saw a post on Joelchrono’s blog about the &lt;a href=&#34;https://joelchrono.xyz/blog/when-blogging-topics-popup-again/&#34;&gt;10 useless facts about me&lt;/a&gt; challenge, so I thought I’d combine both of those into one post.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Fairly recently, I left my job to relocate back to my home state of New York, and have been looking for work more locally. I kind of expected work to be a bit hard to come by, and planned accordingly, but that still doesn’t make the job search any less of a slog. If by any chance there&amp;rsquo;s anyone hiring - either in WNY or hiring for remote positions - hit me up. I’ve got experience with the standard Microsoft stack (both your local DC setup, as well as the MS cloud), Linux, VMware, and networking equipment (nearly exclusively Cisco).&lt;/p&gt;
           
           
         
@@ -33,8 +33,32 @@ Fairly recently, I left my job to relocate back to my home state of New York, an
       <description>
         
           
-            I&amp;rsquo;ve made three long posts about decentralized social media, followed by making a client that works on decentralized social media, so I&amp;rsquo;ll call all that good for now and talk about making some pickles and sourkraut. And not just canned cucumbers and cabbage, but the actual fermented stuff, which is surprisingly easy to make.
-So, the lazy way to make Sourkraut: Boil some water on the stove or in a kettle (makes sure it&amp;rsquo;s sterile and cuts out some of the chlorine if you&amp;rsquo;re on city water), then let it start to cool until it&amp;rsquo;s about room temperature Cut up some cabbage.
+            &lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;A photo of some sourkrout that had been fermenting for a few days at the time of taking the photo&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;/img/sourkrout.avif&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve made three long posts about decentralized social media, followed by making a client that works on decentralized social media, so I&amp;rsquo;ll call all that good for now and talk about making some pickles and sourkraut. And not just canned cucumbers and cabbage, but the actual fermented stuff, which is surprisingly easy to make.&lt;/p&gt;
           
           
         
@@ -50,8 +74,175 @@ So, the lazy way to make Sourkraut: Boil some water on the stove or in a kettle 
       <description>
         
           
-            I ran across a neat trend of sharing your default apps, and a collection of posts doing so. It&amp;rsquo;s made some interesting reads and I thought I would join in and post my own favorites.
-My Devices I have three different devices: a PC running Debian, a tablet I just got setup running Debian and a Waydroid container, and a phone running the Graphene fork of Android. PC Tablet Phone 📨 Mail Client Proton Web Proton App Proton App 📮 Mail Server ^ ^ ^ 📝 Notes Joplin Joplin Joplin ✅ To-Do n/a n/a Tasks (F-Droid) 📷 Photo Shooting n/a n/a AOSP Camera 🟦 Photo Management File Manager n/a AOSP Gallery 📆 Calendar n/a n/a Simple Calendar 📁 Cloud File Storage IceDrive (web) IceDrive (web) IceDrive (PWA) 📖 RSS Nextcloud (web) Nextcloud (web) Nextcloud News App 🙍🏻‍♂️ Contacts n/a n/a AOSP Contacts 🌐 Browser LibreWolf Brave Fennec Firefox 💬 Chat Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web) Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web) Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web) 🔖 Bookmarks Unsynced Unsynced Unsynced 📑 Read It Later PDFs w/ Syncthing PDFs w/ Syncthing PDFs w/ Syncthing 📜 Word Processing LibreOffice LibreOffice n/a 📈 Spreadsheets LibreOffice n/a n/a 📊 Presentations LibreOffice n/a n/a 🛒 Shopping Lists Joplin Joplin Joplin 🍴 Meal Planning n/a n/a n/a 💰 Budgeting and Personal Finance n/a n/a MoneyWallet 📰 News Nextcloud (Web) Nextcould (Web) Nextcloud News App 🎵 Music VLC VLC Innertune 🎤 Podcasts VLC VLC VLC 🔐 Password Management Keepass Keepass Keepass The above is the pre-built list, though for my post I thought I would add on a few extras I like:
+            &lt;p&gt;I ran across a neat trend of &lt;a href=&#34;https://defaults.rknight.me/&#34;&gt;sharing your default apps, and a collection of posts doing so&lt;/a&gt;. It&amp;rsquo;s made some interesting reads and I thought I would join in and post my own favorites.&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;My Devices&lt;/summary&gt;
+  &lt;em&gt;I have three different devices: a PC running Debian, a tablet &lt;a href=&#34;https://nate.mecca1.net/posts/2023-11-05_tablets-1/&#34;&gt;I just got setup&lt;/a&gt; running Debian and a Waydroid container, and a phone running the Graphene fork of Android.&lt;/em&gt;
+&lt;/details&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;PC&lt;/td&gt;
+          &lt;td&gt;Tablet&lt;/td&gt;
+          &lt;td&gt;Phone&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📨 Mail Client&lt;/td&gt;
+          &lt;td&gt;Proton Web&lt;/td&gt;
+          &lt;td&gt;Proton App&lt;/td&gt;
+          &lt;td&gt;Proton App&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📮 Mail Server&lt;/td&gt;
+          &lt;td&gt;^&lt;/td&gt;
+          &lt;td&gt;^&lt;/td&gt;
+          &lt;td&gt;^&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📝 Notes&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;✅ To-Do&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;Tasks (F-Droid)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📷 Photo Shooting&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;AOSP Camera&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🟦 Photo Management&lt;/td&gt;
+          &lt;td&gt;File Manager&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;AOSP Gallery&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📆 Calendar&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;Simple Calendar&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📁 Cloud File Storage&lt;/td&gt;
+          &lt;td&gt;IceDrive (web)&lt;/td&gt;
+          &lt;td&gt;IceDrive (web)&lt;/td&gt;
+          &lt;td&gt;IceDrive (PWA)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📖 RSS&lt;/td&gt;
+          &lt;td&gt;Nextcloud (web)&lt;/td&gt;
+          &lt;td&gt;Nextcloud (web)&lt;/td&gt;
+          &lt;td&gt;Nextcloud News App&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🙍🏻‍♂️ Contacts&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;AOSP Contacts&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🌐 Browser&lt;/td&gt;
+          &lt;td&gt;LibreWolf&lt;/td&gt;
+          &lt;td&gt;Brave&lt;/td&gt;
+          &lt;td&gt;Fennec Firefox&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;💬 Chat&lt;/td&gt;
+          &lt;td&gt;Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web)&lt;/td&gt;
+          &lt;td&gt;Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web)&lt;/td&gt;
+          &lt;td&gt;Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🔖 Bookmarks&lt;/td&gt;
+          &lt;td&gt;Unsynced&lt;/td&gt;
+          &lt;td&gt;Unsynced&lt;/td&gt;
+          &lt;td&gt;Unsynced&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📑 Read It Later&lt;/td&gt;
+          &lt;td&gt;PDFs w/ Syncthing&lt;/td&gt;
+          &lt;td&gt;PDFs w/ Syncthing&lt;/td&gt;
+          &lt;td&gt;PDFs w/ Syncthing&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📜 Word Processing&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📈 Spreadsheets&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📊 Presentations&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🛒 Shopping Lists&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🍴 Meal Planning&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;💰 Budgeting and Personal Finance&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;MoneyWallet&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📰 News&lt;/td&gt;
+          &lt;td&gt;Nextcloud (Web)&lt;/td&gt;
+          &lt;td&gt;Nextcould (Web)&lt;/td&gt;
+          &lt;td&gt;Nextcloud News App&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🎵 Music&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+          &lt;td&gt;Innertune&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🎤 Podcasts&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🔐 Password Management&lt;/td&gt;
+          &lt;td&gt;Keepass&lt;/td&gt;
+          &lt;td&gt;Keepass&lt;/td&gt;
+          &lt;td&gt;Keepass&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt; &lt;/p&gt;
           
           
         
@@ -67,8 +258,10 @@ My Devices I have three different devices: a PC running Debian, a tablet I just 
       <description>
         
           
-            TLDR Even though it&amp;rsquo;s only been three months since I created my blog here, I&amp;rsquo;m going to change the domain from www.mecca1.net to nate.mecca1.net instead. Nothing&amp;rsquo;s should break, www.mecca1.net will forward to nate.mecca1.net for now. Still, if you&amp;rsquo;re following me through RSS or you have my site bookmarked it might be worth swapping out the URL.
-Longer Update My domain predates my blog by about six years, so when I created my blog a few months ago I opted to just use the www subdomain.
+            &lt;h2 id=&#34;tldr&#34;&gt;TLDR&lt;/h2&gt;
+&lt;p&gt;Even though it&amp;rsquo;s only been three months since I created my blog here, I&amp;rsquo;m going to change the domain from &lt;a href=&#34;https://www.mecca1.net&#34;&gt;www.mecca1.net&lt;/a&gt; to nate.mecca1.net instead. Nothing&amp;rsquo;s should break, &lt;a href=&#34;https://www.mecca1.net&#34;&gt;www.mecca1.net&lt;/a&gt; will forward to nate.mecca1.net for now. Still, if you&amp;rsquo;re following me through RSS or you have my site bookmarked it might be worth swapping out the URL.&lt;/p&gt;
+&lt;h2 id=&#34;longer-update&#34;&gt;Longer Update&lt;/h2&gt;
+&lt;p&gt;My domain predates my blog by about six years, so when I created my blog a few months ago I opted to just use the www subdomain. Since I use my domain for multiple things I didn&amp;rsquo;t like the idea of using the root record for my blog and opted to leave it blank. The best way to describe my thought process was along the lines that my domain is my own corner of the internet that can be built in any way I want, and that by leaving the root domain blank I can have it branch out in a whole bunch of different ways instead of being one main thing and a few spin-offs. &amp;ldquo;www&amp;rdquo; is also fitting as it would be the &amp;ldquo;world wide web&amp;rdquo; facing portion it.&lt;/p&gt;
           
           
         
@@ -84,7 +277,7 @@ Longer Update My domain predates my blog by about six years, so when I created m
       <description>
         
           
-            I think I&amp;rsquo;m going to start a blog here. I got this domain with some DNS records just collecting dust, and have an interest in writing stuff casually. I figure I&amp;rsquo;ll write about projects I work on or opinions about things in my field whenever something interests me enough to talk about it. I probably won&amp;rsquo;t write too much about myself personally though, if you&amp;rsquo;re reading this you probably A) know me already and somehow got roped into reading this, B) we&amp;rsquo;re working on some sort of project and you&amp;rsquo;re interested in reading about my writing about it, or C) find my writing about something interesting or useful (the latter being the most unlikely).
+            &lt;p&gt;I think I&amp;rsquo;m going to start a blog here. I got this domain with some DNS records just collecting dust, and have an interest in writing stuff casually. I figure I&amp;rsquo;ll write about projects I work on or opinions about things in my field whenever something interests me enough to talk about it. I probably won&amp;rsquo;t write too much about myself personally though, if you&amp;rsquo;re reading this you probably A) know me already and somehow got roped into reading this, B) we&amp;rsquo;re working on some sort of project and you&amp;rsquo;re interested in reading about my writing about it, or C) find my writing about something interesting or useful (the latter being the most unlikely). In any of those cases you probably aren&amp;rsquo;t interested in what I had for breakfast.&lt;/p&gt;
           
           
         

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>photos on An Untitled Blog</title>
+    <title>Photos on An Untitled Blog</title>
     <link>/tags/photos/</link>
-    <description>Recent content in photos on An Untitled Blog</description>
+    <description>Recent content in Photos on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/photos/index.xml" rel="self" type="application/rss+xml" />
@@ -16,7 +16,15 @@
       <description>
         
           
-            Can you tell the difference between the two images above? At first glance, probably not. If you look at them side by side long enough, at least in fullscreen on an HD display, you might notice a little bit of a difference. In one the sky looks an ever so slightly darker shade, and if you look close enough, color shades seem to change in a more blocky structure instead of a more smooth transition.
+            &lt;img src=&#34;https://raw.githubusercontent.com/0n4t3/Compression-Comparison/refs/heads/main/P1050983.JPG&#34;&gt;
+
+
+
+
+ &lt;img src=&#34;https://raw.githubusercontent.com/0n4t3/Compression-Comparison/refs/heads/main/P1050983.avif&#34;&gt;
+
+
+&lt;p&gt;Can you tell the difference between the two images above? At first glance, probably not. If you look at them side by side long enough, at least in fullscreen on an HD display, you might notice a little bit of a difference. In one the sky looks an ever so slightly darker shade, and if you look close enough, color shades seem to change in a more blocky structure instead of a more smooth transition. Zoom in, and you might notice the word &amp;ldquo;Excel&amp;rdquo; on the side of the windmill is mostly legible on one, and mostly illegible on the other.&lt;/p&gt;
           
           
         
@@ -32,8 +40,8 @@
       <description>
         
           
-            Like a lot of my posts, this kind of kept growing. Going over my photos I kept finding a bunch of favorites I wanted to share outside just using ones for effects, so now I&amp;rsquo;ve got a photos page if you want to check them out.
-You might have played around with AI image generation, getting a little hit of dopamine whenever you get something that looks visually pleasing without actually putting in any effort.
+            &lt;p&gt;&lt;em&gt;Like a lot of my posts, this kind of kept growing. Going over my photos I kept finding a bunch of favorites I wanted to share outside just using ones for effects, so now I&amp;rsquo;ve got a &lt;a href=&#34;https://nate.mecca1.net/pages/photos&#34;&gt;photos page&lt;/a&gt; if you want to check them out.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You might have played around with AI image generation, getting a little hit of dopamine whenever you get something that looks visually pleasing without actually putting in any effort. Using filters is kind of the same thing; you can get something that looks cool despite needing minimal effort and skill, but in this case, it&amp;rsquo;s really your art (assuming you&amp;rsquo;re using filters on your photos). It might be fun to toy around with, so I thought I would share some ways to do so.&lt;/p&gt;
           
           
         

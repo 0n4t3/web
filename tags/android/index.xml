@@ -16,7 +16,7 @@
       <description>
         
           
-            This is another one of my posts that&amp;rsquo;s effectively a few posts crammed together on related topics. Long story short, I started looking into handheld consoles a couple of months back, but in doing so picked up a handheld style controller for mobile instead. I&amp;rsquo;ve really enjoyed that style of gameing, so I wound up circling back and pre-ordering a handheld from Retroid. In addition to talking about that, however, I&amp;rsquo;ve also rambled on about how I got started with emulation, and have some notes on the different handheld options I found during research.
+            &lt;p&gt;This is another one of my posts that&amp;rsquo;s effectively a few posts crammed together on related topics. Long story short, I started looking into handheld consoles a couple of months back, but in doing so picked up a handheld style controller for mobile instead. I&amp;rsquo;ve really enjoyed that style of gameing, so I wound up circling back and pre-ordering a handheld from Retroid. In addition to talking about that, however, I&amp;rsquo;ve also rambled on about how I got started with emulation, and have some notes on the different handheld options I found during research. Feel free to skip around if you&amp;rsquo;re only interested in some of the post.&lt;/p&gt;
           
           
         
@@ -32,8 +32,8 @@
       <description>
         
           
-            Update: Everything worked in hugo&amp;rsquo;s test environment, but I guess local images in sliders breaks everything for who knows why once I actually published the post. I&amp;rsquo;m just going to replace some sliders with lists of images you can click on.
-Before upgrading my phone I heard the Pixel 8a referred to as the &amp;ldquo;most boring phone ever,&amp;rdquo; and that seems like a good description of the phone - and something that I&amp;rsquo;m a fan of.
+            &lt;p&gt;&lt;em&gt;Update: Everything worked in hugo&amp;rsquo;s test environment, but I guess local images in sliders breaks everything for who knows why once I actually published the post. I&amp;rsquo;m just going to replace some sliders with lists of images you can click on.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Before upgrading my phone I heard the Pixel 8a referred to as the &amp;ldquo;most boring phone ever,&amp;rdquo; and that seems like a good description of the phone - and something that I&amp;rsquo;m a fan of. If you&amp;rsquo;re techy you&amp;rsquo;ll probably be interested in weird and unique devices (homemade cyberdeck anyone?), but as far as being used as a tool goes, the Pixel A series excels. So yeah, today I thought I would review my Pixel 5a &amp;amp; 8a in addition to a quick blurb on a mystery phone.&lt;/p&gt;
           
           
         
@@ -49,7 +49,7 @@ Before upgrading my phone I heard the Pixel 8a referred to as the &amp;ldquo;mos
       <description>
         
           
-            This is my second post about searching for a tablet, and a follow-up review of the device I mentioned purchasing in the last post (an MS Surface Go tablet). Aside from the fact I just find it relaxing to write about things that interest or affect me, I hope that this would be useful if you&amp;rsquo;re considering buying an MS Surface tablet (to run either Win/Linux), or if you&amp;rsquo;re purchasing a different tablet to run Linux and want to know how a potential configuration might look.
+            &lt;p&gt;This is my second post about &lt;a href=&#34;https://nate.mecca1.net/posts/2023-11-05_tablets-1/&#34;&gt;searching for a tablet&lt;/a&gt;, and a follow-up review of the device I mentioned purchasing in the last post (an MS Surface Go tablet). Aside from the fact I just find it relaxing to write about things that interest or affect me, I hope that this would be useful if you&amp;rsquo;re considering buying an MS Surface tablet (to run either Win/Linux), or if you&amp;rsquo;re purchasing a different tablet to run Linux and want to know how a potential configuration might look.&lt;/p&gt;
           
           
         
@@ -65,7 +65,9 @@ Before upgrading my phone I heard the Pixel 8a referred to as the &amp;ldquo;mos
       <description>
         
           
-            TLDR, for those looking for less of a novel I did a lot of looking and found a few different options if you&amp;rsquo;re looking for a tablet and have similar preferences as me. There are custom ROMs for some tablets, though they are somewhat limited in which devices are supported (as well as sometimes limits on features or time in which security updates come in). There&amp;rsquo;s also the ability to cut out junk with ADB bridge on Android tablets, of which some cheaper tablets are sketchy and lack long-term security updates, and some of the premium tablets can get pricey.
+            &lt;details&gt;
+  &lt;summary&gt;&lt;strong&gt;TLDR, for those looking for less of a novel&lt;/strong&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;em&gt;I did a lot of looking and found a few different options if you&amp;rsquo;re looking for a tablet and have similar preferences as me. There are custom ROMs for some tablets, though they are somewhat limited in which devices are supported (as well as sometimes limits on features or time in which security updates come in). There&amp;rsquo;s also the ability to cut out junk with ADB bridge on Android tablets, of which some cheaper tablets are sketchy and lack long-term security updates, and some of the premium tablets can get pricey.&lt;/em&gt;&lt;/p&gt;
           
           
         
@@ -81,7 +83,7 @@ Before upgrading my phone I heard the Pixel 8a referred to as the &amp;ldquo;mos
       <description>
         
           
-            I count myself lucky to live in a pretty stable and safe part of the world. The last three years or so might have been slightly less so, but still in the scheme of things I certainly haven&amp;rsquo;t seen the worst of it. But hey, this year is as good of any to think about useful ways to utilize your electronics, specifically your phone, if the power goes out or something similar happens.
+            &lt;p&gt;I count myself lucky to live in a pretty stable and safe part of the world. The last three years or so might have been slightly less so, but still in the scheme of things I certainly haven&amp;rsquo;t seen the worst of it. But hey, this year is as good of any to think about useful ways to utilize your electronics, specifically your phone, if the power goes out or something similar happens.&lt;/p&gt;
           
           
         

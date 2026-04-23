@@ -16,7 +16,16 @@
       <description>
         
           
-            POV: You&amp;rsquo;re a professional dev watching me talk about vibe coding: Your browser does not support the video tag. I&amp;rsquo;m not exactly a stranger to using AI code, parts of nipy-bridge like the part that handles posts based on size was written by Chat GPT via Duck.AI, and I regularly use a Mixtral-Dolphin written bash script to convert files with avifenc. Recently, however, I came across Bookstr by MK Fain, which is being vibe coded.
+            &lt;p&gt;POV: You&amp;rsquo;re a professional dev watching me talk about vibe coding:
+&lt;div&gt;
+    &lt;video width=&#34;480&#34; height=&#34;360&#34; controls&gt;
+  &lt;source src=&#34;/img/cringe.mp4&#34; type=&#34;video/mp4&#34;&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I&amp;rsquo;m not exactly a stranger to using AI code, parts of &lt;a href=&#34;https://github.com/0n4t3/nipy-bridge&#34;&gt;nipy-bridge&lt;/a&gt; like the part that handles posts based on size was written by Chat GPT via Duck.AI, and I regularly use a Mixtral-Dolphin written bash script to convert files with avifenc. Recently, however, I came across &lt;a href=&#34;https://bookstr.xyz/&#34;&gt;Bookstr&lt;/a&gt; by MK Fain, which is being vibe coded. It&amp;rsquo;s a site that takes books people are talking about on Nostr and combines them with OpenLibrary data to offer reading material recommendations and reviews. The site alone is a cool concept, and the fact it was vibe coded and working with a lot of moving parts made me think I need to check out how good AI code has gotten. So yeah, here I chronicle my vibe coding adventure.&lt;/p&gt;
           
           
         
@@ -32,8 +41,8 @@
       <description>
         
           
-            Like a lot of my posts, this kind of kept growing. Going over my photos I kept finding a bunch of favorites I wanted to share outside just using ones for effects, so now I&amp;rsquo;ve got a photos page if you want to check them out.
-You might have played around with AI image generation, getting a little hit of dopamine whenever you get something that looks visually pleasing without actually putting in any effort.
+            &lt;p&gt;&lt;em&gt;Like a lot of my posts, this kind of kept growing. Going over my photos I kept finding a bunch of favorites I wanted to share outside just using ones for effects, so now I&amp;rsquo;ve got a &lt;a href=&#34;https://nate.mecca1.net/pages/photos&#34;&gt;photos page&lt;/a&gt; if you want to check them out.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You might have played around with AI image generation, getting a little hit of dopamine whenever you get something that looks visually pleasing without actually putting in any effort. Using filters is kind of the same thing; you can get something that looks cool despite needing minimal effort and skill, but in this case, it&amp;rsquo;s really your art (assuming you&amp;rsquo;re using filters on your photos). It might be fun to toy around with, so I thought I would share some ways to do so.&lt;/p&gt;
           
           
         
@@ -49,7 +58,13 @@ You might have played around with AI image generation, getting a little hit of d
       <description>
         
           
-            In my post about EDC I rambled on about hats for a bit, and a couple weeks ago I decided to try making one myself. I didn&amp;rsquo;t initially plan on writing a blog post explaining how I did it; however, after having trouble finding a printable pattern, I wound up just winging it, and I figured I&amp;rsquo;d put my process out there.1 Fur hats are way warmer than just about anything else, and even though this was a trial run with a fake polyester fur pelt it&amp;rsquo;s still a warm hat on its own.
+            &lt;div&gt;
+    
+&lt;img src=&#34;https://assets.pxlmo.com/public/m/_v2/734359577006633835/586f75268-5004eb/gG3pMdp1EwMy/yK1vcIb79qYYFyVTweEdhH7070e887BVdTG1kUy3.jpg&#34; alt=&#34;Finished hat image&#34;&gt;&lt;/br&gt;&lt;/br&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;In my &lt;a href=&#34;https://nate.mecca1.net/posts/2024-08-05_edc/&#34;&gt;post about EDC&lt;/a&gt; I rambled on about hats for a bit, and a couple weeks ago I decided to try making one myself. I didn&amp;rsquo;t initially plan on writing a blog post explaining how I did it; however, after having trouble finding a printable pattern, I wound up just winging it, and I figured I&amp;rsquo;d put my process out there.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Fur hats are way warmer than just about anything else, and even though this was a trial run with a fake polyester fur pelt it&amp;rsquo;s still a warm hat on its own. I plan to re-do the process using a natural sheepskin pelt, but if you want to follow along the process works with a natural pelt, fake pelt, and even regular cloth.&lt;/p&gt;
           
           
         
@@ -65,7 +80,9 @@ You might have played around with AI image generation, getting a little hit of d
       <description>
         
           
-            Dropdown: Random notes from drafting Alright, it is April 2nd and I&amp;rsquo;m typing out the first couple of characters in this document which I can already guess is going to be another long post. I already have tons of posts that I expected to be medium length which ballooned out, so given I know ahead of time it&amp;rsquo;ll be long who knows how long it will be. Err, well, editing me and you the reader will know how long it is when I actually publish it.
+            &lt;details&gt;
+  &lt;summary&gt;Dropdown: Random notes from drafting&lt;/summary&gt;
+  &lt;p&gt;&lt;em&gt;Alright, it is April 2nd and I&amp;rsquo;m typing out the first couple of characters in this document which I can already guess is going to be another long post. I already have tons of posts that I expected to be medium length which ballooned out, so given I know ahead of time it&amp;rsquo;ll be long who knows how long it will be. Err, well, editing me and you the reader will know how long it is when I actually publish it. Anyway, regardless, you have been warned.&lt;/em&gt;&lt;/p&gt;
           
           
         
@@ -81,8 +98,32 @@ You might have played around with AI image generation, getting a little hit of d
       <description>
         
           
-            I&amp;rsquo;ve made three long posts about decentralized social media, followed by making a client that works on decentralized social media, so I&amp;rsquo;ll call all that good for now and talk about making some pickles and sourkraut. And not just canned cucumbers and cabbage, but the actual fermented stuff, which is surprisingly easy to make.
-So, the lazy way to make Sourkraut: Boil some water on the stove or in a kettle (makes sure it&amp;rsquo;s sterile and cuts out some of the chlorine if you&amp;rsquo;re on city water), then let it start to cool until it&amp;rsquo;s about room temperature Cut up some cabbage.
+            &lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;A photo of some sourkrout that had been fermenting for a few days at the time of taking the photo&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;/img/sourkrout.avif&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve made three long posts about decentralized social media, followed by making a client that works on decentralized social media, so I&amp;rsquo;ll call all that good for now and talk about making some pickles and sourkraut. And not just canned cucumbers and cabbage, but the actual fermented stuff, which is surprisingly easy to make.&lt;/p&gt;
           
           
         
@@ -98,7 +139,7 @@ So, the lazy way to make Sourkraut: Boil some water on the stove or in a kettle 
       <description>
         
           
-            This is my second post about searching for a tablet, and a follow-up review of the device I mentioned purchasing in the last post (an MS Surface Go tablet). Aside from the fact I just find it relaxing to write about things that interest or affect me, I hope that this would be useful if you&amp;rsquo;re considering buying an MS Surface tablet (to run either Win/Linux), or if you&amp;rsquo;re purchasing a different tablet to run Linux and want to know how a potential configuration might look.
+            &lt;p&gt;This is my second post about &lt;a href=&#34;https://nate.mecca1.net/posts/2023-11-05_tablets-1/&#34;&gt;searching for a tablet&lt;/a&gt;, and a follow-up review of the device I mentioned purchasing in the last post (an MS Surface Go tablet). Aside from the fact I just find it relaxing to write about things that interest or affect me, I hope that this would be useful if you&amp;rsquo;re considering buying an MS Surface tablet (to run either Win/Linux), or if you&amp;rsquo;re purchasing a different tablet to run Linux and want to know how a potential configuration might look.&lt;/p&gt;
           
           
         
@@ -114,8 +155,175 @@ So, the lazy way to make Sourkraut: Boil some water on the stove or in a kettle 
       <description>
         
           
-            I ran across a neat trend of sharing your default apps, and a collection of posts doing so. It&amp;rsquo;s made some interesting reads and I thought I would join in and post my own favorites.
-My Devices I have three different devices: a PC running Debian, a tablet I just got setup running Debian and a Waydroid container, and a phone running the Graphene fork of Android. PC Tablet Phone 📨 Mail Client Proton Web Proton App Proton App 📮 Mail Server ^ ^ ^ 📝 Notes Joplin Joplin Joplin ✅ To-Do n/a n/a Tasks (F-Droid) 📷 Photo Shooting n/a n/a AOSP Camera 🟦 Photo Management File Manager n/a AOSP Gallery 📆 Calendar n/a n/a Simple Calendar 📁 Cloud File Storage IceDrive (web) IceDrive (web) IceDrive (PWA) 📖 RSS Nextcloud (web) Nextcloud (web) Nextcloud News App 🙍🏻‍♂️ Contacts n/a n/a AOSP Contacts 🌐 Browser LibreWolf Brave Fennec Firefox 💬 Chat Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web) Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web) Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web) 🔖 Bookmarks Unsynced Unsynced Unsynced 📑 Read It Later PDFs w/ Syncthing PDFs w/ Syncthing PDFs w/ Syncthing 📜 Word Processing LibreOffice LibreOffice n/a 📈 Spreadsheets LibreOffice n/a n/a 📊 Presentations LibreOffice n/a n/a 🛒 Shopping Lists Joplin Joplin Joplin 🍴 Meal Planning n/a n/a n/a 💰 Budgeting and Personal Finance n/a n/a MoneyWallet 📰 News Nextcloud (Web) Nextcould (Web) Nextcloud News App 🎵 Music VLC VLC Innertune 🎤 Podcasts VLC VLC VLC 🔐 Password Management Keepass Keepass Keepass The above is the pre-built list, though for my post I thought I would add on a few extras I like:
+            &lt;p&gt;I ran across a neat trend of &lt;a href=&#34;https://defaults.rknight.me/&#34;&gt;sharing your default apps, and a collection of posts doing so&lt;/a&gt;. It&amp;rsquo;s made some interesting reads and I thought I would join in and post my own favorites.&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;My Devices&lt;/summary&gt;
+  &lt;em&gt;I have three different devices: a PC running Debian, a tablet &lt;a href=&#34;https://nate.mecca1.net/posts/2023-11-05_tablets-1/&#34;&gt;I just got setup&lt;/a&gt; running Debian and a Waydroid container, and a phone running the Graphene fork of Android.&lt;/em&gt;
+&lt;/details&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;PC&lt;/td&gt;
+          &lt;td&gt;Tablet&lt;/td&gt;
+          &lt;td&gt;Phone&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📨 Mail Client&lt;/td&gt;
+          &lt;td&gt;Proton Web&lt;/td&gt;
+          &lt;td&gt;Proton App&lt;/td&gt;
+          &lt;td&gt;Proton App&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📮 Mail Server&lt;/td&gt;
+          &lt;td&gt;^&lt;/td&gt;
+          &lt;td&gt;^&lt;/td&gt;
+          &lt;td&gt;^&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📝 Notes&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;✅ To-Do&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;Tasks (F-Droid)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📷 Photo Shooting&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;AOSP Camera&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🟦 Photo Management&lt;/td&gt;
+          &lt;td&gt;File Manager&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;AOSP Gallery&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📆 Calendar&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;Simple Calendar&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📁 Cloud File Storage&lt;/td&gt;
+          &lt;td&gt;IceDrive (web)&lt;/td&gt;
+          &lt;td&gt;IceDrive (web)&lt;/td&gt;
+          &lt;td&gt;IceDrive (PWA)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📖 RSS&lt;/td&gt;
+          &lt;td&gt;Nextcloud (web)&lt;/td&gt;
+          &lt;td&gt;Nextcloud (web)&lt;/td&gt;
+          &lt;td&gt;Nextcloud News App&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🙍🏻‍♂️ Contacts&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;AOSP Contacts&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🌐 Browser&lt;/td&gt;
+          &lt;td&gt;LibreWolf&lt;/td&gt;
+          &lt;td&gt;Brave&lt;/td&gt;
+          &lt;td&gt;Fennec Firefox&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;💬 Chat&lt;/td&gt;
+          &lt;td&gt;Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web)&lt;/td&gt;
+          &lt;td&gt;Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web)&lt;/td&gt;
+          &lt;td&gt;Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🔖 Bookmarks&lt;/td&gt;
+          &lt;td&gt;Unsynced&lt;/td&gt;
+          &lt;td&gt;Unsynced&lt;/td&gt;
+          &lt;td&gt;Unsynced&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📑 Read It Later&lt;/td&gt;
+          &lt;td&gt;PDFs w/ Syncthing&lt;/td&gt;
+          &lt;td&gt;PDFs w/ Syncthing&lt;/td&gt;
+          &lt;td&gt;PDFs w/ Syncthing&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📜 Word Processing&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📈 Spreadsheets&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📊 Presentations&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🛒 Shopping Lists&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🍴 Meal Planning&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;💰 Budgeting and Personal Finance&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;MoneyWallet&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📰 News&lt;/td&gt;
+          &lt;td&gt;Nextcloud (Web)&lt;/td&gt;
+          &lt;td&gt;Nextcould (Web)&lt;/td&gt;
+          &lt;td&gt;Nextcloud News App&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🎵 Music&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+          &lt;td&gt;Innertune&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🎤 Podcasts&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🔐 Password Management&lt;/td&gt;
+          &lt;td&gt;Keepass&lt;/td&gt;
+          &lt;td&gt;Keepass&lt;/td&gt;
+          &lt;td&gt;Keepass&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt; &lt;/p&gt;
           
           
         
@@ -131,7 +339,9 @@ My Devices I have three different devices: a PC running Debian, a tablet I just 
       <description>
         
           
-            TLDR, for those looking for less of a novel I did a lot of looking and found a few different options if you&amp;rsquo;re looking for a tablet and have similar preferences as me. There are custom ROMs for some tablets, though they are somewhat limited in which devices are supported (as well as sometimes limits on features or time in which security updates come in). There&amp;rsquo;s also the ability to cut out junk with ADB bridge on Android tablets, of which some cheaper tablets are sketchy and lack long-term security updates, and some of the premium tablets can get pricey.
+            &lt;details&gt;
+  &lt;summary&gt;&lt;strong&gt;TLDR, for those looking for less of a novel&lt;/strong&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;em&gt;I did a lot of looking and found a few different options if you&amp;rsquo;re looking for a tablet and have similar preferences as me. There are custom ROMs for some tablets, though they are somewhat limited in which devices are supported (as well as sometimes limits on features or time in which security updates come in). There&amp;rsquo;s also the ability to cut out junk with ADB bridge on Android tablets, of which some cheaper tablets are sketchy and lack long-term security updates, and some of the premium tablets can get pricey.&lt;/em&gt;&lt;/p&gt;
           
           
         

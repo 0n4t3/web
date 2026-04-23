@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>complaints on An Untitled Blog</title>
+    <title>Complaints on An Untitled Blog</title>
     <link>/categories/complaints/</link>
-    <description>Recent content in complaints on An Untitled Blog</description>
+    <description>Recent content in Complaints on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="/categories/complaints/index.xml" rel="self" type="application/rss+xml" />
@@ -16,7 +16,7 @@
       <description>
         
           
-            This is sort of a successor to Firefox: A Brink of Their Own Making that I published ~6 months ago, followed by me rambling on about different browsers that I&amp;rsquo;ve used or decided to check out for this post. This follow-up was largely spurred on by two different things: Manifest v2&amp;rsquo;s phasing out in standard Chromium and Firefox getting worse. Further, after writing a whole lot and then reflecting on it, I&amp;rsquo;ve gotten a few more thoughts on the topics on hand - but unfortunately like the two external motivations, my thoughts have also led me to think about the ecosystem more negatively.
+            &lt;p&gt;This is sort of a successor to &lt;a href=&#34;https://nate.mecca1.net/posts/2023-12-27_mozillasbrink/&#34;&gt;Firefox: A Brink of Their Own Making&lt;/a&gt; that I published ~6 months ago, followed by me rambling on about different browsers that I&amp;rsquo;ve used or decided to check out for this post. This follow-up was largely spurred on by two different things: Manifest v2&amp;rsquo;s phasing out in standard Chromium and Firefox getting worse. Further, after writing a whole lot and then reflecting on it, I&amp;rsquo;ve gotten a few more thoughts on the topics on hand - but unfortunately like the two external motivations, my thoughts have also led me to think about the ecosystem more negatively.&lt;/p&gt;
           
           
         
@@ -32,8 +32,10 @@
       <description>
         
           
-            Update August 5th 2024
-I have been made aware that Firefox for Android no longer includes Google Analytics as part of their app telemetry. It appears it was removed in v80.1.13. At the time I posted this the Exodus page I linked to did list Google Analytics, but according to the page now they updated the page on July 15th and likely removed the tracker information on that date.
+            &lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Update August 5th 2024&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I have been made aware that Firefox for Android no longer includes Google Analytics as part of their app telemetry. It appears it was removed in v80.1.13. At the time I posted this the Exodus page I linked to did list Google Analytics, but according to the page now they updated the page on July 15th and likely removed the tracker information on that date.&lt;/p&gt;
+&lt;p&gt;Further, on July 3rd I &lt;a href=&#34;https://nate.mecca1.net/posts/2024-07-03_browsers2/&#34;&gt;made another post about browsers&lt;/a&gt;. As the title contains &amp;lsquo;plummeting off the brink&amp;rsquo; you can correctly assume things are only getting worse.&lt;/p&gt;
           
           
         
@@ -49,9 +51,11 @@ I have been made aware that Firefox for Android no longer includes Google Analyt
       <description>
         
           
-            Update 11/25: I was made aware that Signal has some proprietary anti-spam code and added the TLDR.
-A More Technical TLDR I never know how much jargon I should include or how much I should explain, and as long as I&amp;rsquo;m writing I&amp;rsquo;m enjoying myself meaning I&amp;rsquo;ve been all over the place. But here&amp;rsquo;s a shortened version for those familiar with encryption.
-A vanilla implementation of the Signal protocol relies on public key infrastructure to perform a handshake between devices.
+            &lt;p&gt;&lt;em&gt;Update 11/25: I was made aware that Signal has some proprietary anti-spam code and added the TLDR.&lt;/em&gt;&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;&lt;strong&gt;A More Technical TLDR&lt;/strong&gt;&lt;/summary&gt;
+  &lt;p&gt;I never know how much jargon I should include or how much I should explain, and as long as I&amp;rsquo;m writing I&amp;rsquo;m enjoying myself meaning I&amp;rsquo;ve been all over the place. But here&amp;rsquo;s a shortened version for those familiar with encryption.&lt;/p&gt;
+&lt;p&gt;A vanilla implementation of the Signal protocol relies on public key infrastructure to perform a handshake between devices. As you may know, a public key server can certify that any device/key belongs to an account if you have nothing more to go on than a phone number. Furthermore, at any point the server may say keys have changed and direct you to start communicating with a device other than the one you expect.&lt;/p&gt;
           
           
         
@@ -67,7 +71,7 @@ A vanilla implementation of the Signal protocol relies on public key infrastruct
       <description>
         
           
-            I never have had a good track record with massive changes to Windows, starting with Windows 8 which was entirely unusable in my case. It wasn&amp;rsquo;t just the mobile-style graphics and the bloat, but also the fact I couldn’t get more than a couple of days before the installation would break. This went on for a while as I tried to figure out why it was breaking, and I probably went through dozens of installs that themselves took nearly as long as the time I could actually use the device before it broke again.
+            &lt;p&gt;I never have had a good track record with massive changes to Windows, starting with Windows 8 which was entirely unusable in my case. It wasn&amp;rsquo;t just the mobile-style graphics and the bloat, but also the fact I couldn’t get more than a couple of days before the installation would break. This went on for a while as I tried to figure out why it was breaking, and I probably went through dozens of installs that themselves took nearly as long as the time I could actually use the device before it broke again. After determining it was an update to blame, I deferred updates and set my connection to a metered connection, either of which on their own should have solved the issue. Yet soon after I was greeted by another update screen, followed by yet another bricked install.&lt;/p&gt;
           
           
         

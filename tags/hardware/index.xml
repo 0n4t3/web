@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hardware on An Untitled Blog</title>
+    <title>Hardware on An Untitled Blog</title>
     <link>/tags/hardware/</link>
-    <description>Recent content in hardware on An Untitled Blog</description>
+    <description>Recent content in Hardware on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
@@ -16,9 +16,60 @@
       <description>
         
           
-            Originally, I was drafting this in September, planning on dedicating it to Windows 10 Home becoming EOL. I also figured I’d share a meme that contained something along the following:
-Instead, however, it’s early 2026, and I feel like a dedication to RAM prices would be a more fitting start:
-Memes aside, the lightweight laptop - what I’m typing this post on - has a whopping total of 2 GB of ram (1.
+            &lt;p&gt;Originally, I was drafting this in September, planning on dedicating it to Windows 10 Home becoming EOL. I also figured I’d share a meme that contained something along the following:&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;/img/old_laptop/meme1.avif&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Instead, however, it’s early 2026, and I feel like a dedication to RAM prices would be a more fitting start:&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;/img/old_laptop/meme2.avif&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Memes aside, the lightweight laptop - what I’m typing this post on - has a whopping total of 2 GB of ram (1.88 usable) and an Intel Bay Trail processor from over a decade ago. And, believe it or not, it’s a pretty capable machine; at least after being very particular about what I install on it. The device itself is a former Chromebook, now sporting Coreboot and Debian 13.&lt;/p&gt;
           
           
         

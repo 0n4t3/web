@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>privacy on An Untitled Blog</title>
+    <title>Privacy on An Untitled Blog</title>
     <link>/tags/privacy/</link>
-    <description>Recent content in privacy on An Untitled Blog</description>
+    <description>Recent content in Privacy on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
@@ -16,7 +16,7 @@
       <description>
         
           
-            This is sort of a successor to Firefox: A Brink of Their Own Making that I published ~6 months ago, followed by me rambling on about different browsers that I&amp;rsquo;ve used or decided to check out for this post. This follow-up was largely spurred on by two different things: Manifest v2&amp;rsquo;s phasing out in standard Chromium and Firefox getting worse. Further, after writing a whole lot and then reflecting on it, I&amp;rsquo;ve gotten a few more thoughts on the topics on hand - but unfortunately like the two external motivations, my thoughts have also led me to think about the ecosystem more negatively.
+            &lt;p&gt;This is sort of a successor to &lt;a href=&#34;https://nate.mecca1.net/posts/2023-12-27_mozillasbrink/&#34;&gt;Firefox: A Brink of Their Own Making&lt;/a&gt; that I published ~6 months ago, followed by me rambling on about different browsers that I&amp;rsquo;ve used or decided to check out for this post. This follow-up was largely spurred on by two different things: Manifest v2&amp;rsquo;s phasing out in standard Chromium and Firefox getting worse. Further, after writing a whole lot and then reflecting on it, I&amp;rsquo;ve gotten a few more thoughts on the topics on hand - but unfortunately like the two external motivations, my thoughts have also led me to think about the ecosystem more negatively.&lt;/p&gt;
           
           
         
@@ -32,8 +32,10 @@
       <description>
         
           
-            Update August 5th 2024
-I have been made aware that Firefox for Android no longer includes Google Analytics as part of their app telemetry. It appears it was removed in v80.1.13. At the time I posted this the Exodus page I linked to did list Google Analytics, but according to the page now they updated the page on July 15th and likely removed the tracker information on that date.
+            &lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Update August 5th 2024&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I have been made aware that Firefox for Android no longer includes Google Analytics as part of their app telemetry. It appears it was removed in v80.1.13. At the time I posted this the Exodus page I linked to did list Google Analytics, but according to the page now they updated the page on July 15th and likely removed the tracker information on that date.&lt;/p&gt;
+&lt;p&gt;Further, on July 3rd I &lt;a href=&#34;https://nate.mecca1.net/posts/2024-07-03_browsers2/&#34;&gt;made another post about browsers&lt;/a&gt;. As the title contains &amp;lsquo;plummeting off the brink&amp;rsquo; you can correctly assume things are only getting worse.&lt;/p&gt;
           
           
         
@@ -49,7 +51,9 @@ I have been made aware that Firefox for Android no longer includes Google Analyt
       <description>
         
           
-            TLDR, for those looking for less of a novel I did a lot of looking and found a few different options if you&amp;rsquo;re looking for a tablet and have similar preferences as me. There are custom ROMs for some tablets, though they are somewhat limited in which devices are supported (as well as sometimes limits on features or time in which security updates come in). There&amp;rsquo;s also the ability to cut out junk with ADB bridge on Android tablets, of which some cheaper tablets are sketchy and lack long-term security updates, and some of the premium tablets can get pricey.
+            &lt;details&gt;
+  &lt;summary&gt;&lt;strong&gt;TLDR, for those looking for less of a novel&lt;/strong&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;em&gt;I did a lot of looking and found a few different options if you&amp;rsquo;re looking for a tablet and have similar preferences as me. There are custom ROMs for some tablets, though they are somewhat limited in which devices are supported (as well as sometimes limits on features or time in which security updates come in). There&amp;rsquo;s also the ability to cut out junk with ADB bridge on Android tablets, of which some cheaper tablets are sketchy and lack long-term security updates, and some of the premium tablets can get pricey.&lt;/em&gt;&lt;/p&gt;
           
           
         
@@ -65,8 +69,8 @@ I have been made aware that Firefox for Android no longer includes Google Analyt
       <description>
         
           
-            11/03/2023 Update: I fixed some grammar, and Google just announced they&amp;rsquo;re going to stop the implementation of WEI (hopefully permanently, but they may just be trying to outwait bad publicity and anti-trust actions - only time will tell).
-If you read my first post here you probably got the idea I have strong feelings about recent versions of Windows, and you wouldn&amp;rsquo;t be wrong. There&amp;rsquo;s a lot of junk on Windows, but there are many ways you can go around and clean up some of the worst of it, and I thought I would go over a few potential ways of doing so.
+            &lt;p&gt;&lt;em&gt;11/03/2023 Update: I fixed some grammar, and Google just announced they&amp;rsquo;re going to stop the implementation of WEI (hopefully permanently, but they may just be trying to outwait bad publicity and anti-trust actions - only time will tell).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;If you &lt;a href=&#34;https://nate.mecca1.net/posts/2023-07-24_cloud-oss/&#34;&gt;read my first post here&lt;/a&gt; you probably got the idea I have strong feelings about recent versions of Windows, and you wouldn&amp;rsquo;t be wrong. There&amp;rsquo;s a lot of junk on Windows, but there are many ways you can go around and clean up some of the worst of it, and I thought I would go over a few potential ways of doing so.&lt;/p&gt;
           
           
         
@@ -82,7 +86,7 @@ If you read my first post here you probably got the idea I have strong feelings 
       <description>
         
           
-            I never have had a good track record with massive changes to Windows, starting with Windows 8 which was entirely unusable in my case. It wasn&amp;rsquo;t just the mobile-style graphics and the bloat, but also the fact I couldn’t get more than a couple of days before the installation would break. This went on for a while as I tried to figure out why it was breaking, and I probably went through dozens of installs that themselves took nearly as long as the time I could actually use the device before it broke again.
+            &lt;p&gt;I never have had a good track record with massive changes to Windows, starting with Windows 8 which was entirely unusable in my case. It wasn&amp;rsquo;t just the mobile-style graphics and the bloat, but also the fact I couldn’t get more than a couple of days before the installation would break. This went on for a while as I tried to figure out why it was breaking, and I probably went through dozens of installs that themselves took nearly as long as the time I could actually use the device before it broke again. After determining it was an update to blame, I deferred updates and set my connection to a metered connection, either of which on their own should have solved the issue. Yet soon after I was greeted by another update screen, followed by yet another bricked install.&lt;/p&gt;
           
           
         

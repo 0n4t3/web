@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>stuff-I-like on An Untitled Blog</title>
+    <title>Stuff-I-Like on An Untitled Blog</title>
     <link>/categories/stuff-i-like/</link>
-    <description>Recent content in stuff-I-like on An Untitled Blog</description>
+    <description>Recent content in Stuff-I-Like on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="/categories/stuff-i-like/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="/categories/stuff-i-like/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NMail is Neat</title>
+      <link>/posts/2026-04-23_nmail-is-neat/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2026-04-23_nmail-is-neat/</guid>
+      <description>
+        
+          
+            &lt;p&gt;I&amp;rsquo;ve written a lot of longer blog posts lately, time to get back into the classic &amp;ldquo;Nate talks about the thing he just read about and finds neat.&amp;rdquo; So, without further ado, I just read about &lt;a href=&#34;https://nostrmail.org/&#34;&gt;NMail&lt;/a&gt; (&lt;a href=&#34;https://github.com/nogringo/nostr-mail-client&#34;&gt;github&lt;/a&gt;) - and I think it&amp;rsquo;s neat. In fact, I think it&amp;rsquo;s actually one of the most interesting decentralized communication tools I&amp;rsquo;ve seen in a while.&lt;/p&gt;
+&lt;h3 id=&#34;email-is-still-king&#34;&gt;Email is still king&lt;/h3&gt;
+&lt;p&gt;Email is still the king of communication - according to Wikipedia, 50 million non-spam emails are sent every day. Whether it&amp;rsquo;s a contact feature for a blog, the need to send a (small) file, or helping setup a church website - email is usually my go to because of its ubiquity. Unlike something like messengers, which vary a lot between different communities, nationalities, and interests; you&amp;rsquo;ll have a hard time finding somebody without an email address. Even if it&amp;rsquo;s becoming a little less popular in my generation (gen z) and lower - probably because companies like to spam like no tomorrow, and I doubt most people use filters on their inbox - it&amp;rsquo;s still universal across all age groups as well. Not to mention it&amp;rsquo;s, unlike most messengers or social media platforms, an open protocol where you can feasibly own&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; your own identifier and server&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>A Technical Comparison of Distributed Social Media Protocols v3</title>
       <link>/posts/2026-03-08_microblogging-protocols-v3/</link>
@@ -16,8 +34,8 @@
       <description>
         
           
-            Update 3/14/2026: I&amp;rsquo;ve updated the post to reflect that porting Nomadic Identities to Activity Pub is still ongoing. Shoutout to silverpill@mitra.social. Also, less than 24 hours posting this, BlueSky CEO Jay Grabber has stepped down from her roll. A change in leadership may change the state of the platform, which may cause this post to be somewhat inaccurate in the future.
-Hello, I&amp;rsquo;m back for round three of my social media protocol comparisons.
+            &lt;p&gt;&lt;em&gt;Update 3/14/2026: I&amp;rsquo;ve updated the post to reflect that porting Nomadic Identities to Activity Pub is still ongoing. Shoutout to silverpill@mitra.social. Also, less than 24 hours posting this, BlueSky CEO Jay Grabber has stepped down from her roll. A change in leadership may change the state of the platform, which may cause this post to be somewhat inaccurate in the future.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Hello, I&amp;rsquo;m back for round three of my social media protocol comparisons. I wrote v2 because of some mistakes on my part, although it&amp;rsquo;s been two years since writing it, and it&amp;rsquo;s become a bit out of date. It&amp;rsquo;s also a bit long, with a bunch of explainers and clutter right at the start of it, so for this round, I figured I&amp;rsquo;d get things up to date while shortening the text (or at least moving ramblings to footnotes) and move a lot of the explainers to the end.&lt;/p&gt;
           
           
         
@@ -33,9 +51,60 @@ Hello, I&amp;rsquo;m back for round three of my social media protocol comparison
       <description>
         
           
-            Originally, I was drafting this in September, planning on dedicating it to Windows 10 Home becoming EOL. I also figured I’d share a meme that contained something along the following:
-Instead, however, it’s early 2026, and I feel like a dedication to RAM prices would be a more fitting start:
-Memes aside, the lightweight laptop - what I’m typing this post on - has a whopping total of 2 GB of ram (1.
+            &lt;p&gt;Originally, I was drafting this in September, planning on dedicating it to Windows 10 Home becoming EOL. I also figured I’d share a meme that contained something along the following:&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;/img/old_laptop/meme1.avif&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Instead, however, it’s early 2026, and I feel like a dedication to RAM prices would be a more fitting start:&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;/img/old_laptop/meme2.avif&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Memes aside, the lightweight laptop - what I’m typing this post on - has a whopping total of 2 GB of ram (1.88 usable) and an Intel Bay Trail processor from over a decade ago. And, believe it or not, it’s a pretty capable machine; at least after being very particular about what I install on it. The device itself is a former Chromebook, now sporting Coreboot and Debian 13.&lt;/p&gt;
           
           
         
@@ -51,8 +120,15 @@ Memes aside, the lightweight laptop - what I’m typing this post on - has a who
       <description>
         
           
-            As is customary on my microblogging posts, let&amp;rsquo;s get us started with an original meme. Also, if you&amp;rsquo;d like to read my previous Microblogging Protocols compared posts, you can read v1 here and v2 here.
-It&amp;rsquo;s been a little over a year since I made my updated microblogging protocols comparison. Since then a few things have happened, and my previous could use some trimming. In the spirit of keeping things shorter (and keeping the comparison v3 post relevant longer), I figured I&amp;rsquo;d split the post into two parts: this one, which includes random updates and things that happened over the last year or so - and a second one, &amp;ldquo;Microblogging Protocols Compared v3&amp;rdquo; which will be a more streamlined protocol comparison.
+            &lt;p&gt;&lt;em&gt;As is customary on my microblogging posts, let&amp;rsquo;s get us started with an original meme.&lt;/em&gt;
+&lt;div&gt;
+    &lt;video width=&#34;720&#34; height=&#34;480&#34; controls&gt;
+  &lt;source src=&#34;/img/protocol-meme-3.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Also, if you&amp;rsquo;d like to read my previous Microblogging Protocols compared posts, you can read &lt;a href=&#34;/posts/2024-01-30_microblogging-protocols/&#34;&gt;v1 here&lt;/a&gt; and &lt;a href=&#34;/posts/2024-08-11_microbloggingv2/&#34;&gt;v2 here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s been a little over a year since I made my updated microblogging protocols comparison. Since then a few things have happened, and my previous could use some trimming. In the spirit of keeping things shorter (and keeping the comparison v3 post relevant longer), I figured I&amp;rsquo;d split the post into two parts: this one, which includes random updates and things that happened over the last year or so - and a second one, &amp;ldquo;Microblogging Protocols Compared v3&amp;rdquo; which will be a more streamlined protocol comparison. Anyway, as you can probably tell by the meme, the microblogging protocols have been going through a rough patch lately - though it&amp;rsquo;s not all bad news.&lt;/p&gt;
           
           
         
@@ -68,7 +144,7 @@ It&amp;rsquo;s been a little over a year since I made my updated microblogging p
       <description>
         
           
-            This is another one of my posts that&amp;rsquo;s effectively a few posts crammed together on related topics. Long story short, I started looking into handheld consoles a couple of months back, but in doing so picked up a handheld style controller for mobile instead. I&amp;rsquo;ve really enjoyed that style of gameing, so I wound up circling back and pre-ordering a handheld from Retroid. In addition to talking about that, however, I&amp;rsquo;ve also rambled on about how I got started with emulation, and have some notes on the different handheld options I found during research.
+            &lt;p&gt;This is another one of my posts that&amp;rsquo;s effectively a few posts crammed together on related topics. Long story short, I started looking into handheld consoles a couple of months back, but in doing so picked up a handheld style controller for mobile instead. I&amp;rsquo;ve really enjoyed that style of gameing, so I wound up circling back and pre-ordering a handheld from Retroid. In addition to talking about that, however, I&amp;rsquo;ve also rambled on about how I got started with emulation, and have some notes on the different handheld options I found during research. Feel free to skip around if you&amp;rsquo;re only interested in some of the post.&lt;/p&gt;
           
           
         
@@ -84,8 +160,8 @@ It&amp;rsquo;s been a little over a year since I made my updated microblogging p
       <description>
         
           
-            Update: Everything worked in hugo&amp;rsquo;s test environment, but I guess local images in sliders breaks everything for who knows why once I actually published the post. I&amp;rsquo;m just going to replace some sliders with lists of images you can click on.
-Before upgrading my phone I heard the Pixel 8a referred to as the &amp;ldquo;most boring phone ever,&amp;rdquo; and that seems like a good description of the phone - and something that I&amp;rsquo;m a fan of.
+            &lt;p&gt;&lt;em&gt;Update: Everything worked in hugo&amp;rsquo;s test environment, but I guess local images in sliders breaks everything for who knows why once I actually published the post. I&amp;rsquo;m just going to replace some sliders with lists of images you can click on.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Before upgrading my phone I heard the Pixel 8a referred to as the &amp;ldquo;most boring phone ever,&amp;rdquo; and that seems like a good description of the phone - and something that I&amp;rsquo;m a fan of. If you&amp;rsquo;re techy you&amp;rsquo;ll probably be interested in weird and unique devices (homemade cyberdeck anyone?), but as far as being used as a tool goes, the Pixel A series excels. So yeah, today I thought I would review my Pixel 5a &amp;amp; 8a in addition to a quick blurb on a mystery phone.&lt;/p&gt;
           
           
         
@@ -101,8 +177,10 @@ Before upgrading my phone I heard the Pixel 8a referred to as the &amp;ldquo;mos
       <description>
         
           
-            Update: September 20th, 2024: I was incorrect regarding AT&amp;rsquo;s (BlueSky) inability to fully delete things, the protocol DOES support fully deleting posts from the user&amp;rsquo;s repo and I&amp;rsquo;ve updated the post to reflect that. Read more. Big thanks to Ryan for providing the info.
-Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) - in keeping tradition with the original post - Bluesky has managed to change rapidly shortly after I finished this.
+            &lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Update: September 20th, 2024:&lt;/strong&gt;
+I was incorrect regarding AT&amp;rsquo;s (BlueSky) inability to fully delete things, the protocol DOES support fully deleting posts from the user&amp;rsquo;s repo and I&amp;rsquo;ve updated the post to reflect that. &lt;a href=&#34;https://atproto.com/specs/repository&#34;&gt;Read more&lt;/a&gt;. Big thanks to &lt;a href=&#34;https://snarfed.org/&#34;&gt;Ryan&lt;/a&gt; for providing the info.&lt;/p&gt;
+&lt;p&gt;Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) - in keeping tradition with the original post - Bluesky has managed to change rapidly shortly after I finished this. It&amp;rsquo;s good news again, in this case a huge influx of users, many from Brazil after Twitter/X was blocked. Additionally, I also recently saw &lt;a href=&#34;https://frontpage.fyi/&#34;&gt;Frontpage&lt;/a&gt;, an AT based link aggregator. In the post I mention a few times hoping more will be built on AT now that it&amp;rsquo;s opened up, and it appears exactly that is happening.&lt;/p&gt;
           
           
         
@@ -118,8 +196,9 @@ Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) 
       <description>
         
           
-            So after two very long posts, one complaining about web browsers and one comparing the three big non-centralized social media protocols, I thought about writing two shorter posts about random things (hats and making sour krout specifically). However, between then and now stuffs happened and I thought I would make an anthology post with three different mini topics I wanted to share.
-I made a client So yeah, I made a client that can post to Nostr, Activity Pub, and BlueSky (hopefully all of AT once it&amp;rsquo;s fully opened).
+            &lt;p&gt;So after two very long posts, one complaining about web browsers and one comparing the three big non-centralized social media protocols, I thought about writing two shorter posts about random things (hats and making sour krout specifically). However, between then and now stuffs happened and I thought I would make an anthology post with three different mini topics I wanted to share.&lt;/p&gt;
+&lt;h2 id=&#34;i-made-a-client&#34;&gt;I made a client&lt;/h2&gt;
+&lt;p&gt;So yeah, I made a client that can post to Nostr, Activity Pub, and BlueSky (hopefully all of AT once it&amp;rsquo;s fully opened). It&amp;rsquo;s a bit hacky, and written in Python using dependencies that do all the heavy lifting, but it works. It can broadcast the same post to all three, post different posts to different protocols, or skip posting to a protocol altogether. There&amp;rsquo;s a version that uses Keyring to have your OS manage your credentials instead of baking them into a script, and it&amp;rsquo;ll run on just about everything. I&amp;rsquo;m not a programmer by trade, and it&amp;rsquo;s been a very long time since I wrote any code for public consumption, so I&amp;rsquo;m excited to get it working and share it. Apparently I&amp;rsquo;m the second person to do this, as shortly under two weeks before I released mine somebody else made Nootti, so if you like this idea, are on IOS, and want something more polished that is also an option as well.&lt;/p&gt;
           
           
         
@@ -135,9 +214,10 @@ I made a client So yeah, I made a client that can post to Nostr, Activity Pub, a
       <description>
         
           
-            Note: This post is out of date, here&amp;rsquo;s a more up to date version
-Update August 5th 2024
-I have some good and bad news regarding this post. First, I made two mistakes. AT crawlers are not in fact crawlers, they are called relays. Also, shared inboxes are actually part of the Activity Pub W3C standard as apposed to hacky additions to the protocol by third party servers. I was wrong about Activity Pub servers sending multiple messages to the same server remote to update it about a single post.
+            &lt;p&gt;Note: This post is out of date, &lt;a href=&#34;https://nate.mecca1.net/posts/2024-08-11_microbloggingv2/&#34;&gt;here&amp;rsquo;s a more up to date version&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Update August 5th 2024&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I have some good and bad news regarding this post. First, I made two mistakes. AT crawlers are not in fact crawlers, they are called relays. Also, shared inboxes are actually part of the Activity Pub W3C standard as apposed to hacky additions to the protocol by third party servers. I was wrong about Activity Pub servers sending multiple messages to the same server remote to update it about a single post.&lt;/p&gt;
           
           
         
@@ -153,7 +233,7 @@ I have some good and bad news regarding this post. First, I made two mistakes. A
       <description>
         
           
-            Chances are if you&amp;rsquo;re here it&amp;rsquo;s through an RSS feed (or an RSS feed bridged to something else), so I probably don&amp;rsquo;t need to do too much of an introduction. Here&amp;rsquo;s a quick rundown if you&amp;rsquo;re unfamiliar. However, today I wanted to talk about RSS (as well as three other means of following content), how I&amp;rsquo;ve benefited from it, and a small project I started. Just about every piece of content I follow is through RSS - organized into different categories (news, blogs, videos, audio, etc), and the following benefits really stand out:
+            &lt;p&gt;Chances are if you&amp;rsquo;re here it&amp;rsquo;s through an RSS feed (or an RSS feed bridged to something else), so I probably don&amp;rsquo;t need to do too much of an introduction. &lt;a href=&#34;https://www.wpbeginner.com/beginners-guide/what-is-rss-how-to-use-rss-in-wordpress/&#34;&gt;Here&amp;rsquo;s a quick rundown if you&amp;rsquo;re unfamiliar&lt;/a&gt;. However, today I wanted to talk about RSS (as well as three other means of following content), how I&amp;rsquo;ve benefited from it, and a small project I started. Just about every piece of content I follow is through RSS - organized into different categories (news, blogs, videos, audio, etc), and the following benefits really stand out:&lt;/p&gt;
           
           
         
@@ -169,7 +249,7 @@ I have some good and bad news regarding this post. First, I made two mistakes. A
       <description>
         
           
-            I have recently been re-dipping my toes into Nostr (tried it a while back just to experiment with it but never really stuck around), and so far it&amp;rsquo;s become my preferred microblogging platform. There&amp;rsquo;s a handful of reasons surrounding that, both in the protocol itself and what&amp;rsquo;s being built up around it, and I think it has a lot of promise that merits its very quick growth. Today I thought I would go over why I am a fan of it, and why I think it might be worth checking out if you&amp;rsquo;re interested in a more decentralized web.
+            &lt;p&gt;I have recently been re-dipping my toes into Nostr (tried it a while back just to experiment with it but never really stuck around), and so far it&amp;rsquo;s become my preferred microblogging platform. There&amp;rsquo;s a handful of reasons surrounding that, both in the protocol itself and what&amp;rsquo;s being built up around it, and I think it has a lot of promise that merits its very quick growth. Today I thought I would go over why I am a fan of it, and why I think it might be worth checking out if you&amp;rsquo;re interested in a more decentralized web.&lt;/p&gt;
           
           
         
@@ -185,7 +265,7 @@ I have some good and bad news regarding this post. First, I made two mistakes. A
       <description>
         
           
-            IPFS, an acronym for &amp;ldquo;InterPlanetary File System&amp;rdquo;, is a way to deliver files that takes a different approach to HTTP. As I mentioned in my very first post, I originally considered hosting my entire site/blog on it, and while I decided against it for reasons I mentioned there and reasons I&amp;rsquo;ll get into later here; I am working on something that may involve me sharing files here, which I&amp;rsquo;ll probably use IPFS for.
+            &lt;p&gt;IPFS, an acronym for &amp;ldquo;InterPlanetary File System&amp;rdquo;, is a way to deliver files that takes a different approach to HTTP. As I mentioned in my very first post, I originally considered hosting my entire site/blog on it, and while I decided against it for reasons I mentioned there and reasons I&amp;rsquo;ll get into later here; I am working on something that may involve me sharing files here, which I&amp;rsquo;ll probably use IPFS for. This is of course in addition to me finding it an interesting method of sharing data and worth speaking about.&lt;/p&gt;
           
           
         

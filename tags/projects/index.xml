@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>projects on An Untitled Blog</title>
+    <title>Projects on An Untitled Blog</title>
     <link>/tags/projects/</link>
-    <description>Recent content in projects on An Untitled Blog</description>
+    <description>Recent content in Projects on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 18 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/projects/index.xml" rel="self" type="application/rss+xml" />
@@ -16,15 +16,18 @@
       <description>
         
           
-            A based design that makes a web that&amp;rsquo;s true
-ICANNs and NATs embrace shall be no more
-Behind a Pi or in the cloud for you
-We use that tool be I2P or Tor
-Come join a world of speech that can flow free
-The words by truths of math they shall be bound
-A power built right in that&amp;rsquo;s DHT
-Identity by key pairs holds its ground
-IPFS a poggers web design
+            &lt;p&gt;A based design that makes a web that&amp;rsquo;s true&lt;br&gt;
+ICANNs and NATs embrace shall be no more&lt;br&gt;
+Behind a Pi or in the cloud for you&lt;br&gt;
+We use that tool be I2P or Tor&lt;/p&gt;
+&lt;p&gt;Come join a world of speech that can flow free&lt;br&gt;
+The words by truths of math they shall be bound&lt;br&gt;
+A power built right in that&amp;rsquo;s DHT&lt;br&gt;
+Identity by key pairs holds its ground&lt;/p&gt;
+&lt;p&gt;IPFS a poggers web design&lt;br&gt;
+ID by content not by where it is&lt;br&gt;
+Defi domain to own your name online&lt;br&gt;
+A world that&amp;rsquo;s free of gov and free of biz&lt;/p&gt;
           
           
         
@@ -40,7 +43,13 @@ IPFS a poggers web design
       <description>
         
           
-            In my post about EDC I rambled on about hats for a bit, and a couple weeks ago I decided to try making one myself. I didn&amp;rsquo;t initially plan on writing a blog post explaining how I did it; however, after having trouble finding a printable pattern, I wound up just winging it, and I figured I&amp;rsquo;d put my process out there.1 Fur hats are way warmer than just about anything else, and even though this was a trial run with a fake polyester fur pelt it&amp;rsquo;s still a warm hat on its own.
+            &lt;div&gt;
+    
+&lt;img src=&#34;https://assets.pxlmo.com/public/m/_v2/734359577006633835/586f75268-5004eb/gG3pMdp1EwMy/yK1vcIb79qYYFyVTweEdhH7070e887BVdTG1kUy3.jpg&#34; alt=&#34;Finished hat image&#34;&gt;&lt;/br&gt;&lt;/br&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;In my &lt;a href=&#34;https://nate.mecca1.net/posts/2024-08-05_edc/&#34;&gt;post about EDC&lt;/a&gt; I rambled on about hats for a bit, and a couple weeks ago I decided to try making one myself. I didn&amp;rsquo;t initially plan on writing a blog post explaining how I did it; however, after having trouble finding a printable pattern, I wound up just winging it, and I figured I&amp;rsquo;d put my process out there.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Fur hats are way warmer than just about anything else, and even though this was a trial run with a fake polyester fur pelt it&amp;rsquo;s still a warm hat on its own. I plan to re-do the process using a natural sheepskin pelt, but if you want to follow along the process works with a natural pelt, fake pelt, and even regular cloth.&lt;/p&gt;
           
           
         
@@ -56,7 +65,9 @@ IPFS a poggers web design
       <description>
         
           
-            Dropdown: Random notes from drafting Alright, it is April 2nd and I&amp;rsquo;m typing out the first couple of characters in this document which I can already guess is going to be another long post. I already have tons of posts that I expected to be medium length which ballooned out, so given I know ahead of time it&amp;rsquo;ll be long who knows how long it will be. Err, well, editing me and you the reader will know how long it is when I actually publish it.
+            &lt;details&gt;
+  &lt;summary&gt;Dropdown: Random notes from drafting&lt;/summary&gt;
+  &lt;p&gt;&lt;em&gt;Alright, it is April 2nd and I&amp;rsquo;m typing out the first couple of characters in this document which I can already guess is going to be another long post. I already have tons of posts that I expected to be medium length which ballooned out, so given I know ahead of time it&amp;rsquo;ll be long who knows how long it will be. Err, well, editing me and you the reader will know how long it is when I actually publish it. Anyway, regardless, you have been warned.&lt;/em&gt;&lt;/p&gt;
           
           
         
@@ -72,7 +83,7 @@ IPFS a poggers web design
       <description>
         
           
-            Okay, so I&amp;rsquo;m not actually sure I would consider myself a data hoarder, but I thought the title was pretty eye catching, and archival is close enough to data hoarding to only be moderately clickbaity. (I actually think I&amp;rsquo;ve got a pretty well organized and reasonably trimmed home directory). Anyway, I thought I would go over a couple of related topics, specifically my backup strategy, some data archiving, and me getting back into useing optical storage.
+            &lt;p&gt;Okay, so I&amp;rsquo;m not actually sure I would consider myself a data hoarder, but I thought the title was pretty eye catching, and archival is close enough to data hoarding to only be moderately clickbaity. (I actually think I&amp;rsquo;ve got a pretty well organized and reasonably trimmed home directory). Anyway, I thought I would go over a couple of related topics, specifically my backup strategy, some data archiving, and me getting back into useing optical storage.&lt;/p&gt;
           
           
         
@@ -88,7 +99,7 @@ IPFS a poggers web design
       <description>
         
           
-            Chances are if you&amp;rsquo;re here it&amp;rsquo;s through an RSS feed (or an RSS feed bridged to something else), so I probably don&amp;rsquo;t need to do too much of an introduction. Here&amp;rsquo;s a quick rundown if you&amp;rsquo;re unfamiliar. However, today I wanted to talk about RSS (as well as three other means of following content), how I&amp;rsquo;ve benefited from it, and a small project I started. Just about every piece of content I follow is through RSS - organized into different categories (news, blogs, videos, audio, etc), and the following benefits really stand out:
+            &lt;p&gt;Chances are if you&amp;rsquo;re here it&amp;rsquo;s through an RSS feed (or an RSS feed bridged to something else), so I probably don&amp;rsquo;t need to do too much of an introduction. &lt;a href=&#34;https://www.wpbeginner.com/beginners-guide/what-is-rss-how-to-use-rss-in-wordpress/&#34;&gt;Here&amp;rsquo;s a quick rundown if you&amp;rsquo;re unfamiliar&lt;/a&gt;. However, today I wanted to talk about RSS (as well as three other means of following content), how I&amp;rsquo;ve benefited from it, and a small project I started. Just about every piece of content I follow is through RSS - organized into different categories (news, blogs, videos, audio, etc), and the following benefits really stand out:&lt;/p&gt;
           
           
         

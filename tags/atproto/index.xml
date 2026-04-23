@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>atproto on An Untitled Blog</title>
+    <title>Atproto on An Untitled Blog</title>
     <link>/tags/atproto/</link>
-    <description>Recent content in atproto on An Untitled Blog</description>
+    <description>Recent content in Atproto on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="/tags/atproto/index.xml" rel="self" type="application/rss+xml" />
@@ -16,8 +16,8 @@
       <description>
         
           
-            Update 3/14/2026: I&amp;rsquo;ve updated the post to reflect that porting Nomadic Identities to Activity Pub is still ongoing. Shoutout to silverpill@mitra.social. Also, less than 24 hours posting this, BlueSky CEO Jay Grabber has stepped down from her roll. A change in leadership may change the state of the platform, which may cause this post to be somewhat inaccurate in the future.
-Hello, I&amp;rsquo;m back for round three of my social media protocol comparisons.
+            &lt;p&gt;&lt;em&gt;Update 3/14/2026: I&amp;rsquo;ve updated the post to reflect that porting Nomadic Identities to Activity Pub is still ongoing. Shoutout to silverpill@mitra.social. Also, less than 24 hours posting this, BlueSky CEO Jay Grabber has stepped down from her roll. A change in leadership may change the state of the platform, which may cause this post to be somewhat inaccurate in the future.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Hello, I&amp;rsquo;m back for round three of my social media protocol comparisons. I wrote v2 because of some mistakes on my part, although it&amp;rsquo;s been two years since writing it, and it&amp;rsquo;s become a bit out of date. It&amp;rsquo;s also a bit long, with a bunch of explainers and clutter right at the start of it, so for this round, I figured I&amp;rsquo;d get things up to date while shortening the text (or at least moving ramblings to footnotes) and move a lot of the explainers to the end.&lt;/p&gt;
           
           
         
@@ -33,8 +33,15 @@ Hello, I&amp;rsquo;m back for round three of my social media protocol comparison
       <description>
         
           
-            As is customary on my microblogging posts, let&amp;rsquo;s get us started with an original meme. Also, if you&amp;rsquo;d like to read my previous Microblogging Protocols compared posts, you can read v1 here and v2 here.
-It&amp;rsquo;s been a little over a year since I made my updated microblogging protocols comparison. Since then a few things have happened, and my previous could use some trimming. In the spirit of keeping things shorter (and keeping the comparison v3 post relevant longer), I figured I&amp;rsquo;d split the post into two parts: this one, which includes random updates and things that happened over the last year or so - and a second one, &amp;ldquo;Microblogging Protocols Compared v3&amp;rdquo; which will be a more streamlined protocol comparison.
+            &lt;p&gt;&lt;em&gt;As is customary on my microblogging posts, let&amp;rsquo;s get us started with an original meme.&lt;/em&gt;
+&lt;div&gt;
+    &lt;video width=&#34;720&#34; height=&#34;480&#34; controls&gt;
+  &lt;source src=&#34;/img/protocol-meme-3.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Also, if you&amp;rsquo;d like to read my previous Microblogging Protocols compared posts, you can read &lt;a href=&#34;/posts/2024-01-30_microblogging-protocols/&#34;&gt;v1 here&lt;/a&gt; and &lt;a href=&#34;/posts/2024-08-11_microbloggingv2/&#34;&gt;v2 here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s been a little over a year since I made my updated microblogging protocols comparison. Since then a few things have happened, and my previous could use some trimming. In the spirit of keeping things shorter (and keeping the comparison v3 post relevant longer), I figured I&amp;rsquo;d split the post into two parts: this one, which includes random updates and things that happened over the last year or so - and a second one, &amp;ldquo;Microblogging Protocols Compared v3&amp;rdquo; which will be a more streamlined protocol comparison. Anyway, as you can probably tell by the meme, the microblogging protocols have been going through a rough patch lately - though it&amp;rsquo;s not all bad news.&lt;/p&gt;
           
           
         
@@ -50,8 +57,10 @@ It&amp;rsquo;s been a little over a year since I made my updated microblogging p
       <description>
         
           
-            Update: September 20th, 2024: I was incorrect regarding AT&amp;rsquo;s (BlueSky) inability to fully delete things, the protocol DOES support fully deleting posts from the user&amp;rsquo;s repo and I&amp;rsquo;ve updated the post to reflect that. Read more. Big thanks to Ryan for providing the info.
-Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) - in keeping tradition with the original post - Bluesky has managed to change rapidly shortly after I finished this.
+            &lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Update: September 20th, 2024:&lt;/strong&gt;
+I was incorrect regarding AT&amp;rsquo;s (BlueSky) inability to fully delete things, the protocol DOES support fully deleting posts from the user&amp;rsquo;s repo and I&amp;rsquo;ve updated the post to reflect that. &lt;a href=&#34;https://atproto.com/specs/repository&#34;&gt;Read more&lt;/a&gt;. Big thanks to &lt;a href=&#34;https://snarfed.org/&#34;&gt;Ryan&lt;/a&gt; for providing the info.&lt;/p&gt;
+&lt;p&gt;Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) - in keeping tradition with the original post - Bluesky has managed to change rapidly shortly after I finished this. It&amp;rsquo;s good news again, in this case a huge influx of users, many from Brazil after Twitter/X was blocked. Additionally, I also recently saw &lt;a href=&#34;https://frontpage.fyi/&#34;&gt;Frontpage&lt;/a&gt;, an AT based link aggregator. In the post I mention a few times hoping more will be built on AT now that it&amp;rsquo;s opened up, and it appears exactly that is happening.&lt;/p&gt;
           
           
         
@@ -67,9 +76,10 @@ Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) 
       <description>
         
           
-            Note: This post is out of date, here&amp;rsquo;s a more up to date version
-Update August 5th 2024
-I have some good and bad news regarding this post. First, I made two mistakes. AT crawlers are not in fact crawlers, they are called relays. Also, shared inboxes are actually part of the Activity Pub W3C standard as apposed to hacky additions to the protocol by third party servers. I was wrong about Activity Pub servers sending multiple messages to the same server remote to update it about a single post.
+            &lt;p&gt;Note: This post is out of date, &lt;a href=&#34;https://nate.mecca1.net/posts/2024-08-11_microbloggingv2/&#34;&gt;here&amp;rsquo;s a more up to date version&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Update August 5th 2024&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I have some good and bad news regarding this post. First, I made two mistakes. AT crawlers are not in fact crawlers, they are called relays. Also, shared inboxes are actually part of the Activity Pub W3C standard as apposed to hacky additions to the protocol by third party servers. I was wrong about Activity Pub servers sending multiple messages to the same server remote to update it about a single post.&lt;/p&gt;
           
           
         

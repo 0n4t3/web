@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ai on An Untitled Blog</title>
+    <title>Ai on An Untitled Blog</title>
     <link>/tags/ai/</link>
-    <description>Recent content in ai on An Untitled Blog</description>
+    <description>Recent content in Ai on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/ai/index.xml" rel="self" type="application/rss+xml" />
@@ -16,7 +16,16 @@
       <description>
         
           
-            POV: You&amp;rsquo;re a professional dev watching me talk about vibe coding: Your browser does not support the video tag. I&amp;rsquo;m not exactly a stranger to using AI code, parts of nipy-bridge like the part that handles posts based on size was written by Chat GPT via Duck.AI, and I regularly use a Mixtral-Dolphin written bash script to convert files with avifenc. Recently, however, I came across Bookstr by MK Fain, which is being vibe coded.
+            &lt;p&gt;POV: You&amp;rsquo;re a professional dev watching me talk about vibe coding:
+&lt;div&gt;
+    &lt;video width=&#34;480&#34; height=&#34;360&#34; controls&gt;
+  &lt;source src=&#34;/img/cringe.mp4&#34; type=&#34;video/mp4&#34;&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I&amp;rsquo;m not exactly a stranger to using AI code, parts of &lt;a href=&#34;https://github.com/0n4t3/nipy-bridge&#34;&gt;nipy-bridge&lt;/a&gt; like the part that handles posts based on size was written by Chat GPT via Duck.AI, and I regularly use a Mixtral-Dolphin written bash script to convert files with avifenc. Recently, however, I came across &lt;a href=&#34;https://bookstr.xyz/&#34;&gt;Bookstr&lt;/a&gt; by MK Fain, which is being vibe coded. It&amp;rsquo;s a site that takes books people are talking about on Nostr and combines them with OpenLibrary data to offer reading material recommendations and reviews. The site alone is a cool concept, and the fact it was vibe coded and working with a lot of moving parts made me think I need to check out how good AI code has gotten. So yeah, here I chronicle my vibe coding adventure.&lt;/p&gt;
           
           
         
@@ -32,8 +41,10 @@
       <description>
         
           
-            Update Oct. 21st: The transcription portion of the post has been updated, what I originally mistook as issues with how the data was formatted was an issue with too many tokens in the transcript I wanted transcribed.
-At this point we all know how LLMs can generate text, and I&amp;rsquo;m guessing that everybody reading this knows some relatively lightweight libre LLMs can be installed and run locally. But, as you can probably guess by reading this, I enjoy writing stuff, so text generation isn&amp;rsquo;t really something that I have a use for.
+            &lt;p&gt;Update Oct. 21st:
+The transcription portion of the post has been updated, what I originally mistook as issues with how the data was formatted was an issue with too many tokens in the transcript I wanted transcribed.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;At this point we all know how LLMs can generate text, and I&amp;rsquo;m guessing that everybody reading this knows some relatively lightweight libre LLMs can be installed and run locally. But, as you can probably guess by reading this, I enjoy writing stuff, so text generation isn&amp;rsquo;t really something that I have a use for. The knowledge stored in them is helpful for sure; I use local LLMs to find data or troubleshoot something on probably more or less a once-a-week basis (because I&amp;rsquo;m not connected to the internet, can&amp;rsquo;t find what I&amp;rsquo;m looking for in search engines, want to ask about an error code in plain English, etc). They&amp;rsquo;re also always fun to toy around with at first, but after using them for a while the fun wears off and it just becomes another tool.&lt;/p&gt;
           
           
         
@@ -49,7 +60,7 @@ At this point we all know how LLMs can generate text, and I&amp;rsquo;m guessing
       <description>
         
           
-            What you are reading now is the fourth iteration of this post, which has gone through multiple revisions and re-considerations. It might feel a bit fragmented, but my aim is to provide a comprehensive post covering two related topics. The first part will discuss my experimentation with local LLMs (large language models), and the second will explore my personal philosophy and conclusions on AI. Feel free to only read one or the other.
+            &lt;p&gt;What you are reading now is the fourth iteration of this post, which has gone through multiple revisions and re-considerations. It might feel a bit fragmented, but my aim is to provide a comprehensive post covering two related topics. The first part will discuss my experimentation with local LLMs (large language models), and the second will explore my personal philosophy and conclusions on AI. Feel free to only read one or the other. They could have been separate posts, but I enjoy writing (and reading) long posts that are well thought out and cover a wide range of topics. Besides, if you regularly read my writings you&amp;rsquo;ll know I have a habit of writing posts that expand beyond what I initially intended.&lt;/p&gt;
           
           
         

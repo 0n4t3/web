@@ -6,7 +6,25 @@
     <description>Recent content on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NMail is Neat</title>
+      <link>/posts/2026-04-23_nmail-is-neat/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2026-04-23_nmail-is-neat/</guid>
+      <description>
+        
+          
+            &lt;p&gt;I&amp;rsquo;ve written a lot of longer blog posts lately, time to get back into the classic &amp;ldquo;Nate talks about the thing he just read about and finds neat.&amp;rdquo; So, without further ado, I just read about &lt;a href=&#34;https://nostrmail.org/&#34;&gt;NMail&lt;/a&gt; (&lt;a href=&#34;https://github.com/nogringo/nostr-mail-client&#34;&gt;github&lt;/a&gt;) - and I think it&amp;rsquo;s neat. In fact, I think it&amp;rsquo;s actually one of the most interesting decentralized communication tools I&amp;rsquo;ve seen in a while.&lt;/p&gt;
+&lt;h3 id=&#34;email-is-still-king&#34;&gt;Email is still king&lt;/h3&gt;
+&lt;p&gt;Email is still the king of communication - according to Wikipedia, 50 million non-spam emails are sent every day. Whether it&amp;rsquo;s a contact feature for a blog, the need to send a (small) file, or helping setup a church website - email is usually my go to because of its ubiquity. Unlike something like messengers, which vary a lot between different communities, nationalities, and interests; you&amp;rsquo;ll have a hard time finding somebody without an email address. Even if it&amp;rsquo;s becoming a little less popular in my generation (gen z) and lower - probably because companies like to spam like no tomorrow, and I doubt most people use filters on their inbox - it&amp;rsquo;s still universal across all age groups as well. Not to mention it&amp;rsquo;s, unlike most messengers or social media platforms, an open protocol where you can feasibly own&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; your own identifier and server&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>A Technical Comparison of Distributed Social Media Protocols v3</title>
       <link>/posts/2026-03-08_microblogging-protocols-v3/</link>
@@ -16,8 +34,8 @@
       <description>
         
           
-            Update 3/14/2026: I&amp;rsquo;ve updated the post to reflect that porting Nomadic Identities to Activity Pub is still ongoing. Shoutout to silverpill@mitra.social. Also, less than 24 hours posting this, BlueSky CEO Jay Grabber has stepped down from her roll. A change in leadership may change the state of the platform, which may cause this post to be somewhat inaccurate in the future.
-Hello, I&amp;rsquo;m back for round three of my social media protocol comparisons.
+            &lt;p&gt;&lt;em&gt;Update 3/14/2026: I&amp;rsquo;ve updated the post to reflect that porting Nomadic Identities to Activity Pub is still ongoing. Shoutout to silverpill@mitra.social. Also, less than 24 hours posting this, BlueSky CEO Jay Grabber has stepped down from her roll. A change in leadership may change the state of the platform, which may cause this post to be somewhat inaccurate in the future.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Hello, I&amp;rsquo;m back for round three of my social media protocol comparisons. I wrote v2 because of some mistakes on my part, although it&amp;rsquo;s been two years since writing it, and it&amp;rsquo;s become a bit out of date. It&amp;rsquo;s also a bit long, with a bunch of explainers and clutter right at the start of it, so for this round, I figured I&amp;rsquo;d get things up to date while shortening the text (or at least moving ramblings to footnotes) and move a lot of the explainers to the end.&lt;/p&gt;
           
           
         
@@ -33,9 +51,60 @@ Hello, I&amp;rsquo;m back for round three of my social media protocol comparison
       <description>
         
           
-            Originally, I was drafting this in September, planning on dedicating it to Windows 10 Home becoming EOL. I also figured I’d share a meme that contained something along the following:
-Instead, however, it’s early 2026, and I feel like a dedication to RAM prices would be a more fitting start:
-Memes aside, the lightweight laptop - what I’m typing this post on - has a whopping total of 2 GB of ram (1.
+            &lt;p&gt;Originally, I was drafting this in September, planning on dedicating it to Windows 10 Home becoming EOL. I also figured I’d share a meme that contained something along the following:&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;/img/old_laptop/meme1.avif&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Instead, however, it’s early 2026, and I feel like a dedication to RAM prices would be a more fitting start:&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;/img/old_laptop/meme2.avif&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Memes aside, the lightweight laptop - what I’m typing this post on - has a whopping total of 2 GB of ram (1.88 usable) and an Intel Bay Trail processor from over a decade ago. And, believe it or not, it’s a pretty capable machine; at least after being very particular about what I install on it. The device itself is a former Chromebook, now sporting Coreboot and Debian 13.&lt;/p&gt;
           
           
         
@@ -51,7 +120,7 @@ Memes aside, the lightweight laptop - what I’m typing this post on - has a who
       <description>
         
           
-            So, I guess there goes 2025. I’m a bit late on the wrap up post, though as much as I’d like to blame a cold I’ve been dealing with for a while (lol I wrote that several days ago when drafting, and I&amp;rsquo;ve still just now gotten around to posting my finished draft), it’s mostly just laziness. All things considered, it’s been a pretty eventful year for myself - namely that I left my job and returned to my home state.
+            &lt;p&gt;So, I guess there goes 2025. I’m a bit late on the wrap up post, though as much as I’d like to blame a cold I’ve been dealing with for a while (lol I wrote that several days ago when drafting, and I&amp;rsquo;ve still just now gotten around to posting my finished draft), it’s mostly just laziness. All things considered, it’s been a pretty eventful year for myself - namely that I left my job and returned to my home state. It’s been a little busy, and finding local work has been a slog, but all things considered it’s been a good year (and a very extended vacation has been nice).&lt;/p&gt;
           
           
         
@@ -67,8 +136,262 @@ Memes aside, the lightweight laptop - what I’m typing this post on - has a who
       <description>
         
           
-            In 2023 Robb Knight started the defaults trend, covering what people used as their default apps for specific purposes. I did a 2023 version, and while I mentioned planning to do a late 2024 version in my 2024 year end wrap up post, I never wound up getting to it. I&amp;rsquo;ve got a 2025 edition of my default apps below, with changes in bold.
-PC Tablet Phone Mail Client Proton Web N/A Proton App Mail Server ^ ^ ^ Notes Joplin Joplin Joplin Tasks N/A N/A Tasks (org.
+            &lt;p&gt;In 2023 &lt;a href=&#34;https://defaults.rknight.me/&#34;&gt;Robb Knight started the defaults trend&lt;/a&gt;, covering what people used as their default apps for specific purposes. I did a &lt;a href=&#34;/posts/2023-11-14_defaults/&#34;&gt;2023 version&lt;/a&gt;, and while I mentioned planning to do a late 2024 version in my 2024 year end wrap up post, I never wound up getting to it. I&amp;rsquo;ve got a 2025 edition of my default apps below, with changes in &lt;strong&gt;bold&lt;/strong&gt;.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;PC&lt;/th&gt;
+          &lt;th&gt;Tablet&lt;/th&gt;
+          &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Mail Client&lt;/td&gt;
+          &lt;td&gt;Proton Web&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Proton App&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Mail Server&lt;/td&gt;
+          &lt;td&gt;^&lt;/td&gt;
+          &lt;td&gt;^&lt;/td&gt;
+          &lt;td&gt;^&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Notes&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Tasks&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Tasks (org.tasks Android App)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Photo Shooting&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;OpenCam, G Cam&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Photo Management&lt;/td&gt;
+          &lt;td&gt;File Manager&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;AOSP Gallery&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Calendar&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Fossify Calendar&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Cloud Storage&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;AWS, Proton, Syncthing&lt;/td&gt;
+          &lt;td&gt;Syncthing&lt;/td&gt;
+          &lt;td&gt;Proton, Syncthing&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RSS&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;FreshRSS&lt;/td&gt;
+          &lt;td&gt;FreshRSS&lt;/td&gt;
+          &lt;td&gt;FreshRSS (via Read You App)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Contacts&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;AOSP Contacts&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Browser&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Brave &amp;amp; LibreWolf&lt;/td&gt;
+          &lt;td&gt;Brave&lt;/td&gt;
+          &lt;td&gt;Brave &amp;amp; Fennec&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Chat&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Google Chat (web)&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Beeper, Signal, Simplex&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Bookmarks&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Brave Sync&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Brave Sync&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Read It Later&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;SingleFile Plugin + Syncthing&lt;/td&gt;
+          &lt;td&gt;SingleFile Plugin + Syncthing&lt;/td&gt;
+          &lt;td&gt;Brave’s MHTML or Single File Plugin + Syncthing&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Word Processing&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Abiword&lt;/td&gt;
+          &lt;td&gt;Abiword&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Speedsheets&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Presentations&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Shopping Lists&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Meal Planning&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Budgeting&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;MoneyWallet App&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;News&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;FreshRSS&lt;/td&gt;
+          &lt;td&gt;FreshRSS&lt;/td&gt;
+          &lt;td&gt;FreshRSS (via Read You)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Music&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Clementine&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Podcasts/Audiobooks&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Phone via Bluetooth&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Audio Anchor&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Password Management&lt;/td&gt;
+          &lt;td&gt;Keepass&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Keepass&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;my-own-custom-additions-to-the-prompt&#34;&gt;My own custom additions to the prompt:&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;PC&lt;/th&gt;
+          &lt;th&gt;Tablet&lt;/th&gt;
+          &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Operating System&lt;/td&gt;
+          &lt;td&gt;Debian (+ KDE)&lt;/td&gt;
+          &lt;td&gt;Debian (+ Gnome)&lt;/td&gt;
+          &lt;td&gt;GrapheneOS&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2FA&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Agis&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Ebook Reader&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Calibre&lt;/td&gt;
+          &lt;td&gt;Librera (via Waydroid)&lt;/td&gt;
+          &lt;td&gt;Librera&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Microblogging Protocols&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Nostrudel (Nostr) - Friendica Web (ActivityPub &amp;amp; more)&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Amythest (Nostr) - Friendica PWA (ActivityPub &amp;amp; more)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;IRC&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Hexchat&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Photo Editor&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Gimp + Darktable&lt;/td&gt;
+          &lt;td&gt;Darktable&lt;/td&gt;
+          &lt;td&gt;Snapseed&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;SMS&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Flip Phone&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Text Editor&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Emacs, Kate, VS Code&lt;/td&gt;
+          &lt;td&gt;Emacs&lt;/td&gt;
+          &lt;td&gt;Nano (via Termux)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Terminal&lt;/td&gt;
+          &lt;td&gt;Konsole&lt;/td&gt;
+          &lt;td&gt;Gnome Terminal&lt;/td&gt;
+          &lt;td&gt;Termux&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;TTS&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Festival&lt;/td&gt;
+          &lt;td&gt;e-speak&lt;/td&gt;
+          &lt;td&gt;Google Voice Synthesis&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Virtual Keyboard&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;Gnome Keyboard&lt;/td&gt;
+          &lt;td&gt;Futo Keyboard&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;YouTube &amp;amp; Other Platforms&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;FreshRSS + FreeTube or a Private Tab&lt;/td&gt;
+          &lt;td&gt;FreshRSS + FreeTube or a Private Tab&lt;/td&gt;
+          &lt;td&gt;FreshRSS + Grayjay or a Private Tab&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Local LLMs&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LM Studio&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;PocketPal&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Local Translation&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LM Studio&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;G Translate, PocketPal, Amythest&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;why-i-changed-specific-things&#34;&gt;Why I changed specific things:&lt;/h3&gt;
+&lt;p&gt;I haven&amp;rsquo;t actually changed my &lt;strong&gt;Notes App&lt;/strong&gt; yet, but I might in the future. Before Joplin, I used to keep a directory of markdown files which I&amp;rsquo;d sync using Syncthing. This was before I had any sort of server, so both my phone and PC would have to be online and running Syncthing to sync the files. Joplin fixed that by letting me import the markdown directory, then sync to a Dropbox account using E2E encryption. I later set up Nextcloud, then replaced it with a server running FreshRSS &amp;amp; Syncthing. With an instance of Syncthing running 24/7, I can get the same instant sync regardless of what other devices are online, as well as sync other files (e.g. scanned notebook pages as PDFs) in addition to markdown files. Joplin can both import &amp;amp; export notebooks as markdown directories, so there&amp;rsquo;s no real cost of giving my new (old) setup another try.&lt;/p&gt;
           
           
         
@@ -84,8 +407,15 @@ PC Tablet Phone Mail Client Proton Web N/A Proton App Mail Server ^ ^ ^ Notes Jo
       <description>
         
           
-            As is customary on my microblogging posts, let&amp;rsquo;s get us started with an original meme. Also, if you&amp;rsquo;d like to read my previous Microblogging Protocols compared posts, you can read v1 here and v2 here.
-It&amp;rsquo;s been a little over a year since I made my updated microblogging protocols comparison. Since then a few things have happened, and my previous could use some trimming. In the spirit of keeping things shorter (and keeping the comparison v3 post relevant longer), I figured I&amp;rsquo;d split the post into two parts: this one, which includes random updates and things that happened over the last year or so - and a second one, &amp;ldquo;Microblogging Protocols Compared v3&amp;rdquo; which will be a more streamlined protocol comparison.
+            &lt;p&gt;&lt;em&gt;As is customary on my microblogging posts, let&amp;rsquo;s get us started with an original meme.&lt;/em&gt;
+&lt;div&gt;
+    &lt;video width=&#34;720&#34; height=&#34;480&#34; controls&gt;
+  &lt;source src=&#34;/img/protocol-meme-3.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Also, if you&amp;rsquo;d like to read my previous Microblogging Protocols compared posts, you can read &lt;a href=&#34;/posts/2024-01-30_microblogging-protocols/&#34;&gt;v1 here&lt;/a&gt; and &lt;a href=&#34;/posts/2024-08-11_microbloggingv2/&#34;&gt;v2 here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s been a little over a year since I made my updated microblogging protocols comparison. Since then a few things have happened, and my previous could use some trimming. In the spirit of keeping things shorter (and keeping the comparison v3 post relevant longer), I figured I&amp;rsquo;d split the post into two parts: this one, which includes random updates and things that happened over the last year or so - and a second one, &amp;ldquo;Microblogging Protocols Compared v3&amp;rdquo; which will be a more streamlined protocol comparison. Anyway, as you can probably tell by the meme, the microblogging protocols have been going through a rough patch lately - though it&amp;rsquo;s not all bad news.&lt;/p&gt;
           
           
         
@@ -101,7 +431,15 @@ It&amp;rsquo;s been a little over a year since I made my updated microblogging p
       <description>
         
           
-            Can you tell the difference between the two images above? At first glance, probably not. If you look at them side by side long enough, at least in fullscreen on an HD display, you might notice a little bit of a difference. In one the sky looks an ever so slightly darker shade, and if you look close enough, color shades seem to change in a more blocky structure instead of a more smooth transition.
+            &lt;img src=&#34;https://raw.githubusercontent.com/0n4t3/Compression-Comparison/refs/heads/main/P1050983.JPG&#34;&gt;
+
+
+
+
+ &lt;img src=&#34;https://raw.githubusercontent.com/0n4t3/Compression-Comparison/refs/heads/main/P1050983.avif&#34;&gt;
+
+
+&lt;p&gt;Can you tell the difference between the two images above? At first glance, probably not. If you look at them side by side long enough, at least in fullscreen on an HD display, you might notice a little bit of a difference. In one the sky looks an ever so slightly darker shade, and if you look close enough, color shades seem to change in a more blocky structure instead of a more smooth transition. Zoom in, and you might notice the word &amp;ldquo;Excel&amp;rdquo; on the side of the windmill is mostly legible on one, and mostly illegible on the other.&lt;/p&gt;
           
           
         
@@ -117,8 +455,8 @@ It&amp;rsquo;s been a little over a year since I made my updated microblogging p
       <description>
         
           
-            I was thinking about making a personal update, then saw a post on Joelchrono’s blog about the 10 useless facts about me challenge, so I thought I’d combine both of those into one post.
-Fairly recently, I left my job to relocate back to my home state of New York, and have been looking for work more locally. I kind of expected work to be a bit hard to come by, and planned accordingly, but that still doesn’t make the job search any less of a slog.
+            &lt;p&gt;&lt;em&gt;I was thinking about making a personal update, then saw a post on Joelchrono’s blog about the &lt;a href=&#34;https://joelchrono.xyz/blog/when-blogging-topics-popup-again/&#34;&gt;10 useless facts about me&lt;/a&gt; challenge, so I thought I’d combine both of those into one post.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Fairly recently, I left my job to relocate back to my home state of New York, and have been looking for work more locally. I kind of expected work to be a bit hard to come by, and planned accordingly, but that still doesn’t make the job search any less of a slog. If by any chance there&amp;rsquo;s anyone hiring - either in WNY or hiring for remote positions - hit me up. I’ve got experience with the standard Microsoft stack (both your local DC setup, as well as the MS cloud), Linux, VMware, and networking equipment (nearly exclusively Cisco).&lt;/p&gt;
           
           
         
@@ -134,15 +472,18 @@ Fairly recently, I left my job to relocate back to my home state of New York, an
       <description>
         
           
-            A based design that makes a web that&amp;rsquo;s true
-ICANNs and NATs embrace shall be no more
-Behind a Pi or in the cloud for you
-We use that tool be I2P or Tor
-Come join a world of speech that can flow free
-The words by truths of math they shall be bound
-A power built right in that&amp;rsquo;s DHT
-Identity by key pairs holds its ground
-IPFS a poggers web design
+            &lt;p&gt;A based design that makes a web that&amp;rsquo;s true&lt;br&gt;
+ICANNs and NATs embrace shall be no more&lt;br&gt;
+Behind a Pi or in the cloud for you&lt;br&gt;
+We use that tool be I2P or Tor&lt;/p&gt;
+&lt;p&gt;Come join a world of speech that can flow free&lt;br&gt;
+The words by truths of math they shall be bound&lt;br&gt;
+A power built right in that&amp;rsquo;s DHT&lt;br&gt;
+Identity by key pairs holds its ground&lt;/p&gt;
+&lt;p&gt;IPFS a poggers web design&lt;br&gt;
+ID by content not by where it is&lt;br&gt;
+Defi domain to own your name online&lt;br&gt;
+A world that&amp;rsquo;s free of gov and free of biz&lt;/p&gt;
           
           
         
@@ -158,7 +499,16 @@ IPFS a poggers web design
       <description>
         
           
-            POV: You&amp;rsquo;re a professional dev watching me talk about vibe coding: Your browser does not support the video tag. I&amp;rsquo;m not exactly a stranger to using AI code, parts of nipy-bridge like the part that handles posts based on size was written by Chat GPT via Duck.AI, and I regularly use a Mixtral-Dolphin written bash script to convert files with avifenc. Recently, however, I came across Bookstr by MK Fain, which is being vibe coded.
+            &lt;p&gt;POV: You&amp;rsquo;re a professional dev watching me talk about vibe coding:
+&lt;div&gt;
+    &lt;video width=&#34;480&#34; height=&#34;360&#34; controls&gt;
+  &lt;source src=&#34;/img/cringe.mp4&#34; type=&#34;video/mp4&#34;&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I&amp;rsquo;m not exactly a stranger to using AI code, parts of &lt;a href=&#34;https://github.com/0n4t3/nipy-bridge&#34;&gt;nipy-bridge&lt;/a&gt; like the part that handles posts based on size was written by Chat GPT via Duck.AI, and I regularly use a Mixtral-Dolphin written bash script to convert files with avifenc. Recently, however, I came across &lt;a href=&#34;https://bookstr.xyz/&#34;&gt;Bookstr&lt;/a&gt; by MK Fain, which is being vibe coded. It&amp;rsquo;s a site that takes books people are talking about on Nostr and combines them with OpenLibrary data to offer reading material recommendations and reviews. The site alone is a cool concept, and the fact it was vibe coded and working with a lot of moving parts made me think I need to check out how good AI code has gotten. So yeah, here I chronicle my vibe coding adventure.&lt;/p&gt;
           
           
         
@@ -174,7 +524,7 @@ IPFS a poggers web design
       <description>
         
           
-            This is another one of my posts that&amp;rsquo;s effectively a few posts crammed together on related topics. Long story short, I started looking into handheld consoles a couple of months back, but in doing so picked up a handheld style controller for mobile instead. I&amp;rsquo;ve really enjoyed that style of gameing, so I wound up circling back and pre-ordering a handheld from Retroid. In addition to talking about that, however, I&amp;rsquo;ve also rambled on about how I got started with emulation, and have some notes on the different handheld options I found during research.
+            &lt;p&gt;This is another one of my posts that&amp;rsquo;s effectively a few posts crammed together on related topics. Long story short, I started looking into handheld consoles a couple of months back, but in doing so picked up a handheld style controller for mobile instead. I&amp;rsquo;ve really enjoyed that style of gameing, so I wound up circling back and pre-ordering a handheld from Retroid. In addition to talking about that, however, I&amp;rsquo;ve also rambled on about how I got started with emulation, and have some notes on the different handheld options I found during research. Feel free to skip around if you&amp;rsquo;re only interested in some of the post.&lt;/p&gt;
           
           
         
@@ -190,8 +540,8 @@ IPFS a poggers web design
       <description>
         
           
-            Update: Everything worked in hugo&amp;rsquo;s test environment, but I guess local images in sliders breaks everything for who knows why once I actually published the post. I&amp;rsquo;m just going to replace some sliders with lists of images you can click on.
-Before upgrading my phone I heard the Pixel 8a referred to as the &amp;ldquo;most boring phone ever,&amp;rdquo; and that seems like a good description of the phone - and something that I&amp;rsquo;m a fan of.
+            &lt;p&gt;&lt;em&gt;Update: Everything worked in hugo&amp;rsquo;s test environment, but I guess local images in sliders breaks everything for who knows why once I actually published the post. I&amp;rsquo;m just going to replace some sliders with lists of images you can click on.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Before upgrading my phone I heard the Pixel 8a referred to as the &amp;ldquo;most boring phone ever,&amp;rdquo; and that seems like a good description of the phone - and something that I&amp;rsquo;m a fan of. If you&amp;rsquo;re techy you&amp;rsquo;ll probably be interested in weird and unique devices (homemade cyberdeck anyone?), but as far as being used as a tool goes, the Pixel A series excels. So yeah, today I thought I would review my Pixel 5a &amp;amp; 8a in addition to a quick blurb on a mystery phone.&lt;/p&gt;
           
           
         
@@ -207,7 +557,7 @@ Before upgrading my phone I heard the Pixel 8a referred to as the &amp;ldquo;mos
       <description>
         
           
-            Another wild and wacky year is wrapping up, and with it the customary year end wrap up/retrospective. This year I posted a total of 11 posts1, two being update/revised posts and nine standalone posts. My longest post (by far) was my revised microblogging comparison post at 15,411 words2 3, and my shortest was my pickles/sauerkraut recipe post at 722 words (the only post under 1k words). My average post length was 4991 words, my median post length being a similar 5169 words.
+            &lt;p&gt;Another wild and wacky year is wrapping up, and with it the customary year end wrap up/retrospective. This year I posted a total of 11 posts&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, two being update/revised posts and nine standalone posts. My longest post (by far) was my revised microblogging comparison post at 15,411 words&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;, and my shortest was my pickles/sauerkraut recipe post at 722 words (the only post under 1k words). My average post length was 4991 words, my median post length being a similar 5169 words.&lt;/p&gt;
           
           
         
@@ -223,8 +573,8 @@ Before upgrading my phone I heard the Pixel 8a referred to as the &amp;ldquo;mos
       <description>
         
           
-            Like a lot of my posts, this kind of kept growing. Going over my photos I kept finding a bunch of favorites I wanted to share outside just using ones for effects, so now I&amp;rsquo;ve got a photos page if you want to check them out.
-You might have played around with AI image generation, getting a little hit of dopamine whenever you get something that looks visually pleasing without actually putting in any effort.
+            &lt;p&gt;&lt;em&gt;Like a lot of my posts, this kind of kept growing. Going over my photos I kept finding a bunch of favorites I wanted to share outside just using ones for effects, so now I&amp;rsquo;ve got a &lt;a href=&#34;https://nate.mecca1.net/pages/photos&#34;&gt;photos page&lt;/a&gt; if you want to check them out.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You might have played around with AI image generation, getting a little hit of dopamine whenever you get something that looks visually pleasing without actually putting in any effort. Using filters is kind of the same thing; you can get something that looks cool despite needing minimal effort and skill, but in this case, it&amp;rsquo;s really your art (assuming you&amp;rsquo;re using filters on your photos). It might be fun to toy around with, so I thought I would share some ways to do so.&lt;/p&gt;
           
           
         
@@ -240,8 +590,10 @@ You might have played around with AI image generation, getting a little hit of d
       <description>
         
           
-            Update Oct. 21st: The transcription portion of the post has been updated, what I originally mistook as issues with how the data was formatted was an issue with too many tokens in the transcript I wanted transcribed.
-At this point we all know how LLMs can generate text, and I&amp;rsquo;m guessing that everybody reading this knows some relatively lightweight libre LLMs can be installed and run locally. But, as you can probably guess by reading this, I enjoy writing stuff, so text generation isn&amp;rsquo;t really something that I have a use for.
+            &lt;p&gt;Update Oct. 21st:
+The transcription portion of the post has been updated, what I originally mistook as issues with how the data was formatted was an issue with too many tokens in the transcript I wanted transcribed.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;At this point we all know how LLMs can generate text, and I&amp;rsquo;m guessing that everybody reading this knows some relatively lightweight libre LLMs can be installed and run locally. But, as you can probably guess by reading this, I enjoy writing stuff, so text generation isn&amp;rsquo;t really something that I have a use for. The knowledge stored in them is helpful for sure; I use local LLMs to find data or troubleshoot something on probably more or less a once-a-week basis (because I&amp;rsquo;m not connected to the internet, can&amp;rsquo;t find what I&amp;rsquo;m looking for in search engines, want to ask about an error code in plain English, etc). They&amp;rsquo;re also always fun to toy around with at first, but after using them for a while the fun wears off and it just becomes another tool.&lt;/p&gt;
           
           
         
@@ -257,7 +609,13 @@ At this point we all know how LLMs can generate text, and I&amp;rsquo;m guessing
       <description>
         
           
-            In my post about EDC I rambled on about hats for a bit, and a couple weeks ago I decided to try making one myself. I didn&amp;rsquo;t initially plan on writing a blog post explaining how I did it; however, after having trouble finding a printable pattern, I wound up just winging it, and I figured I&amp;rsquo;d put my process out there.1 Fur hats are way warmer than just about anything else, and even though this was a trial run with a fake polyester fur pelt it&amp;rsquo;s still a warm hat on its own.
+            &lt;div&gt;
+    
+&lt;img src=&#34;https://assets.pxlmo.com/public/m/_v2/734359577006633835/586f75268-5004eb/gG3pMdp1EwMy/yK1vcIb79qYYFyVTweEdhH7070e887BVdTG1kUy3.jpg&#34; alt=&#34;Finished hat image&#34;&gt;&lt;/br&gt;&lt;/br&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;In my &lt;a href=&#34;https://nate.mecca1.net/posts/2024-08-05_edc/&#34;&gt;post about EDC&lt;/a&gt; I rambled on about hats for a bit, and a couple weeks ago I decided to try making one myself. I didn&amp;rsquo;t initially plan on writing a blog post explaining how I did it; however, after having trouble finding a printable pattern, I wound up just winging it, and I figured I&amp;rsquo;d put my process out there.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Fur hats are way warmer than just about anything else, and even though this was a trial run with a fake polyester fur pelt it&amp;rsquo;s still a warm hat on its own. I plan to re-do the process using a natural sheepskin pelt, but if you want to follow along the process works with a natural pelt, fake pelt, and even regular cloth.&lt;/p&gt;
           
           
         
@@ -273,8 +631,10 @@ At this point we all know how LLMs can generate text, and I&amp;rsquo;m guessing
       <description>
         
           
-            Update: September 20th, 2024: I was incorrect regarding AT&amp;rsquo;s (BlueSky) inability to fully delete things, the protocol DOES support fully deleting posts from the user&amp;rsquo;s repo and I&amp;rsquo;ve updated the post to reflect that. Read more. Big thanks to Ryan for providing the info.
-Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) - in keeping tradition with the original post - Bluesky has managed to change rapidly shortly after I finished this.
+            &lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Update: September 20th, 2024:&lt;/strong&gt;
+I was incorrect regarding AT&amp;rsquo;s (BlueSky) inability to fully delete things, the protocol DOES support fully deleting posts from the user&amp;rsquo;s repo and I&amp;rsquo;ve updated the post to reflect that. &lt;a href=&#34;https://atproto.com/specs/repository&#34;&gt;Read more&lt;/a&gt;. Big thanks to &lt;a href=&#34;https://snarfed.org/&#34;&gt;Ryan&lt;/a&gt; for providing the info.&lt;/p&gt;
+&lt;p&gt;Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) - in keeping tradition with the original post - Bluesky has managed to change rapidly shortly after I finished this. It&amp;rsquo;s good news again, in this case a huge influx of users, many from Brazil after Twitter/X was blocked. Additionally, I also recently saw &lt;a href=&#34;https://frontpage.fyi/&#34;&gt;Frontpage&lt;/a&gt;, an AT based link aggregator. In the post I mention a few times hoping more will be built on AT now that it&amp;rsquo;s opened up, and it appears exactly that is happening.&lt;/p&gt;
           
           
         
@@ -290,7 +650,9 @@ Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) 
       <description>
         
           
-            Dropdown: Random notes from drafting Alright, it is April 2nd and I&amp;rsquo;m typing out the first couple of characters in this document which I can already guess is going to be another long post. I already have tons of posts that I expected to be medium length which ballooned out, so given I know ahead of time it&amp;rsquo;ll be long who knows how long it will be. Err, well, editing me and you the reader will know how long it is when I actually publish it.
+            &lt;details&gt;
+  &lt;summary&gt;Dropdown: Random notes from drafting&lt;/summary&gt;
+  &lt;p&gt;&lt;em&gt;Alright, it is April 2nd and I&amp;rsquo;m typing out the first couple of characters in this document which I can already guess is going to be another long post. I already have tons of posts that I expected to be medium length which ballooned out, so given I know ahead of time it&amp;rsquo;ll be long who knows how long it will be. Err, well, editing me and you the reader will know how long it is when I actually publish it. Anyway, regardless, you have been warned.&lt;/em&gt;&lt;/p&gt;
           
           
         
@@ -306,7 +668,7 @@ Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) 
       <description>
         
           
-            This is sort of a successor to Firefox: A Brink of Their Own Making that I published ~6 months ago, followed by me rambling on about different browsers that I&amp;rsquo;ve used or decided to check out for this post. This follow-up was largely spurred on by two different things: Manifest v2&amp;rsquo;s phasing out in standard Chromium and Firefox getting worse. Further, after writing a whole lot and then reflecting on it, I&amp;rsquo;ve gotten a few more thoughts on the topics on hand - but unfortunately like the two external motivations, my thoughts have also led me to think about the ecosystem more negatively.
+            &lt;p&gt;This is sort of a successor to &lt;a href=&#34;https://nate.mecca1.net/posts/2023-12-27_mozillasbrink/&#34;&gt;Firefox: A Brink of Their Own Making&lt;/a&gt; that I published ~6 months ago, followed by me rambling on about different browsers that I&amp;rsquo;ve used or decided to check out for this post. This follow-up was largely spurred on by two different things: Manifest v2&amp;rsquo;s phasing out in standard Chromium and Firefox getting worse. Further, after writing a whole lot and then reflecting on it, I&amp;rsquo;ve gotten a few more thoughts on the topics on hand - but unfortunately like the two external motivations, my thoughts have also led me to think about the ecosystem more negatively.&lt;/p&gt;
           
           
         
@@ -322,7 +684,7 @@ Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) 
       <description>
         
           
-            Okay, so I&amp;rsquo;m not actually sure I would consider myself a data hoarder, but I thought the title was pretty eye catching, and archival is close enough to data hoarding to only be moderately clickbaity. (I actually think I&amp;rsquo;ve got a pretty well organized and reasonably trimmed home directory). Anyway, I thought I would go over a couple of related topics, specifically my backup strategy, some data archiving, and me getting back into useing optical storage.
+            &lt;p&gt;Okay, so I&amp;rsquo;m not actually sure I would consider myself a data hoarder, but I thought the title was pretty eye catching, and archival is close enough to data hoarding to only be moderately clickbaity. (I actually think I&amp;rsquo;ve got a pretty well organized and reasonably trimmed home directory). Anyway, I thought I would go over a couple of related topics, specifically my backup strategy, some data archiving, and me getting back into useing optical storage.&lt;/p&gt;
           
           
         
@@ -338,7 +700,7 @@ Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) 
       <description>
         
           
-            What you are reading now is the fourth iteration of this post, which has gone through multiple revisions and re-considerations. It might feel a bit fragmented, but my aim is to provide a comprehensive post covering two related topics. The first part will discuss my experimentation with local LLMs (large language models), and the second will explore my personal philosophy and conclusions on AI. Feel free to only read one or the other.
+            &lt;p&gt;What you are reading now is the fourth iteration of this post, which has gone through multiple revisions and re-considerations. It might feel a bit fragmented, but my aim is to provide a comprehensive post covering two related topics. The first part will discuss my experimentation with local LLMs (large language models), and the second will explore my personal philosophy and conclusions on AI. Feel free to only read one or the other. They could have been separate posts, but I enjoy writing (and reading) long posts that are well thought out and cover a wide range of topics. Besides, if you regularly read my writings you&amp;rsquo;ll know I have a habit of writing posts that expand beyond what I initially intended.&lt;/p&gt;
           
           
         
@@ -354,8 +716,32 @@ Also, on a less important update (in regards to this post&amp;rsquo;s accuracy) 
       <description>
         
           
-            I&amp;rsquo;ve made three long posts about decentralized social media, followed by making a client that works on decentralized social media, so I&amp;rsquo;ll call all that good for now and talk about making some pickles and sourkraut. And not just canned cucumbers and cabbage, but the actual fermented stuff, which is surprisingly easy to make.
-So, the lazy way to make Sourkraut: Boil some water on the stove or in a kettle (makes sure it&amp;rsquo;s sterile and cuts out some of the chlorine if you&amp;rsquo;re on city water), then let it start to cool until it&amp;rsquo;s about room temperature Cut up some cabbage.
+            &lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;A photo of some sourkrout that had been fermenting for a few days at the time of taking the photo&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;/img/sourkrout.avif&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve made three long posts about decentralized social media, followed by making a client that works on decentralized social media, so I&amp;rsquo;ll call all that good for now and talk about making some pickles and sourkraut. And not just canned cucumbers and cabbage, but the actual fermented stuff, which is surprisingly easy to make.&lt;/p&gt;
           
           
         
@@ -371,8 +757,9 @@ So, the lazy way to make Sourkraut: Boil some water on the stove or in a kettle 
       <description>
         
           
-            So after two very long posts, one complaining about web browsers and one comparing the three big non-centralized social media protocols, I thought about writing two shorter posts about random things (hats and making sour krout specifically). However, between then and now stuffs happened and I thought I would make an anthology post with three different mini topics I wanted to share.
-I made a client So yeah, I made a client that can post to Nostr, Activity Pub, and BlueSky (hopefully all of AT once it&amp;rsquo;s fully opened).
+            &lt;p&gt;So after two very long posts, one complaining about web browsers and one comparing the three big non-centralized social media protocols, I thought about writing two shorter posts about random things (hats and making sour krout specifically). However, between then and now stuffs happened and I thought I would make an anthology post with three different mini topics I wanted to share.&lt;/p&gt;
+&lt;h2 id=&#34;i-made-a-client&#34;&gt;I made a client&lt;/h2&gt;
+&lt;p&gt;So yeah, I made a client that can post to Nostr, Activity Pub, and BlueSky (hopefully all of AT once it&amp;rsquo;s fully opened). It&amp;rsquo;s a bit hacky, and written in Python using dependencies that do all the heavy lifting, but it works. It can broadcast the same post to all three, post different posts to different protocols, or skip posting to a protocol altogether. There&amp;rsquo;s a version that uses Keyring to have your OS manage your credentials instead of baking them into a script, and it&amp;rsquo;ll run on just about everything. I&amp;rsquo;m not a programmer by trade, and it&amp;rsquo;s been a very long time since I wrote any code for public consumption, so I&amp;rsquo;m excited to get it working and share it. Apparently I&amp;rsquo;m the second person to do this, as shortly under two weeks before I released mine somebody else made Nootti, so if you like this idea, are on IOS, and want something more polished that is also an option as well.&lt;/p&gt;
           
           
         
@@ -388,9 +775,10 @@ I made a client So yeah, I made a client that can post to Nostr, Activity Pub, a
       <description>
         
           
-            Note: This post is out of date, here&amp;rsquo;s a more up to date version
-Update August 5th 2024
-I have some good and bad news regarding this post. First, I made two mistakes. AT crawlers are not in fact crawlers, they are called relays. Also, shared inboxes are actually part of the Activity Pub W3C standard as apposed to hacky additions to the protocol by third party servers. I was wrong about Activity Pub servers sending multiple messages to the same server remote to update it about a single post.
+            &lt;p&gt;Note: This post is out of date, &lt;a href=&#34;https://nate.mecca1.net/posts/2024-08-11_microbloggingv2/&#34;&gt;here&amp;rsquo;s a more up to date version&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Update August 5th 2024&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I have some good and bad news regarding this post. First, I made two mistakes. AT crawlers are not in fact crawlers, they are called relays. Also, shared inboxes are actually part of the Activity Pub W3C standard as apposed to hacky additions to the protocol by third party servers. I was wrong about Activity Pub servers sending multiple messages to the same server remote to update it about a single post.&lt;/p&gt;
           
           
         
@@ -406,7 +794,7 @@ I have some good and bad news regarding this post. First, I made two mistakes. A
       <description>
         
           
-            It is (or was at least) a new year and I thought I would reflect on my 2023 posts and talk about what kind of content I follow. I originally thought about doing this on Dec 31st, but I tend to work pretty slowly on posts so here I am whenever this actually gets finished and goes live. Since June I posted a total of thirteen posts, two of which were more generic updates (a quick first post and a notice about a URL change), which leaves me a little under two posts per month.
+            &lt;p&gt;It is (or was at least) a new year and I thought I would reflect on my 2023 posts and talk about what kind of content I follow. I originally thought about doing this on Dec 31st, but I tend to work pretty slowly on posts so here I am whenever this actually gets finished and goes live. Since June I posted a total of thirteen posts, two of which were more generic updates (a quick first post and a notice about a URL change), which leaves me a little under two posts per month. My first and last &amp;lsquo;real&amp;rsquo; posts were both complaining about the state of tech, &lt;a href=&#34;https://nate.mecca1.net/posts/2023-07-24_cloud-oss/&#34;&gt;Microsoft&amp;rsquo;s Windows 365&lt;/a&gt; and &lt;a href=&#34;https://nate.mecca1.net/posts/2023-12-27_mozillasbrink/&#34;&gt;The State of Firefox&lt;/a&gt; respectively, and the rest were all about various tech topics that interest me or that I&amp;rsquo;d been working on/using in some way.&lt;/p&gt;
           
           
         
@@ -422,8 +810,10 @@ I have some good and bad news regarding this post. First, I made two mistakes. A
       <description>
         
           
-            Update August 5th 2024
-I have been made aware that Firefox for Android no longer includes Google Analytics as part of their app telemetry. It appears it was removed in v80.1.13. At the time I posted this the Exodus page I linked to did list Google Analytics, but according to the page now they updated the page on July 15th and likely removed the tracker information on that date.
+            &lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Update August 5th 2024&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I have been made aware that Firefox for Android no longer includes Google Analytics as part of their app telemetry. It appears it was removed in v80.1.13. At the time I posted this the Exodus page I linked to did list Google Analytics, but according to the page now they updated the page on July 15th and likely removed the tracker information on that date.&lt;/p&gt;
+&lt;p&gt;Further, on July 3rd I &lt;a href=&#34;https://nate.mecca1.net/posts/2024-07-03_browsers2/&#34;&gt;made another post about browsers&lt;/a&gt;. As the title contains &amp;lsquo;plummeting off the brink&amp;rsquo; you can correctly assume things are only getting worse.&lt;/p&gt;
           
           
         
@@ -439,7 +829,7 @@ I have been made aware that Firefox for Android no longer includes Google Analyt
       <description>
         
           
-            Chances are if you&amp;rsquo;re here it&amp;rsquo;s through an RSS feed (or an RSS feed bridged to something else), so I probably don&amp;rsquo;t need to do too much of an introduction. Here&amp;rsquo;s a quick rundown if you&amp;rsquo;re unfamiliar. However, today I wanted to talk about RSS (as well as three other means of following content), how I&amp;rsquo;ve benefited from it, and a small project I started. Just about every piece of content I follow is through RSS - organized into different categories (news, blogs, videos, audio, etc), and the following benefits really stand out:
+            &lt;p&gt;Chances are if you&amp;rsquo;re here it&amp;rsquo;s through an RSS feed (or an RSS feed bridged to something else), so I probably don&amp;rsquo;t need to do too much of an introduction. &lt;a href=&#34;https://www.wpbeginner.com/beginners-guide/what-is-rss-how-to-use-rss-in-wordpress/&#34;&gt;Here&amp;rsquo;s a quick rundown if you&amp;rsquo;re unfamiliar&lt;/a&gt;. However, today I wanted to talk about RSS (as well as three other means of following content), how I&amp;rsquo;ve benefited from it, and a small project I started. Just about every piece of content I follow is through RSS - organized into different categories (news, blogs, videos, audio, etc), and the following benefits really stand out:&lt;/p&gt;
           
           
         
@@ -455,7 +845,7 @@ I have been made aware that Firefox for Android no longer includes Google Analyt
       <description>
         
           
-            I have recently been re-dipping my toes into Nostr (tried it a while back just to experiment with it but never really stuck around), and so far it&amp;rsquo;s become my preferred microblogging platform. There&amp;rsquo;s a handful of reasons surrounding that, both in the protocol itself and what&amp;rsquo;s being built up around it, and I think it has a lot of promise that merits its very quick growth. Today I thought I would go over why I am a fan of it, and why I think it might be worth checking out if you&amp;rsquo;re interested in a more decentralized web.
+            &lt;p&gt;I have recently been re-dipping my toes into Nostr (tried it a while back just to experiment with it but never really stuck around), and so far it&amp;rsquo;s become my preferred microblogging platform. There&amp;rsquo;s a handful of reasons surrounding that, both in the protocol itself and what&amp;rsquo;s being built up around it, and I think it has a lot of promise that merits its very quick growth. Today I thought I would go over why I am a fan of it, and why I think it might be worth checking out if you&amp;rsquo;re interested in a more decentralized web.&lt;/p&gt;
           
           
         
@@ -471,7 +861,7 @@ I have been made aware that Firefox for Android no longer includes Google Analyt
       <description>
         
           
-            This is my second post about searching for a tablet, and a follow-up review of the device I mentioned purchasing in the last post (an MS Surface Go tablet). Aside from the fact I just find it relaxing to write about things that interest or affect me, I hope that this would be useful if you&amp;rsquo;re considering buying an MS Surface tablet (to run either Win/Linux), or if you&amp;rsquo;re purchasing a different tablet to run Linux and want to know how a potential configuration might look.
+            &lt;p&gt;This is my second post about &lt;a href=&#34;https://nate.mecca1.net/posts/2023-11-05_tablets-1/&#34;&gt;searching for a tablet&lt;/a&gt;, and a follow-up review of the device I mentioned purchasing in the last post (an MS Surface Go tablet). Aside from the fact I just find it relaxing to write about things that interest or affect me, I hope that this would be useful if you&amp;rsquo;re considering buying an MS Surface tablet (to run either Win/Linux), or if you&amp;rsquo;re purchasing a different tablet to run Linux and want to know how a potential configuration might look.&lt;/p&gt;
           
           
         
@@ -487,9 +877,11 @@ I have been made aware that Firefox for Android no longer includes Google Analyt
       <description>
         
           
-            Update 11/25: I was made aware that Signal has some proprietary anti-spam code and added the TLDR.
-A More Technical TLDR I never know how much jargon I should include or how much I should explain, and as long as I&amp;rsquo;m writing I&amp;rsquo;m enjoying myself meaning I&amp;rsquo;ve been all over the place. But here&amp;rsquo;s a shortened version for those familiar with encryption.
-A vanilla implementation of the Signal protocol relies on public key infrastructure to perform a handshake between devices.
+            &lt;p&gt;&lt;em&gt;Update 11/25: I was made aware that Signal has some proprietary anti-spam code and added the TLDR.&lt;/em&gt;&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;&lt;strong&gt;A More Technical TLDR&lt;/strong&gt;&lt;/summary&gt;
+  &lt;p&gt;I never know how much jargon I should include or how much I should explain, and as long as I&amp;rsquo;m writing I&amp;rsquo;m enjoying myself meaning I&amp;rsquo;ve been all over the place. But here&amp;rsquo;s a shortened version for those familiar with encryption.&lt;/p&gt;
+&lt;p&gt;A vanilla implementation of the Signal protocol relies on public key infrastructure to perform a handshake between devices. As you may know, a public key server can certify that any device/key belongs to an account if you have nothing more to go on than a phone number. Furthermore, at any point the server may say keys have changed and direct you to start communicating with a device other than the one you expect.&lt;/p&gt;
           
           
         
@@ -505,8 +897,175 @@ A vanilla implementation of the Signal protocol relies on public key infrastruct
       <description>
         
           
-            I ran across a neat trend of sharing your default apps, and a collection of posts doing so. It&amp;rsquo;s made some interesting reads and I thought I would join in and post my own favorites.
-My Devices I have three different devices: a PC running Debian, a tablet I just got setup running Debian and a Waydroid container, and a phone running the Graphene fork of Android. PC Tablet Phone 📨 Mail Client Proton Web Proton App Proton App 📮 Mail Server ^ ^ ^ 📝 Notes Joplin Joplin Joplin ✅ To-Do n/a n/a Tasks (F-Droid) 📷 Photo Shooting n/a n/a AOSP Camera 🟦 Photo Management File Manager n/a AOSP Gallery 📆 Calendar n/a n/a Simple Calendar 📁 Cloud File Storage IceDrive (web) IceDrive (web) IceDrive (PWA) 📖 RSS Nextcloud (web) Nextcloud (web) Nextcloud News App 🙍🏻‍♂️ Contacts n/a n/a AOSP Contacts 🌐 Browser LibreWolf Brave Fennec Firefox 💬 Chat Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web) Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web) Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web) 🔖 Bookmarks Unsynced Unsynced Unsynced 📑 Read It Later PDFs w/ Syncthing PDFs w/ Syncthing PDFs w/ Syncthing 📜 Word Processing LibreOffice LibreOffice n/a 📈 Spreadsheets LibreOffice n/a n/a 📊 Presentations LibreOffice n/a n/a 🛒 Shopping Lists Joplin Joplin Joplin 🍴 Meal Planning n/a n/a n/a 💰 Budgeting and Personal Finance n/a n/a MoneyWallet 📰 News Nextcloud (Web) Nextcould (Web) Nextcloud News App 🎵 Music VLC VLC Innertune 🎤 Podcasts VLC VLC VLC 🔐 Password Management Keepass Keepass Keepass The above is the pre-built list, though for my post I thought I would add on a few extras I like:
+            &lt;p&gt;I ran across a neat trend of &lt;a href=&#34;https://defaults.rknight.me/&#34;&gt;sharing your default apps, and a collection of posts doing so&lt;/a&gt;. It&amp;rsquo;s made some interesting reads and I thought I would join in and post my own favorites.&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;My Devices&lt;/summary&gt;
+  &lt;em&gt;I have three different devices: a PC running Debian, a tablet &lt;a href=&#34;https://nate.mecca1.net/posts/2023-11-05_tablets-1/&#34;&gt;I just got setup&lt;/a&gt; running Debian and a Waydroid container, and a phone running the Graphene fork of Android.&lt;/em&gt;
+&lt;/details&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;PC&lt;/td&gt;
+          &lt;td&gt;Tablet&lt;/td&gt;
+          &lt;td&gt;Phone&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📨 Mail Client&lt;/td&gt;
+          &lt;td&gt;Proton Web&lt;/td&gt;
+          &lt;td&gt;Proton App&lt;/td&gt;
+          &lt;td&gt;Proton App&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📮 Mail Server&lt;/td&gt;
+          &lt;td&gt;^&lt;/td&gt;
+          &lt;td&gt;^&lt;/td&gt;
+          &lt;td&gt;^&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📝 Notes&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;✅ To-Do&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;Tasks (F-Droid)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📷 Photo Shooting&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;AOSP Camera&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🟦 Photo Management&lt;/td&gt;
+          &lt;td&gt;File Manager&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;AOSP Gallery&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📆 Calendar&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;Simple Calendar&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📁 Cloud File Storage&lt;/td&gt;
+          &lt;td&gt;IceDrive (web)&lt;/td&gt;
+          &lt;td&gt;IceDrive (web)&lt;/td&gt;
+          &lt;td&gt;IceDrive (PWA)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📖 RSS&lt;/td&gt;
+          &lt;td&gt;Nextcloud (web)&lt;/td&gt;
+          &lt;td&gt;Nextcloud (web)&lt;/td&gt;
+          &lt;td&gt;Nextcloud News App&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🙍🏻‍♂️ Contacts&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;AOSP Contacts&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🌐 Browser&lt;/td&gt;
+          &lt;td&gt;LibreWolf&lt;/td&gt;
+          &lt;td&gt;Brave&lt;/td&gt;
+          &lt;td&gt;Fennec Firefox&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;💬 Chat&lt;/td&gt;
+          &lt;td&gt;Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web)&lt;/td&gt;
+          &lt;td&gt;Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web)&lt;/td&gt;
+          &lt;td&gt;Matrix &amp;gt; Signal &amp;gt; Telegram &amp;gt; G Chat (Web)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🔖 Bookmarks&lt;/td&gt;
+          &lt;td&gt;Unsynced&lt;/td&gt;
+          &lt;td&gt;Unsynced&lt;/td&gt;
+          &lt;td&gt;Unsynced&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📑 Read It Later&lt;/td&gt;
+          &lt;td&gt;PDFs w/ Syncthing&lt;/td&gt;
+          &lt;td&gt;PDFs w/ Syncthing&lt;/td&gt;
+          &lt;td&gt;PDFs w/ Syncthing&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📜 Word Processing&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📈 Spreadsheets&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📊 Presentations&lt;/td&gt;
+          &lt;td&gt;LibreOffice&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🛒 Shopping Lists&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+          &lt;td&gt;Joplin&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🍴 Meal Planning&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;💰 Budgeting and Personal Finance&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;n/a&lt;/td&gt;
+          &lt;td&gt;MoneyWallet&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;📰 News&lt;/td&gt;
+          &lt;td&gt;Nextcloud (Web)&lt;/td&gt;
+          &lt;td&gt;Nextcould (Web)&lt;/td&gt;
+          &lt;td&gt;Nextcloud News App&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🎵 Music&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+          &lt;td&gt;Innertune&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🎤 Podcasts&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+          &lt;td&gt;VLC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;🔐 Password Management&lt;/td&gt;
+          &lt;td&gt;Keepass&lt;/td&gt;
+          &lt;td&gt;Keepass&lt;/td&gt;
+          &lt;td&gt;Keepass&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt; &lt;/p&gt;
           
           
         
@@ -522,7 +1081,9 @@ My Devices I have three different devices: a PC running Debian, a tablet I just 
       <description>
         
           
-            TLDR, for those looking for less of a novel I did a lot of looking and found a few different options if you&amp;rsquo;re looking for a tablet and have similar preferences as me. There are custom ROMs for some tablets, though they are somewhat limited in which devices are supported (as well as sometimes limits on features or time in which security updates come in). There&amp;rsquo;s also the ability to cut out junk with ADB bridge on Android tablets, of which some cheaper tablets are sketchy and lack long-term security updates, and some of the premium tablets can get pricey.
+            &lt;details&gt;
+  &lt;summary&gt;&lt;strong&gt;TLDR, for those looking for less of a novel&lt;/strong&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;em&gt;I did a lot of looking and found a few different options if you&amp;rsquo;re looking for a tablet and have similar preferences as me. There are custom ROMs for some tablets, though they are somewhat limited in which devices are supported (as well as sometimes limits on features or time in which security updates come in). There&amp;rsquo;s also the ability to cut out junk with ADB bridge on Android tablets, of which some cheaper tablets are sketchy and lack long-term security updates, and some of the premium tablets can get pricey.&lt;/em&gt;&lt;/p&gt;
           
           
         
@@ -538,8 +1099,8 @@ My Devices I have three different devices: a PC running Debian, a tablet I just 
       <description>
         
           
-            11/03/2023 Update: I fixed some grammar, and Google just announced they&amp;rsquo;re going to stop the implementation of WEI (hopefully permanently, but they may just be trying to outwait bad publicity and anti-trust actions - only time will tell).
-If you read my first post here you probably got the idea I have strong feelings about recent versions of Windows, and you wouldn&amp;rsquo;t be wrong. There&amp;rsquo;s a lot of junk on Windows, but there are many ways you can go around and clean up some of the worst of it, and I thought I would go over a few potential ways of doing so.
+            &lt;p&gt;&lt;em&gt;11/03/2023 Update: I fixed some grammar, and Google just announced they&amp;rsquo;re going to stop the implementation of WEI (hopefully permanently, but they may just be trying to outwait bad publicity and anti-trust actions - only time will tell).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;If you &lt;a href=&#34;https://nate.mecca1.net/posts/2023-07-24_cloud-oss/&#34;&gt;read my first post here&lt;/a&gt; you probably got the idea I have strong feelings about recent versions of Windows, and you wouldn&amp;rsquo;t be wrong. There&amp;rsquo;s a lot of junk on Windows, but there are many ways you can go around and clean up some of the worst of it, and I thought I would go over a few potential ways of doing so.&lt;/p&gt;
           
           
         
@@ -555,7 +1116,7 @@ If you read my first post here you probably got the idea I have strong feelings 
       <description>
         
           
-            I count myself lucky to live in a pretty stable and safe part of the world. The last three years or so might have been slightly less so, but still in the scheme of things I certainly haven&amp;rsquo;t seen the worst of it. But hey, this year is as good of any to think about useful ways to utilize your electronics, specifically your phone, if the power goes out or something similar happens.
+            &lt;p&gt;I count myself lucky to live in a pretty stable and safe part of the world. The last three years or so might have been slightly less so, but still in the scheme of things I certainly haven&amp;rsquo;t seen the worst of it. But hey, this year is as good of any to think about useful ways to utilize your electronics, specifically your phone, if the power goes out or something similar happens.&lt;/p&gt;
           
           
         
@@ -571,8 +1132,10 @@ If you read my first post here you probably got the idea I have strong feelings 
       <description>
         
           
-            TLDR Even though it&amp;rsquo;s only been three months since I created my blog here, I&amp;rsquo;m going to change the domain from www.mecca1.net to nate.mecca1.net instead. Nothing&amp;rsquo;s should break, www.mecca1.net will forward to nate.mecca1.net for now. Still, if you&amp;rsquo;re following me through RSS or you have my site bookmarked it might be worth swapping out the URL.
-Longer Update My domain predates my blog by about six years, so when I created my blog a few months ago I opted to just use the www subdomain.
+            &lt;h2 id=&#34;tldr&#34;&gt;TLDR&lt;/h2&gt;
+&lt;p&gt;Even though it&amp;rsquo;s only been three months since I created my blog here, I&amp;rsquo;m going to change the domain from &lt;a href=&#34;https://www.mecca1.net&#34;&gt;www.mecca1.net&lt;/a&gt; to nate.mecca1.net instead. Nothing&amp;rsquo;s should break, &lt;a href=&#34;https://www.mecca1.net&#34;&gt;www.mecca1.net&lt;/a&gt; will forward to nate.mecca1.net for now. Still, if you&amp;rsquo;re following me through RSS or you have my site bookmarked it might be worth swapping out the URL.&lt;/p&gt;
+&lt;h2 id=&#34;longer-update&#34;&gt;Longer Update&lt;/h2&gt;
+&lt;p&gt;My domain predates my blog by about six years, so when I created my blog a few months ago I opted to just use the www subdomain. Since I use my domain for multiple things I didn&amp;rsquo;t like the idea of using the root record for my blog and opted to leave it blank. The best way to describe my thought process was along the lines that my domain is my own corner of the internet that can be built in any way I want, and that by leaving the root domain blank I can have it branch out in a whole bunch of different ways instead of being one main thing and a few spin-offs. &amp;ldquo;www&amp;rdquo; is also fitting as it would be the &amp;ldquo;world wide web&amp;rdquo; facing portion it.&lt;/p&gt;
           
           
         
@@ -588,7 +1151,7 @@ Longer Update My domain predates my blog by about six years, so when I created m
       <description>
         
           
-            IPFS, an acronym for &amp;ldquo;InterPlanetary File System&amp;rdquo;, is a way to deliver files that takes a different approach to HTTP. As I mentioned in my very first post, I originally considered hosting my entire site/blog on it, and while I decided against it for reasons I mentioned there and reasons I&amp;rsquo;ll get into later here; I am working on something that may involve me sharing files here, which I&amp;rsquo;ll probably use IPFS for.
+            &lt;p&gt;IPFS, an acronym for &amp;ldquo;InterPlanetary File System&amp;rdquo;, is a way to deliver files that takes a different approach to HTTP. As I mentioned in my very first post, I originally considered hosting my entire site/blog on it, and while I decided against it for reasons I mentioned there and reasons I&amp;rsquo;ll get into later here; I am working on something that may involve me sharing files here, which I&amp;rsquo;ll probably use IPFS for. This is of course in addition to me finding it an interesting method of sharing data and worth speaking about.&lt;/p&gt;
           
           
         
@@ -604,7 +1167,7 @@ Longer Update My domain predates my blog by about six years, so when I created m
       <description>
         
           
-            I never have had a good track record with massive changes to Windows, starting with Windows 8 which was entirely unusable in my case. It wasn&amp;rsquo;t just the mobile-style graphics and the bloat, but also the fact I couldn’t get more than a couple of days before the installation would break. This went on for a while as I tried to figure out why it was breaking, and I probably went through dozens of installs that themselves took nearly as long as the time I could actually use the device before it broke again.
+            &lt;p&gt;I never have had a good track record with massive changes to Windows, starting with Windows 8 which was entirely unusable in my case. It wasn&amp;rsquo;t just the mobile-style graphics and the bloat, but also the fact I couldn’t get more than a couple of days before the installation would break. This went on for a while as I tried to figure out why it was breaking, and I probably went through dozens of installs that themselves took nearly as long as the time I could actually use the device before it broke again. After determining it was an update to blame, I deferred updates and set my connection to a metered connection, either of which on their own should have solved the issue. Yet soon after I was greeted by another update screen, followed by yet another bricked install.&lt;/p&gt;
           
           
         
@@ -620,7 +1183,7 @@ Longer Update My domain predates my blog by about six years, so when I created m
       <description>
         
           
-            I think I&amp;rsquo;m going to start a blog here. I got this domain with some DNS records just collecting dust, and have an interest in writing stuff casually. I figure I&amp;rsquo;ll write about projects I work on or opinions about things in my field whenever something interests me enough to talk about it. I probably won&amp;rsquo;t write too much about myself personally though, if you&amp;rsquo;re reading this you probably A) know me already and somehow got roped into reading this, B) we&amp;rsquo;re working on some sort of project and you&amp;rsquo;re interested in reading about my writing about it, or C) find my writing about something interesting or useful (the latter being the most unlikely).
+            &lt;p&gt;I think I&amp;rsquo;m going to start a blog here. I got this domain with some DNS records just collecting dust, and have an interest in writing stuff casually. I figure I&amp;rsquo;ll write about projects I work on or opinions about things in my field whenever something interests me enough to talk about it. I probably won&amp;rsquo;t write too much about myself personally though, if you&amp;rsquo;re reading this you probably A) know me already and somehow got roped into reading this, B) we&amp;rsquo;re working on some sort of project and you&amp;rsquo;re interested in reading about my writing about it, or C) find my writing about something interesting or useful (the latter being the most unlikely). In any of those cases you probably aren&amp;rsquo;t interested in what I had for breakfast.&lt;/p&gt;
           
           
         
