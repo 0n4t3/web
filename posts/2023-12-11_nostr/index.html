@@ -159,42 +159,42 @@
 <h4 id="client-and-relay-customization">Client and Relay Customization</h4>
 <p>One of the first things that will likely stand out is that your client, not the relays (servers), combines all of the posts and replies from various relays into one big network. You can add a relay (most clients come with defaults, but those can be changed), choose how to interact with that relay, and then the content from the accounts that use the relay will be visible and interactable in a very similar way to how Activity Pub handles federation. You can of course tune how your client interacts with a relay, for example in the Amethyst client you can enable or disable a relay:</p>
 <table>
-  <thead>
-      <tr>
-          <th></th>
-          <th></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Uploading Data</td>
-          <td>Will enable/disable the client from mirroring your account on the relay</td>
-      </tr>
-      <tr>
-          <td>Downloading Data</td>
-          <td>Will enable/disable the client from downloading content from other people&rsquo;s profiles mirrored on the relay</td>
-      </tr>
-      <tr>
-          <td>Showing up in your home feed</td>
-          <td>Will enable/disable content from that relay from showing up in your home feed</td>
-      </tr>
-      <tr>
-          <td>Delivering direct messages</td>
-          <td>Will enable/disable other users&rsquo; ability to use that relay to send direct messages from you</td>
-      </tr>
-      <tr>
-          <td>Showing up in Nostr chat rooms</td>
-          <td>Will enable/disable the delivery of public chat content from that relay</td>
-      </tr>
-      <tr>
-          <td>Showing up in the global feed</td>
-          <td>Will enable/disable content from that relay from showing up in your global feed</td>
-      </tr>
-      <tr>
-          <td>Showing up in searches</td>
-          <td>Will enable/disable content from that relay from showing up in searches</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uploading Data</td>
+<td>Will enable/disable the client from mirroring your account on the relay</td>
+</tr>
+<tr>
+<td>Downloading Data</td>
+<td>Will enable/disable the client from downloading content from other people&rsquo;s profiles mirrored on the relay</td>
+</tr>
+<tr>
+<td>Showing up in your home feed</td>
+<td>Will enable/disable content from that relay from showing up in your home feed</td>
+</tr>
+<tr>
+<td>Delivering direct messages</td>
+<td>Will enable/disable other users&rsquo; ability to use that relay to send direct messages from you</td>
+</tr>
+<tr>
+<td>Showing up in Nostr chat rooms</td>
+<td>Will enable/disable the delivery of public chat content from that relay</td>
+</tr>
+<tr>
+<td>Showing up in the global feed</td>
+<td>Will enable/disable content from that relay from showing up in your global feed</td>
+</tr>
+<tr>
+<td>Showing up in searches</td>
+<td>Will enable/disable content from that relay from showing up in searches</td>
+</tr>
+</tbody>
 </table>
 <p>This gives a great deal of control over what you see and where it shows up, for example by disabling private messages from users on a particular relay. Keep in mind that it only prevents that relay from delivering the message, so if you and a user have two relays in common and only one relay has been disabled the other relay will still deliver that same message. In this way choosing your preferred level of moderation and how you go about doing so is entirely up to you.</p>
 <p>This also makes it a lot easier to add or remove various projects built on top of Nostr. For example, if you wanted to follow RSS feeds in a Nostr client you can simply add a relay such as <a href="/tmp/.mount_Joplindvp2xE/resources/app.asar/rsslay.nostr.moe" title="rsslay.nostr.moe">rsslay.nostr.moe</a> and begin using the project without any hassle. For example, by adding the relay then following my blog&rsquo;s feed below:</p>
@@ -268,6 +268,9 @@ https://mostr,pub/users/910af9070dfd6beee63f0d4aaac354b5da164d6bb23c9c876cdf524c
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="/posts/2026-06-18_cars-1-evs/" class="nav-link" title="Cars Kinda Suck RN 1/3: Are EVs Worth it?">Cars Kinda Suck RN 1/3: Are EVs Worth it?</a>
+      </li>
+      <li>
         <a href="/posts/2026-04-23_nmail-is-neat/" class="nav-link" title="NMail is Neat">NMail is Neat</a>
       </li>
       <li>
@@ -287,9 +290,6 @@ https://mostr,pub/users/910af9070dfd6beee63f0d4aaac354b5da164d6bb23c9c876cdf524c
       </li>
       <li>
         <a href="/posts/2025-11-10_avif-file-format/" class="nav-link" title="Rather Impressive Image Compression">Rather Impressive Image Compression</a>
-      </li>
-      <li>
-        <a href="/posts/2025-10-31_random-update/" class="nav-link" title="Anyone out there hiring? &#43; 10 pointless facts">Anyone out there hiring? + 10 pointless facts</a>
       </li>
     </ul>
     <div>
@@ -312,7 +312,7 @@ https://mostr,pub/users/910af9070dfd6beee63f0d4aaac354b5da164d6bb23c9c876cdf524c
         
         <a href='/categories/informational/' class="post_tag button button_translucent" title="informational">
           INFORMATIONAL
-          <span class="button_tally">5</span>
+          <span class="button_tally">6</span>
         </a>
         
         <a href='/categories/complaints/' class="post_tag button button_translucent" title="complaints">
@@ -338,7 +338,7 @@ https://mostr,pub/users/910af9070dfd6beee63f0d4aaac354b5da164d6bb23c9c876cdf524c
       <nav class="tags_nav">
         <a href='/tags/tech/' class="post_tag button button_translucent" title="tech">
           TECH
-          <span class="button_tally">19</span>
+          <span class="button_tally">20</span>
         </a>
         
         <a href='/tags/protocols/' class="post_tag button button_translucent" title="protocols">
@@ -438,6 +438,11 @@ https://mostr,pub/users/910af9070dfd6beee63f0d4aaac354b5da164d6bb23c9c876cdf524c
         
         <a href='/tags/archival/' class="post_tag button button_translucent" title="archival">
           ARCHIVAL
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='/tags/cars/' class="post_tag button button_translucent" title="cars">
+          CARS
           <span class="button_tally">1</span>
         </a>
         
