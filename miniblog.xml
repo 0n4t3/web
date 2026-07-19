@@ -7,6 +7,13 @@
     <!-- top of entries -->
     <!-- entry divider -->
     <item>
+      <title>Miniblog update</title>
+      <link>https://nate.mecca1.net/miniblog/miniblog_about/</link>
+      <description>An update to my miniblog description and landing page</description>
+      <pubDate>Sun, 07 Jul 2026 13:10:00 EST</pubDate>
+    </item>
+    <!-- entry divider -->    <!-- entry divider -->
+    <item>
       <title>Enderal is fun</title>
       <link>https://ditto.pub/nevent1qgsfzzhequxl66lwucls6j42cd2ttkskf44my0yusakd75jvwgzwvmgqyzdcg0y2zvm9hkx57ahd9xrh25j9lzsytw7ufvfjqj9w6hl9l7jz7wv0um7</link>
       <description>Been playing Enderal, an independent game built on Skyrim.</description>
