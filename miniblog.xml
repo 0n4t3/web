@@ -5,7 +5,14 @@
     <description>Experimental posts, random thoughts, and all manner of shenanigans</description>
     <link>https://nate.mecca1.net/miniblog/miniblog/</link>
     <!-- top of entries -->
-    <!-- entry divider -->
+        <!-- entry divider -->
+    <item>
+      <title>Claude the Luddite Transcriber</title>
+      <link>https://ditto.pub/nevent1qgsfzzhequxl66lwucls6j42cd2ttkskf44my0yusakd75jvwgzwvmgqyzsddxfxt49txh643xfqg9lwmx5uhwghrlmlufemdrsz8rqmkqxsgre26u0</link>
+      <description>Using Claude to transcribe handwriting content.</description>
+      <pubDate>Sun, 09 Aug 2026 21:10:00 EST</pubDate>
+    </item>
+    <!-- entry divider --><!-- entry divider -->
     <item>
       <title>Winter 2026 Niagara Falls Photos</title>
       <link>https://text.tchncs.de/1nate/niagara-falls-winter-photos/</link>
