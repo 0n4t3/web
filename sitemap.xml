@@ -266,6 +266,10 @@
     <loc>/posts/2023-06-16_first-post/</loc>
     <lastmod>2023-06-16T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/pages/slash/</loc>
+  </url><url>
+    <loc>/pages/chronicles/</loc>
+  </url><url>
     <loc>/pages/follow/</loc>
   </url><url>
     <loc>/miniblog/miniblog/</loc>
@@ -275,5 +279,7 @@
     <loc>/pages/</loc>
   </url><url>
     <loc>/pages/resume/</loc>
+  </url><url>
+    <loc>/pages/webapps/</loc>
   </url>
 </urlset>
