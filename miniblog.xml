@@ -5,7 +5,13 @@
     <description>Experimental posts, random thoughts, and all manner of shenanigans</description>
     <link>https://nate.mecca1.net/miniblog/miniblog/</link>
     <!-- top of entries -->
-        <!-- entry divider -->
+    <item>
+      <title>Fancy pencils</title>
+      <link>https://ditto.pub/naddr1qvzqqqr4gupzpyg2lyrsmlttamnr7r224tp4fdw6zexkhv3unjrkeh6jf3eqfendqq8hqun9d45h2mfdwpjkucmfd3esmj0s7k</link>
+      <description>A short off the cuff post about pencils.</description>
+      <pubDate>Tue, 18 Aug 2026 20:01:00 EST</pubDate>
+    </item>
+    <!-- entry divider --><!-- entry divider -->
     <item>
       <title>Claude the Luddite Transcriber</title>
       <link>https://ditto.pub/nevent1qgsfzzhequxl66lwucls6j42cd2ttkskf44my0yusakd75jvwgzwvmgqyzsddxfxt49txh643xfqg9lwmx5uhwghrlmlufemdrsz8rqmkqxsgre26u0</link>
