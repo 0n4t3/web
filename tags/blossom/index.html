@@ -4,12 +4,10 @@
   lang="en"
   data-figures=""
   
-    class="page"
-  
   
   >
   <head>
-<title>NMail is Neat | An Untitled Blog</title>
+<title>Blossom | An Untitled Blog</title>
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -22,22 +20,22 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="I&rsquo;ve written a lot of longer blog posts lately, time to get back into the classic &ldquo;Nate talks about the thing he just read about and finds …" />
+<meta name="description" content="" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="NMail is Neat" />
+<meta name="twitter:title" content="Blossom" />
 <meta name="twitter:image" content="/"/>
-<meta property="og:url" content="/posts/2026-04-23_nmail-is-neat/" />
-<meta property="og:title" content="NMail is Neat" />
-<meta property="og:description" content="I&rsquo;ve written a lot of longer blog posts lately, time to get back into the classic &ldquo;Nate talks about the thing he just read about and finds …" />
+<meta property="og:url" content="/tags/blossom/" />
+<meta property="og:title" content="Blossom" />
+<meta property="og:description" content="" />
 <meta property="og:image" content="/" />
-  <meta name="keywords" content="tech,protocols,email,nostr" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
 <link rel="manifest" href="/icons/site.webmanifest">
 
-<link rel="canonical" href="/posts/2026-04-23_nmail-is-neat/">
+<link rel="canonical" href="/tags/blossom/">
+<link rel="alternate" type="application/rss+xml" href="/tags/blossom/index.xml" title="An Untitled Blog" />
 
 
 
@@ -108,10 +106,19 @@
 </header>
 
     <main>
-  
+
+
+
 <div class="grid-inverse wrap content">
-  <article class="post_content">
-    <h1 class="post_title">NMail is Neat</h1>
+  <div>
+    <ul class="posts" id="posts">
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="/posts/2026-08-21_permanant-reference/" title="Permanent Reference Media">Permanent Reference Media</a>
+      </h3>
+      
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -119,65 +126,35 @@
 </svg>
 </span>
     <span class="post_date">
-      Apr 23, 2026	  
+      Aug 21, 2026	  
     </span>
-    <span class="post_time"> · 9 min read</span><span>&nbsp;· <a href='/tags/tech/' title="tech" class="post_tag button button_translucent">tech
+    <span class="post_time"> · 21 min read</span><span>&nbsp;· <a href='/tags/tech/' title="tech" class="post_tag button button_translucent">tech
         </a><a href='/tags/protocols/' title="protocols" class="post_tag button button_translucent">protocols
-        </a><a href='/tags/email/' title="email" class="post_tag button button_translucent">email
+        </a><a href='/tags/ipfs/' title="ipfs" class="post_tag button button_translucent">ipfs
         </a><a href='/tags/nostr/' title="nostr" class="post_tag button button_translucent">nostr
+        </a><a href='/tags/blossom/' title="blossom" class="post_tag button button_translucent">blossom
         </a>
     </span>
   </div>
 
-    <div class="post_body"><p>I&rsquo;ve written a lot of longer blog posts lately, time to get back into the classic &ldquo;Nate talks about the thing he just read about and finds neat.&rdquo; So, without further ado, I just read about <a href="https://nostrmail.org/">NMail</a> (<a href="https://github.com/nogringo/nostr-mail-client">github</a>) - and I think it&rsquo;s neat. In fact, I think it&rsquo;s actually one of the most interesting decentralized communication tools I&rsquo;ve seen in a while.</p>
-<h3 id="email-is-still-king">Email is still king</h3>
-<p>Email is still the king of communication - according to Wikipedia, 50 million non-spam emails are sent every day. Whether it&rsquo;s a contact feature for a blog, the need to send a (small) file, or helping setup a church website - email is usually my go to because of its ubiquity. Unlike something like messengers, which vary a lot between different communities, nationalities, and interests; you&rsquo;ll have a hard time finding somebody without an email address. Even if it&rsquo;s becoming a little less popular in my generation (gen z) and lower - probably because companies like to spam like no tomorrow, and I doubt most people use filters on their inbox - it&rsquo;s still universal across all age groups as well. Not to mention it&rsquo;s, unlike most messengers or social media platforms, an open protocol where you can feasibly own<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> your own identifier and server<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
-<p>There&rsquo;s also something a bit refreshing about email as well. The longer letter style format - with subjects, rich text, and good attachment support - make for nicer communication than a quick text/IM message. Longer messages with formatting can be nice, and as you can probably tell from my writing, I tend to be a bit verbose. And, with its more letter style usage, emails feel easier to operate with on your own time. Responding to an email 20 hours after it was received because you only check email once a day feels natural. Responding to a text/IM message 20 hours later feels a lot more iffy, and in our always online world, slowing down a bit can be refreshing.</p>
-<h3 id="what-was-i-talking-about-again-right-nmail">What was I talking about again? Right, NMail.</h3>
-<p>Honestly, at first glance, the project looks a little boring. It&rsquo;s email like messages, but over the decentralized Nostr protocol. Neat in concept, but not exactly ground breaking. Not to mention the good old <a href="https://xkcd.com/927/">standards conundrum</a>, except in this case, there&rsquo;s probably like 12 people who&rsquo;ve used NostrMail - all just to toy around with it. It&rsquo;s an experimental standard with few users, built on top of an experimental protocol with few users - impossible to actually grow a userbase. <em>Except</em>, that&rsquo;s not actually true. Under the hood, NMail messages are actually bone stock<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> RFC 2822 emails. A completely normal email is whipped up - the kind that could be imported into an Outlook or Thunderbird folder - then encrypted using end-to-end encryption and delivered over a decentralized protocol. It&rsquo;s not exactly re-inventing the wheel, it&rsquo;s just upgrading the powertrain that spins those wheels.</p>
-<p>Okay, cool, but I still can&rsquo;t email my friends &hellip; except I actually can. The biggest thing that caught my eye was the bridge, a.k.a. a standard email server. While the client doesn&rsquo;t need a server to operate (again, we&rsquo;re on a decentralized network by default), you can configure a bridge in the client. If you send an NMail to another user on the NMail using an NPUB (Nostr Key Identifier): a standard email is generated, it&rsquo;s E2E encrypted, then delivered via relays. If, however, you send to a standard email address: the same standard email is generated, then delivered via the bridge to arrive in a normal email inbox. Sort of like Proton/Tuta - sending to another user of that platform gives a truly E2E message that stays within that ecosystem, while letting you communicate with everyone else using a standard email.</p>
-<p>That&rsquo;s the promising part, and what makes me think that NMail might have a chance at growing. Bridges and backwards compatibility are always the &ldquo;have your cake and eat it too&rdquo; solution. You get all the benefits of the better encryption and decentralized delivery when you&rsquo;re communicating with someone who has it, but you get to communicate with anyone on regular email with the same pros &amp; cons of regular email. That paradigm makes me think it&rsquo;s actually got a decent chance of being useful, and apparently I&rsquo;m not the only one who thinks that, because the dev behind it just got an OpenSats grant last week.</p>
-<h3 id="setup--anti-spam">Setup &amp; Anti Spam</h3>
-<p>I made a quick draft of this post on April 15th, and in it mentioned that at some point somebody is probably going to use the bridge for spam and get it blocked. But, as of today (23rd) it looks like there&rsquo;s already been an anti spam feature implemented - which is great for the project, though makes it a touch more complicated to setup. I have a feeling that development is going to be quick and any guide I write is going to be out of date really fast, but if you wanted to give it a try, here&rsquo;s how:</p>
-<p>First, go to <a href="https://app.nostrmail.org/">app.nostrmail.org</a>. If you&rsquo;re one of the 12 existing Nostr users, you can sign in with an nsec bunker or extension, but if you&rsquo;re not, you can click sign up. Read through the informational slideshow, set your name, and copy your &lsquo;sync code&rsquo; (an nsec, a private key that controls your account). Now click &ldquo;Go to your inbox&rdquo; and you&rsquo;re already pretty much set. You can click your profile and click copy npub, which is your public address - think of it like GPG: your nsec is your private key for you to safeguard, and your npub is your public key to share with others. You can now send decentralized messages<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. If you want to test it out, my account is <code>npub1jy90jpcdl447ae3lp4924s65khdpvnttkg7fepmvmafycusyueksrvllx9</code> - if you send me a message I&rsquo;ll probably reply a few days later with a subpar meme or something.</p>
-<p><strong>Enabling the bridge</strong><br>
-Setting up the bridge to send emails to standard addresses is a bit more complicated. First, go to <a href="https://nostr-mail.web.app/">nostr-mail.web.app</a> and sign in (choose &ldquo;nsec&rdquo; then paste your sync code/nsec into it if you&rsquo;re just toying around and registered using one). There are currently two account tiers: &ldquo;blocked&rdquo; and &ldquo;free&rdquo; (looks like a paid tier is coming, but not yet implemented). If you&rsquo;re a regular Nostr user and already have a <a href="https://nate.mecca1.net/posts/2026-03-08_microblogging-protocols-v3/#nostr-7">WOT Score</a>, then you&rsquo;ll already be in the free tier; otherwise you&rsquo;ll likely be &lsquo;blocked.&rsquo; If you are in the blocked tier, you&rsquo;ll need at least one credit to get moved into the free tier, which can be done by &lsquo;mining&rsquo; or paying for a credit.</p>
-<p>&lsquo;Mining&rsquo; for credits, which I&rsquo;d recommend you do, is going to have your device do some math equations to prove it&rsquo;s not a bot (similar to Cloudflare or Anubis anti-DDoS tools). It took my phone less than 3 seconds to &lsquo;mine&rsquo; a credit, and once you&rsquo;ve generated one, you&rsquo;re automatically moved from &lsquo;blocked&rsquo; to &lsquo;free.&rsquo; You can also send 0.008$ USD worth of Bitcoin for a credit, but I feel like it&rsquo;s pointless; not only would it probably take longer to send crypto - assuming you even have crypto - but it&rsquo;s such a laughably small amount that it&rsquo;s not even like you&rsquo;re making a real donation to support the project.</p>
-<p>Once you&rsquo;re in the free tier, you can use the bridge to send 10 emails per day and receive 100, with any ones beyond that limit using credits (this limit only applies to using the bridge to send/receive standard emails - Nostr based emails to/from public keys are decentralized and unlimited). You can now go back to your inbox, click &ldquo;settings,&rdquo; then &ldquo;hosting&rdquo; in settings. Scroll down to the bridges section and click the plus icon next to the &ldquo;uid.ovh&rdquo; bridge (the default bridge hosted by the dev) and save your settings.</p>
-<p><strong>Sending regular emails via the bridge</strong><br>
-With the bridge enabled, you can now send mail to regular emails as well. If you want to receive regular emails, your email should be <code>[npub]@uid.ohv</code> such as <code>npub1jy90jpcdl447ae3lp4924s65khdpvnttkg7fepmvmafycusyueksrvllx9@uid.ohv</code> (my nmail address via the bridge). Though I&rsquo;m assuming there&rsquo;ll be the ability to use a custom name at some point, especially on self hosted bridges. To send an email to a standard address, choose &ldquo;Compose&rdquo; and click on the &ldquo;^&rdquo; button to expand your options. Click on your username in the &ldquo;From&rdquo; section and change it from your npub to the bridged address ending in <code>@uid.ohv</code>. Now, instead of sending an email to an npub, you can instead type in a regular <code>user@domain</code> as the intended recipient.</p>
-<h3 id="final_ramblings">final_ramblings</h3>
-<p>So yeah, I think it&rsquo;s neat. Now, of course, it&rsquo;s in early development, so don&rsquo;t expect to change your mail server out quite yet. The web client is working, although the native clients are still being worked on. The bridge is also a bit minimal, only allowing <code>key@bridge-domain</code> addresses instead of custom usernames (not to mention, though I haven&rsquo;t tried self hosting the bridge, I assume that&rsquo;d have a hint of jank in it as well). But still, it&rsquo;s working, decentralized, end-to-end encrypted email when staying within the network - that has standard compatibility with normal emails. As I said above, it&rsquo;s probably the most interesting project I&rsquo;ve seen in a while from the decentralized communication space, and I think its focus on compatibility might give it a decent shot at succeeding. I&rsquo;ll certainly be keeping an eye on it.</p>
-<h2 id="footnotes">Footnotes:</h2>
-<div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p>Or, at least rent. You can&rsquo;t truly &lsquo;own&rsquo; a domain or IP address, and unless it&rsquo;s a server you have in your closet, you don&rsquo;t really &lsquo;own&rsquo; your VPS. But, compared to everything else, having a domain and server is close-ish to &lsquo;owning.&rsquo;&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2">
-<p>Even in open source/open standards, not a lot of forms of communication are so open. Something like SMS is an open standard, but you can&rsquo;t host your own. Messengers like Signal or WhatsApp have open source protocols, and you can set up your own servers, but you can&rsquo;t communicate with Signal or WhatsApp users on them. The truly open options are a lot smaller - think messengers like Matrix/SimpleX/Marmot or social media protocols with DM features like Activity Pub/Nostr - but those all have very small userbases.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:3">
-<p>Well, at least mostly bone stock. RFC 2822 is actually a bit out of date, the latest email standard is RFC 5322. According to my research (i.e. I asked an AI and experimented with it a bit), that shouldn&rsquo;t matter too much - emails under the old standard are still backwards compatible with modern clients and mail servers. The biggest risk (again, according to AI) is that it might be more likely to trip a spam filter. I&rsquo;m unsure of the reason as to why the older standard was chosen.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:4">
-<p>You can also send a decentralized message to NIP-05 usernames, a domain based name (such as <code>nate@nate.mecca1.net</code>) that links to a public key. But, if you&rsquo;re just testing it out, going through the trouble of setting up a NIP-05 domain username is probably going to be more of a hassle than just sending an email to an npub (public key hash).&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</div>
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>See, I told you I’d get tuckered out writing about vehicles and be back to protocols soon enough.
+“The internet is forever” is a great warning against the inability to unshare content, but completely irrelevant in regard to linkrot and long term preservation. Links I save or share here often are offline or …</p>
+          
+          <br>
+          <a href="/posts/2026-08-21_permanant-reference/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
 
-    </div><div class="post_comments">
-  
-  
-  
-  
-</div>
-
-
-
-
-  </article>
+      <li>
+      </li>
+    </ul>
+  </div>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <br>
@@ -437,8 +414,9 @@ With the bridge enabled, you can now send mail to regular emails as well. If you
   </section>
 </aside>
 
-  
 </div>
+
+
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>

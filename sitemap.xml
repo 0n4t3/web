@@ -3,7 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/blossom/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/ipfs/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/nostr/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/2026-08-21_permanant-reference/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/protocols/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/stuff-i-like/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/tech/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/cars/</loc>
     <lastmod>2026-08-12T00:00:00+00:00</lastmod>
@@ -11,25 +41,13 @@
     <loc>/posts/2026-08-12_cars3/</loc>
     <lastmod>2026-08-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/categories/complaints/</loc>
-    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
     <lastmod>2026-08-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/privacy/</loc>
     <lastmod>2026-08-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/rants/</loc>
-    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/tech/</loc>
     <lastmod>2026-08-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2026-07-02_cars-2-two-wheelers/</loc>
@@ -51,15 +69,6 @@
     <lastmod>2026-04-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2026-04-23_nmail-is-neat/</loc>
-    <lastmod>2026-04-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/nostr/</loc>
-    <lastmod>2026-04-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/protocols/</loc>
-    <lastmod>2026-04-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/stuff-i-like/</loc>
     <lastmod>2026-04-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2026-03-08_microblogging-protocols-v3/</loc>
@@ -120,9 +129,6 @@
     <lastmod>2025-10-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/i2p/</loc>
-    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/ipfs/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2025-06-18_standard-server-alternatives/</loc>
