@@ -123,7 +123,7 @@
     <span class="post_date">
       Aug 21, 2026	  
     </span>
-    <span class="post_time"> · 21 min read</span><span>&nbsp;· <a href='/tags/tech/' title="tech" class="post_tag button button_translucent">tech
+    <span class="post_time"> · 24 min read</span><span>&nbsp;· <a href='/tags/tech/' title="tech" class="post_tag button button_translucent">tech
         </a><a href='/tags/protocols/' title="protocols" class="post_tag button button_translucent">protocols
         </a><a href='/tags/ipfs/' title="ipfs" class="post_tag button button_translucent">ipfs
         </a><a href='/tags/nostr/' title="nostr" class="post_tag button button_translucent">nostr
@@ -202,6 +202,25 @@
 <p>I&rsquo;ve also started what I call the &ldquo;Untitled Chronicles,&rdquo; just a collection of PDFs I share <a href="/pages/chronicles/">here</a>. It doesn&rsquo;t contain a ton yet, but I&rsquo;m slowly putting together small collections of posts in e-book/pamphlet form that I&rsquo;m stashing on IPFS and Blossom (via PressStr). I might also just start adding SingleFile generated archives to IPFS and Blossom as well.</p>
 <p>Finally, I made the page <a href="/pages/permanent-reference/">/permanent-reference</a>, which is a list of all posts available on these protocols. In the event you wanted to grab a hash of a post on one of these protocols, it can be found on that page by searching the post name. In the event this site goes down and you still wanted to access or reference that post, you&rsquo;d be able to grab the hash from a personal archive of the page if you made one, or from something like the Wayback Machine.</p>
 <p>Finally, while I doubt I&rsquo;ve got the clout to make this sort of archiving trendy, if I wanted to link to something that had an archive like this I&rsquo;d include both the standard link as well as the IPFS/Blossom/Nostr/whatever hash either next to it or in the footnotes.</p>
+<hr>
+<hr>
+<h1 id="20260911-addendum">2026/09/11 Addendum</h1>
+<p>Guys, guys, <del>I made something</del> Claude made something mildly interesting. Long story short, I had the idea of making a tool like SingleFile, but for entire websites instead of individual web pages. Not knowing a lick of JavaScript or of any libraries built for that, I asked Claude to take over the idea, which it sycophantically ran with and finished. With that, and a few other updates on the archival side of things, I thought I&rsquo;d make a quick post addendum.</p>
+<h2 id="compressius">Compressius</h2>
+<ul>
+<li><a href="https://0n4t3.github.io/Compressus/">Compressius itself</a></li>
+<li><a href="https://github.com/0n4t3/Compressus/releases/tag/example">Example snapshot archive</a></li>
+</ul>
+<p>The idea of Compressius is pretty simple: SingleFile, but for entire websites. Upload a zipped file, configure it to your liking, and generate an archive of a static site as a single HTML file. That file can be opened locally, with no JS or remote images/scripts. It can also be uploaded to an archival protocol like IPFS or Blossom (either directly to Blossom or in the form of an Nsite). To get around the fact that the whole site is one page, it gives you a fake but usable address bar for basic navigation, and is about as future proof as a single file archive of a site can be.</p>
+<p>If you want to use the tool and you already use a static site generator like I do (Hugo), then it&rsquo;s as simple as generating a build of the site, compressing it as a zip, and uploading it to the tool. A few moments of in browser processing later and you&rsquo;ll have your entire site archived as a single HTML file. If you have a dynamic site, such as one hosted by WordPress - or if you want a personal archive of an external site - you can use the following command to generate a local static site from any backend.</p>
+<p><code>wget -mpEk4 --user-agent=&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36&quot; --wait=2 --random-wait --limit-rate=200k --waitretry=10 --tries=3 &quot;https://nate.mecca1.net/&quot;</code></p>
+<p>The great thing about a tool like this is that even though the tool itself might be a disposable vibe coded project, truly static local web content is like a text document or PDF in that it&rsquo;s pretty future proof. I&rsquo;m going to transition my <a href="/pages/permanent-reference/">permanent reference page</a> to be based around semi-regular full-site Compressius archives. I&rsquo;ll still be sharing individual post hashes via Nostr links, and clumps of posts via the &ldquo;Untitled Chronicles,&rdquo; but these archives will be the bulk of my site archives - what you&rsquo;d use if you wanted to link to an unmodified version of one of my posts, or to access my content when my server is down or my domain no longer resolves.</p>
+<h2 id="more-nostr-archiving">More Nostr Archiving</h2>
+<p>As with every post I make about one of these social media protocols, something changed within 48 hours that warranted an update. This post was no different. In this case, the Ditto plugin by Soapbox (<a href="https://chromewebstore.google.com/detail/ditto-extension/fbiegkepanmjielbemkhieckmlckiagi">Chromium</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/ditto-extension/">Gecko</a>) can now archive pages by exporting them as a static HTML file shared as an Nsite. It&rsquo;s a cool feature that combines grassroots archiving, like Archive.org&rsquo;s Wayback Machine, with the decentralized Blossom protocol. I&rsquo;d be slightly concerned about copyright liability for archiving external sites, but the Internet Archive has survived so far. Soapbox likely protected by Section 230, and I doubt it&rsquo;s users would likely be sued only because they&rsquo;re A) small fish and B) minimally tracked as long as they don&rsquo;t use a key tied to their identity.</p>
+<h2 id="gutenbergwikipedia-nostr-mirrors">Gutenberg/Wikipedia Nostr mirrors</h2>
+<p>Beyond the page archiving, I also failed to mention that there&rsquo;s a project archiving all of Project Gutenberg on Nostr, with Wikipedia coming soon. Unlike Ditto&rsquo;s feature, this has been going on for a while - I was just unaware of it. But yeah, we&rsquo;ve already got content like Project Gutenberg mirrored on decentralized, permanent reference protocols and served through a user friendly gui. <a href="https://decentnewsroom.com/bookshelf">Here&rsquo;s a link</a> to the archive, and <a href="https://decentnewsroom.com/bookshelf/f270ea291587268f8b116189a9162d7a1de537894284acc104107fbf67a92345?q=A%20Connecticut%20Yankee%20in%20King%20Arthur%27s%20Court">here&rsquo;s a link</a> to <em>A Connecticut Yankee in King Arthur&rsquo;s Court</em> (a good read that&rsquo;s in the public domain).</p>
+<hr>
+<hr>
 <h2 id="footnotes">Footnotes:</h2>
 <div class="footnotes" role="doc-endnotes">
 <hr>
