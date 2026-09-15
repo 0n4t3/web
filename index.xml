@@ -6,22 +6,25 @@
     <description>Recent content on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Permanent Reference Media Sept 10 Addendum</title>
-      <link>/posts/2026-08-21_permanant-reference/</link>
-      <pubDate>Fri, 11 Sep 2026 15:45:00 +0000</pubDate>
-
-      <guid>/posts/2026-08-21_permanant-reference/#:~:text=in%20the%20footnotes.-,2026/09/11%20Addendum,-Guys%2C%20guys%2C</guid>
+      <title>Handwritten Ramblings</title>
+      <link>/posts/2026-09-15_handwriting/</link>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2026-09-15_handwriting/</guid>
       <description>
-
-
-            A quick addendum. I made a site snapshot archive tool, Ditto can archive websites on Blossom, and Project Gutenberg is now archived on Nostr.
-
-
-
+        
+          
+            !! verify date
+I had the idea of writing about writing, more specifically handwritten content, and figured what better means of making a post about it than one consisting of handwritten scans. Be forewarned, being handwritten, there&amp;rsquo;s quite a bit less polish on my already rambling and disorganized content.
+If you can&amp;rsquo;t read my handwriting - be it because of a screen reader/accessibility need, the amount of data the page takes up, or just because it&amp;rsquo;s rather illegible - there is a Claude powered transcription of my handwriting on the bottom of the page.
+          
+          
+        
       </description>
     </item>
+    
     <item>
       <title>Permanent Reference Media</title>
       <link>/posts/2026-08-21_permanant-reference/</link>

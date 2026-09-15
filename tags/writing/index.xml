@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writing on An Untitled Blog</title>
+    <link>/tags/writing/</link>
+    <description>Recent content in Writing on An Untitled Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Handwritten Ramblings</title>
+      <link>/posts/2026-09-15_handwriting/</link>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2026-09-15_handwriting/</guid>
+      <description>
+        
+          
+            !! verify date
+I had the idea of writing about writing, more specifically handwritten content, and figured what better means of making a post about it than one consisting of handwritten scans. Be forewarned, being handwritten, there&amp;rsquo;s quite a bit less polish on my already rambling and disorganized content.
+If you can&amp;rsquo;t read my handwriting - be it because of a screen reader/accessibility need, the amount of data the page takes up, or just because it&amp;rsquo;s rather illegible - there is a Claude powered transcription of my handwriting on the bottom of the page.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
