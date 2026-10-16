@@ -2,9 +2,16 @@
 <rss version="2.0">
   <channel>
     <title>Untitled Miniblog</title>
-    <description>Experimental posts, random thoughts, and all manner of shenanigans</description>
+    <description>Experimental posts, random thoughts, and all manner of shenanigans.</description>
     <link>https://nate.mecca1.net/miniblog/miniblog/</link>
     <!-- top of entries -->
+    <item>
+      <title>(repost) code as a commodity</title>
+      <link>https://ditto.pub/nevent1qqsguehardzv2gncfw7yr5y8tpsmyyv54sll4vta9r8g4u4e7kdgxnsppemhxue69uhkummn9ekx7mp0qgsf03c2gsmx5ef4c9zmxvlew04gdh7u94afnknp33qvv3c94kvwxgsrqsqqqqqp9ktk9t</link>
+      <description>A post that I felt was worth sharing, the best argument against code as a commodity that I've seen.</description>
+      <pubDate>Fri, 16 Oct 2026 18:30:37 EST</pubDate>
+    </item>
+    <!-- entry divider -->
     <item>
       <title>A vibe coding story</title>
       <link>https://ditto.pub/nevent1qqsqqqqq2z9nxgwldtsr8ve74vmk5ek6f5ws6wuww4nm45nc7cn3t2cpzamhxue69uhhsmtj9e6hxetwdaehgu3wdaexwtczyzgs47g8ph7khmhx8ux542kr2j6a59jddwere8y8dn04ynrjqnnx6qcyqqqqqqgs0j9au</link>
@@ -16,7 +23,7 @@
       <title>I finally dropped my motorcycle</title>
       <link>https://ditto.pub/naddr1qvzqqqr4gupzpyg2lyrsmlttamnr7r224tp4fdw6zexkhv3unjrkeh6jf3eqfendqq8x6mm5dukkgun0wqknyvpjxcjg0rjd</link>
       <description>Exactly as the title implies</description>
-      <pubDate>Wed, 09 Sept 2026 12:37:00 EST</pubDate>
+      <pubDate>Wed, 09 Sep 2026 12:37:00 EST</pubDate>
     </item>
     <!-- entry divider -->
     <item>
@@ -25,35 +32,35 @@
       <description>A small collection of photos</description>
       <pubDate>Tue, 08 Sep 2026 12:53:00 EST</pubDate>
     </item>
-    <!-- entry divider --><!-- entry divider -->
+    <!-- entry divider -->
     <item>
       <title>Fancy pencils</title>
       <link>https://ditto.pub/naddr1qvzqqqr4gupzpyg2lyrsmlttamnr7r224tp4fdw6zexkhv3unjrkeh6jf3eqfendqq8hqun9d45h2mfdwpjkucmfd3esmj0s7k</link>
       <description>A short off the cuff post about pencils.</description>
       <pubDate>Tue, 18 Aug 2026 20:01:00 EST</pubDate>
     </item>
-    <!-- entry divider --><!-- entry divider -->
+    <!-- entry divider -->
     <item>
       <title>Claude the Luddite Transcriber</title>
       <link>https://ditto.pub/nevent1qgsfzzhequxl66lwucls6j42cd2ttkskf44my0yusakd75jvwgzwvmgqyzsddxfxt49txh643xfqg9lwmx5uhwghrlmlufemdrsz8rqmkqxsgre26u0</link>
       <description>Using Claude to transcribe handwriting content.</description>
       <pubDate>Sun, 09 Aug 2026 21:10:00 EST</pubDate>
     </item>
-    <!-- entry divider --><!-- entry divider -->
+    <!-- entry divider -->
     <item>
       <title>Winter 2026 Niagara Falls Photos</title>
       <link>https://text.tchncs.de/1nate/niagara-falls-winter-photos/</link>
       <description>Some photos from my trip to Niagara falls six months ago</description>
-      <pubDate>Sun, 07 Jul 2026 14:28:00 EST</pubDate>
+      <pubDate>Tue, 07 Jul 2026 14:28:00 EST</pubDate>
     </item>
-    <!-- entry divider -->    <!-- entry divider -->    <!-- entry divider -->
+    <!-- entry divider -->
     <item>
       <title>Miniblog update</title>
       <link>https://nate.mecca1.net/miniblog/miniblog_about/</link>
       <description>An update to my miniblog description and landing page</description>
-      <pubDate>Sun, 07 Jul 2026 13:10:00 EST</pubDate>
+      <pubDate>Tue, 07 Jul 2026 13:10:00 EST</pubDate>
     </item>
-    <!-- entry divider -->    <!-- entry divider -->
+    <!-- entry divider -->
     <item>
       <title>Enderal is fun</title>
       <link>https://ditto.pub/nevent1qgsfzzhequxl66lwucls6j42cd2ttkskf44my0yusakd75jvwgzwvmgqyzdcg0y2zvm9hkx57ahd9xrh25j9lzsytw7ufvfjqj9w6hl9l7jz7wv0um7</link>
@@ -61,14 +68,12 @@
       <pubDate>Fri, 03 Jul 2026 11:21:00 EST</pubDate>
     </item>
     <!-- entry divider -->
-    <!-- entry divider -->
     <item>
       <title>Toying around with a phone dock</title>
       <link>https://1nate.leaflet.pub/3mfp35jgopc26</link>
       <description>Testing how my phone works in a desktop like setup.</description>
       <pubDate>Wed, 25 Feb 2026 11:21:00 EST</pubDate>
     </item>
-    <!-- entry divider -->
     <!-- entry divider -->
     <item>
       <title>Holos Is Adding Custom Domain Support</title>
@@ -81,15 +86,14 @@
       <title>Google is re supporting JPEG XL in Chromium</title>
       <link>https://text.tchncs.de/1nate/google-is-re-supporting-jpeg-xl-in-chromium</link>
       <description>After quietly removing JPEG Xl support in Chromium a few years back it might be making a comeback. JPG XL and AVIF are both pretty impressive formats, and their support is good to see.</description>
-      <pubDate>Wed, 29 Nov 2025 21:08:00 EST</pubDate>
+      <pubDate>Sat, 29 Nov 2025 21:08:00 EST</pubDate>
     </item>
-    <!-- entry divider -->
     <!-- entry divider -->
     <item>
       <title>Google might have just reversed forced app verification</title>
       <link>https://ditto.pub/nevent1qgsfzzhequxl66lwucls6j42cd2ttkskf44my0yusakd75jvwgzwvmgqyzelly8gpetn6xe2c74wmf6mqmt7rpvlzcdjycazpj0rgvr4e6f9uqefrxd</link>
       <description>Good news everyone</description>
-      <pubDate>Wed, 18 Nov 2025 22:40:00 EST</pubDate>
+      <pubDate>Tue, 18 Nov 2025 22:40:00 EST</pubDate>
     </item>
     <!-- entry divider -->
     <item>
