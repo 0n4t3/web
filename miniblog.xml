@@ -6,6 +6,20 @@
     <link>https://nate.mecca1.net/miniblog/miniblog/</link>
     <!-- top of entries -->
     <item>
+      <title>Artcraft Android</title>
+      <link>https://ditto.pub/nevent1qgsfzzhequxl66lwucls6j42cd2ttkskf44my0yusakd75jvwgzwvmgqyradz8rcrg9762tvng803hadac86u04clhxnfphsd8xmm8xzkcte7ealwfq</link>
+      <description>Artcraft has an andriod fork and it might provide a seriously useful tool found nowhere else yet.</description>
+      <pubDate>Wed, 28 Oct 2026 08:08:43 EST</pubDate>
+    </item>
+    <!-- entry divider -->
+    <item>
+      <title>Consider Private Clouds &amp; Universal Servers: a low effort open letter to Nostr</title>
+      <link>https://njump.me/naddr1qqjryvtxv4skzwfs95cnxdtx956xvcty95ur2wp395crxepjv43xzdn9vscx2q3qjy90jpcdl447ae3lp4924s65khdpvnttkg7fepmvmafycusyueksxpqqqp65w8w0zkh</link>
+      <description>There’s not really much out there in terms of a ‘universal server’ that could meet the needs of self hosted apps, niche vibe coded projects, and general personal cloud type applications. I feel like Nostr might be able to fill this sort of niche - in some cases as it is now, and in others, likely with a new NIP or slightly different use of something already present like Blossom. But I lack the brain cells to make it happen, so I figured I’d yap about it on the internet instead, in the event my ideas might inspire someone else.</description>
+      <pubDate>Thu, 22 Oct 2026 12:09:00 EST</pubDate>
+    </item>
+    <!-- entry divider -->
+    <item>
       <title>(repost) code as a commodity</title>
       <link>https://ditto.pub/nevent1qqsguehardzv2gncfw7yr5y8tpsmyyv54sll4vta9r8g4u4e7kdgxnsppemhxue69uhkummn9ekx7mp0qgsf03c2gsmx5ef4c9zmxvlew04gdh7u94afnknp33qvv3c94kvwxgsrqsqqqqqp9ktk9t</link>
       <description>A post that I felt was worth sharing, the best argument against code as a commodity that I've seen.</description>
