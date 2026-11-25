@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on An Untitled Blog</title>
+    <link>/tags/github/</link>
+    <description>Recent content in Github on An Untitled Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decentralized Git &amp; Github Alternatives</title>
+      <link>/posts/2026-11-25_github-alternatives/</link>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2026-11-25_github-alternatives/</guid>
+      <description>
+        
+          
+            As touched upon in my previous impromptu post, GitHub recently either suspended or deleted my account. Exactly which is which I don’t know - I’m still yet to receive an email, notification, or response to my ticket even acknowledging that anything happened. All I know is that late Friday afternoon I tried logging in and the login page kept redirecting me to a /suspended url that otherwise looked like a login page, and all of my data was completely inaccessible.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

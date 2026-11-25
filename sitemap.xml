@@ -3,10 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2026-11-20T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/atproto/</loc>
+    <lastmod>2026-11-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
-    <lastmod>2026-11-20T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/decentralized/</loc>
+    <lastmod>2026-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/2026-11-25_github-alternatives/</loc>
+    <lastmod>2026-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/git/</loc>
+    <lastmod>2026-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/github/</loc>
+    <lastmod>2026-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/nostr/</loc>
+    <lastmod>2026-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2026-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/protocols/</loc>
+    <lastmod>2026-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/radicle.dev/</loc>
+    <lastmod>2026-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/stuff-i-like/</loc>
+    <lastmod>2026-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2026-11-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/help/</loc>
     <lastmod>2026-11-20T00:00:00+00:00</lastmod>
@@ -15,12 +48,6 @@
     <lastmod>2026-11-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/personal-updates/</loc>
-    <lastmod>2026-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2026-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2026-11-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2026-10-20_handwriting-2/</loc>
@@ -41,16 +68,7 @@
     <loc>/tags/ipfs/</loc>
     <lastmod>2026-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/nostr/</loc>
-    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/posts/2026-08-21_permanant-reference/</loc>
-    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/protocols/</loc>
-    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/stuff-i-like/</loc>
     <lastmod>2026-08-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/tech/</loc>
@@ -96,9 +114,6 @@
     <lastmod>2026-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/activitypub/</loc>
-    <lastmod>2026-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/atproto/</loc>
     <lastmod>2026-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/debian/</loc>
@@ -241,9 +256,6 @@
   </url><url>
     <loc>/posts/2023-12-27_mozillasbrink/</loc>
     <lastmod>2023-12-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/decentralized/</loc>
-    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2023-12-20_followanything/</loc>
     <lastmod>2023-12-20T00:00:00+00:00</lastmod>

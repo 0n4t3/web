@@ -6,7 +6,23 @@
     <description>Recent content in Atproto on An Untitled Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="/tags/atproto/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="/tags/atproto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decentralized Git &amp; Github Alternatives</title>
+      <link>/posts/2026-11-25_github-alternatives/</link>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2026-11-25_github-alternatives/</guid>
+      <description>
+        
+          
+            As touched upon in my previous impromptu post, GitHub recently either suspended or deleted my account. Exactly which is which I don’t know - I’m still yet to receive an email, notification, or response to my ticket even acknowledging that anything happened. All I know is that late Friday afternoon I tried logging in and the login page kept redirecting me to a /suspended url that otherwise looked like a login page, and all of my data was completely inaccessible.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>A Technical Comparison of Distributed Social Media Protocols v3</title>
       <link>/posts/2026-03-08_microblogging-protocols-v3/</link>
